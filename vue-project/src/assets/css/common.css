@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/*
+* common
+*/
+
+@font-face {
+	font-family: 'Pretendard JP';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard JP Bold'), url('../font/PretendardJP-Bold.woff2') format('woff2'), url('../font/PretendardJP-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard JP';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard JP Medium'), url('../font/PretendardJP-Medium.woff2') format('woff2'), url('../font/PretendardJP-Medium.woff') format('woff');
+}
+
+*, *::before, *::after {padding:0; margin:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+:focus:not(:focus-visible) {outline:none;}
+
+html {font-size:10px;}
+body {
+    font-family: "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size:1.4rem; font-weight:500; line-height:2rem; color:#000;
+}
+html, body {height:100%;}
+
+input, textarea, select, button, table, pre {font:inherit; color:inherit;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {display:block;}
+li {list-style:none;}
+img, fieldset, abbr, acronym {border:none;}
+i, address, caption, cite, code, dfn, em, var {font-style:normal;}
+blockquote, q {quotes:none;}
+img, input, button, select, textarea {vertical-align:middle;}
+a {color:inherit; text-decoration:none;}
+button {cursor:pointer;}
+legend, caption {position:absolute; width:1px; height:1px; margin:-1px; clip:rect(0 0 0 0); overflow:hidden;}
+table {width:100%; border-spacing:0;}
+input, button {border:none; border-radius:0; background:none;}
+
+sup {line-height:0.9rem;}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {appearance:none; -webkit-appearance:none; margin:0;}
+input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
+
+.mobile ::-webkit-scrollbar {display:none;}
+.mobile ::-webkit-scrollbar-thumb {display:none;}
+
+.pc ::-webkit-scrollbar {width:6px; height:6px;}
+.pc ::-webkit-scrollbar-thumb {background-color:#ddd; border-radius:6px;}
+.pc ::-webkit-scrollbar-track {background-color:#fafafa; border-radius:6px;}
+.pc * {scrollbar-width:thin; scrollbar-color:#ddd;}
+
+
+/* *** font *** */
+
+
+/* *** color *** */
+
+
+/* *** 정렬 *** */
+
+
+/* *** 말줄임 *** */
+
+
+/* *** dimmed *** */
+
+
+/* *** blind *** */
+.blind {position:absolute !important; width:1px !important; height:1px !important; margin:-1px !important; clip:rect(0 0 0 0) !important; overflow:hidden !important;}
+
+/* *** margin *** */
+
+
+/* *** padding *** */
+
+
+/* *** scroll *** */
+.noScroll {touch-action:none; -webkit-overflow-scrolling:none; overflow:hidden; overscroll-behavior:none;}
+
+/* *** scroll_fixed *** */
+
+
+/* *** loading *** */
+
+.wrap {display:flex; flex-direction:column; height:100%;}
+.container {flex:1 1 auto;}
+.content {height:100%; max-width:64rem; padding:5.2rem 0 3.2rem; margin:0 auto;}
+
+/* PC nav */
+.title_nav {display:none; padding:6.4rem 1.6rem 0; /*margin-bottom:1.2rem;*/ font-size:1.6rem; font-weight:700; line-height:2.3rem; color:#000;}
+
+/* section */
+.section {padding:1.2rem 1.6rem 0 1.6rem;}
+.section ~ .section {padding-top:3.2rem;}
+.section .section {padding:0;}
+
+/* table */
+.table {font-size:1.3rem; color:#000; line-height:1.9rem; border-top:1px solid #000; border-bottom:1px solid #ddd;}
+.table th,
+.table td {padding:2rem 0.8rem; border-bottom:1px solid #ddd;}
+.table tbody th {color:#717171; text-align:left; vertical-align:top;}
+.table thead th {padding:1.2rem 0.4rem !important; background-color:#f1f3f4; color:#000; font-size:1.2rem; text-align:center;}
+.table.ty02 th,
+.table.ty02 td {font-size:1.2rem;}
+.table.ty03 th,
+.table.ty03 td {padding:1.6rem 0.6rem; font-size:1.2rem;}
+
+/*.table table .tb_stat{color:#717171; text-align:center; vertical-align:middle;}
+.table table .ann_fee{font-size:1.6rem; text-align:right;}
+.table table.tb_center td,
+.table table.tb_center th {text-align: center;}
+.table table.nrw_st th,
+.table table.nrw_st td{font-size:1.2rem; padding:1.6rem 0.6rem;}
+.table table.nrw_st thead th{padding:1.2rem 0.4rem;}
+.table table.nrw_st_ty02 thead th{font-size:1.2rem; padding:1.2rem 0.4rem;}
+.table table.nrw_st_ty02 tbody td{font-size:1.2rem;}
+.table table dl dt{color:#777; margin-top:1.3rem;}
+.table table dl dt > b{color:#909090;}
+.table table dl dt:first-child{margin-top:0;}
+ .table table .th_ico{position:relative; padding:2rem 0.8rem 2rem 2rem;}
+.table table .th_ico::before{content:""; position:absolute; left:0; top:2rem; width:1.6rem; height:1.6rem; background:no-repeat center/1.6rem;}
+.table table .tb_right {text-align:right;}
+tr:nth-child(1) .th_ico::before{background-image:url(../images/ico/ico_loca.png);}
+tr:nth-child(2) .th_ico::before{background-image:url(../images/ico/ico_phone.png);}
+tr:nth-child(3) .th_ico::before{background-image:url(../images/ico/ico_clock.png);}
+tr:nth-child(4) .th_ico::before{background-image:url(../images/ico/ico_cale.png);}
+
+.table_ty02 {padding:0;}
+.table_ty02 th, 
+.table_ty02 td{padding:2rem 0.8rem; border-bottom:1px solid #ddd;}
+.table_ty02 tbody tr:last-child th, 
+.table_ty02 tbody tr:last-child td{border-bottom:0;} */
+
+
+/* ********** PC ********** */
+.pc {overflow-y:scroll;}
+
+.pc_show {display:none !important;}
+.pc .pc_show {display:block !important;}
+.pc .pc_hide {display:none !important;}
+
+.pc .wrap {min-width:96rem; height:auto;}
+.pc .content {padding-top:0;}
+
+.pc .title_nav {display:block;}
+
+.pc .header {position:sticky; height:9.6rem; background:#ddd;}
+.pc .header > .inner {display:none;}
+.pc .header > .pc_header {display:block;}
+
+.pc .footer > .inner {max-width:96rem;}
+
+.pc .aside {display:none;}
+
+.pc .aside_float > .inner {bottom:4rem !important; z-index:10;}
+.pc .aside_float .reco_btn {display:block;}
+
+@media screen and (min-width:640px){
+    .pop_layer.alert .pop_wrap {max-width:50rem;}
+    
+    .pop_layer.normal {align-items:center;}
+    .pop_layer.normal .pop_wrap {max-height:calc(100% - 5.2rem); border-radius:0.8rem; transform:translateY(0) scale(50%);}
+    .pop_layer.normal.open .pop_wrap {transform:scale(100%);}
+    
+    .pop_layer.full {align-items:center;}
+    .pop_layer.full .pop_wrap {height:auto; max-height:calc(100% - 5.2rem); border-radius:0.8rem; transform:translateY(0) scale(50%);}
+    .pop_layer.full .pop_wrap.height_fix {height:calc(100% - 5.2rem);}
+    .pop_layer.full .pop_header {padding:2.25rem 3.6rem 2.25rem 1.6rem;}
+    .pop_layer.full .pop_header h3 {font-size:1.9rem; line-height:2.6rem;}
+    .pop_layer.full .pop_content {padding-bottom:2.4rem;}
+    .pop_layer.full .pop_footer {padding:0 1.6rem 2rem 1.6rem;}
+    .pop_layer.full.open .pop_wrap {transform:scale(100%);}
+    .pop_layer.full .pop_close {top:2.2rem; right:1.2rem; background-image:url(../images/ico/ico_close.png); background-size:1.6rem auto;}
+}
+
+
+/* @media screen and (max-width:360px){
+    html {font-size:9px;}
+} */
+
