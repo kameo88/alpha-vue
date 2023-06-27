@@ -38,8 +38,7 @@
             <td></td>
             <td></td>
             <td class="url">
-              <router-link to="/Popup">Popup</router-link>
-              <a href="./guide/popup.html" target="_blank"></a>
+              <a href="/Popup" target="_blank">Popup</a>
               </td>
             <td class="marker"></td>
             <td class="date"></td>

@@ -6,16 +6,16 @@
       <p class="info"><span>2023.05.26</span> Last updata</p>
       <div class="proc_wrap"></div>
       <ul class="tab_nav">
-        <li><router-link to="/ListGuide">Guide</router-link></li>
-        <li><router-link to="/ListCommon">공통, etc</router-link></li>
-        <li><router-link to="/ListMain">메인</router-link></li>
-        <li><router-link to="/ListUsim">유심구매</router-link></li>
-        <li><router-link to="/ListRatePlan">요금제</router-link></li>
-        <li><router-link to="/ListBeneFit">혜택</router-link></li>
-        <li><router-link to="/ListCS">고객지원</router-link></li>
-        <li><router-link to="/ListMypage">마이페이지</router-link></li>
-        <li><router-link to="/ListLogin">로그인</router-link></li>
-        <li><router-link to="/ListFooter">푸터</router-link></li>
+        <li><a href="/ListGuide">Guide</a></li>
+        <li><a href="/ListCommon">공통, etc</a></li>
+        <li><a href="/ListMain">메인</a></li>
+        <li><a href="/ListUsim">유심구매</a></li>
+        <li><a href="/ListRatePlan">요금제</a></li>
+        <li><a href="/ListBeneFit">혜택</a></li>
+        <li><a href="/ListCS">고객지원</a></li>
+        <li><a href="/ListMypage">마이페이지</a></li>
+        <li><a href="/ListLogin">로그인</a></li>
+        <li><a href="/ListFooter">푸터</a></li>
       </ul>
       <div class="marker">
         <ul>
