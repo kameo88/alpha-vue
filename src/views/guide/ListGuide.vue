@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
 
-    <div><GuideHeader :page="page" :pageOn="pageOn" @changeGuidePage="changeGuidePage" /></div>
+    <GuideHeader :page="page" :pageOn="pageOn" @changeGuidePage="changeGuidePage" />
     
     <h2>Guide : v0.0</h2>
 
@@ -293,6 +293,6 @@ export default {
   },
   components:{
     GuideHeader,
-  }
+  },
 }
 </script>

@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <router-view />
-  </div>
+  <router-view />
 </template>
 
 <script>
@@ -9,7 +7,6 @@ export default {
   name: 'App',
   mounted(){
     this.$front.device();
-    // this.$router.push("/guide/ListGuide");
   }
 }
 </script>
