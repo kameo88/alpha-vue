@@ -1,5 +1,5 @@
 <template>
-  dddddd
+  Default
   <v-app>
     <!-- <default-bar /> -->
 
@@ -16,6 +16,9 @@ export default {
   components:{
     // DefaultBar,
     // DefaultView
+  },
+  mounted(){
+    this.$router.push("/guide/ListGuide");
   }
 }
 </script>

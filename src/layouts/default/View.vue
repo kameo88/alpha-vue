@@ -1,9 +1,12 @@
 <template>
-  <v-main>
+  View
+  <!-- <v-main>
     <router-view />
-  </v-main>
+  </v-main> -->
 </template>
 
-<script setup>
-  //
+<script>
+export default {
+  name: 'ViewPage'
+}
 </script>

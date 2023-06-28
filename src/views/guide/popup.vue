@@ -2,7 +2,7 @@
 
   <div class="wrap">
 
-    <Header />
+    <CompHeader />
 
     <div class="container">
       <div class="content" id="content">
@@ -83,6 +83,13 @@
 
 </template>
 
-<script setup>
-  import Header from '@/components/Header.vue'
+<script>
+import CompHeader from '@/components/Header.vue'
+
+export default {
+  name: 'GuidePopup',
+  components:{
+    CompHeader,
+  }
+}
 </script>
