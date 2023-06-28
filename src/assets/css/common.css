@@ -89,8 +89,8 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 /* *** loading *** */
 
 /* ***** button ***** */
-.btn {display:inline-block; border:0.1rem solid; border-radius:0.8rem; text-align:center;}
-/* [class^=btn_] {display:inline-block; border:0.1rem solid; border-radius:0.8rem; text-align:center;} */
+/* .btn {display:inline-block; border:0.1rem solid; border-radius:0.8rem; text-align:center;} */
+[class^=btn_] {display:inline-block; border:0.1rem solid; border-radius:0.8rem; text-align:center;}
                 
 [class^=btn_][class*=_sXS] {padding:0.17rem 0.5rem; font-size:1.3rem; line-height:1.9rem; border-radius:0.4rem;}
 [class^=btn_][class*=_sS] {padding:0.72rem 1.12rem; font-size:1.4rem; line-height:2rem; border-radius:0.6rem;}
