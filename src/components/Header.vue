@@ -154,7 +154,9 @@
 </template>
 
 <script>
-  //
+export default {
+  name: 'compHeader'
+}
 </script>
 
 <style>
