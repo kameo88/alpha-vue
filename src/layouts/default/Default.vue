@@ -1,12 +1,21 @@
 <template>
+  dddddd
   <v-app>
-    <default-bar />
+    <!-- <default-bar /> -->
 
-    <default-view />
+    <!-- <default-view /> -->
   </v-app>
 </template>
 
-<script setup>
-  import DefaultBar from './AppBar.vue'
-  import DefaultView from './View.vue'
+<script>
+// import DefaultBar from './AppBar.vue'
+// import DefaultView from './View.vue'
+
+export default {
+  name: 'DefaultTdas',
+  components:{
+    // DefaultBar,
+    // DefaultView
+  }
+}
 </script>

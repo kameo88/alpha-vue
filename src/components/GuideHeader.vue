@@ -30,7 +30,6 @@
     </div>
   </header>
 
-
 </template>
 
 <script>

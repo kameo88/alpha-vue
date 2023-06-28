@@ -1,8 +1,9 @@
 <template>
+  home
 
   <div class="wrap">
 
-    <GuideHeader />
+    <GuideHeader :page="page" :pageOn="pageOn" @changeGuidePage="changeGuidePage" />
 
     <h2>Guide : v0.0</h2>
 
@@ -256,7 +257,23 @@
   <hr> <!-- empty -->
 </template>
 
-<script setup>
-  import GuideHeader from '@/components/GuideHeader.vue'
+<script>
+import GuideHeader from '@/components/GuideHeader.vue'
+
+export default {
+  name: 'GuideHome',
+  methods: {
+    changeGuidePage(num){
+      this.$emit('changeGuidePage', num);
+    }
+  },
+  props : {
+    page: Object,
+    pageOn: Number,
+  },
+  components: {
+    GuideHeader,
+  }
+}
 </script>
 
