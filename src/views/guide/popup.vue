@@ -85,7 +85,7 @@
 
 
 
-  <div class="pop_layer alert" id="popup01"> <!-- alert, normal, full -->
+<div class="pop_layer alert" id="popup01"> <!-- alert, normal, full -->
   <div class="pop_wrap">
     <div class="pop_header">
       <h3>안내</h3>
