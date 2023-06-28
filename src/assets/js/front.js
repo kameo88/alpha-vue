@@ -1,5 +1,5 @@
-const methods = {
-  deviceChk(){
+const front = {
+  device(){
     const elem = document.querySelector("html");
     const userAgent = navigator.userAgent;
 
@@ -251,7 +251,7 @@ const tab = {
 
 export default {
     install(Vue) {
-        Vue.config.globalProperties.$deviceChk = methods.deviceChk;
+        Vue.config.globalProperties.$front = front;
         Vue.config.globalProperties.$tab = tab;
         Vue.config.globalProperties.$sort = sort;
         Vue.config.globalProperties.$popup = popup;

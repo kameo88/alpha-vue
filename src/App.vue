@@ -2,6 +2,11 @@
   <router-view />
 </template>
 
-<script setup>
-  //
+<script>
+export default {
+  name: 'App',
+  mounted(){
+    this.$front.device();
+  }
+}
 </script>
