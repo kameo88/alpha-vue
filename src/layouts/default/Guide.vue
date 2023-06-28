@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <router-view :page="page" :pageOn="pageOn" @changeGuidePage="changeGuidePage" />
-  </div>
+  <router-view :page="page" :pageOn="pageOn" @changeGuidePage="changeGuidePage" />
 </template>
 
 <script>
