@@ -7,7 +7,7 @@
 
     <div class="container">
       <div class="content" id="content">
-        <h2 class="title_nav">title</h2>
+        <h2 class="title_nav">Guide</h2>
 
         <div class="page_info">page info</div>
         
