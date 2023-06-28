@@ -3,7 +3,6 @@
   <div class="wrap">
 
     <Header />
-    <!-- // header -->
 
     <div class="container">
       <div class="content" id="content">
@@ -82,7 +81,6 @@
   </div>
   <!-- // wrap -->
 
-  <hr>
 </template>
 
 <script setup>
