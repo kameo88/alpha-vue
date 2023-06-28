@@ -245,7 +245,101 @@ const tab = {
       _body.scrollTo(0, _scroll);
     }
 
+    // tablist02 일때만
+    this.move(_this);
+
+  },
+  move(e){
+    // console.log(e);
+
+    const _tabList = e.parentNode.parentNode;
+
+    const _width = _tabList.scrollWidth;    // 가로 820
+    const _tabListW = _tabList.offsetWidth; // 보여지는 가로 640
+    const _elemW = e.offsetWidth;
+    0
+    let _tabListS = _tabList.scrollLeft;  // 스크롤값
+    const _scroll = _width - _tabListW;     // 최대 스크롤 값 (180)
+
+
+    const _tabListL = _tabList.offsetLeft;
+    let _thisL = e.offsetLeft - _tabListL;
+
+    let __thisL = _thisL - _tabListS;
+
+    // _thisL = _thisL - _scroll;
+
+    const _half = (_tabListW/2);
+
+    const gap = _thisL - _half;
+
+    let st = _tabListS;                        // 시작점
+    let en = _width - _tabListW + _tabListS;   // 끝점
+
+    // 시작점 _tabListS
+    // 끝점 _width - _tabListW + _tabListS
+    console.log(st, en);
+    
+
+    let start = st + (_tabListW - _thisL);
+    // 180
+
+    let goto = _thisL - en - (_scroll);
+    
+    
+    console.log('_width:', _width, '_tabListW:', _tabListW, ' _tabListS:', _tabListS, ' _thisL:', _thisL, ' __thisL:', __thisL, ' _elemW:', _elemW, ' goto:', goto );
+    // if( _thisL+100 > _tabListW ){
+      _tabList.scrollTo(goto, 0);
+    // }
+
+    // let animate;
+    // const run = function(){
+    //   console.log('run', start, gap);
+    //   if( start > _half ){
+    //     console.log('clear');
+    //     cancelAnimationFrame(animate);
+    //   } else {
+    //     animate = requestAnimationFrame(run);
+    //   }
+
+    //   _tabList.scrollTo(start, 0);
+
+    //   console.log(start);
+
+    //   if( _tabListS < gap ){
+    //     start += 10;
+    //   } else {
+    //     start -= 10;
+    //   }
+    // }
+    // requestAnimationFrame(run);
+    
+
+
+
+    // while(gap){
+    //   if(start == gap){
+    //     console.log('==');
+    //     break;
+    //   }
+
+    //   _tabList.scrollTo(start, 0);
+
+    //   if( _tabListS < gap ){
+    //     start++;
+    //   } else {
+    //     start--;
+    //   }
+    // }
+    // console.log(_tabListS, gap);
+    
+
+
   }
+}
+
+const tag = {
+
 }
 
 
@@ -255,5 +349,6 @@ export default {
         Vue.config.globalProperties.$tab = tab;
         Vue.config.globalProperties.$sort = sort;
         Vue.config.globalProperties.$popup = popup;
+        Vue.config.globalProperties.$tag = tag;
     }
 }

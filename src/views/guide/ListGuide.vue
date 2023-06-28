@@ -121,7 +121,10 @@
             <td class="url"><a href="/guide/ListGuide/popup" target="_blank">/ListGuide/popup</a></td>
             <td class="marker"></td>
             <td class="date"></td>
-            <td>&amp; tooltip</td>
+            <td>
+              script 작업완료<br>
+              &amp; tooltip
+            </td>
           </tr>
           <tr class="ing">
             <td>component</td>
@@ -161,7 +164,9 @@
             <td class="url"><a href="/guide/ListGuide/tab" target="_blank">/ListGuide/tab</a></td>
             <td class="marker"></td>
             <td class="date"></td>
-            <td></td>
+            <td>
+              script 작업완료
+            </td>
           </tr>
           <tr class="ing">
             <td></td>
