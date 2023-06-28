@@ -59,6 +59,7 @@ import GuideHeader from '@/components/GuideHeader.vue'
 
 export default {
   name: 'ListUsim',
+  emits: ['changeGuidePage'],
   methods: {
     changeGuidePage(num){
       this.$emit('changeGuidePage', num);

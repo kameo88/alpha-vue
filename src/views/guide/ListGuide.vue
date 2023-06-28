@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
 
-    <GuideHeader :page="page" :pageOn="pageOn" @changeGuidePage="changeGuidePage" />
+    <div><GuideHeader :page="page" :pageOn="pageOn" @changeGuidePage="changeGuidePage" /></div>
     
     <h2>Guide : v0.0</h2>
 
@@ -270,6 +270,7 @@ import GuideHeader from '@/components/GuideHeader.vue'
 
 export default {
   name: 'ListGuide',
+  emits: ['changeGuidePage'],
   methods: {
     changeGuidePage(num){
       this.$emit('changeGuidePage', num);

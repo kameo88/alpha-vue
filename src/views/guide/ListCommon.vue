@@ -2,7 +2,7 @@
 
   <div class="wrap">
 
-    <GuideHeader :page="page" :pageOn="pageOn" @changeGuidePage="changeGuidePage" />
+    <div><GuideHeader :page="page" :pageOn="pageOn" @changeGuidePage="changeGuidePage" /></div>
     
     <h2>공통 : v0.0</h2>
 
@@ -59,6 +59,7 @@ import GuideHeader from '@/components/GuideHeader.vue'
 
 export default {
   name: 'ListCommon',
+  emits: ['changeGuidePage'],
   methods: {
     changeGuidePage(num){
       this.$emit('changeGuidePage', num);
@@ -70,6 +71,6 @@ export default {
   },
   components:{
     GuideHeader,
-  }
+  },
 }
 </script>

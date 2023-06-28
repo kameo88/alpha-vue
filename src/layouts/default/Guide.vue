@@ -7,6 +7,7 @@
 <script>
 export default {
   name: 'GuideMain',
+  emits: ['changeGuidePage'],
   data(){
     return {
       page: [
@@ -25,9 +26,8 @@ export default {
     }
   },
   methods: {
-    changeGuidePage(value){
-      this.pageOn = value;
-      console.log('Guide', value);
+    changeGuidePage(num){
+      this.pageOn = num;
     }
   }
 }

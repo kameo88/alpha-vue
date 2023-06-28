@@ -59,6 +59,7 @@ import GuideHeader from '@/components/GuideHeader.vue'
 
 export default {
   name: 'ListFooter',
+  emits: ['changeGuidePage'],
   methods: {
     changeGuidePage(num){
       this.$emit('changeGuidePage', num);
