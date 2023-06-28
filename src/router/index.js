@@ -23,17 +23,6 @@ const routes = [
     component: () => import('@/layouts/default/Guide.vue'),
     children: [
       {
-        path: '/ListGuide',
-        name: 'ListGuide',
-        component: () => import('@/views/guide/ListGuide.vue'),
-      },
-    ],
-  },
-  {
-    path: '/',
-    component: () => import('@/layouts/default/Guide.vue'),
-    children: [
-      {
         path: '/ListCommon',
         name: 'ListCommon',
         component: () => import('@/views/guide/ListCommon.vue'),
@@ -139,6 +128,20 @@ const routes = [
   //     },
   //   ],
   // },
+
+
+  // ListGuide
+  {
+    path: '/',
+    component: () => import('@/layouts/default/Guide.vue'),
+    children: [
+      {
+        path: '/ListGuide',
+        name: 'ListGuide',
+        component: () => import('@/views/guide/ListGuide.vue'),
+      },
+    ],
+  },
   {
     path: '/ListGuide',
     component: () => import('@/layouts/default/Guide.vue'),
