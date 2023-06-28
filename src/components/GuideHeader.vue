@@ -2,11 +2,14 @@
 
   <header>
     <div class="cont_area">
-      <h1><router-link to="/"><img src="../assets/images/common/logo_plusalpha.png" alt="+알파"></router-link> : </h1>
+      <h1><router-link to="/"><img src="../assets/images/common/logo_plusalpha.png" alt="+알파"></router-link> : {{ page[pageOn].name }}</h1>
       <p class="info"><span>2023.05.26</span> Last updata</p>
       <div class="proc_wrap"></div>
       <ul class="tab_nav">
-        <li><a href="/ListGuide">Guide</a></li>
+        <li v-for="(a, i) in page" :key="i" :class="{ on : pageOn==i }">
+          <router-link :to="`${a.path}`" @click="changeGuidePage(i)">{{ a.name }}</router-link>
+        </li>
+        <!-- <li><a href="/ListGuide">Guide</a></li>
         <li><a href="/ListCommon">공통, etc</a></li>
         <li><a href="/ListMain">메인</a></li>
         <li><a href="/ListUsim">유심구매</a></li>
@@ -15,7 +18,7 @@
         <li><a href="/ListCS">고객지원</a></li>
         <li><a href="/ListMypage">마이페이지</a></li>
         <li><a href="/ListLogin">로그인</a></li>
-        <li><a href="/ListFooter">푸터</a></li>
+        <li><a href="/ListFooter">푸터</a></li> -->
       </ul>
       <div class="marker">
         <ul>
@@ -30,8 +33,19 @@
 
 </template>
 
-<script setup>
-  //
+<script>
+export default {
+  name: 'GuideHeader',
+  methods:{
+    changeGuidePage(num){
+      this.$emit('changeGuidePage', num);
+    }
+  },
+  props : {
+    page: Object,
+    pageOn: Number,
+  },
+}
 </script>
 
 <style>

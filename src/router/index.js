@@ -1,216 +1,195 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
 
-
-
 const routes = [
   {
-    path: '/',
+    path: "/",
     component: () => import('@/layouts/default/Guide.vue'),
-    children: [
-      {
-        path: '',
-        name: 'Home',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
-      },
-    ],
   },
+
   {
-    path: '/',
+    path: '/guide',
     component: () => import('@/layouts/default/Guide.vue'),
-    children: [
-      {
-        path: '/ListCommon',
-        name: 'ListCommon',
-        component: () => import('@/views/guide/ListCommon.vue'),
-      },
-    ],
-  },
-  {
-    path: '/',
-    component: () => import('@/layouts/default/Guide.vue'),
-    children: [
-      {
-        path: '/ListMain',
-        name: 'ListMain',
-        component: () => import('@/views/guide/ListMain.vue'),
-      },
-    ],
-  },
-  {
-    path: '/',
-    component: () => import('@/layouts/default/Guide.vue'),
-    children: [
-      {
-        path: '/ListUsim',
-        name: 'ListUsim',
-        component: () => import('@/views/guide/ListUsim.vue'),
-      },
-    ],
-  },
-  {
-    path: '/',
-    component: () => import('@/layouts/default/Guide.vue'),
-    children: [
-      {
-        path: '/ListRatePlan',
-        name: 'ListRatePlan',
-        component: () => import('@/views/guide/ListRatePlan.vue'),
-      },
-    ],
-  },
-  {
-    path: '/',
-    component: () => import('@/layouts/default/Guide.vue'),
-    children: [
-      {
-        path: '/ListBenefit',
-        name: 'ListBenefit',
-        component: () => import('@/views/guide/ListBenefit.vue'),
-      },
-    ],
-  },
-  {
-    path: '/',
-    component: () => import('@/layouts/default/Guide.vue'),
-    children: [
-      {
-        path: '/ListCS',
-        name: 'ListCS',
-        component: () => import('@/views/guide/ListCS.vue'),
-      },
-    ],
-  },
-  {
-    path: '/',
-    component: () => import('@/layouts/default/Guide.vue'),
-    children: [
-      {
-        path: '/ListMypage',
-        name: 'ListMypage',
-        component: () => import('@/views/guide/ListMypage.vue'),
-      },
-    ],
-  },
-  {
-    path: '/',
-    component: () => import('@/layouts/default/Guide.vue'),
-    children: [
-      {
-        path: '/ListLogin',
-        name: 'ListLogin',
-        component: () => import('@/views/guide/ListLogin.vue'),
-      },
-    ],
-  },
-  {
-    path: '/',
-    component: () => import('@/layouts/default/Guide.vue'),
-    children: [
-      {
-        path: '/ListFooter',
-        name: 'ListFooter',
-        component: () => import('@/views/guide/ListFooter.vue'),
-      },
-    ],
-  },
-  // {
-  //   path: '/',
-  //   component: () => import('@/layouts/default/Guide.vue'),
-  //   children: [
-  //     {
-  //       path: '/Popup',
-  //       name: 'Popup',
-  //       component: () => import('@/views/guide/Popup.vue'),
-  //     },
-  //   ],
-  // },
 
 
-  // ListGuide
-  {
-    path: '/',
-    component: () => import('@/layouts/default/Guide.vue'),
+    // ListGuide
     children: [
       {
-        path: '/ListGuide',
-        name: 'ListGuide',
+        path: 'ListGuide',
         component: () => import('@/views/guide/ListGuide.vue'),
       },
-    ],
-  },
-  {
-    path: '/ListGuide',
-    component: () => import('@/layouts/default/Guide.vue'),
-    children: [
       {
-        path: 'layout',
+        path: 'ListGuide/Template',
+        component: () => import('@/views/guide/Template.vue'),
+      },
+      {
+        path: 'ListGuide/Layout',
         component: () => import('@/views/guide/Layout.vue'),
       },
       {
-        path: 'popup',
+        path: 'ListGuide/Popup',
         component: () => import('@/views/guide/Popup.vue'),
       },
       {
-        path: 'text',
+        path: 'ListGuide/Text',
         component: () => import('@/views/guide/Text.vue'),
       },
       {
-        path: 'form',
+        path: 'ListGuide/Form',
         component: () => import('@/views/guide/Form.vue'),
       },
       {
-        path: 'form_etc',
+        path: 'ListGuide/FormEtc',
         component: () => import('@/views/guide/FormEtc.vue'),
       },
       {
-        path: 'tab',
+        path: 'ListGuide/Tab',
         component: () => import('@/views/guide/Tab.vue'),
       },
       {
-        path: 'tag',
+        path: 'ListGuide/Tag',
         component: () => import('@/views/guide/Tag.vue'),
       },
       {
-        path: 'accordion',
+        path: 'ListGuide/Accordion',
         component: () => import('@/views/guide/Accordion.vue'),
       },
       {
-        path: 'button',
+        path: 'ListGuide/Button',
         component: () => import('@/views/guide/Button.vue'),
       },
       {
-        path: 'table',
+        path: 'ListGuide/Table',
         component: () => import('@/views/guide/Table.vue'),
       },
       {
-        path: 'info_list',
+        path: 'ListGuide/InfoList',
         component: () => import('@/views/guide/InfoList.vue'),
       },
       {
-        path: 'flag',
+        path: 'ListGuide/Flag',
         component: () => import('@/views/guide/Flag.vue'),
       },
       {
-        path: 'list',
+        path: 'ListGuide/List',
         component: () => import('@/views/guide/List.vue'),
       },
       {
-        path: 'swiper',
+        path: 'ListGuide/Swiper',
         component: () => import('@/views/guide/Swiper.vue'),
       },
       {
-        path: 'logo',
+        path: 'ListGuide/Logo',
         component: () => import('@/views/guide/Logo.vue'),
       },
       {
-        path: 'animation',
+        path: 'ListGuide/Animation',
         component: () => import('@/views/guide/Animation.vue'),
-      }
-    ],
+      },
+
+
+      // guide
+      {
+        path: 'ListCommon',
+        component: () => import('@/views/guide/ListCommon.vue'),
+      },
+      // {
+      //   path: 'ListCommon/sub',
+      //   component: () => import('@/views/guide/ListCommon.vue'),
+      // },
+
+
+      // main
+      {
+        path: 'ListMain',
+        component: () => import('@/views/guide/ListMain.vue'),
+      },
+      // {
+      //   path: 'ListMain/sub',
+      //   component: () => import('@/views/guide/ListMain.vue'),
+      // },
+
+
+      // 유심구매
+      {
+        path: 'ListUsim',
+        component: () => import('@/views/guide/ListUsim.vue'),
+      },
+      // {
+      //   path: 'ListUsim/sub',
+      //   component: () => import('@/views/guide/ListUsim.vue'),
+      // },
+
+
+      // 요금제
+      {
+        path: 'ListRatePlan',
+        component: () => import('@/views/guide/ListRatePlan.vue'),
+      },
+      // {
+      //   path: 'ListRatePlan/sub',
+      //   component: () => import('@/views/guide/ListRatePlan.vue'),
+      // },
+
+
+      // 혜택
+      {
+        path: 'ListBeneFit',
+        component: () => import('@/views/guide/ListBeneFit.vue'),
+      },
+      // {
+      //   path: 'ListBeneFit/sub',
+      //   component: () => import('@/views/guide/ListBeneFit.vue'),
+      // },
+
+
+      // 고객지원
+      {
+        path: 'ListCS',
+        component: () => import('@/views/guide/ListCS.vue'),
+      },
+      // {
+      //   path: 'ListCS/sub',
+      //   component: () => import('@/views/guide/ListCS.vue'),
+      // },
+
+
+      // 마이페이지
+      {
+        path: 'ListMypage',
+        component: () => import('@/views/guide/ListMypage.vue'),
+      },
+      // {
+      //   path: 'ListMypage/sub',
+      //   component: () => import('@/views/guide/ListMypage.vue'),
+      // },
+
+
+      // 로그인
+      {
+        path: 'ListLogin',
+        component: () => import('@/views/guide/ListLogin.vue'),
+      },
+      // {
+      //   path: 'ListLogin/sub',
+      //   component: () => import('@/views/guide/ListLogin.vue'),
+      // },
+
+
+      // 푸터
+      {
+        path: 'ListFooter',
+        component: () => import('@/views/guide/ListFooter.vue'),
+      },
+      // {
+      //   path: 'ListFooter/sub',
+      //   component: () => import('@/views/guide/ListFooter.vue'),
+      // },
+
+
+
+
+    ]
   },
 ]
 
