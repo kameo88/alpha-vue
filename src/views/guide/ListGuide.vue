@@ -180,8 +180,8 @@
             <td>
               <p><b>[06/29]</b> tag script 작업완료</p>
               <p><b>[06/29]</b> tag variable(반응형)을 포함한 컴포넌트의 경우 mounted(){ this.$tag.variable.resize() } 필요</p>
-              <p><b>[06/29]</b>Tag list02 마크업 검토 필요</p>
-              <p><b>[06/29]</b>range vuetify 마이그레이션</p>
+              <p><b>[06/29]</b> Tag list02 마크업 검토 필요</p>
+              <p><b>[06/29]</b> range vuetify 마이그레이션</p>
             </td>
           </tr>
           <tr class="ing">

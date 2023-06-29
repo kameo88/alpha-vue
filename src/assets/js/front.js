@@ -2,6 +2,9 @@ window.addEventListener("load", function(){
   // console.log('dd');
   
   // tag.init();
+  // let noneLink = document.querySelectorAll("a[href='#']");
+  // console.log(noneLink);
+  
 })
 
 const front = {
@@ -455,6 +458,40 @@ const tag = {
   }
 }
 
+const accordion ={
+  click(e){
+    e.preventDefault();
+    const _this = e.target;
+    console.log(_this);
+  },
+  open(elem){
+
+  },
+  close(elem){
+
+  }
+}
+
+const toggle = {
+  click(e){
+    const _this = e.target;
+    let _acdItem = _this.parentNode;
+    if( !_acdItem.classList.contains("acdItem") ) _acdItem = _acdItem.parentNode;
+
+    const isExpanded = _this.getAttribute("aria-expanded") == "true";
+    ( isExpanded ) ? this.close(_this, _acdItem) : this.open(_this, _acdItem);
+
+  },
+  open(_this, _acdItem){
+    _this.setAttribute("aria-expanded", true);
+    _acdItem.classList.add("on");
+  },
+  close(_this, _acdItem){
+    _this.setAttribute("aria-expanded", false);
+    _acdItem.classList.remove("on");
+  }
+}
+
 
 export default {
     install(Vue) {
@@ -463,5 +500,7 @@ export default {
         Vue.config.globalProperties.$sort = sort;
         Vue.config.globalProperties.$popup = popup;
         Vue.config.globalProperties.$tag = tag;
+        Vue.config.globalProperties.$accordion = accordion;
+        Vue.config.globalProperties.$toggle = toggle;
     }
 }
