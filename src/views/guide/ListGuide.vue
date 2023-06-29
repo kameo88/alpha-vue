@@ -93,7 +93,7 @@
             </td>
           </tr>
           <tr class="ing">
-            <td>layout</td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
