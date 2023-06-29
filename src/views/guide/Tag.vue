@@ -394,10 +394,13 @@
 
               <div class="range_area">
                 <div class="value">
-                  <input type="text" id="range_val" readonly>
+                  <input type="text" id="range_val" :value="`${value[0]}원 ~ ${value[1]}원`" readonly>
                 </div>
                 <div class="slider">
-                  <div id="filter_range"></div>
+
+                  <v-range-slider v-model="value" min="0" max="60000" step="1000" track-color="#ddd" track-fill-color="#fc6969" strict></v-range-slider>
+                  
+                  <!-- <div id="filter_range"></div> -->
                 </div>
               </div>
               
@@ -405,43 +408,43 @@
                 <ul>
                   <li>
                     <div class="radio_ty00">
-                      <input type="radio" id="filter_radio02_01" name="filter_radio02" data-min="0" data-max="100000" checked>
+                      <input type="radio" id="filter_radio02_01" name="filter_radio02" data-min="0" data-max="60000" checked @change="rangeChange">
                       <label for="filter_radio02_01">전체</label>
                     </div>
                   </li>
                   <li>
                     <div class="radio_ty00">
-                      <input type="radio" id="filter_radio02_02" name="filter_radio02" data-min="0" data-max="10000">
+                      <input type="radio" id="filter_radio02_02" name="filter_radio02" data-min="0" data-max="10000" @change="rangeChange">
                       <label for="filter_radio02_02">1만원 이하</label>
                     </div>
                   </li>
                   <li>
                     <div class="radio_ty00">
-                      <input type="radio" id="filter_radio02_03" name="filter_radio02" data-min="10000" data-max="20000">
+                      <input type="radio" id="filter_radio02_03" name="filter_radio02" data-min="10000" data-max="20000" @change="rangeChange">
                       <label for="filter_radio02_03">1만원 대</label>
                     </div>
                   </li>
                   <li>
                     <div class="radio_ty00">
-                      <input type="radio" id="filter_radio02_04" name="filter_radio02" data-min="20000" data-max="30000">
+                      <input type="radio" id="filter_radio02_04" name="filter_radio02" data-min="20000" data-max="30000" @change="rangeChange">
                       <label for="filter_radio02_04">2만원 대</label>
                     </div>
                   </li>
                   <li>
                     <div class="radio_ty00">
-                      <input type="radio" id="filter_radio02_05" name="filter_radio02" data-min="30000" data-max="40000">
+                      <input type="radio" id="filter_radio02_05" name="filter_radio02" data-min="30000" data-max="40000" @change="rangeChange">
                       <label for="filter_radio02_05">3만원 대</label>
                     </div>
                   </li>
                   <li>
                     <div class="radio_ty00">
-                      <input type="radio" id="filter_radio02_06" name="filter_radio02" data-min="40000" data-max="50000">
+                      <input type="radio" id="filter_radio02_06" name="filter_radio02" data-min="40000" data-max="50000" @change="rangeChange">
                       <label for="filter_radio02_06">4만원 대</label>
                     </div>
                   </li>
                   <li>
                     <div class="radio_ty00">
-                      <input type="radio" id="filter_radio02_07" name="filter_radio02" data-min="50000" data-max="100000">
+                      <input type="radio" id="filter_radio02_07" name="filter_radio02" data-min="50000" data-max="100000" @change="rangeChange">
                       <label for="filter_radio02_07">5만원 이상</label>
                     </div>
                   </li>
@@ -846,20 +849,22 @@
 
 
 
-
-<!-- <script>
-    $(function(){
-        $(document).on('click', '.tag_list02 button', function(){
-            $(this).parent('li').remove();
-        });
-    });
-</script> -->
-
 <script>
 import CompHeader from "@/components/Header.vue";
 
 export default {
   name: "GuideTag",
+  data(){
+    return {
+      value: [0, 60000],
+    }
+  },
+  methods: {
+    rangeChange(e){
+      this.value[0] = e.target.getAttribute("data-min");
+      this.value[1] = e.target.getAttribute("data-max");
+    }
+  },
   components: {
     CompHeader,
   },
@@ -868,3 +873,12 @@ export default {
   }
 };
 </script>
+
+<style>
+.v-slider.v-input--horizontal .v-slider-thumb {left: calc(var(--v-slider-thumb-position) - var(--v-slider-thumb-size) / 2)}
+.v-slider-thumb__surface{width:1.6rem!important; height:1.6rem!important; box-sizing:border-box; background:#fff!important; border:0.2rem solid #fc6969;}
+.v-slider-track__fill{height:0.4rem!important;}
+.v-slider-thumb__ripple {display:none!important;}
+.v-slider.v-input--horizontal > .v-input__control {min-height:0.4rem!important;}
+.v-input__details{display:none!important;}
+</style>
