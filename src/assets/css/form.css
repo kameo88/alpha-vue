@@ -424,7 +424,7 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 
 /* ***** tag_list ***** */
 .tag_list {position:relative; margin-bottom:2rem;}
-.tag_list > ul {padding:0 1.6rem; margin-bottom:-0.8rem; font-size:0; line-height:0; overflow-x:auto; white-space:nowrap;}
+.tag_list > ul {padding:0 1.6rem; margin-bottom:-0.8rem; font-size:0; line-height:0; overflow-x:auto; white-space:nowrap; scroll-behavior:smooth;}
 .tag_list > ul > li {display:inline-block; margin:0 0.4rem 0.8rem 0;}
 .tag_list > ul > li:last-child {margin-right:0;}
 .tag_list > ul > li > button {height:3.2rem; padding:0 1.04rem; border-radius:1.6rem; border:2px solid #f8f8f8; background-color:#f8f8f8; color:#a5a5a5; font-size:1.3rem; line-height:1.9rem;}

@@ -122,8 +122,8 @@
             <td class="marker"></td>
             <td class="date"></td>
             <td>
-              script 작업완료<br>
-              &amp; tooltip
+              <p><b>[06/28]</b>popup script 작업완료</p>
+              <p>&amp; tooltip</p>
             </td>
           </tr>
           <tr class="ing">
@@ -165,7 +165,8 @@
             <td class="marker"></td>
             <td class="date"></td>
             <td>
-              script 작업완료
+              <p><b>[06/28]</b> tab script 작업완료</p>
+              <p><b>[06/29]</b> tab scroll script 작업완료</p>
             </td>
           </tr>
           <tr class="ing">
@@ -176,7 +177,11 @@
             <td class="url"><a href="/guide/ListGuide/tag" target="_blank">/ListGuide/tag</a></td>
             <td class="marker"></td>
             <td class="date"></td>
-            <td></td>
+            <td>
+              <p><b>[06/29]</b> tag script 작업완료</p>
+              <p><b>[06/29]</b> tag variable(반응형)을 포함한 컴포넌트의 경우 mounted(){ this.$tag.variable.resize() } 필요</p>
+              <p><b>[06/29]</b>Tag list02 마크업 검토 필요</p>
+            </td>
           </tr>
           <tr class="ing">
             <td></td>
