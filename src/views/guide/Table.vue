@@ -30,7 +30,7 @@
 import compHeader from '@/components/Header.vue'
 
 export default {
-  name: 'GuideTemplate',
+  name: 'GuideTable',
   components:{
     compHeader,
   },

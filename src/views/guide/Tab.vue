@@ -293,7 +293,7 @@
 import CompHeader from "@/components/Header.vue";
 
 export default {
-  name: "GuidePopup",
+  name: "GuideTab",
   components: {
     CompHeader,
   },

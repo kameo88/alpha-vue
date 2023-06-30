@@ -171,7 +171,7 @@
 import compHeader from '@/components/Header.vue'
 
 export default {
-  name: 'ButtonGuide',
+  name: 'GuideButton',
   components:{
     compHeader,
   },
