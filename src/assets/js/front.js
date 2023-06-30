@@ -1,3 +1,12 @@
+window.addEventListener("load", function(){
+  // console.log('dd');
+  
+  // tag.init();
+  // let noneLink = document.querySelectorAll("a[href='#']");
+  // console.log(noneLink);
+  
+})
+
 const front = {
   device(){
     const elem = document.querySelector("html");
@@ -245,6 +254,243 @@ const tab = {
       _body.scrollTo(0, _scroll);
     }
 
+    // tablist02 일때만 move()
+    let tab_list02 = _this.parentNode;
+    while( tab_list02 ){
+      if( tab_list02.classList.contains("tab_list02") || tab_list02.nodeName == "BODY" ) break;
+      tab_list02 = tab_list02.parentNode;
+    }
+    if( tab_list02.classList.contains("tab_list02") ) this.move(_this);
+
+  },
+  move(e){
+    const _tabList = e.parentNode.parentNode;
+
+    const _tabListW = _tabList.offsetWidth; // 보여지는 가로 640
+    const _tabListS = _tabList.scrollLeft;  // 스크롤값
+
+    const _tabListL = _tabList.offsetLeft;
+    const _thisL = e.offsetLeft - _tabListL;
+    const _elemW = e.offsetWidth;
+
+    const st = _tabListS;               // 탭 시작점
+    const en = _tabListS + _tabListW;   // 탭 끝점
+
+    const elSt = _thisL;
+    const elEn = _thisL + _elemW;
+
+    const gap = 10;
+    const move = 100;
+
+    let goto = _tabListS;
+
+    if( st >= elSt-gap ) goto = goto - move;
+    if( en <= elEn+gap ) goto = goto + move;
+
+    // console.log('st:', st, ' en:', en, ' elSt:', elSt, ' elEn:', elEn, ' goto:', goto );
+
+    _tabList.scrollTo(goto, 0);
+  }
+}
+
+const tag = {
+  click(e){
+    const _this = e.target;
+    
+    // multi 클래스 가졌는지 체크
+    let _tagList = _this.parentNode;
+    while( _tagList ){
+      if( _tagList.classList.contains("tag_list") || _tagList.nodeName == "BODY" ) break
+      _tagList = _tagList.parentNode;
+    }
+    if( _tagList.classList.contains("multi") ){  // multi 아니면 this 제외 on 해제
+
+      if( _this.getAttribute("aria-selected") == "true" ){
+        _this.setAttribute("aria-selected", false);
+        _this.parentNode.classList.remove("on");
+      } else {
+        _this.setAttribute("aria-selected", true);
+        _this.parentNode.classList.add("on");
+      }
+
+    } else {  // multi
+      // console.log('multi X');
+      let _thisOn = ( _this.getAttribute("aria-selected") == "true" ) ? true : false;
+
+      let _li = _this.parentNode.parentNode.firstChild;
+      while(_li){
+        _li.classList.remove("on");
+        _li.querySelector("button").setAttribute("aria-selected", false);
+        _li = _li.nextElementSibling;
+      }
+
+      if( !_thisOn ){
+        _this.setAttribute("aria-selected", true);
+        _this.parentNode.classList.add("on");
+      }
+    }
+
+    this.move(_this);
+  },
+  move(e){
+    const _tabList = e.parentNode.parentNode;
+
+    const _tabListW = _tabList.offsetWidth; // 보여지는 가로 640
+    const _tabListS = _tabList.scrollLeft;  // 스크롤값
+
+    const _tabListL = _tabList.offsetLeft;
+    const _thisL = e.offsetLeft - _tabListL;
+    const _elemW = e.offsetWidth;
+
+    const st = _tabListS;               // 탭 시작점
+    const en = _tabListS + _tabListW;   // 탭 끝점
+
+    const elSt = _thisL;
+    const elEn = _thisL + _elemW;
+
+    const gap = 100;
+    const move = 200;
+
+    let goto = _tabListS;
+
+    if( st >= elSt-gap ) goto = goto - move;
+    if( en <= elEn+gap ) goto = goto + move;
+
+    // console.log('st:', st, ' en:', en, ' elSt:', elSt, ' elEn:', elEn, ' goto:', goto );
+
+    _tabList.scrollTo(goto, 0);
+  },
+  delete(e){
+    const _this = e.target;
+    const _li = _this.parentNode;
+    _li.remove();
+  },
+  variable: {
+    click(e){
+      const _this = e.target;
+      const _tagList = _this.parentNode;
+
+      const isExpanded = _this.getAttribute("aria-expanded") == "true";
+      ( isExpanded ) ? this.close(_tagList, _this) : this.open(_tagList, _this);
+    },
+    open(_tagList, _this){
+      _tagList.classList.add("on");
+      _this.setAttribute("aria-expanded", true);
+    },
+    close(_tagList, _this){
+      _tagList.classList.remove("on");
+      _this.setAttribute("aria-expanded", false);
+    },
+    resize(){
+
+      let _tagList = document.querySelectorAll(".tagList:not(.block)");
+      _tagList = [..._tagList].filter( e => e.querySelectorAll("button[aria-expanded]").length > 0 );
+
+      const tagListResize = function(){
+        _tagList.forEach( e =>{
+          
+          const ulWidth = e.querySelector("ul").offsetWidth;
+          const li = e.querySelectorAll("ul > li");
+          let liWidth = 0;
+          li.forEach( el =>{ liWidth += el.offsetWidth })
+          
+          if( liWidth > ulWidth ){
+            e.classList.add("variable");
+          } else {
+            e.classList.remove("variable");
+          }
+        })
+      }
+
+      window.addEventListener("resize", tagListResize );
+      tagListResize();
+    }
+  },
+  other: {
+    open(e){
+      const _this = e.target;
+
+      let _tagList = _this.parentNode.parentNode.parentNode;
+      let _otherPop = _tagList.querySelector(".other_pop");
+
+      if( _this.classList.contains("on") ){
+        // 닫기
+        _this.classList.remove("on");
+        _otherPop.classList.remove("on");
+      } else {
+        // 열기
+        _this.classList.add("on");
+        _otherPop.classList.add("on");
+      }
+
+    },
+    close(_otherPop, _button){
+      _button.classList.remove("on");
+      _otherPop.classList.remove("on");
+    },
+    select(e){
+      const _this = e.target;
+      const _thisLi = _this.parentNode;
+      const _listBox = _this.parentNode.parentNode;
+
+      const _tagList = _this.parentNode.parentNode.parentNode.parentNode;
+      const _button = _tagList.querySelector(".other").querySelector("button");
+
+      const _otherPop = _tagList.querySelector(".other_pop");
+
+      _listBox.querySelectorAll("li").forEach((e)=>{
+        const btn = e.querySelector("button");
+
+        if( e == _thisLi ){
+          e.classList.add("on");
+          btn.setAttribute("aria-selected", true);
+
+          _button.innerText = e.querySelector("button").innerText;
+        } else {
+          e.classList.remove("on");
+          btn.setAttribute("aria-selected", false);
+        }
+      })
+
+      this.close(_otherPop, _button);
+
+    }
+  }
+}
+
+const accordion ={
+  click(e){
+    e.preventDefault();
+    const _this = e.target;
+    console.log(_this);
+  },
+  open(elem){
+    console.log(elem);
+
+  },
+  close(elem){
+    console.log(elem);
+
+  }
+}
+
+const toggle = {
+  click(e){
+    const _this = e.target;
+    let _acdItem = _this.parentNode;
+    if( !_acdItem.classList.contains("acdItem") ) _acdItem = _acdItem.parentNode;
+
+    const isExpanded = _this.getAttribute("aria-expanded") == "true";
+    ( isExpanded ) ? this.close(_this, _acdItem) : this.open(_this, _acdItem);
+
+  },
+  open(_this, _acdItem){
+    _this.setAttribute("aria-expanded", true);
+    _acdItem.classList.add("on");
+  },
+  close(_this, _acdItem){
+    _this.setAttribute("aria-expanded", false);
+    _acdItem.classList.remove("on");
   }
 }
 
@@ -255,5 +501,8 @@ export default {
         Vue.config.globalProperties.$tab = tab;
         Vue.config.globalProperties.$sort = sort;
         Vue.config.globalProperties.$popup = popup;
+        Vue.config.globalProperties.$tag = tag;
+        Vue.config.globalProperties.$accordion = accordion;
+        Vue.config.globalProperties.$toggle = toggle;
     }
 }

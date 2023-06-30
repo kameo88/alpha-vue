@@ -14,7 +14,7 @@
           <h3 class="tit02">Popup Alert</h3>
 
           <div class="group_btn">
-              <button type="button" class="btn slL c01" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');">Alert</button>
+              <button type="button" class="btn_sL_c01" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');">Alert</button>
           </div>
 
         </div> <!-- // section -->
