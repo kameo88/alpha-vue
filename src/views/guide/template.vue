@@ -2,7 +2,7 @@
 
   <div class="wrap">
 
-    <Header />
+    <compHeader />
     <!-- // gnb -->
 
     <div class="container">
@@ -26,6 +26,13 @@
 
 </template>
 
-<script setup>
-  import Header from '@/components/Header.vue'
+<script>
+import compHeader from '@/components/Header.vue'
+
+export default {
+  name: 'TemplateGuide',
+  components:{
+    compHeader,
+  },
+}
 </script>

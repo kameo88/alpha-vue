@@ -76,7 +76,7 @@
 
   </header>
   <!-- // header -->
-  <aside class="aside">
+  <!-- <aside class="aside">
     <div class="inner">
         <div class="asd_top">
             <a href="javascript:void(0);" class="asd_home"><span class="blind">home</span></a>
@@ -149,7 +149,7 @@
             <a href="javascript:void(0);" class="link_plus">결합하고 할인받자</a>
         </div>
     </div>
-  </aside>
+  </aside> -->
 
 </template>
 

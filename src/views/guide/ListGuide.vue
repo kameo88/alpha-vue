@@ -185,7 +185,7 @@
           </tr>
           <tr class="ing">
             <td></td>
-            <td>button &amp; more</td>
+            <td><strong class="fc">button &amp; more</strong></td>
             <td></td>
             <td></td>
             <td class="url"><a href="/guide/ListGuide/button" target="_blank">/ListGuide/button</a></td>
@@ -273,7 +273,6 @@
   </div>
   <!-- // wrap -->
 
-  <hr>
 </template>
 
 <script>
