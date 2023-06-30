@@ -25,11 +25,14 @@
             </div>
           </div>
 
-          <div class="acd_st acdItem tog" name="expanded">
-            <a href="#" role="button" aria-expanded="false" class="acd_btn" @click="$toggle.click">일련번호 확인 방법  toggle</a>
-            <div class="acd_panel" role="region">
-              일련번호 확인 방법
-            </div>
+          <div class="acd_st acdItem tog" :class="{ on : elementToggle}">
+            <!-- <a href="#" role="button" aria-expanded="false" class="acd_btn" @click="$toggle.click">일련번호 확인 방법  toggle</a> -->
+            <a href="#" role="button" aria-expanded="false" class="acd_btn" @click="expandedClick">일련번호 확인 방법  toggle</a>
+            <transition name="expanded">
+              <div class="acd_panel" role="region" v-if="elementToggle">
+                일련번호 확인 방법
+              </div>
+            </transition>
           </div>
 
           <div class="acd_st acdItem tog">
@@ -121,8 +124,48 @@ import CompHeader from "@/components/Header.vue";
 
 export default {
   name: "GuideAccorion",
+  data(){
+    return {
+      elementToggle: false,
+      expanded: false,
+
+    }
+  },
+  methods: {
+    expandedClick(){
+      this.elementToggle = !this.elementToggle
+    }
+  },
   components: {
     CompHeader,
   },
 };
 </script>
+<style>
+/* .expanded-enter-active, .expanded-leave-active {
+  transition: opacity .5s;
+}
+.expanded-enter, .expanded-leave-to {
+  opacity: 0;
+} */
+
+
+/* .expanded-enter-active,
+.expanded-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.expanded-enter-from,
+.expanded-leave-to {
+  opacity: 0;
+} */
+
+
+.expanded-enter-from{opacity:0; height:0; transition:all 2s;}
+.expanded-enter-active{transition:all 2s;}
+.expanded-enter-to{opacity:1; height:auto; transition:all 2s;}
+
+.expanded-leave-from{opacity:1; height:auto; transition:all 2s;}
+.expanded-leave-active{transition:all 1s;}
+.expanded-leave-to{opacity:0; height:0; transition:all 2s;}
+</style>

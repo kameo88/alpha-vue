@@ -465,9 +465,11 @@ const accordion ={
     console.log(_this);
   },
   open(elem){
+    console.log(elem);
 
   },
   close(elem){
+    console.log(elem);
 
   }
 }
