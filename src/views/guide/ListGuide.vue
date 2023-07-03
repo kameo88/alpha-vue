@@ -221,7 +221,7 @@
             <td class="date"></td>
             <td></td>
           </tr>
-          <tr class="ing">
+          <tr class="end">
             <td></td>
             <td>flag</td>
             <td></td>
