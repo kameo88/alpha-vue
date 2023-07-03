@@ -1,6 +1,5 @@
 <template>
   <div class="wrap">
-    <CompHeader />
 
     <div class="container">
       <div class="content" id="content">
@@ -198,7 +197,6 @@
 </template>
 
 <script>
-import CompHeader from "@/components/Header.vue";
 
 export default {
   name: "GuideAccorion",
@@ -216,28 +214,30 @@ export default {
       this.elementToggle = !this.elementToggle
     }
   },
-  components: {
-    CompHeader,
-  },
 };
 </script>
 <style>
+
 /* vuetify accordion reset */
 .acd_wrap .v-expansion-panel:not(:first-child)::after {display:none}
 .acd_wrap .acd_item .v-expansion-panel__shadow{display:none;}
 .acd_wrap .v-expansion-panel-title__overlay{display:none;}
-.acd_wrap .v-expansion-panels.acd_item {border-radius:1.2rem!important; border-bottom-left-radius:1.2rem !important; border-bottom-right-radius: 1.2rem !important; overflow:hidden;}
+.acd_wrap .v-expansion-panel.acd_item {border-radius:1.2rem!important; border-bottom-left-radius:1.2rem !important; border-bottom-right-radius: 1.2rem !important; overflow:hidden;}
+
+.acd_wrap .v-expansion-panels:not(.v-expansion-panels--variant-accordion) > :first-child:not(:last-child):not(.v-expansion-panel--active):not(.v-expansion-panel--before-active){border-radius:1.2rem!important;}
+
+
 
 /* accordion vuetify */
 .acd_wrap{}
 .acd_wrap .acd_item{background:#f8f8f8; border-radius:1.2rem!important; overflow:hidden;}
 .acd_wrap .acd_item + .acd_item {margin-top:0.8rem;}
-/* .acd_wrap .acd_title{} */
+.acd_wrap .acd_title{border-radius:1.2rem;}
 .acd_wrap .acd_title .v-expansion-panel-title{font-size:1.5rem; font-weight:700; line-height:1.8rem; padding:2rem;}
 .acd_wrap .acd_title .v-expansion-panel-title__icon .v-icon{width:2.4rem; height:2.4rem;}
 .acd_wrap .acd_title .v-expansion-panel-title__icon .v-icon::before{content:''; display:block; width:2.4rem; height:2.4rem; background: url(/src/assets/images/common/ico_arrowB02.png) no-repeat center / 100% auto;}
 .acd_wrap .acd_title .v-expansion-panel-title--active .v-expansion-panel-title__icon .v-icon::before{transform: rotate(180deg);}
-.acd_wrap .acd_panel{overflow:hidden;}
+.acd_wrap .acd_panel{overflow:hidden; background:#f8f8f8;}
 .acd_wrap .acd_panel .v-expansion-panel-text__wrapper{padding:0 2rem 2rem;}
 
 

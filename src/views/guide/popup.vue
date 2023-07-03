@@ -2,8 +2,6 @@
 
   <div class="wrap">
 
-    <CompHeader />
-
     <div class="container">
       <div class="content" id="content">
         <h2 class="title_nav">Guide</h2>
@@ -207,12 +205,8 @@
 </template>
 
 <script>
-import CompHeader from '@/components/Header.vue'
 
 export default {
   name: 'GuidePopup',
-  components:{
-    CompHeader,
-  }
 }
 </script>

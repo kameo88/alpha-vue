@@ -1,6 +1,5 @@
 <template>
   <div class="wrap">
-    <CompHeader />
 
     <div class="container">
       <div class="content" id="content">
@@ -290,12 +289,7 @@
 </template>
 
 <script>
-import CompHeader from "@/components/Header.vue";
-
 export default {
   name: "GuideTab",
-  components: {
-    CompHeader,
-  },
 };
 </script>

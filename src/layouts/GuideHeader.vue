@@ -31,35 +31,15 @@
 <script>
 export default {
   name: 'GuideHeader',
-  data() {
-    return {
-      pageInfo: {"total": 0, "end": 0, "per": 0 },
-    }
-  },
   methods:{
     changeGuidePage(num){
       this.$emit('changeGuidePage', num);
-    }
+    },
   },
   props : {
     page: Object,
     pageOn: Number,
-    // pageInfo: Object,
+    pageInfo: Object,
   },
-  mounted(){
-    let tr = document.querySelectorAll("tbody tr").length;
-    let hid = document.querySelectorAll("tbody tr.hid").length;
-
-    let end = document.querySelectorAll("tbody tr.end").length;
-    let mod = document.querySelectorAll("tbody tr.mod").length;
-    
-    let pageTotal = tr - hid;
-    let pageEnd = end + mod;
-    let pagePer = (pageEnd == 0 ) ? 0 : (pageTotal / pageEnd).toFixed(1);
-
-    this.pageInfo.total = pageTotal;
-    this.pageInfo.end = pageEnd;
-    this.pageInfo.per = pagePer;
-  }
 }
 </script>

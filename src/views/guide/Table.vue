@@ -2,9 +2,6 @@
 
   <div class="wrap">
 
-    <compHeader />
-    <!-- // gnb -->
-
     <div class="container">
       <div class="content" id="content">
         <h2 class="title_nav">Guide</h2>
@@ -171,12 +168,8 @@
 </template>
 
 <script>
-import compHeader from '@/components/Header.vue'
 
 export default {
   name: 'GuideTable',
-  components:{
-    compHeader,
-  },
 }
 </script>

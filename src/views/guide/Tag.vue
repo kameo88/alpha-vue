@@ -1,6 +1,5 @@
 <template>
   <div class="wrap">
-    <CompHeader />
 
     <div class="container">
       <div class="content" id="content">
@@ -850,7 +849,6 @@
 
 
 <script>
-import CompHeader from "@/components/Header.vue";
 
 export default {
   name: "GuideTag",
@@ -864,9 +862,6 @@ export default {
       this.value[0] = e.target.getAttribute("data-min");
       this.value[1] = e.target.getAttribute("data-max");
     }
-  },
-  components: {
-    CompHeader,
   },
   mounted(){
     this.$tag.variable.resize();

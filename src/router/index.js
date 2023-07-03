@@ -4,46 +4,18 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    component: () => import('@/views/guide/ListGuide.vue'),
-  },
-
-  {
-    path: '/guide',
-    component: () => import('@/layouts/MainLayout.vue'),
-    children: [
-      {
-        path: '/guide/ListGuide/Template',
-        component: () => import('@/views/guide/Template.vue'),
-      },
-      {
-        path: '/guide/ListGuide/Button',
-        component: () => import('@/views/guide/Button.vue'),
-      },
-    ]
+    component: () => import('@/views/Home.vue'),
   },
 
   // guide list
   {
-    path: '/guide',
+    path: '/list',
     component: () => import('@/layouts/GuideLayout.vue'),
     children: [
       {
         path: 'ListGuide',
         component: () => import('@/views/guide/ListGuide.vue'),
       },
-    ]
-  },
-
-
-  // guide list
-  {
-    path: '/guide',
-    component: () => import('@/layouts/default/Guide.vue'),
-    children: [
-      // {
-      //   path: 'ListGuide',
-      //   component: () => import('@/views/guide/ListGuide.vue'),
-      // },
       {
         path: 'ListCommon',
         component: () => import('@/views/guide/ListCommon.vue'),
@@ -82,80 +54,184 @@ const routes = [
       },
     ]
   },
+
+
+  // guide
+  
+  {
+    path: '/guide',
+    component: () => import('@/layouts/MainLayout.vue'),
+    children: [
+      {
+        path: 'layout',
+        component: () => import('@/views/guide/ListGuide.vue'),
+      },
+      {
+        path: 'template',
+        component: () => import('@/views/guide/template.vue'),
+      },
+      {
+        path: 'popup',
+        component: () => import('@/views/guide/Popup.vue'),
+      },
+      {
+        path: 'text',
+        component: () => import('@/views/guide/text.vue'),
+      },
+      {
+        path: 'form',
+        component: () => import('@/views/guide/form.vue'),
+      },
+      {
+        path: 'form_etc',
+        component: () => import('@/views/guide/form_etc.vue'),
+      },
+      {
+        path: 'tab',
+        component: () => import('@/views/guide/tab.vue'),
+      },
+      {
+        path: 'tag',
+        component: () => import('@/views/guide/tag.vue'),
+      },
+      {
+        path: 'accordion',
+        component: () => import('@/views/guide/Accordion.vue'),
+      },
+      {
+        path: 'button',
+        component: () => import('@/views/guide/button.vue'),
+      },
+      {
+        path: 'table',
+        component: () => import('@/views/guide/table.vue'),
+      },
+      {
+        path: 'info_list',
+        component: () => import('@/views/guide/info_list.vue'),
+      },
+      {
+        path: 'flag',
+        component: () => import('@/views/guide/flag.vue'),
+      },
+      {
+        path: 'list',
+        component: () => import('@/views/guide/list.vue'),
+      },
+      {
+        path: 'swiper',
+        component: () => import('@/views/guide/swiper.vue'),
+      },
+      {
+        path: 'logo',
+        component: () => import('@/views/guide/logo.vue'),
+      },
+      {
+        path: 'animation',
+        component: () => import('@/views/guide/animation.vue'),
+      },
+    ]
+  }
+
+
+  
+
+  // {
+  //   path: '/guide',
+  //   component: () => import('@/layouts/GuideLayout.vue'),
+  //   children: [
+  //     {
+  //       path: 'ListGuide',
+  //       component: () => import('@/views/guide/ListGuide.vue'),
+  //     }
+  //   ]
+  // },
+
+  // guide list
+  // {
+  //   path: '/guide',
+  //   component: () => import('@/layouts/GuideLayout.vue'),
+  //   children: [
+  //     {
+  //       path: 'ListGuide',
+  //       component: () => import('@/views/guide/ListGuide.vue'),
+  //     },
+  //   ]
+  // },
   
 
 
 
 
   // ListGuide page
-  {
-    path: '/guide/ListGuide/Template',
-    component: () => import('@/views/guide/Template.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Layout',
-    component: () => import('@/views/guide/Layout.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Popup',
-    component: () => import('@/views/guide/Popup.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Text',
-    component: () => import('@/views/guide/Text.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Form',
-    component: () => import('@/views/guide/Form.vue'),
-  },
-  {
-    path: '/guide/ListGuide/FormEtc',
-    component: () => import('@/views/guide/FormEtc.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Tab',
-    component: () => import('@/views/guide/Tab.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Tag',
-    component: () => import('@/views/guide/Tag.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Accordion',
-    component: () => import('@/views/guide/Accordion.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Button',
-    component: () => import('@/views/guide/Button.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Table',
-    component: () => import('@/views/guide/Table.vue'),
-  },
-  {
-    path: '/guide/ListGuide/InfoList',
-    component: () => import('@/views/guide/InfoList.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Flag',
-    component: () => import('@/views/guide/Flag.vue'),
-  },
-  {
-    path: '/guide/ListGuide/List',
-    component: () => import('@/views/guide/List.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Swiper',
-    component: () => import('@/views/guide/Swiper.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Logo',
-    component: () => import('@/views/guide/Logo.vue'),
-  },
-  {
-    path: '/guide/ListGuide/Animation',
-    component: () => import('@/views/guide/Animation.vue'),
-  },
+  // {
+  //   path: '/guide/ListGuide/Template',
+  //   component: () => import('@/views/guide/Template.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Layout',
+  //   component: () => import('@/views/guide/Layout.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Popup',
+  //   component: () => import('@/views/guide/Popup.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Text',
+  //   component: () => import('@/views/guide/Text.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Form',
+  //   component: () => import('@/views/guide/Form.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/FormEtc',
+  //   component: () => import('@/views/guide/FormEtc.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Tab',
+  //   component: () => import('@/views/guide/Tab.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Tag',
+  //   component: () => import('@/views/guide/Tag.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Accordion',
+  //   component: () => import('@/views/guide/Accordion.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Button',
+  //   component: () => import('@/views/guide/Button.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Table',
+  //   component: () => import('@/views/guide/Table.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/InfoList',
+  //   component: () => import('@/views/guide/InfoList.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Flag',
+  //   component: () => import('@/views/guide/Flag.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/List',
+  //   component: () => import('@/views/guide/List.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Swiper',
+  //   component: () => import('@/views/guide/Swiper.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Logo',
+  //   component: () => import('@/views/guide/Logo.vue'),
+  // },
+  // {
+  //   path: '/guide/ListGuide/Animation',
+  //   component: () => import('@/views/guide/Animation.vue'),
+  // },
 
   
 

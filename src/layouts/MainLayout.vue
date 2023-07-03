@@ -1,12 +1,9 @@
 <template>
-
 	<div class="wrap">
 		<MainHeader />
 		<router-view />
 		<MainFooter />
 	</div>
-  <!-- // wrap -->
-
 </template>
 
 <script>

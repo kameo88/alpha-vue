@@ -1,9 +1,6 @@
 <template>
   <div class="wrap">
 
-    <compHeader />
-    <!-- // gnb -->
-
     <div class="container">
       <div class="content" id="content">
         <h2 class="title_nav">PC 페이지 nav (class="title_nav") Guide</h2>
@@ -151,12 +148,7 @@
 </template>
 
 <script>
-import compHeader from '@/components/Header.vue'
-
 export default {
   name: 'GuideText',
-  components:{
-    compHeader,
-  },
 }
 </script>
