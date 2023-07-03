@@ -759,10 +759,6 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 .acd_st .acd_panel {padding:0 2rem 2rem;}
 
 
-.acdItem [role=region] {display:none;}
-.acdItem.on [role=region] {display:block;}
-
-
 
 
 /* ***** tooltip ***** */
