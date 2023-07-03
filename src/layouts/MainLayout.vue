@@ -1,25 +1,23 @@
 <template>
 
 	<div class="wrap">
-		<theHeader />
+		<MainHeader />
 		<router-view />
-		<theFooter />
+		<MainFooter />
 	</div>
+  <!-- // wrap -->
 
 </template>
 
 <script>
-import theHeader from '@/layouts/theHeader.vue'
-import theFooter from '@/layouts/theFooter.vue'
+import MainHeader from '@/layouts/MainHeader.vue'
+import MainFooter from '@/layouts/MainFooter.vue'
 
 export default {
   name: 'MainLayout',
   components:{
-    theHeader,
-    theFooter,
+    MainHeader,
+    MainFooter,
   },
 }
 </script>
-
-<style>
-</style>

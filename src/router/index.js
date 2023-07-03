@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    component: () => import('@/layouts/ListGuide.vue'),
+    component: () => import('@/views/guide/ListGuide.vue'),
   },
 
   {
@@ -12,8 +12,24 @@ const routes = [
     component: () => import('@/layouts/MainLayout.vue'),
     children: [
       {
+        path: '/guide/ListGuide/Template',
+        component: () => import('@/views/guide/Template.vue'),
+      },
+      {
         path: '/guide/ListGuide/Button',
         component: () => import('@/views/guide/Button.vue'),
+      },
+    ]
+  },
+
+  // guide list
+  {
+    path: '/guide',
+    component: () => import('@/layouts/GuideLayout.vue'),
+    children: [
+      {
+        path: 'ListGuide',
+        component: () => import('@/views/guide/ListGuide.vue'),
       },
     ]
   },
@@ -24,10 +40,10 @@ const routes = [
     path: '/guide',
     component: () => import('@/layouts/default/Guide.vue'),
     children: [
-      {
-        path: 'ListGuide',
-        component: () => import('@/views/guide/ListGuide.vue'),
-      },
+      // {
+      //   path: 'ListGuide',
+      //   component: () => import('@/views/guide/ListGuide.vue'),
+      // },
       {
         path: 'ListCommon',
         component: () => import('@/views/guide/ListCommon.vue'),

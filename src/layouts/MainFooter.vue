@@ -6,9 +6,6 @@
 
 <script>
 export default {
-  name: 'theFooter'
+  name: 'MainFooter'
 }
 </script>
-
-<style>
-</style>

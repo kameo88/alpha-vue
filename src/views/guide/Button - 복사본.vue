@@ -1,5 +1,10 @@
 <template>
 
+  <div class="wrap">
+
+    <!-- <compHeader /> -->
+    <!-- // gnb -->
+
     <div class="container">
       <div class="content" id="content">
         <h2 class="title_nav">Guide</h2>
@@ -7,7 +12,7 @@
         <div class="page_info">Button</div>
 
         <div class="section">
-          <h3 class="tit02">button</h3>
+            <h3 class="tit02">button</h3>
             
           <a href="javascript:void(0);" role="button" class="btn_sXS_c01">button</a>
           <button type="button" class="btn_sXS_c01">button</button>
@@ -156,11 +161,19 @@
       </div> <!-- // content -->
     </div><!-- // container -->
 
+  </div>
+  <!-- // wrap -->
+
+
 </template>
 
 <script>
+// import compHeader from '@/components/Header.vue'
 
 export default {
   name: 'GuideButton',
+  components:{
+    // compHeader,
+  },
 }
 </script>

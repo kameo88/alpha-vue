@@ -63,7 +63,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  @import url(../views/guide/guide.css);
-</style>

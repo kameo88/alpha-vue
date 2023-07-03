@@ -155,9 +155,6 @@
 
 <script>
 export default {
-  name: 'theHeader'
+  name: 'MainHeader'
 }
 </script>
-
-<style>
-</style>
