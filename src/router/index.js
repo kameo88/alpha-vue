@@ -64,7 +64,7 @@ const routes = [
     children: [
       {
         path: 'layout',
-        component: () => import('@/views/guide/ListGuide.vue'),
+        component: () => import('@/views/guide/Layout.vue'),
       },
       {
         path: 'template',
@@ -100,15 +100,15 @@ const routes = [
       },
       {
         path: 'button',
-        component: () => import('@/views/guide/button.vue'),
+        component: () => import('@/views/guide/Button.vue'),
       },
       {
         path: 'table',
-        component: () => import('@/views/guide/table.vue'),
+        component: () => import('@/views/guide/Table.vue'),
       },
       {
         path: 'info_list',
-        component: () => import('@/views/guide/info_list.vue'),
+        component: () => import('@/views/guide/InfoList.vue'),
       },
       {
         path: 'flag',
