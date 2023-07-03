@@ -181,7 +181,7 @@
               <p><b>[06/29]</b> range vuetify 마이그레이션</p>
             </td>
           </tr>
-          <tr class="ing">
+          <tr class="end">
             <td></td>
             <td>accordion</td>
             <td></td>
@@ -189,7 +189,9 @@
             <td class="url"><a href="/guide/accordion" target="_blank">/guide/accordion</a></td>
             <td class="marker"></td>
             <td class="date"></td>
-            <td></td>
+            <td>
+              <p><b>[07/03]</b> accordion, toggle vuetify 작업완료</p>
+            </td>
           </tr>
           <tr class="end">
             <td></td>

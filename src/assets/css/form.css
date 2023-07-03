@@ -744,7 +744,7 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 
 
 /* ***** accordion ***** */
-.acd_st {border-radius:1.2rem; background-color:#f8f8f8;}
+/* .acd_st {border-radius:1.2rem; background-color:#f8f8f8;}
 .acd_st + .acd_st {margin-top:0.8rem;}
 .acd_st .acd_btn {position:relative; display:block; padding:2rem 4.4rem 2rem 2rem; font-size:1.5rem; font-weight:700; line-height:1.8rem;}
 .acd_st .acd_btn::after {content:''; position:absolute; top:50%; right:2rem; display:block; width:2.4rem; height:2.4rem; margin-top:-1.2rem; background:url(../images/common/ico_arrowB02.png) no-repeat center / 100% auto;}
@@ -756,7 +756,7 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 .acd_st .acd_tab .check_st > label::before {position:absolute; top:0; left:0; margin-right:0;}
 .acd_st .acd_tab button {flex:none; width:2.4rem; height:2.4rem; background:url(../images/common/ico_arrowB02.png) no-repeat center / 100% auto;}
 .acd_st.on .acd_tab button {transform:rotate(180deg);}
-.acd_st .acd_panel {padding:0 2rem 2rem;}
+.acd_st .acd_panel {padding:0 2rem 2rem;} */
 
 
 
