@@ -76,7 +76,7 @@
               tr class="hid"
             </td>
           </tr>
-          <tr class="ing">
+          <tr class="end">
             <td>layout</td>
             <td></td>
             <td></td>
@@ -85,11 +85,12 @@
             <td class="marker"></td>
             <td class="date"></td>
             <td>
+              <p class="fc"><b>[07/03]</b> aside float 추가</p>
               layout, loading, skip menu, header, aside menu, container, footer, floating area <br>
               PC header
             </td>
           </tr>
-          <tr class="ing">
+          <tr class="end">
             <td></td>
             <td></td>
             <td></td>
@@ -98,6 +99,7 @@
             <td class="marker"></td>
             <td class="date"></td>
             <td>
+              sample file
             </td>
           </tr>
           <!-- <tr class="">
@@ -193,7 +195,7 @@
           </tr>
           <tr class="end">
             <td></td>
-            <td><strong class="fc">button &amp; more</strong></td>
+            <td>button &amp; more</td>
             <td></td>
             <td></td>
             <td class="url"><a href="/guide/button" target="_blank">/guide/button</a></td>
