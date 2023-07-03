@@ -176,14 +176,17 @@ const popup = {
 
     const _body = document.querySelector("body");
     const _pop = document.querySelector(pop);
+    const _isOpen = _pop.classList.contains("open");
     const _popWrap = _pop.querySelector(".pop_wrap");
     const _btn = document.querySelector(btn);
 
     _pop.classList.remove("open");
     _pop.removeAttribute("style");
     
-    _pop.querySelector(".sort_s").remove();
-    _pop.querySelector(".sort_e").remove();
+    if( _isOpen ){
+      _pop.querySelector(".sort_s").remove();
+      _pop.querySelector(".sort_e").remove();
+    }
 
     _popWrap.removeAttribute('tabindex');
 
@@ -192,6 +195,7 @@ const popup = {
       _body.classList.remove("noScroll");
     }
     _btn.focus();
+
   }
 }
 

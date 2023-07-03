@@ -5,12 +5,14 @@
 		<AsideFloat />
 		<MainFooter />
 	</div>
+  <MainPopup />
 </template>
 
 <script>
 import MainHeader from '@/layouts/MainHeader.vue'
 import AsideFloat from '@/layouts/AsideFloat.vue'
 import MainFooter from '@/layouts/MainFooter.vue'
+import MainPopup from '@/layouts/MainPopup.vue'
 
 export default {
   name: 'MainLayout',
@@ -18,6 +20,7 @@ export default {
     MainHeader,
     AsideFloat,
     MainFooter,
+    MainPopup,
   },
 }
 </script>
