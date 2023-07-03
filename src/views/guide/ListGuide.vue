@@ -82,7 +82,7 @@
               <td></td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/layout" target="_blank">/list/layout</a></td>
+              <td class="url"><a href="/guide/layout" target="_blank">/guide/layout</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td>
@@ -95,7 +95,7 @@
               <td></td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/template" target="_blank">/list/template</a></td>
+              <td class="url"><a href="/guide/template" target="_blank">/guide/template</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td>
@@ -116,7 +116,7 @@
               <td>popup</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/popup" target="_blank">/list/popup</a></td>
+              <td class="url"><a href="/guide/popup" target="_blank">/guide/popup</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td>
@@ -129,7 +129,7 @@
               <td>text</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/text" target="_blank">/list/text</a></td>
+              <td class="url"><a href="/guide/text" target="_blank">/guide/text</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td></td>
@@ -139,7 +139,7 @@
               <td>form</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/form" target="_blank">/list/form</a></td>
+              <td class="url"><a href="/guide/form" target="_blank">/guide/form</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td>06.21 디자인 적용된 form &gt; form etc 페이지 분리</td>
@@ -149,7 +149,7 @@
               <td>form etc</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/form_etc" target="_blank">/list/form_etc</a></td>
+              <td class="url"><a href="/guide/form_etc" target="_blank">/guide/form_etc</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td></td>
@@ -159,7 +159,7 @@
               <td>tab</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/tab" target="_blank">/list/tab</a></td>
+              <td class="url"><a href="/guide/tab" target="_blank">/guide/tab</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td>
@@ -172,7 +172,7 @@
               <td>filter &amp; tag</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/tag" target="_blank">/list/tag</a></td>
+              <td class="url"><a href="/guide/tag" target="_blank">/guide/tag</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td>
@@ -187,7 +187,7 @@
               <td>accordion</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/accordion" target="_blank">/list/accordion</a></td>
+              <td class="url"><a href="/guide/accordion" target="_blank">/guide/accordion</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td></td>
@@ -197,7 +197,7 @@
               <td><strong class="fc">button &amp; more</strong></td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/button" target="_blank">/list/button</a></td>
+              <td class="url"><a href="/guide/button" target="_blank">/guide/button</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td></td>
@@ -207,7 +207,7 @@
               <td>table</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/table" target="_blank">/list/table</a></td>
+              <td class="url"><a href="/guide/table" target="_blank">/guide/table</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td>06.21 2단 table &gt; dl 태그로 수정, info list 페이지 분리</td>
@@ -217,7 +217,7 @@
               <td>info list</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/info_list" target="_blank">/list/info_list</a></td>
+              <td class="url"><a href="/guide/info_list" target="_blank">/guide/info_list</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td></td>
@@ -227,7 +227,7 @@
               <td>flag</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/flag" target="_blank">/list/flag</a></td>
+              <td class="url"><a href="/guide/flag" target="_blank">/guide/flag</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td></td>
@@ -237,7 +237,7 @@
               <td>list</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/list" target="_blank">/list/list</a></td>
+              <td class="url"><a href="/guide/list" target="_blank">/guide/list</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td>
@@ -249,7 +249,7 @@
               <td>swiper</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/swiper" target="_blank">/list/swiper</a></td>
+              <td class="url"><a href="/guide/swiper" target="_blank">/guide/swiper</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td></td>
@@ -259,7 +259,7 @@
               <td>logo</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/logo" target="_blank">/list/logo</a></td>
+              <td class="url"><a href="/guide/logo" target="_blank">/guide/logo</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td></td>
@@ -269,7 +269,7 @@
               <td>animation</td>
               <td></td>
               <td></td>
-              <td class="url"><a href="/list/animation" target="_blank">/list/animation</a></td>
+              <td class="url"><a href="/guide/animation" target="_blank">/guide/animation</a></td>
               <td class="marker"></td>
               <td class="date"></td>
               <td></td>
