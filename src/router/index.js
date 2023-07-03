@@ -4,7 +4,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    component: () => import('@/views/Home.vue'),
+    // component: () => import('@/views/Home.vue'),
+    redirect: '/list/ListGuide',
   },
 
   // guide list
