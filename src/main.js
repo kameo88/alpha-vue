@@ -13,7 +13,7 @@ import { createApp } from 'vue'
 // Plugins
 import { registerPlugins } from '@/plugins'
 import front from "./assets/js/front"
-import "./assets/css/style.css";
+// import "./assets/css/style.css";
 
 
 const app = createApp(App)

@@ -11,7 +11,7 @@
         <div class="section">
           <h3 class="tit02">accordion VUETIFY</h3>
           
-          <v-expansion-panels class="acd_wrap"  v-model="acd">
+          <v-expansion-panels class="acd_wrap" v-model="acd">
             <v-expansion-panel class="acd_item">
               <div class="acd_title">
                 <v-expansion-panel-title>일련번호 확인 방법</v-expansion-panel-title>
@@ -204,9 +204,8 @@ export default {
     return {
       elementToggle: false,
       expanded: false,
-      acd: [0],
+      acd: [1],
       toggle: [0],
-
     }
   },
   methods: {
@@ -217,33 +216,5 @@ export default {
 };
 </script>
 <style>
-
-/* vuetify accordion reset */
-.acd_wrap .v-expansion-panel:not(:first-child)::after {display:none}
-.acd_wrap .acd_item .v-expansion-panel__shadow{display:none;}
-.acd_wrap .v-expansion-panel-title__overlay{display:none;}
-.acd_wrap .v-expansion-panel.acd_item {border-radius:1.2rem!important; border-bottom-left-radius:1.2rem !important; border-bottom-right-radius: 1.2rem !important; overflow:hidden;}
-
-.acd_wrap .v-expansion-panels:not(.v-expansion-panels--variant-accordion) > :first-child:not(:last-child):not(.v-expansion-panel--active):not(.v-expansion-panel--before-active){border-radius:1.2rem!important;}
-
-
-
-/* accordion vuetify */
-.acd_wrap{}
-.acd_wrap .acd_item{background:#f8f8f8; border-radius:1.2rem!important; overflow:hidden;}
-.acd_wrap .acd_item + .acd_item {margin-top:0.8rem;}
-.acd_wrap .acd_title{border-radius:1.2rem;}
-.acd_wrap .acd_title .v-expansion-panel-title{font-size:1.5rem; font-weight:700; line-height:1.8rem; padding:2rem;}
-.acd_wrap .acd_title .v-expansion-panel-title__icon .v-icon{width:2.4rem; height:2.4rem;}
-.acd_wrap .acd_title .v-expansion-panel-title__icon .v-icon::before{content:''; display:block; width:2.4rem; height:2.4rem; background: url(/src/assets/images/common/ico_arrowB02.png) no-repeat center / 100% auto;}
-.acd_wrap .acd_title .v-expansion-panel-title--active .v-expansion-panel-title__icon .v-icon::before{transform: rotate(180deg);}
-.acd_wrap .acd_panel{overflow:hidden; background:#f8f8f8;}
-.acd_wrap .acd_panel .v-expansion-panel-text__wrapper{padding:0 2rem 2rem;}
-
-
-/* accordion vuetify ty02 */
-.acd_wrap .acd_item.ty02 .acd_title{display:flex; align-items:center; justify-content:space-between; width:100%; padding:1.7rem 2rem;}
-.acd_wrap .acd_item.ty02 .acd_title .v-expansion-panel-title{width:2.4rem; height:2.4rem; padding:0; min-height:auto;}
-.acd_wrap .acd_item.ty02 .acd_title .acd_tab{font-size:1.5rem;}
 
 </style>
