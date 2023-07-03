@@ -41,7 +41,9 @@ export default {
       
       let pageTotal = tr - hid;
       let pageEnd = end + mod;
-      let pagePer = (pageEnd == 0 ) ? 0 : (pageTotal / pageEnd).toFixed(1);
+      let pagePer = (pageEnd == 0 ) ? 0 : ( pageTotal * 10 / pageEnd ).toFixed(1);
+
+      console.log(pagePer);
 
       this.pageInfo.total = pageTotal;
       this.pageInfo.end = pageEnd;
