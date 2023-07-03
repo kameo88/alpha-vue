@@ -4,7 +4,18 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    component: () => import('@/layouts/Default/default.vue'),
+    component: () => import('@/layouts/ListGuide.vue'),
+  },
+
+  {
+    path: '/guide',
+    component: () => import('@/layouts/MainLayout.vue'),
+    children: [
+      {
+        path: '/guide/ListGuide/Button',
+        component: () => import('@/views/guide/Button.vue'),
+      },
+    ]
   },
 
 

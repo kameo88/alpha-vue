@@ -26,7 +26,6 @@ body {
     font-size:1.4rem; font-weight:500; line-height:2rem; color:#000;
 }
 html, body {height:100%;}
-#app {padding:2rem;}
 
 input, textarea, select, button, table, pre {font:inherit; color:inherit;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {display:block;}

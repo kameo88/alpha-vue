@@ -1,10 +1,5 @@
 <template>
 
-  <div class="wrap">
-
-    <compHeader />
-    <!-- // gnb -->
-
     <div class="container">
       <div class="content" id="content">
         <h2 class="title_nav">Guide</h2>
@@ -161,19 +156,15 @@
       </div> <!-- // content -->
     </div><!-- // container -->
 
-  </div>
-  <!-- // wrap -->
-
-
 </template>
 
 <script>
-import compHeader from '@/components/Header.vue'
+// import compHeader from '@/components/Header.vue'
 
 export default {
   name: 'GuideButton',
   components:{
-    compHeader,
+    // compHeader,
   },
 }
 </script>
