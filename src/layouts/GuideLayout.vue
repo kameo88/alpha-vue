@@ -28,7 +28,6 @@ export default {
       pageInfo: {"total": 0, "end": 0, "per": 0 },
     }
   },
-  emits: ['changeGuidePage'],
   methods: {
     changeGuidePage(num){
       this.pageOn = num;
