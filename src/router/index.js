@@ -69,7 +69,7 @@ const routes = [
       },
       {
         path: 'template',
-        component: () => import('@/views/guide/template.vue'),
+        component: () => import('@/views/guide/Template.vue'),
       },
       {
         path: 'popup',
@@ -77,23 +77,23 @@ const routes = [
       },
       {
         path: 'text',
-        component: () => import('@/views/guide/text.vue'),
+        component: () => import('@/views/guide/Text.vue'),
       },
       {
         path: 'form',
-        component: () => import('@/views/guide/form.vue'),
+        component: () => import('@/views/guide/Form.vue'),
       },
       {
         path: 'form_etc',
-        component: () => import('@/views/guide/form_etc.vue'),
+        component: () => import('@/views/guide/Form_etc.vue'),
       },
       {
         path: 'tab',
-        component: () => import('@/views/guide/tab.vue'),
+        component: () => import('@/views/guide/Tab.vue'),
       },
       {
         path: 'tag',
-        component: () => import('@/views/guide/tag.vue'),
+        component: () => import('@/views/guide/Tag.vue'),
       },
       {
         path: 'accordion',
@@ -113,23 +113,23 @@ const routes = [
       },
       {
         path: 'flag',
-        component: () => import('@/views/guide/flag.vue'),
+        component: () => import('@/views/guide/Flag.vue'),
       },
       {
         path: 'list',
-        component: () => import('@/views/guide/list.vue'),
+        component: () => import('@/views/guide/List.vue'),
       },
       {
         path: 'swiper',
-        component: () => import('@/views/guide/swiper.vue'),
+        component: () => import('@/views/guide/Swiper.vue'),
       },
       {
         path: 'logo',
-        component: () => import('@/views/guide/logo.vue'),
+        component: () => import('@/views/guide/Logo.vue'),
       },
       {
         path: 'animation',
-        component: () => import('@/views/guide/animation.vue'),
+        component: () => import('@/views/guide/Animation.vue'),
       },
     ]
   }
