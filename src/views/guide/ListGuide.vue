@@ -85,6 +85,7 @@
             <td class="marker"></td>
             <td class="date"></td>
             <td>
+              <p><b>[07/04]</b> gnb, aside script 작업완료</p>
               <p class="fc"><b>[07/03]</b> aside float 추가</p>
               layout, loading, skip menu, header, aside menu, container, footer, floating area <br>
               PC header

@@ -14,7 +14,9 @@
 .acd_wrap .v-expansion-panel:not(:first-child)::after {display:none}
 .acd_wrap .acd_item .v-expansion-panel__shadow{display:none;}
 .acd_wrap .v-expansion-panel-title__overlay{display:none;}
-.acd_wrap .v-expansion-panels:not(.v-expansion-panels--variant-accordion) > :first-child:not(:last-child):not(.v-expansion-panel--active):not(.v-expansion-panel--before-active){border-radius:1.2rem!important;}
+.v-expansion-panels:not(.v-expansion-panels--variant-accordion) > :first-child:not(:last-child):not(.v-expansion-panel--active):not(.v-expansion-panel--before-active){ border-bottom-left-radius:1.2rem !important; border-bottom-left-radius: 1.2rem !important;}
+.v-expansion-panels:not(.v-expansion-panels--variant-accordion) > :last-child:not(:first-child):not(.v-expansion-panel--active):not(.v-expansion-panel--after-active){border-top-left-radius: 1.2rem !important; border-top-right-radius: 1.2rem !important;}
+
 
 /* vuetify accordion */
 .acd_wrap .acd_item{background:#f8f8f8; border-radius:1.2rem!important; overflow:hidden;}
