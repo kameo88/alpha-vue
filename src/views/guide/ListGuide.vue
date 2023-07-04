@@ -234,7 +234,9 @@
             <td class="url"><a href="/guide/flag" target="_blank">/guide/flag</a></td>
             <td class="marker"></td>
             <td class="date"></td>
-            <td></td>
+            <td>
+              <p><b>[07/04]</b> flag 이벤트 처리 완료</p>
+            </td>
           </tr>
           <tr class="mod">
             <td></td>

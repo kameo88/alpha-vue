@@ -209,7 +209,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 
 .header > .pc_header .nav .sub_menu {/*display:none;*/ margin-top:-2.5rem !important; }
 .header > .pc_header .nav .sub_menu ul li:last-child {padding-bottom:2.8rem;}
-.header > .pc_header .nav .sub_menu a {padding:1.2rem 0; font-size:1.4rem; line-height:1.6rem; color:#000;}
+.header > .pc_header .nav .sub_menu a {padding:1.2rem 0; font-size:1.4rem; line-height:1.6rem; color:#717171;}
 .header > .pc_header .nav .sub_menu a sup {display:inline-block; margin-top:-0.5rem;}
 .header > .pc_header .nav .sub_menu a.img_delivery {height:4rem; background:url(../images/common/menu_delivery.png) no-repeat center / auto 1.6rem;}
 .header > .pc_header .nav .sub_menu li.on a{color:#fc6969; font-weight:700;}
@@ -253,7 +253,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 
 
 .aside .aside_header {flex:none; padding:0 2rem; margin-bottom:3.2rem;}
-.aside .aside_header .user {display:flex; justify-content:space-between; align-items:end; padding-top:3rem;}
+.aside .aside_header .user {display:flex; justify-content:space-between; align-items:end; padding:3rem 2rem 0;}
 .aside .aside_header .user .tit {font-size:1.8rem; line-height:2.6rem; color:#000;}
 .aside .aside_header .user .link_login {font-weight:700; color:#fc6969; text-decoration:underline;}
 .aside .aside_header .user .link_set {position:relative; display:inline-block; padding-right:2.4rem; font-weight:700;}
