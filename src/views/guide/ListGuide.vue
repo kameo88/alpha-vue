@@ -236,7 +236,7 @@
             <td class="date"></td>
             <td></td>
           </tr>
-          <tr class="ing">
+          <tr class="mod">
             <td></td>
             <td>list</td>
             <td></td>
@@ -245,6 +245,7 @@
             <td class="marker"></td>
             <td class="date"></td>
             <td>
+              <!-- <p><b>[07/04]</b> </p> -->
               sort, item, list, pagination
             </td>
           </tr>
