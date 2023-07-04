@@ -256,12 +256,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.v-slider.v-input--horizontal .v-slider-thumb {left: calc(var(--v-slider-thumb-position) - var(--v-slider-thumb-size) / 2)}
-.v-slider-thumb__surface{width:1.6rem!important; height:1.6rem!important; box-sizing:border-box; background:#fff!important; border:0.2rem solid #fc6969;}
-.v-slider-track__fill{height:0.4rem!important;}
-.v-slider-thumb__ripple {display:none!important;}
-.v-slider.v-input--horizontal > .v-input__control {min-height:0.4rem!important;}
-.v-input__details{display:none!important;}
-</style>
