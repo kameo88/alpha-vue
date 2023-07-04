@@ -462,6 +462,82 @@ const tag = {
   }
 }
 
+const swiper = {
+  cardSwiper: function(){
+    var swiperItem = new Swiper(".cardSwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 12,
+      grabCursor: true,
+      observer: true,
+      observeParents: true,
+      navigation: {
+        nextEl: ('.swiper-button-next'),
+        prevEl: ('.swiper-button-prev'),
+      },
+      on: {
+        slideChange	:function(a){
+
+          const el = a.$el[0];
+
+          const isTY04 = el.classList.contains("ty04");
+          const isHTML = document.querySelector("html").classList.contains("pc");
+          if( isTY04 ||!isHTML ) return;
+
+          const wrapW = a.width;
+
+          const swiperW = a.virtualSize;
+          const Translate = a.translate;
+          const gap = 20;
+
+          // console.log( a, swiperW + Translate - gap,  wrapW, swiperW, Translate, gap, ( swiperW + Translate - gap > wrapW ));
+
+          if( swiperW + Translate - gap > wrapW ){
+              ( a.activeIndex != 0 ) ? el.classList.add("activeIndex") : el.classList.remove("activeIndex");
+          }
+        }
+      }
+    });
+  },
+  flowSwiper: function(){
+    var swiperItem = new Swiper(".flowSwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 32,
+      loop: true,
+      autoplay: {
+        delay: 0,
+      },
+      speed: 5000,
+      observer: true,
+      observeParents: true,
+    });
+  },
+  bnrSwiper: function(){
+    var swiperItem = new Swiper(".bnrSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 17,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      observer: true,
+      observeParents: true,
+    });
+  },
+  notice: function(){
+    var swiperItem = new Swiper("#noticePop .swiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      observer: true,
+      observeParents: true,
+    });
+  }
+}
+
 
 export default {
     install(Vue) {
@@ -470,5 +546,6 @@ export default {
         Vue.config.globalProperties.$sort = sort;
         Vue.config.globalProperties.$popup = popup;
         Vue.config.globalProperties.$tag = tag;
+        Vue.config.globalProperties.$swiper = swiper;
     }
 }

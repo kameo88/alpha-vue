@@ -35,7 +35,7 @@
 
 
 /* ***** swiper ***** */
-.cardSwiper.swiper {padding:1.6rem; margin:-1.6rem;}
+/* .cardSwiper.swiper {padding:1.6rem; margin:-1.6rem;}
 .cardSwiper .swiper-slide {max-width:24rem; height:auto; border-radius:1.2rem; background-color:#fff; box-shadow:0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.08); overflow:hidden;}
 .cardSwiper .swiper-slide > * {height:100%;}
 
@@ -57,8 +57,45 @@
 .swiper.bnrSwiper .swiper-pagination-bullet-active {width:0.8rem; background:#717171;}
 .swiper.bnrSwiper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper.bnrSwiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {margin:0 0.4rem;}
+.section .swiper.swiper-initialized.bnrSwiper {padding-left:1.6rem; padding-right:1.6rem; margin-left:-1.6rem; margin-right:-1.6rem;} */
+
+/* ***** swiper ***** */
+.cardSwiper.swiper {padding:1.6rem; margin:-1.6rem;}
+.pc .cardSwiper.swiper.activeIndex{padding-left:4.4rem;}
+.cardSwiper .swiper-slide {max-width:24rem; height:auto; border-radius:1.2rem; background-color:#fff; box-shadow:0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.08); overflow:hidden;}
+.cardSwiper .swiper-slide > * {height:100%;}
+
+.cardSwiper.ty02 .swiper-slide {max-width:28rem; box-shadow:none;}
+.cardSwiper.ty03 .swiper-slide {max-width:15.3rem; box-shadow:none;}
+
+.flowSwiper.swiper {margin-left:-1.6rem; margin-right:-1.6rem;}
+.flowSwiper .swiper-wrapper {transition-timing-function:linear;}
+.flowSwiper .swiper-slide {width:12rem;}
+.flowSwiper .swiper-slide a {display:block;}
+.flowSwiper .swiper-slide img {display:block; width:100%;}
+
+.bnrSwiper a {display:block; border-radius:1.2rem; overflow:hidden;}
+.bnrSwiper a img {display:block; width:100%;}
+.swiper.swiper-initialized.bnrSwiper {padding-bottom:1.2rem;}
+.swiper.bnrSwiper .swiper-horizontal > .swiper-pagination-bullets,
+.swiper.bnrSwiper .swiper-pagination-bullets.swiper-pagination-horizontal {bottom:0; font-size:0; line-height:0;}
+.swiper.bnrSwiper .swiper-pagination-bullet {width:0.4rem; height:0.4rem; border-radius:0.2rem; background:#ddd; opacity:1;}
+.swiper.bnrSwiper .swiper-pagination-bullet-active {width:0.8rem; background:#717171;}
+.swiper.bnrSwiper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper.bnrSwiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {margin:0 0.4rem;}
 .section .swiper.swiper-initialized.bnrSwiper {padding-left:1.6rem; padding-right:1.6rem; margin-left:-1.6rem; margin-right:-1.6rem;}
 
+.mobile .card_swiper_control{display:none;}
+.card_swiper_control .swiper-button-prev.swiper-button-disabled,
+.card_swiper_control .swiper-button-next.swiper-button-disabled{display:none;}
+.card_swiper_control .swiper-button-next,
+.card_swiper_control .swiper-button-prev {top:1rem; width:4rem; height:calc(100% - 1rem); margin:0; background:linear-gradient(90deg, rgba(255, 255, 255, 0) 5%, #fff 60%);}
+.card_swiper_control .swiper-button-next{right:0;}
+.card_swiper_control .swiper-button-prev{left:0; background:linear-gradient(270deg, rgba(255, 255, 255, 0) 5%, #fff 60%);}
+.card_swiper_control .swiper-button-prev:after,
+.card_swiper_control .swiper-button-next:after{position:absolute; top:50%; margin-top:-2.2rem; width:3.2rem; height:3.2rem; border-radius:3.2rem; background:url(../images/ico/ico_swiperR.svg) center center no-repeat #fff; background-size:0.9rem auto; border:1px solid #ededed; box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.04); font-size:0.1px; color:transparent;}
+.card_swiper_control .swiper-button-prev:after{left:0.4rem; transform:scaleX(-1);}
+.card_swiper_control .swiper-button-next:after{right:0.4rem;}
 
 
 

@@ -79,6 +79,8 @@
 </template>
 
 <script>
+import '@/assets/js/swiper-bundle.min.js';
+import '@/assets/css/swiper-bundle.css';
 
 export default {
   name: 'GuidePopup',
@@ -86,6 +88,9 @@ export default {
     return {
       tooltip: [false, false, false],
     }
+  },
+  mounted(){
+    this.$swiper.notice();
   }
 }
 </script>
