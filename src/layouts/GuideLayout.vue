@@ -43,7 +43,7 @@ export default {
       let pageEnd = end + mod;
       let pagePer = (pageEnd == 0 ) ? 0 : ( pageTotal * 10 / pageEnd ).toFixed(1);
 
-      console.log(pagePer);
+      // console.log(pagePer);
 
       this.pageInfo.total = pageTotal;
       this.pageInfo.end = pageEnd;
