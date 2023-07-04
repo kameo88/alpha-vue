@@ -112,7 +112,7 @@
             <td class="date"></td>
             <td></td>
           </tr> -->
-          <tr class="ing">
+          <tr class="end">
             <td></td>
             <td>popup</td>
             <td></td>
@@ -121,8 +121,8 @@
             <td class="marker"></td>
             <td class="date"></td>
             <td>
-              <p><b>[06/28]</b>popup script 작업완료</p>
-              <p>&amp; tooltip</p>
+              <p><b>[07/04]</b> tooltip vuetify 작업완료</p>
+              <p><b>[06/28]</b> popup script 작업완료</p>
             </td>
           </tr>
           <tr class="end">

@@ -35,58 +35,43 @@
 
 
       <div class="section">
-        <v-btn @click="tooltip[0] = !tooltip[0]" id="test">tooltip</v-btn>
-          
-        <v-tooltip v-model="tooltip[0]" activator="#test" location="bottom">
-          Tooltippp
-        </v-tooltip>
+        <h3 class="tit02">tooltip VUETIFY</h3>
+
+        <div>
+          데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
+          <v-btn id="tooltip0" class="tooltip_btn" :class="{on : tooltip[0]}" title="툴팁" @click="tooltip[0] = !tooltip[0]">툴팁</v-btn>
+          <v-tooltip v-model="tooltip[0]" activator="#tooltip0" location="bottom" offset="0" transition="false" :open-on-hover="false" no-click-animation>
+            <div class="tooltip_content">
+              데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
+            </div>
+          </v-tooltip>
+        </div>
+
+        <br><br><br><br>
+
+        <div>
+          데이터 소진 시 유튜브 화질 1080p로 <v-btn id="tooltip1" class="tooltip_btn" :class="{on : tooltip[1]}" title="툴팁" @click="tooltip[1] = !tooltip[1]">툴팁</v-btn> 원활히 볼 수 있어요
+          <v-tooltip v-model="tooltip[1]" activator="#tooltip1" location="bottom" offset="0" transition="false" :open-on-hover="false" no-click-animation>
+            <div class="tooltip_content">
+              데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
+            </div>
+          </v-tooltip>
+        </div>
         
+        <br><br><br><br>
 
+        <div>
+          <v-btn id="tooltip2" class="tooltip_btn" :class="{on : tooltip[2]}" title="툴팁" @click="tooltip[2] = !tooltip[2]">툴팁</v-btn>
+          데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
+          <v-tooltip v-model="tooltip[2]" activator="#tooltip2" location="bottom" offset="0" transition="false" :open-on-hover="false" no-click-animation>
+            <div class="tooltip_content">
+              데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
+            </div>
+          </v-tooltip>
+        </div>
 
-        <v-tooltip text="데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요" bottom>
-          <template v-slot:activator="{ props }">
-            <v-btn v-bind="props">Tooltip</v-btn>
-          </template>
-        </v-tooltip>
-
-        <!-- <v-tooltip v-model="tooltip[0]" location="bottom">
-          <template>
-          </template>
-          <span>Programmatic tooltip</span>
-        </v-tooltip> -->
       </div>
       
-
-
-
-      <div class="section">
-        <h3 class="tit02">tooltip</h3>
-
-        데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
-        <span class="tooltip">
-          <button type="button" aria-expanded="false"><span class="blind">툴팁</span></button>
-          <span class="info" role="tooltip">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
-        </span>
-
-        <br><br><br><br>
-
-        데이터 소진 시 유튜브 화질 1080p로
-        <span class="tooltip">
-          <button type="button" aria-expanded="false"><span class="blind">툴팁</span></button>
-          <span class="info" role="tooltip">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
-        </span>
-        원활히 볼 수 있어요
-
-        <br><br><br><br>
-
-        
-        <span class="tooltip">
-          <button type="button" aria-expanded="false"><span class="blind">툴팁</span></button>
-          <span class="info" role="tooltip">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
-        </span>
-        데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
-
-      </div> <!-- // section -->
 
     </div> <!-- // content -->
   </div><!-- // container -->

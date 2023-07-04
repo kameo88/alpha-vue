@@ -743,35 +743,6 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 
 
 
-/* ***** accordion ***** */
-/* .acd_st {border-radius:1.2rem; background-color:#f8f8f8;}
-.acd_st + .acd_st {margin-top:0.8rem;}
-.acd_st .acd_btn {position:relative; display:block; padding:2rem 4.4rem 2rem 2rem; font-size:1.5rem; font-weight:700; line-height:1.8rem;}
-.acd_st .acd_btn::after {content:''; position:absolute; top:50%; right:2rem; display:block; width:2.4rem; height:2.4rem; margin-top:-1.2rem; background:url(../images/common/ico_arrowB02.png) no-repeat center / 100% auto;}
-.acd_st.on .acd_btn::after {transform:rotate(180deg);}
-.acd_st .acd_btn > strong{color:#000;}
-
-.acd_st .acd_tab {display:flex; justify-content:space-between; align-items:center; padding:1.7rem 2rem; color:#000; font-size:1.5rem; line-height:1.8rem;}
-.acd_st .acd_tab .check_st > label {padding-left:2.8rem;}
-.acd_st .acd_tab .check_st > label::before {position:absolute; top:0; left:0; margin-right:0;}
-.acd_st .acd_tab button {flex:none; width:2.4rem; height:2.4rem; background:url(../images/common/ico_arrowB02.png) no-repeat center / 100% auto;}
-.acd_st.on .acd_tab button {transform:rotate(180deg);}
-.acd_st .acd_panel {padding:0 2rem 2rem;} */
-
-
-
-
-/* ***** tooltip ***** */
-.tooltip {position:relative; display:inline-block; vertical-align:middle;}
-.tooltip > button {position:relative; display:block; width:1.6rem; height:1.6rem; background:url(../images/common/ico_tooltip.png) no-repeat center / contain;}
-.tooltip > button:after {content:""; position:absolute; bottom:-0.7rem; left:50%; display:none; height:0; width:0; border-bottom:5px solid rgba(0, 0, 0, 0.8); border-left:4px solid transparent; border-right:4px solid transparent; transform:translateX(-50%);}
-.tooltip > .info {position:absolute; top:calc(100% + 0.6rem); display:none; padding:0.8rem 1rem; margin:0 1.6rem; border-radius:0.8rem; background:rgba(0, 0, 0, 0.8); font-size:1.2rem; line-height:1.8rem; text-align:center; color:#fff; z-index:1;}
-.tooltip.on > button:after,
-.tooltip.on > .info {display:block;}
-
-
-
-
 
 /* ***** box ***** */
 .box_line {padding:2rem; border:0.1rem solid #ddd; border-radius:1.2rem; background:#fff;}
