@@ -247,7 +247,7 @@
               sort, item, list, pagination
             </td>
           </tr>
-          <tr class="ing">
+          <tr class="end">
             <td></td>
             <td>swiper</td>
             <td></td>
@@ -255,7 +255,9 @@
             <td class="url"><a href="/guide/swiper" target="_blank">/guide/swiper</a></td>
             <td class="marker"></td>
             <td class="date"></td>
-            <td></td>
+            <td>
+              <p><b>[07/04]</b> swiper 작업완료</p>
+            </td>
           </tr>
           <tr class="ing">
             <td></td>
