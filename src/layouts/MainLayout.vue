@@ -1,6 +1,6 @@
 <template>
-  <div class="loading" v-if="loading.show">
-    <Vue3Lottie  class="lottie" :animationData="loading.data" loop autoplay />
+  <div class="loading" v-if="loading">
+    <div class="lottie"><compLottie name="loading" /></div>
     <span class="blind">loading</span>
   </div>
 
@@ -22,19 +22,20 @@ import MainHeader from '@/layouts/MainHeader.vue'
 import AsideFloat from '@/layouts/AsideFloat.vue'
 import MainFooter from '@/layouts/MainFooter.vue'
 import MainPopup from '@/layouts/MainPopup.vue'
-import LottieLoading from "/src/assets/images/animation/loading.json";
+
+import compLottie from "@/components/Lottie.vue";
 
 export default {
   name: 'MainLayout',
   data(){
     return {
-      loading: {"show": false, "data": LottieLoading },
+      loading: false,
     }
   },
   mounted(){
     if( this.$route.path == "/guide/layout" ){
-      this.loading.show = true;
-      setTimeout(() => { this.loading.show = false }, 2000);
+      this.loading = true;
+      setTimeout(() => { this.loading = false }, 2000);
     }
   },
   components:{
@@ -42,6 +43,7 @@ export default {
     AsideFloat,
     MainFooter,
     MainPopup,
+    compLottie
   },
 }
 </script>
