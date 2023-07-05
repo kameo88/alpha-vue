@@ -7,7 +7,7 @@
 .v-slider-track__fill{height:0.4rem!important;}
 .v-slider-thumb__ripple {display:none!important;}
 .v-slider.v-input--horizontal > .v-input__control {min-height:0.4rem!important;}
-.v-input__details{display:none!important;}
+.v-slider .v-input__details{display:none!important;}
 
 
 /* vuetify accordion reset */
