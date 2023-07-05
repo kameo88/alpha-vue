@@ -13,7 +13,7 @@
                     <div>총 1,438개</div>
                     <div>
                         <div class="sort_pop">
-                            <button type="button" class="sort_btn" aria-haspopup="true">추천 순</button>
+                            <button type="button" class="sort_btn" aria-haspopup="true" @click="$sort.open">추천 순</button>
                             <div class="sort_layer">
                                 <div class="sort_layer_wrap">
                                     <div class="sort_layer_header">
@@ -22,23 +22,23 @@
                                     <div class="sort_layer_content">
                                         <ul class="sort_group" role="listbox">
                                             <li role="none" class="on">
-                                                <button type="button" role="option" aria-selected="true">추천 순</button>
+                                                <button type="button" role="option" aria-selected="true" @click="$sort.select">추천 순</button>
                                             </li>
                                             <li role="none">
-                                                <button type="button" role="option" aria-selected="false">낮은 가격 순</button>
+                                                <button type="button" role="option" aria-selected="false" @click="$sort.select">낮은 가격 순</button>
                                             </li>
                                             <li role="none">
-                                                <button type="button" role="option" aria-selected="false">할인 적용 후 낮은 가격 순</button>
+                                                <button type="button" role="option" aria-selected="false" @click="$sort.select">할인 적용 후 낮은 가격 순</button>
                                             </li>
                                             <li role="none">
-                                                <button type="button" role="option" aria-selected="false">선택 순</button>
+                                                <button type="button" role="option" aria-selected="false" @click="$sort.select">선택 순</button>
                                             </li>
                                             <li role="none">
-                                                <button type="button" role="option" aria-selected="false">데이터 많은 순</button>
+                                                <button type="button" role="option" aria-selected="false" @click="$sort.select">데이터 많은 순</button>
                                             </li>
                                         </ul>
                                     </div> <!-- // item_list -->
-                                    <button type="button" class="sort_layer_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+                                    <button type="button" class="sort_layer_close" data-action="close" @click="$sort.close"><span class="blind">팝업 닫기</span></button>
                                 </div>
                             </div> <!-- // sort_layer -->
                         </div> <!-- // sort_pop -->

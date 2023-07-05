@@ -109,26 +109,26 @@ const sort = {
     if (_html.classList.contains('mobile')) _body.classList.remove("noScroll");
   },
   select(e){
-    const  _this = e.target;
-    let _li = _this.parentNode.parentNode.firstChild;
-    while(_li){
-      _li.classList.remove("on");
-      _li.querySelector("button").setAttribute("aria-selected", false);
-      _li = _li.nextElementSibling;
-    }
-    
-    _this.setAttribute("aria-selected", true);
-    _this.parentNode.classList.add("on");
+    const _this = e.target;
+    const _this_li = _this.parentNode;
+    const li = _this_li.parentNode.querySelectorAll("li");
 
-    let sortLayer = _this.parentNode;
-    while( sortLayer ){
-      if( sortLayer.classList.contains("sort_layer") || sortLayer.nodeName == "BODY" ) break
-      sortLayer = sortLayer.parentNode;
-    }
+    li.forEach( a => {
+      const button = a.querySelector("button");
+      if( button == _this ){
+        a.classList.add("on");
+        button.setAttribute("aria-selected", true);
+      } else {
+        a.classList.remove("on");
+        button.setAttribute("aria-selected", false);
+      }
+    })
 
-    if( sortLayer.classList.contains("sort_layer") ){
+    const isSortLayer = [...document.querySelectorAll(".sort_layer.open .sort_group > li > button")].filter( a => a == _this ).length;
+    if( isSortLayer ){
+      const button = document.querySelector(".sort_layer.open").parentNode.querySelector(".sort_btn");
       const text = _this.innerText;
-      sortLayer.parentNode.querySelector(".sort_btn").innerText = text;
+      button.innerText = text;
       this.close();
     }
   }  
@@ -202,70 +202,50 @@ const popup = {
 const tab = {
   click(e){
     const _this = e.target;
-    const _body = document.querySelector("body");
-    
-    let scrollTab = _this.parentNode;
-    while( scrollTab ){
-      if( scrollTab.classList.contains("scroll_tab") || scrollTab.nodeName == "BODY" ) break
-      scrollTab = scrollTab.parentNode;
-    }
+    const _this_li = _this.parentNode;
+    const li = _this_li.parentNode.querySelectorAll("li");
+    let _thisId = '';
 
-    if( scrollTab.classList.contains("scroll_tab") ){
-      // tabList.tabMove(_this);
-      console.log('scroll_tab');
-      return;
-    }
+    li.forEach( a => {
+      const button = a.querySelector("button");
+      if( a == _this_li ){
+        _thisId = button.getAttribute("aria-controls");
+        button.setAttribute("aria-selected", true);
+        a.classList.add("on");
+      } else {
+        button.setAttribute("aria-selected", false);
+        a.classList.remove("on");
+      }
+    })
 
-    let _li = _this.parentNode.parentNode.firstChild;
-    while(_li){
-      _li.classList.remove("on");
-      _li.querySelector("button").setAttribute("aria-selected", false);
-      _li = _li.nextElementSibling;
-    }
+    const _this_tabPanel = document.querySelector(`#${_thisId}`);
+    const tabPanel = document.querySelector(`#${_thisId}`).parentNode.querySelectorAll("[role='tabpanel']");
+    tabPanel.forEach( a => ( a == _this_tabPanel ) ? a.setAttribute("aria-expanded", true) : a.setAttribute("aria-expanded", false));
 
-    _this.setAttribute("aria-selected", true);
-    _this.parentNode.classList.add("on");
 
-    const _tabId = _this.getAttribute("aria-controls");
-    const _tabPanel = document.querySelector(`#${_tabId}`);
-    if( _tabPanel != null ){
-      _tabPanel.setAttribute("aria-expanded", true);
-    }
+    // 이건 어디에 쓰는거지
+    // const _body = document.querySelector("body");
+    // let popLayer = _this.parentNode;
+    // while( popLayer ){
+    //   if( popLayer.classList.contains("pop_layer") || popLayer.nodeName == "BODY" ) break
+    //   popLayer = popLayer.parentNode;
+    // }
+    // if( !popLayer.classList.contains("pop_layer") ){
+    //   let _scroll = _body.scrollTop;
+    //   const _tabList = _this.parentNode.parentNode;
+    //   let _thisTop = _tabList.offsetTop;
+    //   let _thisHeight = _tabList.offsetHeight;
+    //   let _conTop = _this_tabPanel.offsetTop;
 
-    let previous = _tabPanel.previousElementSibling;
-    while( previous != null ){
-      previous.setAttribute("aria-expanded", false);
-      previous = previous.previousElementSibling;
-    }
-    let next = _tabPanel.nextElementSibling;
-    while( next != null ){
-      next.setAttribute("aria-expanded", false);
-      next = next.nextElementSibling;
-    }
+    //   _scroll = _conTop - ((_thisTop + _thisHeight) - _scroll);
+    //   _body.scrollTo(0, _scroll);
+    // }
 
-    let popLayer = _this.parentNode;
-    while( popLayer ){
-      if( popLayer.classList.contains("pop_layer") || popLayer.nodeName == "BODY" ) break
-      popLayer = popLayer.parentNode;
-    }
-    if( !popLayer.classList.contains("pop_layer") ){
-      let _scroll = _body.scrollTop;
-      const _tabList = _this.parentNode.parentNode;
-      let _thisTop = _tabList.offsetTop;
-      let _thisHeight = _tabList.offsetHeight;
-      let _conTop = _tabPanel.offsetTop;
 
-      _scroll = _conTop - ((_thisTop + _thisHeight) - _scroll);
-      _body.scrollTo(0, _scroll);
-    }
+    // tablist02 일때만 move() (좌우 스크롤)
+    const isTablist02 = [...document.querySelectorAll(".tab_list02")].map( a => [...a.querySelectorAll("button[role='tab']")].filter( b => b == _this )).flat().length;
+    if( isTablist02 ) this.move(_this);
 
-    // tablist02 일때만 move()
-    let tab_list02 = _this.parentNode;
-    while( tab_list02 ){
-      if( tab_list02.classList.contains("tab_list02") || tab_list02.nodeName == "BODY" ) break;
-      tab_list02 = tab_list02.parentNode;
-    }
-    if( tab_list02.classList.contains("tab_list02") ) this.move(_this);
 
   },
   move(e){
@@ -301,40 +281,32 @@ const tab = {
 const tag = {
   click(e){
     const _this = e.target;
-    
-    // multi 클래스 가졌는지 체크
-    let _tagList = _this.parentNode;
-    while( _tagList ){
-      if( _tagList.classList.contains("tag_list") || _tagList.nodeName == "BODY" ) break
-      _tagList = _tagList.parentNode;
-    }
-    if( _tagList.classList.contains("multi") ){  // multi 아니면 this 제외 on 해제
+    const _thisOn = ( _this.getAttribute("aria-selected") == "true" ) ? true : false;
+    const _this_li = _this.parentNode;
 
-      if( _this.getAttribute("aria-selected") == "true" ){
-        _this.setAttribute("aria-selected", false);
-        _this.parentNode.classList.remove("on");
+    if( _thisOn ){
+      _this.setAttribute("aria-selected", false);
+      _this_li.classList.remove("on");
+      return;
+    }
+
+    const li = _this_li.parentNode.querySelectorAll("li");
+    const isMulti = [...document.querySelectorAll(".tag_list.multi")].map( a => [...a.querySelectorAll("li > button")].filter( b => b == _this )).flat().length;
+
+
+    li.forEach( a => {
+      const button = a.querySelector("button");
+
+      if( button == _this ){
+        button.setAttribute("aria-selected", true);
+        a.classList.add("on");
       } else {
-        _this.setAttribute("aria-selected", true);
-        _this.parentNode.classList.add("on");
+        if( !isMulti ){
+          button.setAttribute("aria-selected", false);
+          a.classList.remove("on");
+        }
       }
-
-    } else {  // multi
-      // console.log('multi X');
-      let _thisOn = ( _this.getAttribute("aria-selected") == "true" ) ? true : false;
-
-      let _li = _this.parentNode.parentNode.firstChild;
-      while(_li){
-        _li.classList.remove("on");
-        _li.querySelector("button").setAttribute("aria-selected", false);
-        _li = _li.nextElementSibling;
-      }
-
-      if( !_thisOn ){
-        _this.setAttribute("aria-selected", true);
-        _this.parentNode.classList.add("on");
-      }
-    }
-
+    });
     this.move(_this);
   },
   move(e){
