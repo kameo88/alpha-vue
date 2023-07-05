@@ -171,10 +171,10 @@
         <div class="tab_list">
           <ul role="tablist">
             <li role="none" class="on">
-              <button type="button" role="tab" aria-selected="false" aria-controls="tab_panel_02_01" @click="$tab.click">사용자 리뷰</button>
+              <button type="button" role="tab" aria-selected="true" aria-controls="tab_panel_02_01" @click="$tab.click">사용자 리뷰</button>
             </li>
             <li role="none">
-              <button type="button" role="tab" aria-selected="true" aria-controls="tab_panel_02_02" @click="$tab.click">블로그 리뷰</button>
+              <button type="button" role="tab" aria-selected="false" aria-controls="tab_panel_02_02" @click="$tab.click">블로그 리뷰</button>
             </li>
           </ul>
         </div>

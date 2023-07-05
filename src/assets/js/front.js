@@ -212,6 +212,7 @@ const tab = {
 
     if( scrollTab.classList.contains("scroll_tab") ){
       // tabList.tabMove(_this);
+      console.log('scroll_tab');
       return;
     }
 

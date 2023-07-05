@@ -284,7 +284,7 @@
             <td class="date"></td>
             <td></td>
           </tr>
-          <tr class="ing">
+          <tr class="end">
             <td></td>
             <td>sticky</td>
             <td></td>
@@ -292,7 +292,9 @@
             <td class="url"><a href="/guide/sticky" target="_blank">/guide/sticky</a></td>
             <td class="marker"></td>
             <td class="date"></td>
-            <td></td>
+            <td>
+              <p><b>[07/05]</b> sticky script 작업완료</p>
+            </td>
           </tr>
         </tbody>
       </table>

@@ -174,7 +174,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 
 
 /* *** header *** */
-.header {flex:none; position:fixed; top:0; left:0; width:100%; height:5.2rem; z-index:10;}
+.header {flex:none; position:fixed; top:0; left:0; width:100%; height:5.2rem; z-index:11;}
 .header > .inner {display:flex; justify-content:space-between; align-items:center; height:5.2rem; max-width:64rem; margin:0 auto; padding:0 1.6rem;}
 .header > .inner .h_left {display:flex; align-items:center; flex:1 1 auto; overflow:hidden;}
 .header > .inner .h_left > *:not(:last-child) {margin-right:0.8rem;}
