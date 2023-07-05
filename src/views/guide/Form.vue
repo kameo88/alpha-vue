@@ -8,7 +8,7 @@
       
       <div class="section">
         <h3 class="tit02">input</h3>
-          <!-- <v-text-field placeholder="고객명" variant="outlined" hint="Enter your password to access this website" clearable></v-text-field> -->
+          <v-text-field placeholder="고객명" variant="outlined" hint="Enter your password to access this website" clearable></v-text-field>
           <v-text-field placeholder="고객명 필수" variant="outlined" clearable></v-text-field>
 
 
