@@ -1,9 +1,7 @@
 <template>
-  
-  <div class="loading" v-if="loading">
-    <lottie-player src="/src/assets/images/animation/loading.json" speed="1" loop autoplay></lottie-player>
+  <div class="loading" v-if="loading.show">
+    <Vue3Lottie  class="lottie" :animationData="loading.data" loop autoplay />
     <span class="blind">loading</span>
-    https://github.com/LottieFiles/lottie-vue
   </div>
 
   <div class="skip">
@@ -24,21 +22,19 @@ import MainHeader from '@/layouts/MainHeader.vue'
 import AsideFloat from '@/layouts/AsideFloat.vue'
 import MainFooter from '@/layouts/MainFooter.vue'
 import MainPopup from '@/layouts/MainPopup.vue'
-
-import '@/assets/js/lottie-player.js';
-// import 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js';
+import LottieLoading from "/src/assets/images/animation/loading.json";
 
 export default {
   name: 'MainLayout',
   data(){
     return {
-      loading: false,
+      loading: {"show": false, "data": LottieLoading },
     }
   },
   mounted(){
     if( this.$route.path == "/guide/layout" ){
-      this.loading = true;
-      setTimeout(() => { this.loading = false }, 1000);
+      this.loading.show = true;
+      setTimeout(() => { this.loading.show = false }, 2000);
     }
   },
   components:{
