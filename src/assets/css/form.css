@@ -539,8 +539,8 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 [class^="list_con"] .bo_btn_list {display:flex; justify-content:space-between; align-items:flex-start; margin-left:1.5rem;}
 [class^="list_con"] .bo_btn_list [class*="bo_btn_"] ~ [class*="bo_btn_"]{margin-left:0.8rem;}
 [class^="list_con"] .bo_btn_list [class*="bo_btn_"]:before{content:""; width:4rem; height:4rem; display:inline-block; background:no-repeat center/100%;}
-[class^="list_con"] .bo_btn_list .bo_btn_local:before{background-image:url("../../resource/images/common/img_location.png");}
-[class^="list_con"] .bo_btn_list .bo_btn_call:before{background-image:url("../../resource/images/common/img_call.png");}
+[class^="list_con"] .bo_btn_list .bo_btn_local:before{background-image:url("../../assets/images/common/img_location.png");}
+[class^="list_con"] .bo_btn_list .bo_btn_call:before{background-image:url("../../assets/images/common/img_call.png");}
 
 .list_con01{background:url(../images/common/ico_arrowR02.png) no-repeat right center / 2.4rem 2.4rem; padding: 2rem 2.4rem 2rem 0.8rem;}
 .list_con01 .date_rel{font-size:1.2rem; color:#bbb; line-height:1.5rem; display:block; margin-bottom:1rem;}
