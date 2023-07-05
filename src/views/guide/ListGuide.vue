@@ -284,6 +284,16 @@
             <td class="date"></td>
             <td></td>
           </tr>
+          <tr class="ing">
+            <td></td>
+            <td>sticky</td>
+            <td></td>
+            <td></td>
+            <td class="url"><a href="/guide/sticky" target="_blank">/guide/sticky</a></td>
+            <td class="marker"></td>
+            <td class="date"></td>
+            <td></td>
+          </tr>
         </tbody>
       </table>
     </div>

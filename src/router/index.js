@@ -131,6 +131,10 @@ const routes = [
         path: 'animation',
         component: () => import('@/views/guide/Animation.vue'),
       },
+      {
+        path: 'sticky',
+        component: () => import('@/views/guide/Sticky.vue'),
+      },
     ]
   }
 
