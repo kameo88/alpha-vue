@@ -34,12 +34,12 @@
       <div class="bottom_float">
         <div class="inner">
           <div class="float_btn_wrap">
-            <div class="group_btn">
-              <button type="button" class="btn_sL_c01">button</button>
+            <div class="btn_group">
+              <button type="button" class="btn lg c01">button</button>
             </div>
-            <div class="group_btn">
-              <button type="button" class="btn_sL_c02">button</button>
-              <button type="button" class="btn_sL_c03">button</button>
+            <div class="btn_group">
+              <button type="button" class="btn lg c02">button</button>
+              <button type="button" class="btn lg c03">button</button>
             </div>
           </div>
           <!-- plan_join -->
