@@ -69,6 +69,21 @@
             </div>
           </v-tooltip>
         </div>
+        
+        <br><br><br><br>
+
+        <div style="width:30rem; margin:0 auto; padding:2rem; position:relative; border:1px solid #ddd; border-radius:1.2rem;">
+          데이터 소진 시 유튜브 화질 1080p로
+          <v-btn id="tooltip3" class="tooltip_btn" :class="{on : tooltip[3]}" title="툴팁" @click="tooltip[3] = !tooltip[3]">툴팁</v-btn>
+          원활히 볼 수 있어요
+          contained
+          <v-tooltip v-model="tooltip[3]" activator="#tooltip3" location="bottom" offset="0" transition="false" :open-on-hover="false" no-click-animation contained>
+            <div class="tooltip_content">
+              v-tooltip contained 옵션, 부모에 position:relative
+            </div>
+          </v-tooltip>
+        </div>
+
 
       </div>
       
@@ -86,7 +101,7 @@ export default {
   name: 'GuidePopup',
   data(){
     return {
-      tooltip: [false, false, false],
+      tooltip: [false, false, false, false],
     }
   },
   mounted(){
