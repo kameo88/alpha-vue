@@ -85,7 +85,7 @@ const routes = [
       },
       {
         path: 'form_etc',
-        component: () => import('@/views/guide/Form_etc.vue'),
+        component: () => import('@/views/guide/FormEtc.vue'),
       },
       {
         path: 'tab',
