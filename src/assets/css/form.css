@@ -557,7 +557,7 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 .plan_item .combi .choice{margin-right:auto; font-size:1.1rem; line-height:1.5rem; color:#BBB; text-align:left; order:1;}
 .plan_item .combi .combi_inner{display:flex; flex-flow:column; margin-bottom:0; order:2;}
 .plan_item .combi .combi_inner strong{font-size:1.6rem; line-height:2rem; color:#000;}
-.plan_item .combi [class^=btn_] {display:none;}
+.plan_item .combi .btn {display:none;}
 
 .plan_item .card_bot{display:flex; flex-wrap:wrap; justify-content:space-between; gap:0.8rem; margin-top:2.4rem;}
 .plan_item .card_bot .acc_box{margin-left:0.4rem;}
@@ -794,7 +794,7 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 .pc .plan_item .combi .period {display:inline-block; margin-left:0.4rem;}
 .pc .plan_item .combi .combi_inner {display:block; order:1;}
 .pc .plan_item .combi .combi_inner strong {display:inline-block;}
-.pc .plan_item .combi [class^=btn_] {display:inline-block; min-width:12rem; margin-left:auto; order:2;}
+.pc .plan_item .combi .btn {display:inline-block; min-width:12rem; margin-left:auto; order:2;}
 .pc .plan_item .bag_list {display:block;}
 .pc .plan_item .link_list {display:none;}
 
