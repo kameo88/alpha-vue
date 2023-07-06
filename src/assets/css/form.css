@@ -14,7 +14,8 @@
 
 .input_box {position:relative;}
 .input_box .input {width:100%; padding-right:4rem;}
-.input_box .btn_del {position:absolute; right:1.6rem; top:50%; display:none; width:1.6rem; height:100%; background:url(../images/common/ico_del.png) no-repeat center / 1.6rem auto; transform:translateY(-50%);}
+.input_box .btn_del {position:absolute; right:1.6rem; top:50%; display:none; width:1.6rem; height:100%; background:url(../images/common/ico_del.png) no-repeat center / 1.6rem auto; transform:translateY(-50%); z-index:2;}
+.input_box .btn_del.on{display:block;}
 
 /* input etc */
 .input_box.search .btn_del {right:3.4rem;}
@@ -70,7 +71,7 @@
 
 .textarea_box {position:relative;}
 .textarea_box .textarea {width:100%; padding-bottom:3.25rem;}
-.textarea_box .byte_check {position:absolute; bottom:0.15rem; left:1.6rem; width:calc(100% - 3.2rem); padding:0.8rem 0 1.45rem; background-color:#fff; font-size:1.1rem; line-height:1rem;}
+.textarea_box .byte_check {position:absolute; bottom:0.2rem; left:1.6rem; width:calc(100% - 3.2rem); padding:0.8rem 0 1.45rem; background-color:#fff; font-size:1.1rem; line-height:1rem;}
 .textarea_box .byte_check .count {color:#000;}
 .textarea_box .byte_check .total {color:#bbb;}
 .textarea_box .byte_check .total::before {content:'/';}

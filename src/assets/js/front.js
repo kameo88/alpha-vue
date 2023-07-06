@@ -1,12 +1,3 @@
-window.addEventListener("load", function(){
-  // console.log('dd');
-  
-  // tag.init();
-  // let noneLink = document.querySelectorAll("a[href='#']");
-  // console.log(noneLink);
-  
-})
-
 const front = {
   device(){
     const elem = document.querySelector("html");
@@ -511,6 +502,52 @@ const swiper = {
   }
 }
 
+const input = {
+  elem: [],
+  btnDel: [],
+  init: function(){
+    const isInput = document.querySelectorAll("input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='search'], input[type='tel'], input[type='url']");
+    if( !isInput ) return;
+    // console.log('input init');
+
+    document.querySelectorAll(".input_box .btn_del").forEach( a => { this.btnDel.push(a) });
+    isInput.forEach( a =>{
+      this.elem.push(a);
+      this.setBtnDel(a);
+    });
+    
+    this.input();
+    this.clear();
+
+  },
+  input: function(){
+    this.elem.forEach( a => { a.addEventListener("input", ()=>{ this.setBtnDel(a) })})
+  },
+  setBtnDel: function(input){
+    const _this = input;
+    const _btnDel = _this.parentNode.querySelector(".btn_del");
+   
+    const isDisabled = _this.getAttribute("disabled") != null;
+    const isReadonly = _this.getAttribute("readonly") != null;
+
+    if( _this.value.length ){
+      if( isDisabled || isReadonly ) return;
+      _btnDel.classList.add("on");
+    } else {
+      _btnDel.classList.remove("on");
+    }
+  },
+  clear: function(){
+    this.btnDel.forEach( a =>{ a.addEventListener("click", ()=>{
+      const _this = a;
+      const _input = a.parentNode.querySelector("input");
+      _this.classList.remove("on");
+      _input.value = "";
+      _input.focus();
+    })})
+  },
+}
+
 
 export default {
     install(Vue) {
@@ -520,5 +557,6 @@ export default {
         Vue.config.globalProperties.$popup = popup;
         Vue.config.globalProperties.$tag = tag;
         Vue.config.globalProperties.$swiper = swiper;
+        Vue.config.globalProperties.$input = input;
     }
 }
