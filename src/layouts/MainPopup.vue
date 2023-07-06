@@ -1,4 +1,5 @@
 <template>
+  {{ popupItem }}
   <div class="pop_layer alert" id="popup01"> <!-- alert, normal, full -->
     <div class="pop_wrap">
       <div class="pop_header">
@@ -992,5 +993,8 @@ export default {
       this.value[1] = e.target.getAttribute("data-max");
     }
   },
+  props: {
+    popupItem: Array,
+  }
 }
 </script>

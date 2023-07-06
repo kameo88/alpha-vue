@@ -10,11 +10,13 @@
 
 	<div class="wrap">
 		<MainHeader />
-		<router-view />
+    {{ popupItem }}
+		<router-view @popupItem="popupItem = $event;" />
 		<AsideFloat />
 		<MainFooter />
 	</div>
-  <MainPopup />
+
+  <MainPopup :popupItem="popupItem" />
 </template>
 
 <script>
@@ -30,6 +32,7 @@ export default {
   data(){
     return {
       loading: false,
+      popupItem: [],
     }
   },
   mounted(){

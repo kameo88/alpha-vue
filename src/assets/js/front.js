@@ -128,6 +128,7 @@ const sort = {
 
 const popup = {
   open : function(pop){
+
     const _body = document.querySelector("body");
     _body.classList.add("noScroll");
 

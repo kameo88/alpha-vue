@@ -101,11 +101,13 @@ export default {
   name: 'GuidePopup',
   data(){
     return {
+      popupItem: ['popup01', 'popup02', 'popup03', 'noticePop'],
       tooltip: [false, false, false, false],
     }
   },
   mounted(){
     this.$swiper.notice();
+    this.$emit('popupItem', this.popupItem);
   }
 }
 </script>
