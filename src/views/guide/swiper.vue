@@ -668,7 +668,7 @@ import '@/assets/js/swiper-bundle.min.js';
 import '@/assets/css/swiper-bundle.css';
 
 export default {
-  name: "GuideTab",
+  name: "GuideSwiper",
   mounted(){
     this.$swiper.cardSwiper();
     this.$swiper.flowSwiper();

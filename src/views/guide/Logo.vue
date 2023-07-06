@@ -37,33 +37,33 @@
       <div class="section">
         <h3 class="tit02">height: 32, padding X </h3>
             
-          <div class="logo_box">
-            <img src="@/assets/images/data/logo_s_alpha_b.png" alt="+알파">
-            <span>
-              <img src="@/assets/images/data/logo_s_alpha_w.png" alt="+알파">
-            </span>
-            <img src="@/assets/images/data/logo_s_partner01.png" alt="A모바일">
-            <img src="@/assets/images/data/logo_s_partner02.png" alt="FLASH모바일">
-            <img src="@/assets/images/data/logo_s_partner03.png" alt="KG모빌리언스">
-            <img src="@/assets/images/data/logo_s_partner04.png" alt="U+유모바일">
-            <img src="@/assets/images/data/logo_s_partner05.png" alt="WELL">
-            <img src="@/assets/images/data/logo_s_partner06.png" alt="freeT">
-            <img src="@/assets/images/data/logo_s_partner07.png" alt="mobing">
-            <img src="@/assets/images/data/logo_s_partner08.png" alt="리브모바일">
-            <img src="@/assets/images/data/logo_s_partner09.png" alt="마블프로듀스">
-            <img src="@/assets/images/data/logo_s_partner10.png" alt="벨류컴">
-            <img src="@/assets/images/data/logo_s_partner11.png" alt="슈가모바일">
-            <img src="@/assets/images/data/logo_s_partner12.png" alt="스노우맨">
-            <img src="@/assets/images/data/logo_s_partner13.png" alt="스마텔">
-            <img src="@/assets/images/data/logo_s_partner14.png" alt="아이즈모바일">
-            <img src="@/assets/images/data/logo_s_partner15.png" alt="앤텔레콤">
-            <img src="@/assets/images/data/logo_s_partner16.png" alt="에스원안심모바일">
-            <img src="@/assets/images/data/logo_s_partner17.png" alt="여유텔레콤">
-            <img src="@/assets/images/data/logo_s_partner18.png" alt="이야기모바일">
-            <img src="@/assets/images/data/logo_s_partner19.png" alt="이지모바일">
-            <img src="@/assets/images/data/logo_s_partner20.png" alt="인스모바일">
-            <img src="@/assets/images/data/logo_s_partner21.png" alt="티플러스">
-            <img src="@/assets/images/data/logo_s_partner22.png" alt="헬로모바일">
+        <div class="logo_box">
+          <img src="@/assets/images/data/logo_s_alpha_b.png" alt="+알파">
+          <span>
+            <img src="@/assets/images/data/logo_s_alpha_w.png" alt="+알파">
+          </span>
+          <img src="@/assets/images/data/logo_s_partner01.png" alt="A모바일">
+          <img src="@/assets/images/data/logo_s_partner02.png" alt="FLASH모바일">
+          <img src="@/assets/images/data/logo_s_partner03.png" alt="KG모빌리언스">
+          <img src="@/assets/images/data/logo_s_partner04.png" alt="U+유모바일">
+          <img src="@/assets/images/data/logo_s_partner05.png" alt="WELL">
+          <img src="@/assets/images/data/logo_s_partner06.png" alt="freeT">
+          <img src="@/assets/images/data/logo_s_partner07.png" alt="mobing">
+          <img src="@/assets/images/data/logo_s_partner08.png" alt="리브모바일">
+          <img src="@/assets/images/data/logo_s_partner09.png" alt="마블프로듀스">
+          <img src="@/assets/images/data/logo_s_partner10.png" alt="벨류컴">
+          <img src="@/assets/images/data/logo_s_partner11.png" alt="슈가모바일">
+          <img src="@/assets/images/data/logo_s_partner12.png" alt="스노우맨">
+          <img src="@/assets/images/data/logo_s_partner13.png" alt="스마텔">
+          <img src="@/assets/images/data/logo_s_partner14.png" alt="아이즈모바일">
+          <img src="@/assets/images/data/logo_s_partner15.png" alt="앤텔레콤">
+          <img src="@/assets/images/data/logo_s_partner16.png" alt="에스원안심모바일">
+          <img src="@/assets/images/data/logo_s_partner17.png" alt="여유텔레콤">
+          <img src="@/assets/images/data/logo_s_partner18.png" alt="이야기모바일">
+          <img src="@/assets/images/data/logo_s_partner19.png" alt="이지모바일">
+          <img src="@/assets/images/data/logo_s_partner20.png" alt="인스모바일">
+          <img src="@/assets/images/data/logo_s_partner21.png" alt="티플러스">
+          <img src="@/assets/images/data/logo_s_partner22.png" alt="헬로모바일">
         </div>
 
       </div> <!-- // section -->

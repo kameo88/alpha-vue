@@ -240,17 +240,6 @@
 
 export default {
   name: "GuideTag",
-  // data(){
-  //   return {
-  //     value: [0, 60000],
-  //   }
-  // },
-  // methods: {
-  //   rangeChange(e){
-  //     this.value[0] = e.target.getAttribute("data-min");
-  //     this.value[1] = e.target.getAttribute("data-max");
-  //   }
-  // },
   mounted(){
     this.$tag.variable.resize();
   }

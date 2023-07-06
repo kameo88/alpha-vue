@@ -539,6 +539,6 @@
 <script>
 
 export default {
-  name: 'GuideTemplate',
+  name: 'GuideFormEtc',
 }
 </script>
