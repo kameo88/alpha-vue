@@ -1,0 +1,14 @@
+########################################
+####		class 변경 내역		####
+########################################
+
+>> btn 관련 
+[class^=btn_]	==> 	btn
+btn_sXS_c01	==>	btn xsm c01
+btn_sS_c01	==>	btn sm c01
+btn_sM_c01	==>	btn md c01
+btn_sL_c01	==>	btn lg c01
+
+group_btn	==>	btn_group
+
+	
