@@ -266,7 +266,7 @@
               <p><b>[07/04]</b> swiper 작업완료</p>
             </td>
           </tr>
-          <tr class="ing">
+          <tr class="end">
             <td></td>
             <td>logo</td>
             <td></td>
@@ -274,7 +274,9 @@
             <td class="url"><a href="/guide/logo" target="_blank">/guide/logo</a></td>
             <td class="marker"></td>
             <td class="date"></td>
-            <td></td>
+            <td>
+              <p><b>[07/06]</b> 페이지 추가</p>
+            </td>
           </tr>
           <tr class="ing">
             <td></td>
