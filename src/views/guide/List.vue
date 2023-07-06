@@ -184,7 +184,7 @@
               </li>
             </ul>
           </div>
-          <div class="group_btn pc_hide mgt12">
+          <div class="btn_group pc_hide mgt12">
             <a href="javascript:void(0);" role="button" class="btn_sM_c05">더볼래요</a>
           </div>
 
@@ -358,7 +358,7 @@
                 </div>
               </li>
               <li>
-                <div class="plan_item" style="margin-left:20rem;">
+                <div class="plan_item">
                   <div class="card_top">
                     <div class="partner">
                       <img src="/src/assets/images/data/logo_s_partner06.png" alt="프리티">
@@ -373,7 +373,7 @@
                     <strong class="plan_tit_sub">
                       월 11GB + 매일 2GB + 3Mbps
                       <v-btn id="tooltip2" class="tooltip_btn" :class="{on : tooltip[2]}" title="툴팁" @click="tooltip[2] = !tooltip[2]">툴팁</v-btn>
-                      <v-tooltip v-model="tooltip[2]" activator="#tooltip2" location="bottom" offset="0" transition="false" :open-on-hover="false" no-click-animation contained>
+                      <v-tooltip v-model="tooltip[2]" activator="#tooltip2" location="bottom" offset="0" transition="false" :open-on-hover="false" no-click-animation>
                         <div class="tooltip_content">
                           데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
                         </div>

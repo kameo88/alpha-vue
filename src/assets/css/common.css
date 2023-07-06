@@ -175,8 +175,8 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 
 .share_box{display:flex; justify-content:space-between; align-items:center; margin-top:0.6rem;}
 .share_box > span{font-size:1.2rem; line-height:1.5rem; color:#909090;}
-.share_btn {font-size:1.3rem; line-height:1.9rem; color:#717171;}
-.share_btn::before {content:''; display:inline-block; width:1.6rem; height:1.6rem; margin-right:0.2rem; background:url(../images/common/share.png) no-repeat left center / 100% auto; vertical-align:text-bottom;}
+.btn_share {font-size:1.3rem; line-height:1.9rem; color:#717171;}
+.btn_share::before {content:''; display:inline-block; width:1.6rem; height:1.6rem; margin-right:0.2rem; background:url(../images/common/share.png) no-repeat left center / 100% auto; vertical-align:text-bottom;}
 
 .text_btn{position:relative; display:inline-block; padding-right:1.8rem; margin-top:1.2rem; font-size:1.3rem; line-height:1.9rem; color:#717171;}
 .text_btn::after{content:''; position:absolute; top:50%; right:0; width:1.6rem; height:1.6rem; margin-top:-0.8rem; background:url(../../resource/images/common/ico_arrowR.png) no-repeat center / 100% auto;}
@@ -322,7 +322,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .bottom_float > .inner {position:fixed; right:0; bottom:0; left:0; z-index:10;}
 .bottom_float .float_btn_wrap {position:relative; padding:0 1.6rem 3.2rem 1.6rem; background:#fff;}
 .bottom_float .float_btn_wrap::before {content:''; position:absolute; bottom:100%; left:0; right:0; height:1.2rem; background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 60%);}
-.bottom_float .float_btn_wrap .group_btn {max-width:60.8rem; margin-left:auto; margin-right:auto;}
+.bottom_float .float_btn_wrap .btn_group {max-width:60.8rem; margin-left:auto; margin-right:auto;}
 
 .aside_float > .inner {position:fixed; right:1.6rem; bottom:4rem; z-index:9;}
 .aside_float a,
@@ -427,7 +427,7 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 .pop_layer.alert .pop_content {padding:0 2rem;}
 .pop_layer.alert .pop_content:last-child {padding-bottom:2rem;}
 .pop_layer.alert .pop_footer {padding:2.8rem 2rem 2rem;}
-.pop_layer.alert .pop_footer .group_btn {justify-content:center;}
+.pop_layer.alert .pop_footer .btn_group {justify-content:center;}
 .pop_layer.alert .pop_footer .btn {max-width:calc((100% - 0.8rem) / 2);}
 .pop_layer.alert .pop_close {display:none;}
 .pop_layer.alert.open .pop_wrap {transform:scale(100%);}
