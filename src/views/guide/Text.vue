@@ -20,7 +20,6 @@
 				<div class="share_box">
 					<span>text</span>
 					<button type="button" class="btn_share" id="btn_share" @click="$popup.open('#sharePop', '#btn_share');"><span class="blind">공유하기</span></button>
-          <button type="button" class="btn lg c01" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');">Alert</button>
 
 				</div>
 			</div> <!-- // section -->
@@ -103,40 +102,6 @@
 		</div> <!-- // content -->
 	</div><!-- // container -->
 
-  <div class="pop_layer alert" id="sharePop">
-      <div class="pop_wrap">
-          <div class="pop_header">
-              <h3>공유하기</h3>
-          </div>
-          <div class="pop_content">
-              <div class="cir_icon_link">
-                  <ul>
-                      <li>
-                          <a href="javascript:void(0);" class="facebook_icon_link"> <!-- onclick="popUp.close('#popup01', '#btn_popup01');" -->
-                              <span>페이스북</span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="javascript:void(0);" class="kakao_icon_link">
-                              <span>카카오톡</span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="javascript:void(0);" class="url_icon_link">
-                              <span>URL 복사</span>
-                          </a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-          <div class="pop_footer">
-              <div class="btn_group">
-                  <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#sharePop', '#btn_share')">닫기</button>
-                  
-              </div>
-          </div>
-      </div>
-  </div> <!-- // pop_layer -->
 
 </template>
 

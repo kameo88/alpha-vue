@@ -185,7 +185,7 @@
             </ul>
           </div>
           <div class="btn_group pc_hide mgt12">
-            <a href="javascript:void(0);" role="button" class="btn_sM_c05">더볼래요</a>
+            <a href="javascript:void(0);" role="button" class="btn md c05">더볼래요</a>
           </div>
 
           <div class="pagination pc_show">
@@ -258,7 +258,7 @@
                       </strong>
                       <span class="period">6개월 이후 38,900원</span>
                     </div>
-                    <a href="javascript:void(0);" class="btn_sS_c02">자세히보기</a>
+                    <a href="javascript:void(0);" class="btn sm c02">자세히보기</a>
 
                     <div class="choice">22,521명이 선택했어요</div>
                   </div>
@@ -391,7 +391,7 @@
                       <strong>월 10,890원</strong>
                       <span class="period">6개월 이후 38,900원</span>
                     </div>
-                    <a href="javascript:void(0);" class="btn_sS_c02">자세히보기</a>
+                    <a href="javascript:void(0);" class="btn sm c02">자세히보기</a>
                     
                     <div class="choice">22,521명이 선택했어요</div>
                   </div>

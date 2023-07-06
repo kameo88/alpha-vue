@@ -132,7 +132,7 @@
               <tr>
                 <th scope="row">2022.10.03</th>
                 <td>5G 더빠른 180GB+</td>
-                <td class="tb_stat"><button type="button" class="btn_sXS_c07">혜택보기</button></td>
+                <td class="tb_stat"><button type="button" class="btn xsm c07">혜택보기</button></td>
               </tr>
               <tr>
                 <th scope="row">2022.10.03</th>
