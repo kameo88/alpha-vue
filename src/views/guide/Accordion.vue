@@ -91,7 +91,7 @@
       <div class="section">
         <h3 class="tit03">요금제 상세정보</h3>
 
-        <v-expansion-panels class="acd_wrap crp_detail_list"  v-model="acd2" multiple>
+        <v-expansion-panels class="acd_wrap"  v-model="acd2" multiple>
           <v-expansion-panel class="acd_item ty03">
             <div class="acd_title">
               <v-expansion-panel-title>초과 이용 요금 toggle</v-expansion-panel-title>

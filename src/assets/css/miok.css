@@ -14,8 +14,9 @@
 .acd_wrap .v-expansion-panel:not(:first-child)::after {display:none}
 .acd_wrap .acd_item .v-expansion-panel__shadow{display:none;}
 .acd_wrap .v-expansion-panel-title__overlay{display:none;}
-.v-expansion-panels:not(.v-expansion-panels--variant-accordion) > :first-child:not(:last-child):not(.v-expansion-panel--active):not(.v-expansion-panel--before-active){ border-bottom-left-radius:1.2rem !important; border-bottom-left-radius: 1.2rem !important;}
-.v-expansion-panels:not(.v-expansion-panels--variant-accordion) > :last-child:not(:first-child):not(.v-expansion-panel--active):not(.v-expansion-panel--after-active){border-top-left-radius: 1.2rem !important; border-top-right-radius: 1.2rem !important;}
+.acd_wrap.v-expansion-panels:not(.v-expansion-panels--variant-accordion) > .acd_item:first-child:not(:last-child):not(.v-expansion-panel--active):not(.v-expansion-panel--before-active),
+.acd_wrap.v-expansion-panels:not(.v-expansion-panels--variant-accordion) > .acd_item:last-child:not(:first-child):not(.v-expansion-panel--active):not(.v-expansion-panel--after-active),
+.acd_wrap.v-expansion-panels:not(.v-expansion-panels--variant-accordion) > .acd_item:not(:first-child):not(:last-child):not(.v-expansion-panel--active):not(.v-expansion-panel--before-active){border-radius:1.2rem!important;}
 
 
 /* vuetify accordion */
@@ -42,6 +43,10 @@
 .pc .acd_wrap .acd_item.ty03 .acd_title .v-expansion-panel-title{padding:2rem 0.8rem;}
 .pc .acd_wrap .acd_item.ty03 .acd_panel{background:transparent;}
 .pc .acd_wrap .acd_item.ty03 .acd_panel .v-expansion-panel-text__wrapper{padding:0 0.8rem 2rem;}
+.pc .acd_wrap.v-expansion-panels:not(.v-expansion-panels--variant-accordion) > .acd_item.ty03:first-child:not(:last-child):not(.v-expansion-panel--active):not(.v-expansion-panel--before-active),
+.pc .acd_wrap.v-expansion-panels:not(.v-expansion-panels--variant-accordion) > .acd_item.ty03:last-child:not(:first-child):not(.v-expansion-panel--active):not(.v-expansion-panel--after-active),
+.pc .acd_wrap.v-expansion-panels:not(.v-expansion-panels--variant-accordion) > .acd_item.ty03:not(:first-child):not(:last-child):not(.v-expansion-panel--active):not(.v-expansion-panel--before-active){border-radius:0!important;}
+
 
 
 
