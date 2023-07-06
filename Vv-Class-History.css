@@ -11,4 +11,18 @@ btn_sL_c01	==>	btn lg c01
 
 group_btn	==>	btn_group
 
-	
+
+>> form 
+
+fali_m		==>	error
+del_btn		==>	btn_del
+search_btn	==>	btn_search
+select_btn	==>	btn_select
+
+
+>> table
+; new style
+
+.table
+.table.ty02
+.table.ty03
