@@ -176,19 +176,20 @@ export default {
   data(){
     return {
       gnbOn: false,
-      asideOn: false,
       aside: [false, false, false, false],
     }
   },
   methods: {
     gnbOpen(){
-      console.log('gnbOpen');
+      if( this.gnbOn == true ) return;
+
       const nav = document.querySelector("nav.nav");
       nav.classList.add("on");
       this.gnbOn = true;
     },
     gnbClose(){
-      console.log('gnbClose');
+      if( this.gnbOn == false ) return;
+
       const nav = document.querySelector("nav.nav");
       nav.classList.remove("on");
       this.gnbOn = false;
