@@ -351,7 +351,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .pop_layer.alert .pop_content:last-child {padding-bottom:2rem;}
 .pop_layer.alert .pop_footer {padding:2.8rem 2rem 2rem;}
 .pop_layer.alert .pop_footer .group_btn {justify-content:center;}
-.pop_layer.alert .pop_footer [class^=btn_] {max-width:calc((100% - 0.8rem) / 2);}
+.pop_layer.alert .pop_footer .btn {max-width:calc((100% - 0.8rem) / 2);}
 .pop_layer.alert .pop_close {display:none;}
 .pop_layer.alert.open .pop_wrap {transform:scale(100%);}
 

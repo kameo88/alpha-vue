@@ -10,9 +10,9 @@
           </div>
       </div>
       <div class="pop_footer">
-        <div class="group_btn">
-          <button type="button" class="btn_sS_c07" data-action="close" @click="$popup.close('#popup01', '#btn_popup01')">취소</button>
-          <button type="button" class="btn_sS_c02" @click="$popup.close('#popup01', '#btn_popup01'); $popup.close('#popup03', '#btn_popup01');">확인</button>
+        <div class="btn_group">
+          <button type="button" class="btn sm c07" data-action="close" @click="$popup.close('#popup01', '#btn_popup01')">취소</button>
+          <button type="button" class="btn sm c02" @click="$popup.close('#popup01', '#btn_popup01'); $popup.close('#popup03', '#btn_popup01');">확인</button>
         </div>
       </div>
     </div>
@@ -37,8 +37,8 @@
         <br>content <br>content <br>content <br>content <br>content <br>content <br>content <br>content <br>content
       </div>
       <div class="pop_footer">
-        <div class="group_btn">
-          <button type="button" class="btn_sM_c03">확인</button>
+        <div class="btn_group">
+          <button type="button" class="btn md c03">확인</button>
         </div>
       </div>
       <button type="button" class="pop_close" data-action="close" @click="$popup.close('#popup02', '#btn_popup02')"><span class="blind">팝업 닫기</span></button>
@@ -53,8 +53,8 @@
       <div class="pop_content">
         <div class="section">
             
-          <div class="group_btn">
-            <button type="button" class="btn_sL_c01" id="btn_popup04" @click="$popup.open('#popup01', '#btn_popup04');">팝업 and 팝업</button>
+          <div class="btn_group">
+            <button type="button" class="btn lg c01" id="btn_popup04" @click="$popup.open('#popup01', '#btn_popup04');">팝업 and 팝업</button>
           </div>
 
         </div> <!-- // section -->
@@ -73,11 +73,11 @@
         </div> <!-- // section -->
       </div>
       <div class="pop_footer">
-        <div class="group_btn">
-          <button type="button" class="btn_sL_c03">확인</button>
+        <div class="btn_group">
+          <button type="button" class="btn lg c03">확인</button>
         </div>
-        <div class="group_btn">
-          <button type="button" class="btn_sL_c03">확인</button>
+        <div class="btn_group">
+          <button type="button" class="btn lg c03">확인</button>
         </div>
       </div>
       <button type="button" class="pop_close" data-action="close" @click="$popup.close('#popup03', '#btn_popup03');"><span class="blind">팝업 닫기</span></button>
@@ -711,9 +711,9 @@
             </ul>
           </div>
         </div>
-        <div class="group_btn">
-          <button type="button" class="btn_sM_reset">초기화</button>
-          <button type="button" class="btn_sM_c01"><span>1,232</span>개의 결과 보기</button>
+        <div class="btn_group">
+          <button type="button" class="btn md reset">초기화</button>
+          <button type="button" class="btn md c01"><span>1,232</span>개의 결과 보기</button>
         </div>
       </div>
       <button type="button" class="pop_close" data-action="close" @click="$popup.close('#filterPop', '#btn_filterPop')"><span class="blind">팝업 닫기</span></button>

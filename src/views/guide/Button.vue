@@ -7,128 +7,129 @@
         <div class="page_info">Button</div>
 
         <div class="section">
+
           <h3 class="tit02">button</h3>
             
-          <a href="javascript:void(0);" role="button" class="btn_sXS_c01">button</a>
-          <button type="button" class="btn_sXS_c01">button</button>
+          <a href="javascript:void(0);" role="button" class="btn xsm c01">button</a>
+          <button type="button" class="btn xsm c01">button</button>
           
-          <a href="javascript:void(0);" role="button" class="btn_sS_c01">button</a>
-          <button type="button" class="btn_sS_c01">button</button>
+          <a href="javascript:void(0);" role="button" class="btn sm c01">button</a>
+          <button type="button" class="btn sm c01">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sM_c01">button</a>
-          <button type="button" class="btn_sM_c01">button</button>
+          <a href="javascript:void(0);" role="button" class="btn md c01">button</a>
+          <button type="button" class="btn md c01">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sL_c01">button</a>
-          <button type="button" class="btn_sL_c01">button</button>
+          <a href="javascript:void(0);" role="button" class="btn lg c01">button</a>
+          <button type="button" class="btn lg c01">button</button>
           
-          <a href="javascript:void(0);" role="button" class="btn_sXS_c02">button</a>
-          <button type="button" class="btn_sXS_c02">button</button>
+          <a href="javascript:void(0);" role="button" class="btn xsm c02">button</a>
+          <button type="button" class="btn xsm c02">button</button>
           
-          <a href="javascript:void(0);" role="button" class="btn_sS_c02">button</a>
-          <button type="button" class="btn_sS_c02">button</button>
+          <a href="javascript:void(0);" role="button" class="btn sm c02">button</a>
+          <button type="button" class="btn sm c02">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sM_c02">button</a>
-          <button type="button" class="btn_sM_c02">button</button>
+          <a href="javascript:void(0);" role="button" class="btn md c02">button</a>
+          <button type="button" class="btn md c02">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sL_c02">button</a>
-          <button type="button" class="btn_sL_c02">button</button>
+          <a href="javascript:void(0);" role="button" class="btn lg c02">button</a>
+          <button type="button" class="btn lg c02">button</button>
           
-          <a href="javascript:void(0);" role="button" class="btn_sXS_c03">button</a>
-          <button type="button" class="btn_sXS_c03">button</button>
+          <a href="javascript:void(0);" role="button" class="btn xsm c03">button</a>
+          <button type="button" class="btn xsm c03">button</button>
           
-          <a href="javascript:void(0);" role="button" class="btn_sS_c03">button</a>
-          <button type="button" class="btn_sS_c03">button</button>
+          <a href="javascript:void(0);" role="button" class="btn sm c03">button</a>
+          <button type="button" class="btn sm c03">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sM_c03">button</a>
-          <button type="button" class="btn_sM_c03">button</button>
+          <a href="javascript:void(0);" role="button" class="btn md c03">button</a>
+          <button type="button" class="btn md c03">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sL_c03">button</a>
-          <button type="button" class="btn_sL_c03">button</button>
+          <a href="javascript:void(0);" role="button" class="btn lg c03">button</a>
+          <button type="button" class="btn lg c03">button</button>
           
-          <a href="javascript:void(0);" role="button" class="btn_sXS_c04">button</a>
-          <button type="button" class="btn_sXS_c04">button</button>
+          <a href="javascript:void(0);" role="button" class="btn xsm c04">button</a>
+          <button type="button" class="btn xsm c04">button</button>
           
-          <a href="javascript:void(0);" role="button" class="btn_sS_c04">button</a>
-          <button type="button" class="btn_sS_c04">button</button>
+          <a href="javascript:void(0);" role="button" class="btn sm c04">button</a>
+          <button type="button" class="btn sm c04">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sM_c04">button</a>
-          <button type="button" class="btn_sM_c04">button</button>
+          <a href="javascript:void(0);" role="button" class="btn md c04">button</a>
+          <button type="button" class="btn md c04">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sL_c04">button</a>
-          <button type="button" class="btn_sL_c04">button</button>
+          <a href="javascript:void(0);" role="button" class="btn lg c04">button</a>
+          <button type="button" class="btn lg c04">button</button>
           
-          <a href="javascript:void(0);" role="button" class="btn_sXS_c05">button</a>
-          <button type="button" class="btn_sXS_c05">button</button>
+          <a href="javascript:void(0);" role="button" class="btn xsm c05">button</a>
+          <button type="button" class="btn xsm c05">button</button>
           
-          <a href="javascript:void(0);" role="button" class="btn_sS_c05">button</a>
-          <button type="button" class="btn_sS_c05">button</button>
+          <a href="javascript:void(0);" role="button" class="btn sm c05">button</a>
+          <button type="button" class="btn sm c05">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sM_c05">button</a>
-          <button type="button" class="btn_sM_c05">button</button>
+          <a href="javascript:void(0);" role="button" class="btn md c05">button</a>
+          <button type="button" class="btn md c05">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sL_c05">button</a>
-          <button type="button" class="btn_sL_c05">button</button>
+          <a href="javascript:void(0);" role="button" class="btn lg c05">button</a>
+          <button type="button" class="btn lg c05">button</button>
           
-          <a href="javascript:void(0);" role="button" class="btn_sXS_c06">button</a>
-          <button type="button" class="btn_sXS_c06">button</button>
+          <a href="javascript:void(0);" role="button" class="btn xsm c06">button</a>
+          <button type="button" class="btn xsm c06">button</button>
           
-          <a href="javascript:void(0);" role="button" class="btn_sS_c06">button</a>
-          <button type="button" class="btn_sS_c06">button</button>
+          <a href="javascript:void(0);" role="button" class="btn sm c06">button</a>
+          <button type="button" class="btn sm c06">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sM_c06">button</a>
-          <button type="button" class="btn_sM_c06">button</button>
+          <a href="javascript:void(0);" role="button" class="btn md c06">button</a>
+          <button type="button" class="btn md c06">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sL_c06">button</a>
-          <button type="button" class="btn_sL_c06">button</button>
+          <a href="javascript:void(0);" role="button" class="btn lg c06">button</a>
+          <button type="button" class="btn lg c06">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sXS_c07">button</a>
-          <button type="button" class="btn_sXS_c07">button</button>
+          <a href="javascript:void(0);" role="button" class="btn xsm c07">button</a>
+          <button type="button" class="btn xsm c07">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sS_c07">button</a>
-          <button type="button" class="btn_sS_c07">button</button>
+          <a href="javascript:void(0);" role="button" class="btn sm c07">button</a>
+          <button type="button" class="btn sm c07">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sM_c07">button</a>
-          <button type="button" class="btn_sM_c07">button</button>
+          <a href="javascript:void(0);" role="button" class="btn md c07">button</a>
+          <button type="button" class="btn md c07">button</button>
 
-          <a href="javascript:void(0);" role="button" class="btn_sL_c07">button</a>
-          <button type="button" class="btn_sL_c07">button</button>
+          <a href="javascript:void(0);" role="button" class="btn lg c07">button</a>
+          <button type="button" class="btn lg c07">button</button>
 
         </div> <!-- // section -->
           
         <div class="section">
           <h3 class="tit02">button disabled</h3>
           
-          <a class="btn_sM_c01 disabled">disabled</a>
-          <a class="btn_sM_c01" disabled>disabled</a>
-          <button type="button" class="btn_sM_c01" disabled>disabled</button>
+          <a class="btn md c01 disabled">disabled</a>
+          <a class="btn md c01" disabled>disabled</a>
+          <button type="button" class="btn md c01" disabled>disabled</button>
 
         </div><!-- // section -->
 
         <div class="section">
           <h3 class="tit02">button etc</h3>
 
-          <button type="button" class="btn_sM_reset">reset</button>
+          <button type="button" class="btn md reset">reset</button>
 
-          <button type="button" class="btn_sM_kakao">kakao</button>
+          <button type="button" class="btn md kakao">kakao</button>
           
-          <button type="button" class="btn_sM_naver">naver</button>
+          <button type="button" class="btn md naver">naver</button>
           
-          <button type="button" class="btn_sM_email">email</button>
+          <button type="button" class="btn md email">email</button>
 
         </div> <!-- // section -->
 
         <div class="section">
           <h3 class="tit02">button group</h3>
           
-          <div class="group_btn">
-            <button type="button" class="btn_sL_c01">button</button>
+          <div class="btn_group">
+            <button type="button" class="btn lg c01">button</button>
           </div>
-          <div class="group_btn">
-            <button type="button" class="btn_sL_c02">button</button>
+          <div class="btn_group">
+            <button type="button" class="btn lg c02">button</button>
           </div>
-          <div class="group_btn">
-            <a href="javascript:void(0);" role="button" class="btn_sL_c01">button button button button</a>
-            <button type="button" class="btn_sL_c01">button</button>
+          <div class="btn_group">
+            <a href="javascript:void(0);" role="button" class="btn lg c01">button button button button</a>
+            <button type="button" class="btn lg c01">button</button>
           </div>
 
         </div> <!-- // section -->

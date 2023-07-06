@@ -7,29 +7,29 @@
       
       <div class="section">
         <h3 class="tit02">Popup Alert</h3>
-        <div class="group_btn">
-          <button type="button" class="btn_sL_c01" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');">Alert</button>
+        <div class="btn_group">
+          <button type="button" class="btn lg c01" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');">Alert</button>
         </div>
       </div> <!-- // section -->
       
       <div class="section">
         <h3 class="tit02">Popup Normal</h3>
-        <div class="group_btn">
-          <button type="button" class="btn_sL_c02" id="btn_popup02" @click="$popup.open('#popup02', '#btn_popup02');">Normal</button>
+        <div class="btn_group">
+          <button type="button" class="btn lg c02" id="btn_popup02" @click="$popup.open('#popup02', '#btn_popup02');">Normal</button>
         </div>
       </div> <!-- // section -->
       
       <div class="section">
         <h3 class="tit02">Popup Full</h3>
-        <div class="group_btn">
-          <button type="button" class="btn_sL_c03" id="btn_popup03" @click="$popup.open('#popup03', '#btn_popup03');">Full</button>
+        <div class="btn_group">
+          <button type="button" class="btn lg c03" id="btn_popup03" @click="$popup.open('#popup03', '#btn_popup03');">Full</button>
         </div>
       </div> <!-- // section -->
       
       <div class="section">
         <h3 class="tit02">Popup notice</h3>
-        <div class="group_btn">
-          <button type="button" class="btn_sL_c04" id="btn_noticePop" @click="$popup.open('#noticePop', '#btn_noticePop');">notice</button>
+        <div class="btn_group">
+          <button type="button" class="btn lg c04" id="btn_noticePop" @click="$popup.open('#noticePop', '#btn_noticePop');">notice</button>
         </div>
       </div> <!-- // section -->
 
