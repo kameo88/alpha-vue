@@ -184,8 +184,8 @@
               </li>
             </ul>
           </div>
-          <div class="group_btn pc_hide mgt12">
-            <a href="javascript:void(0);" role="button" class="btn_sM_c05">더볼래요</a>
+          <div class="btn_group pc_hide mgt12">
+            <a href="javascript:void(0);" role="button" class="btn md c05">더볼래요</a>
           </div>
 
           <div class="pagination pc_show">
@@ -258,7 +258,7 @@
                       </strong>
                       <span class="period">6개월 이후 38,900원</span>
                     </div>
-                    <a href="javascript:void(0);" class="btn_sS_c02">자세히보기</a>
+                    <a href="javascript:void(0);" class="btn sm c02">자세히보기</a>
 
                     <div class="choice">22,521명이 선택했어요</div>
                   </div>
@@ -358,7 +358,7 @@
                 </div>
               </li>
               <li>
-                <div class="plan_item" style="margin-left:20rem;">
+                <div class="plan_item">
                   <div class="card_top">
                     <div class="partner">
                       <img src="/src/assets/images/data/logo_s_partner06.png" alt="프리티">
@@ -373,7 +373,7 @@
                     <strong class="plan_tit_sub">
                       월 11GB + 매일 2GB + 3Mbps
                       <v-btn id="tooltip2" class="tooltip_btn" :class="{on : tooltip[2]}" title="툴팁" @click="tooltip[2] = !tooltip[2]">툴팁</v-btn>
-                      <v-tooltip v-model="tooltip[2]" activator="#tooltip2" location="bottom" offset="0" transition="false" :open-on-hover="false" no-click-animation contained>
+                      <v-tooltip v-model="tooltip[2]" activator="#tooltip2" location="bottom" offset="0" transition="false" :open-on-hover="false" no-click-animation>
                         <div class="tooltip_content">
                           데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
                         </div>
@@ -391,7 +391,7 @@
                       <strong>월 10,890원</strong>
                       <span class="period">6개월 이후 38,900원</span>
                     </div>
-                    <a href="javascript:void(0);" class="btn_sS_c02">자세히보기</a>
+                    <a href="javascript:void(0);" class="btn sm c02">자세히보기</a>
                     
                     <div class="choice">22,521명이 선택했어요</div>
                   </div>

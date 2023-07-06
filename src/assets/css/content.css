@@ -356,7 +356,7 @@
 
 /* ** 요금제 상세 ** */
 .plan_topCon::after {content:''; display:block; clear:both;}
-.plan_topCon .share_btn {float:right; margin-top:0.8rem;}
+.plan_topCon .btn_share {float:right; margin-top:0.8rem;}
 .plan_con {padding:2rem; border:0.1rem solid #ddd; border-radius:1.2rem; background-color:#fff;}
 .plan_con .top {display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; margin-bottom:2.4rem;}
 .plan_con .top .beft {display:flex; justify-content:flex-end; flex-wrap:wrap;}
@@ -998,7 +998,7 @@
 .pc .cont_ratePlan .swiper.bnrSwiper .swiper-horizontal > .swiper-pagination-bullets,
 .pc .cont_ratePlan .swiper.bnrSwiper .swiper-pagination-bullets.swiper-pagination-horizontal {bottom:2rem; left:auto; right:4rem; width:auto;}
 .pc .cont_ratePlan .title_nav {display:flex; justify-content:space-between;}
-.pc .cont_ratePlan .title_nav .share_btn {font-weight:500;}
+.pc .cont_ratePlan .title_nav .btn_share {font-weight:500;}
 
 .pc .crp_wrap {display:flex; padding:1.2rem 1.6rem 0;}
 .pc .crp_wrap .crp_l {width:28.8rem; margin-right:3.2rem;}
@@ -1035,7 +1035,7 @@
 .pc .crp_wrap .crp_l .scroll_fixed.on .filter_wrap {position:initial; top:auto !important; left:auto; width:auto; transform:translateX(0); z-index:auto;}
 
 /* 요금제 상세 */
-.pc .plan_topCon .share_btn {display:none;}
+.pc .plan_topCon .btn_share {display:none;}
 .pc .plan_con {padding:3.2rem;}
 .pc .plan_con .top {margin-bottom:3.2rem;}
 .pc .plan_con .top .beft img {height:2.4rem;}

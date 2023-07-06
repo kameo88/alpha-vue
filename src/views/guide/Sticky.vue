@@ -177,7 +177,7 @@
                   </li>
                 </ul>
                 <div class="group_btn">
-                  <button type="button" class="btn_sM_c05" id="btn_popup01" onclick="popUp.open('#popup01', '#btn_popup01');">전체보기</button>
+                  <button type="button" class="btn md c05" id="btn_popup01" onclick="popUp.open('#popup01', '#btn_popup01');">전체보기</button>
                 </div>
               </div>
             </div>
@@ -238,7 +238,7 @@
                   </li>
                 </ul>
                 <div class="group_btn">
-                  <button type="button" class="btn_sM_c05" id="btn_popup02" onclick="popUp.open('#popup02', '#btn_popup02');">전체보기</button>
+                  <button type="button" class="btn md c05" id="btn_popup02" onclick="popUp.open('#popup02', '#btn_popup02');">전체보기</button>
                 </div>
               </div>
             </div>
@@ -292,7 +292,7 @@
                     </strong>
                     <span class="period">6개월 이후 38,900원</span>
                   </div>
-                  <a href="javascript:void(0);" class="btn_sS_c02">자세히보기</a>
+                  <a href="javascript:void(0);" class="btn sm c02">자세히보기</a>
                 </div>
                   
                 <div class="acdItem">
@@ -429,7 +429,7 @@
                     </strong>
                     <span class="period">6개월 이후 38,900원</span>
                   </div>
-                  <a href="javascript:void(0);" class="btn_sS_c02">자세히보기</a>
+                  <a href="javascript:void(0);" class="btn sm c02">자세히보기</a>
                 </div>
                   
                 <div class="acdItem">
@@ -528,7 +528,7 @@
             </li>
           </ul>
           <div class="group_btn">
-            <button type="button" class="btn_sM_c05">파트너사 요금제 더 보러가기</button>
+            <button type="button" class="btn md c05">파트너사 요금제 더 보러가기</button>
           </div>
         </div> <!-- // item_list -->
 
@@ -661,7 +661,7 @@
             </li>
           </ul>
           <div class="group_btn">
-            <a href="javascript:void(0);" role="button" class="btn_sM_c05">더볼래요</a>
+            <a href="javascript:void(0);" role="button" class="btn md c05">더볼래요</a>
           </div>
         </div>
 
