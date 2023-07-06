@@ -194,6 +194,7 @@
             <td class="marker"></td>
             <td class="date"></td>
             <td>
+              <p><b>[07/06]</b> accordion ty03 케이스 추가</p>
               <p><b>[07/03]</b> accordion, toggle vuetify 작업완료</p>
             </td>
           </tr>

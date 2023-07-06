@@ -1060,14 +1060,6 @@
 .pc .crp_benefits_list .acd_st .acd_btn::after {display:none;}
 .pc .crp_benefits_list .acdItem [role=region] {display:block !important; height:auto !important; padding:0 2rem 2rem !important;}
 
-/* 요금제 상세정보 */
-.pc .crp_detail_list {border-top:0.1rem solid #000;}
-.pc .crp_detail_list .acd_st {border-bottom:0.1rem solid #ddd; border-radius:0; background-color:#ffff;}
-.pc .crp_detail_list .acd_st + .acd_st {margin-top:0;}
-.pc .crp_detail_list .acd_st .acd_btn {padding:2rem 3.2rem 2rem 0.8rem;}
-.pc .crp_detail_list .acd_st .acd_btn::after {right:0.8rem;}
-.pc .crp_detail_list .acd_st .acd_panel {padding:0 0.8rem 2rem;}
-
 /* 사용자 리뷰 */
 .pc .review_point .detail dt {color:#000;}
 

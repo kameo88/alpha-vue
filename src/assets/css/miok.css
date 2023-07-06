@@ -35,6 +35,15 @@
 .acd_wrap .acd_item.ty02 .acd_title .v-expansion-panel-title__icon{margin:0;}
 .acd_wrap .acd_item.ty02 .acd_title .acd_tab{font-size: 1.5rem;}
 
+/* vuetify accordion ty03 */
+.pc .acd_wrap .acd_item.ty03{background:transparent; border-bottom:1px solid #ddd; border-radius:0!important;}
+.pc .acd_wrap .acd_item.ty03:first-child{border-top:1px solid #000;}
+.pc .acd_wrap .acd_item.ty03 + .acd_item.ty03{margin-top:0;}
+.pc .acd_wrap .acd_item.ty03 .acd_title .v-expansion-panel-title{padding:2rem 0.8rem;}
+.pc .acd_wrap .acd_item.ty03 .acd_panel{background:transparent;}
+.pc .acd_wrap .acd_item.ty03 .acd_panel .v-expansion-panel-text__wrapper{padding:0 0.8rem 2rem;}
+
+
 
 /* ***** accordion ***** */
 /* .acd_st {border-radius:1.2rem; background-color:#f8f8f8;}
@@ -50,6 +59,14 @@
 .acd_st .acd_tab button {flex:none; width:2.4rem; height:2.4rem; background:url(../images/common/ico_arrowB02.png) no-repeat center / 100% auto;}
 .acd_st.on .acd_tab button {transform:rotate(180deg);}
 .acd_st .acd_panel {padding:0 2rem 2rem;} */
+
+/* 요금제 상세정보 */
+/* .pc .crp_detail_list {border-top:0.1rem solid #000;}
+.pc .crp_detail_list .acd_st {border-bottom:0.1rem solid #ddd; border-radius:0; background-color:#ffff;}
+.pc .crp_detail_list .acd_st + .acd_st {margin-top:0;}
+.pc .crp_detail_list .acd_st .acd_btn {padding:2rem 3.2rem 2rem 0.8rem;}
+.pc .crp_detail_list .acd_st .acd_btn::after {right:0.8rem;}
+.pc .crp_detail_list .acd_st .acd_panel {padding:0 0.8rem 2rem;} */
 
 
 
