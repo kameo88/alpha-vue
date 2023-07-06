@@ -7,32 +7,32 @@
 
       <div class="tag_list">
         <ul>
-          <li><button type="button" disabled @click="$tag.click">지금 HOT한</button></li>
-          <li><button type="button" disabled @click="$tag.click">이달의 추천</button></li>
-          <li><button type="button" disabled @click="$tag.click">데이터x통화 무제한</button></li>
-          <li><button type="button" disabled @click="$tag.click">사은품 팡팡</button></li>
-          <li><button type="button" disabled @click="$tag.click">인터넷 결합 요금제</button></li>
-          <li><button type="button" disabled @click="$tag.click">카톡/인터넷용</button></li>
-          <li><button type="button" disabled @click="$tag.click">5G 요금제</button></li>
-          <li><button type="button" disabled @click="$tag.click">부모님 추천</button></li>
-          <li><button type="button" disabled @click="$tag.click">초저가요금제</button></li>
-          <li><button type="button" disabled @click="$tag.click">통화무제한</button></li>
+          <li><button type="button" role="option" disabled @click="$tag.click">지금 HOT한</button></li>
+          <li><button type="button" role="option" disabled @click="$tag.click">이달의 추천</button></li>
+          <li><button type="button" role="option" disabled @click="$tag.click">데이터x통화 무제한</button></li>
+          <li><button type="button" role="option" disabled @click="$tag.click">사은품 팡팡</button></li>
+          <li><button type="button" role="option" disabled @click="$tag.click">인터넷 결합 요금제</button></li>
+          <li><button type="button" role="option" disabled @click="$tag.click">카톡/인터넷용</button></li>
+          <li><button type="button" role="option" disabled @click="$tag.click">5G 요금제</button></li>
+          <li><button type="button" role="option" disabled @click="$tag.click">부모님 추천</button></li>
+          <li><button type="button" role="option" disabled @click="$tag.click">초저가요금제</button></li>
+          <li><button type="button" role="option" disabled @click="$tag.click">통화무제한</button></li>
         </ul>
       </div>
           
       <div class="tag_list tagList">
         <button type="button" aria-expanded="false" @click="$tag.variable.click"><span class="blind">펼쳐 보기</span></button>
         <ul>
-          <li role="none" class="on"><button type="button" aria-selected="true" @click="$tag.click">지금 HOT한</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">이달의 추천</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">데이터x통화 무제한</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">사은품 팡팡</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">인터넷 결합 요금제</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">카톡/인터넷용</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">5G 요금제</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">부모님 추천</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">초저가요금제</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">통화무제한</button></li>
+          <li role="none" class="on"><button type="button" role="option" aria-selected="true" @click="$tag.click">지금 HOT한</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">이달의 추천</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">데이터x통화 무제한</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">사은품 팡팡</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">인터넷 결합 요금제</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">카톡/인터넷용</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">5G 요금제</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">부모님 추천</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">초저가요금제</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">통화무제한</button></li>
         </ul>
       </div>
 
@@ -57,16 +57,16 @@
       <div class="tag_list block tagList"> <!-- .tag_list : 가변 스타일, .tag_list.block : 블록 스타일 -->
         <button type="button" aria-expanded="false" @click="$tag.variable.click"><span class="blind">펼쳐 보기</span></button>
         <ul>
-          <li role="none" class="on"><button type="button" aria-selected="true" @click="$tag.click">지금 HOT한</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">이달의 추천</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">데이터x통화 무제한</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">사은품 팡팡</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">인터넷 결합 요금제</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">카톡/인터넷용</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">5G 요금제</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">부모님 추천</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">초저가요금제</button></li>
-          <li role="none"><button type="button" aria-selected="false" @click="$tag.click">통화무제한</button></li>
+          <li role="none" class="on"><button type="button" role="option" aria-selected="true" @click="$tag.click">지금 HOT한</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">이달의 추천</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">데이터x통화 무제한</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">사은품 팡팡</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">인터넷 결합 요금제</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">카톡/인터넷용</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">5G 요금제</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">부모님 추천</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">초저가요금제</button></li>
+          <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">통화무제한</button></li>
         </ul>
       </div>
 
@@ -76,16 +76,16 @@
         <div class="tag_list tagList">
           <button type="button" aria-expanded="false" @click="$tag.variable.click"><span class="blind">펼쳐 보기</span></button>
           <ul>
-            <li role="none" class="on"><button type="button" aria-selected="true" @click="$tag.click">지금 HOT한</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">이달의 추천</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">데이터x통화 무제한</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">사은품 팡팡</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">인터넷 결합 요금제</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">카톡/인터넷용</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">5G 요금제</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">부모님 추천</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">초저가요금제</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">통화무제한</button></li>
+            <li role="none" class="on"><button type="button" role="option" aria-selected="true" @click="$tag.click">지금 HOT한</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">이달의 추천</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">데이터x통화 무제한</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">사은품 팡팡</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">인터넷 결합 요금제</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">카톡/인터넷용</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">5G 요금제</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">부모님 추천</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">초저가요금제</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">통화무제한</button></li>
           </ul>
         </div>
           
@@ -108,16 +108,16 @@
         <div class="tag_list block tagList">
           <button type="button" aria-expanded="false"><span class="blind">펼쳐 보기</span></button>
           <ul>
-            <li role="none" class="on"><button type="button" aria-selected="true" @click="$tag.click">지금 HOT한</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">이달의 추천</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">데이터x통화 무제한</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">사은품 팡팡</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">인터넷 결합 요금제</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">카톡/인터넷용</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">5G 요금제</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">부모님 추천</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">초저가요금제</button></li>
-            <li role="none"><button type="button" aria-selected="false" @click="$tag.click">통화무제한</button></li>
+            <li role="none" class="on"><button type="button" role="option" aria-selected="true" @click="$tag.click">지금 HOT한</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">이달의 추천</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">데이터x통화 무제한</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">사은품 팡팡</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">인터넷 결합 요금제</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">카톡/인터넷용</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">5G 요금제</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">부모님 추천</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">초저가요금제</button></li>
+            <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">통화무제한</button></li>
           </ul>
         </div>
           
@@ -177,16 +177,16 @@
               <li role="none" class="other">
                 <button type="button" aria-haspopup="true" @click="$tag.other.open">후불유심요금제</button>
               </li>
-              <li role="none" class="on"><button type="button">지금 HOT한</button></li>
-              <li role="none"><button type="button">이달의 추천</button></li>
-              <li role="none"><button type="button">데이터x통화 무제한</button></li>
-              <li role="none"><button type="button">사은품 팡팡</button></li>
-              <li role="none"><button type="button">인터넷 결합 요금제</button></li>
-              <li role="none"><button type="button">카톡/인터넷용</button></li>
-              <li role="none"><button type="button">5G 요금제</button></li>
-              <li role="none"><button type="button">부모님 추천</button></li>
-              <li role="none"><button type="button">초저가요금제</button></li>
-              <li role="none"><button type="button">통화무제한</button></li>
+              <li role="none" class="on"><button type="button" role="option" aria-selected="true" @click="$tag.click">지금 HOT한</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">이달의 추천</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">데이터x통화 무제한</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">사은품 팡팡</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">인터넷 결합 요금제</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">카톡/인터넷용</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">5G 요금제</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">부모님 추천</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">초저가요금제</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">통화무제한</button></li>
             </ul>
             <div class="other_pop">
               <ul role="listbox">
@@ -199,16 +199,16 @@
           <div class="tag_list variable tagList">
             <button type="button" aria-expanded="false" @click="$tag.variable.click"><span class="blind">펼쳐 보기</span></button>
             <ul>
-              <li role="none" class="on"><button type="button">지금 HOT한</button></li>
-              <li role="none"><button type="button">이달의 추천</button></li>
-              <li role="none"><button type="button">데이터x통화 무제한</button></li>
-              <li role="none"><button type="button">사은품 팡팡</button></li>
-              <li role="none"><button type="button">인터넷 결합 요금제</button></li>
-              <li role="none"><button type="button">카톡/인터넷용</button></li>
-              <li role="none"><button type="button">5G 요금제</button></li>
-              <li role="none"><button type="button">부모님 추천</button></li>
-              <li role="none"><button type="button">초저가요금제</button></li>
-              <li role="none"><button type="button">통화무제한</button></li>
+              <li role="none" class="on"><button type="button" role="option" aria-selected="true" @click="$tag.click">지금 HOT한</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">이달의 추천</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">데이터x통화 무제한</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">사은품 팡팡</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">인터넷 결합 요금제</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">카톡/인터넷용</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">5G 요금제</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">부모님 추천</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">초저가요금제</button></li>
+              <li role="none"><button type="button" role="option" aria-selected="false" @click="$tag.click">통화무제한</button></li>
             </ul>
           </div>
 
