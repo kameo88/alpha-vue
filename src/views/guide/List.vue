@@ -266,8 +266,8 @@
                   <div class="acdItem">
                     <div class="card_bot">
                       <div class="paln_badge">
-                        <button type="button" class="btn bag c01"><span class="blind">찜하기</span>480</button>
-                        <button type="button" class="btn bag c02">비교하기</button>
+                        <button type="button" class="btn bag c01" :class="{ on : flag[0] }" @click="flag[0] = !flag[0]"><span class="blind">찜하기</span>480</button>
+                        <button type="button" class="btn bag c02" :class="{ on : flag[1] }" @click="flag[1] = !flag[1]">비교하기</button>
                       </div>
 
                       <div class="gift_box">
@@ -463,6 +463,7 @@ export default {
   name: 'GuideTemplate',
 	data(){
     return {
+      flag: [false, false],
       tooltip: [false, false, false],
     }
   },
