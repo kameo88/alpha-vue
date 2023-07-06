@@ -43,7 +43,6 @@
 
       <div class="section scroll_panel" role="tabpanel" aria-expanded="true" tabindex="0" id="scroll_panel_01">
         <h3 class="blind">기본정보</h3>
-
         <div class="partner_info">
           <dl>
             <dt>업무시간</dt>
@@ -65,616 +64,614 @@
       </div> <!-- // section -->
 
       <div class="section scroll_panel" role="tabpanel" aria-expanded="false" tabindex="0" id="scroll_panel_02">
-          <h3 class="tit03">리뷰</h3>
+        <h3 class="tit03">리뷰</h3>
 
-          <div class="tab_list">
-              <ul role="tablist">
-                  <li role="none">
-                      <button type="button" role="tab" aria-selected="true" aria-controls="tab_panel_01_01">사용자 리뷰</button>
-                  </li>
-                  <li role="none">
-                      <button type="button" role="tab" aria-selected="false" aria-controls="tab_panel_01_02">블로그 리뷰</button>
-                  </li>
-              </ul>
-          </div>
-          <div class="tabpanel_wrap">
-              <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_01_01">
-                  <h3 class="blind">사용자 리뷰</h3>
+        <div class="tab_list">
+          <ul role="tablist">
+            <li role="none" class="on">
+              <button type="button" role="tab" aria-selected="true" aria-controls="tab_panel_01_01" @click="$tab.click">사용자 리뷰</button>
+            </li>
+            <li role="none">
+              <button type="button" role="tab" aria-selected="false" aria-controls="tab_panel_01_02" @click="$tab.click">블로그 리뷰</button>
+            </li>
+          </ul>
+        </div>
+        <div class="tabpanel_wrap">
+          <div role="tabpanel" aria-expanded="true" tabindex="0" id="tab_panel_01_01">
+            <h3 class="blind">사용자 리뷰</h3>
 
-                  <div class="section">
-                      
-                      <div class="review_point">
-                          <div class="rp_l">
-                              <div class="all">
-                                  <strong>5.0</strong>
-                                  <span>(56개)</span>
-                              </div>
-                          </div>
-                          <div class="rp_r">
-                              <div class="detail">
-                                  <dl>
-                                      <dt>개통과정</dt>
-                                      <dd>
-                                          <div class="star_box">
-                                              <div class="star"></div>
-                                              <div class="star_active" style="width:100%;"></div>
-                                          </div>
-                                          <strong>5.0</strong>
-                                      </dd>
-                                  </dl>
-                                  <dl>
-                                      <dt>고객상담</dt>
-                                      <dd>
-                                          <div class="star_box">
-                                              <div class="star"></div>
-                                              <div class="star_active" style="width:40%;"></div>
-                                          </div>
-                                          <strong>4.0</strong>
-                                      </dd>
-                                  </dl>
-                                  <dl>
-                                      <dt>요금제 만족도</dt>
-                                      <dd>
-                                          <div class="star_box">
-                                              <div class="star"></div>
-                                              <div class="star_active" style="width:80%;"></div>
-                                          </div>
-                                          <strong>4.0</strong>
-                                      </dd>
-                                  </dl>
-                              </div>
-                          </div>
-                      </div> <!-- // review_point -->
-
-                      <div class="line_list ty02">
-                          <ul>
-                              <li>
-                                  <div class="list_con02">
-                                      <div class="cus">
-                                          <span class="name">김*파</span>
-                                          <div class="star_box">
-                                              <div class="star"></div>
-                                              <div class="star_active" style="width:40%;"></div>
-                                          </div>
-                                          <span class="score">0.0</span>
-                                          <span class="date">2023.04.11</span>
-                                      </div>
-                                      <span class="tit">
-                                          전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
-                                      </span>
-                                  </div>
-                              </li>
-                              <li>
-                                  <div class="list_con02">
-                                      <div class="cus">
-                                          <span class="name">김*파</span>
-                                          <div class="star_box">
-                                              <div class="star"></div>
-                                              <div class="star_active" style="width:40%;"></div>
-                                          </div>
-                                          <span class="score">0.0</span>
-                                          <span class="date">2023.04.11</span>
-                                      </div>
-                                      <span class="tit">
-                                          전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
-                                      </span>
-                                  </div>
-                              </li>
-                              <li>
-                                  <div class="list_con02">
-                                      <div class="cus">
-                                          <span class="name">김*파</span>
-                                          <div class="star_box">
-                                              <div class="star"></div>
-                                              <div class="star_active" style="width:40%;"></div>
-                                          </div>
-                                          <span class="score">0.0</span>
-                                          <span class="date">2023.04.11</span>
-                                      </div>
-                                      <span class="tit">
-                                          전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
-                                      </span>
-                                  </div>
-                              </li>
-                          </ul>
-                          <div class="group_btn">
-                              <button type="button" class="btn_sM_c05" id="btn_popup01" onclick="popUp.open('#popup01', '#btn_popup01');">전체보기</button>
-                          </div>
-                      </div>
+            <div class="section">
+                
+              <div class="review_point">
+                <div class="rp_l">
+                  <div class="all">
+                    <strong>5.0</strong>
+                    <span>(56개)</span>
                   </div>
-              </div> <!-- // tabpanel -->
-              <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_01_02">
-                  <h3 class="blind">블로그 리뷰</h3>
-
-                  <div class="section">
-                      <div class="line_list ty02">
-                          <ul>
-                              <li>
-                                  <a href="javascript:void(0);" class="list_con03">
-                                      <div class="list_lft">
-                                          <div class="cus">
-                                              <span class="name">올리브소스 님</span>
-                                              <span class="date">2023.04.11</span>
-                                          </div>
-                                          <span class="tit ellipsis2">
-                                              전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
-                                          </span>
-                                      </div>
-                                      <div class="img">
-                                          <img src="@/assets/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
-                                      </div>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:void(0);" class="list_con03">
-                                      <div class="list_lft">
-                                          <div class="cus">
-                                              <span class="name">올리브소스 님</span>
-                                              <span class="date">2023.04.11</span>
-                                          </div>
-                                          <span class="tit ellipsis2">
-                                              전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
-                                          </span>
-                                      </div>
-                                      <div class="img">
-                                          <img src="@/assets/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
-                                      </div>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="javascript:void(0);" class="list_con03">
-                                      <div class="list_lft">
-                                          <div class="cus">
-                                              <span class="name">올리브소스 님</span>
-                                              <span class="date">2023.04.11</span>
-                                          </div>
-                                          <span class="tit ellipsis2">
-                                              전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
-                                          </span>
-                                      </div>
-                                      <div class="img">
-                                          <img src="@/assets/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
-                                      </div>
-                                  </a>
-                              </li>
-                          </ul>
-                          <div class="group_btn">
-                              <button type="button" class="btn_sM_c05" id="btn_popup02" onclick="popUp.open('#popup02', '#btn_popup02');">전체보기</button>
-                          </div>
-                      </div>
+                </div>
+                <div class="rp_r">
+                  <div class="detail">
+                    <dl>
+                      <dt>개통과정</dt>
+                      <dd>
+                        <div class="star_box">
+                          <div class="star"></div>
+                          <div class="star_active" style="width:100%;"></div>
+                        </div>
+                        <strong>5.0</strong>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>고객상담</dt>
+                      <dd>
+                        <div class="star_box">
+                          <div class="star"></div>
+                          <div class="star_active" style="width:40%;"></div>
+                        </div>
+                        <strong>4.0</strong>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>요금제 만족도</dt>
+                      <dd>
+                        <div class="star_box">
+                          <div class="star"></div>
+                          <div class="star_active" style="width:80%;"></div>
+                        </div>
+                        <strong>4.0</strong>
+                      </dd>
+                    </dl>
                   </div>
-              </div> <!-- // tabpanel -->
-          </div> <!-- // tabpanel_wrap -->
+                </div>
+              </div> <!-- // review_point -->
+
+              <div class="line_list ty02">
+                <ul>
+                  <li>
+                    <div class="list_con02">
+                      <div class="cus">
+                        <span class="name">김*파</span>
+                        <div class="star_box">
+                          <div class="star"></div>
+                          <div class="star_active" style="width:40%;"></div>
+                        </div>
+                        <span class="score">0.0</span>
+                        <span class="date">2023.04.11</span>
+                      </div>
+                      <span class="tit">
+                        전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list_con02">
+                      <div class="cus">
+                        <span class="name">김*파</span>
+                        <div class="star_box">
+                          <div class="star"></div>
+                          <div class="star_active" style="width:40%;"></div>
+                        </div>
+                        <span class="score">0.0</span>
+                        <span class="date">2023.04.11</span>
+                      </div>
+                      <span class="tit">
+                        전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list_con02">
+                      <div class="cus">
+                        <span class="name">김*파</span>
+                        <div class="star_box">
+                          <div class="star"></div>
+                          <div class="star_active" style="width:40%;"></div>
+                        </div>
+                        <span class="score">0.0</span>
+                        <span class="date">2023.04.11</span>
+                      </div>
+                      <span class="tit">
+                        전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="group_btn">
+                  <button type="button" class="btn_sM_c05" id="btn_popup01" onclick="popUp.open('#popup01', '#btn_popup01');">전체보기</button>
+                </div>
+              </div>
+            </div>
+          </div> <!-- // tabpanel -->
+          <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_01_02">
+            <h3 class="blind">블로그 리뷰</h3>
+
+            <div class="section">
+              <div class="line_list ty02">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0);" class="list_con03">
+                      <div class="list_lft">
+                        <div class="cus">
+                          <span class="name">올리브소스 님</span>
+                          <span class="date">2023.04.11</span>
+                        </div>
+                        <span class="tit ellipsis2">
+                          전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                        </span>
+                      </div>
+                      <div class="img">
+                        <img src="@/assets/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);" class="list_con03">
+                      <div class="list_lft">
+                        <div class="cus">
+                          <span class="name">올리브소스 님</span>
+                          <span class="date">2023.04.11</span>
+                        </div>
+                        <span class="tit ellipsis2">
+                          전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                        </span>
+                      </div>
+                      <div class="img">
+                        <img src="@/assets/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);" class="list_con03">
+                      <div class="list_lft">
+                        <div class="cus">
+                          <span class="name">올리브소스 님</span>
+                          <span class="date">2023.04.11</span>
+                        </div>
+                        <span class="tit ellipsis2">
+                          전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                        </span>
+                      </div>
+                      <div class="img">
+                        <img src="@/assets/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="group_btn">
+                  <button type="button" class="btn_sM_c05" id="btn_popup02" onclick="popUp.open('#popup02', '#btn_popup02');">전체보기</button>
+                </div>
+              </div>
+            </div>
+          </div> <!-- // tabpanel -->
+        </div> <!-- // tabpanel_wrap -->
 
       </div> <!-- // section -->
 
-            <div class="section scroll_panel" role="tabpanel" aria-expanded="false" tabindex="0" id="scroll_panel_03">
-                <h3 class="tit03">요금제</h3>
+      <div class="section scroll_panel" role="tabpanel" aria-expanded="false" tabindex="0" id="scroll_panel_03">
+        <h3 class="tit03">요금제</h3>
 
-                <div class="item_list ty02">
-                    <ul>
-                        <li>
-                            <div class="plan_item">
-                                <div class="card_top">
-                                    <div class="partner">
-                                        <img src="@/assets/images/data/logo_s_partner06.png" alt="프리티">
-                                        <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
-                                    </div>
-                                    <div class="beft">
-                                        <img src="@/assets/images/component/img_flag01.png" alt="특가">
-                                        <img src="@/assets/images/component/img_flag02.png" alt="+알파 only">
-                                    </div>
-                                </div>
-
-                                <div class="card_mid">
-                                    <span class="plan_tit">데이터안심15G+</span>
-                                    <strong class="plan_tit_sub">
-                                        월 11GB + 매일 2GB + 3Mbps
-                                        <span class="tooltip">
-                                            <button type="button"><span class="blind">요금제 툴팁</span></button>
-                                            <span class="info">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
-                                        </span>
-                                    </strong>
-                                    <div class="plan_info">
-                                        <span class="phone"><span class="blind">통화량</span>100분</span>
-                                        <span class="message"><span class="blind">문자량</span>100건</span>
-                                        <span class="cellular"><span class="blind">통신기술</span>LTE</span>
-                                    </div>
-                                </div>
-
-                                <div class="combi">
-                                    <div class="combi_inner">
-                                        <strong>
-                                            <span class="tooltip">
-                                                <button type="button"><span class="blind">요금제 툴팁</span></button>
-                                                <span class="info">LG U+ 인터넷/IPTV 신규 가입 + 알뜰폰 결합 시, 최대 118만원의 혜택을 받을 수 있어요!</span>
-                                            </span>
-                                            <span class="fc01">결합하면</span> 월 10,890원
-                                        </strong>
-                                        <span class="period">6개월 이후 38,900원</span>
-                                    </div>
-                                    <a href="javascript:void(0);" class="btn_sS_c02">자세히보기</a>
-                                </div>
-                                
-                                <div class="acdItem">
-                                    <div class="card_bot">
-                                        <div class="paln_badge">
-                                            <button type="button" class="bag_btn_c01"><span class="blind">찜하기</span>480</button> <!-- 활성화 class="... on" -->
-                                            <button type="button" class="bag_btn_c02">비교하기</button> <!-- 활성화 class="... on" -->
-                                        </div>
-
-                                        <div class="gift_box">
-                                            <div class="bag_list">
-                                                <ul>
-                                                    <li>
-                                                        <div class="bag_git">
-                                                            <img src="@/assets/images/component/img_gifts01.png" alt="스타벅스 로고">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="bag_git">
-                                                            <img src="@/assets/images/component/img_gifts02.png" alt="신세계 로고">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="bag_git">
-                                                            <img src="@/assets/images/component/img_gifts03.png" alt="선물상자 로고">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="bag_git">
-                                                            <img src="@/assets/images/component/img_gifts04.png" alt="네이버페이 로고">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="bag_git">
-                                                            <img src="@/assets/images/component/img_gifts05.png" alt="데이터 로고">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="bag_git">
-                                                            +2
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-            
-                                            <div class="acc_box">
-                                                <button type="button" aria-expanded="false" class="acc_btn">사은품 최대 <span>3</span>개</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div role="region">
-                                        <ul class="acc_contents">
-                                            <li>
-                                                <div class="bag_git">
-                                                    <img src="@/assets/images/component/img_gifts03.png" alt="선물상자 로고">
-                                                </div>
-                                                <span>일반 유심 무료 발송</span>
-                                            </li>
-                                            <li>
-                                                <div class="bag_git">
-                                                    <img src="@/assets/images/component/img_gifts04.png" alt="네이버페이 로고">
-                                                </div>
-                                                <span>네이버페이 5,000P 제공</span>
-                                            </li>
-                                            <li>
-                                                <div class="bag_git">
-                                                    <img src="@/assets/images/component/img_gifts02.png" alt="신세계 로고">
-                                                </div>
-                                                <span>신세계상품권 10,000원권 증정</span>
-                                            </li>
-                                            <li>
-                                                <div class="bag_git">
-                                                    <img src="@/assets/images/component/img_gifts01.png" alt="스타벅스 로고">
-                                                </div>
-                                                <span>스타벅스 아메리카노 기프티콘 2잔 제공</span>
-                                            </li>
-                                            <li>
-                                                <div class="bag_git">
-                                                    <img src="@/assets/images/component/img_gifts02.png" alt="신세계 로고">
-                                                </div>
-                                                <span>신세계 상품권 1만원</span>
-                                            </li>
-                                            <li>
-                                                <div class="bag_git">
-                                                    <img src="@/assets/images/component/img_gifts05.png" alt="데이터 로고">
-                                                </div>
-                                                <span>NFC 유심 50% 할인</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="javascript:void(0);" class="link_list">
-                                    <span class="blind">요금제 상세페이지 이동</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plan_item">
-                                <div class="card_top">
-                                    <div class="partner">
-                                        <img src="@/assets/images/data/logo_s_partner06.png" alt="프리티">
-                                        <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
-                                    </div>
-                                    <div class="beft">
-                                        <img src="@/assets/images/component/img_flag01.png" alt="특가">
-                                        <img src="@/assets/images/component/img_flag02.png" alt="+알파 only">
-                                    </div>
-                                </div>
-
-                                <div class="card_mid">
-                                    <span class="plan_tit">데이터안심15G+</span>
-                                    <strong class="plan_tit_sub">
-                                        월 11GB + 매일 2GB + 3Mbps
-                                        <span class="tooltip">
-                                            <button type="button"><span class="blind">요금제 툴팁</span></button>
-                                            <span class="info">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
-                                        </span>
-                                    </strong>
-                                    <div class="plan_info">
-                                        <span class="phone"><span class="blind">통화량</span>100분</span>
-                                        <span class="message"><span class="blind">문자량</span>100건</span>
-                                        <span class="cellular"><span class="blind">통신기술</span>LTE</span>
-                                    </div>
-                                </div>
-
-                                <div class="combi">
-                                    <div class="combi_inner">
-                                        <strong>
-                                            <span class="tooltip">
-                                                <button type="button"><span class="blind">요금제 툴팁</span></button>
-                                                <span class="info">LG U+ 인터넷/IPTV 신규 가입 + 알뜰폰 결합 시, 최대 118만원의 혜택을 받을 수 있어요!</span>
-                                            </span>
-                                            <span class="fc01">결합하면</span> 월 10,890원
-                                        </strong>
-                                        <span class="period">6개월 이후 38,900원</span>
-                                    </div>
-                                    <a href="javascript:void(0);" class="btn_sS_c02">자세히보기</a>
-                                </div>
-                                
-                                <div class="acdItem">
-                                    <div class="card_bot">
-                                        <div class="paln_badge">
-                                            <button type="button" class="bag_btn_c01"><span class="blind">찜하기</span>480</button> <!-- 활성화 class="... on" -->
-                                            <button type="button" class="bag_btn_c02">비교하기</button> <!-- 활성화 class="... on" -->
-                                        </div>
-
-                                        <div class="gift_box">
-                                            <div class="bag_list">
-                                                <ul>
-                                                    <li>
-                                                        <div class="bag_git">
-                                                            <img src="@/assets/images/component/img_gifts01.png" alt="스타벅스 로고">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="bag_git">
-                                                            <img src="@/assets/images/component/img_gifts02.png" alt="신세계 로고">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="bag_git">
-                                                            <img src="@/assets/images/component/img_gifts03.png" alt="선물상자 로고">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="bag_git">
-                                                            <img src="@/assets/images/component/img_gifts04.png" alt="네이버페이 로고">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="bag_git">
-                                                            <img src="@/assets/images/component/img_gifts05.png" alt="데이터 로고">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="bag_git">
-                                                            +2
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-            
-                                            <div class="acc_box">
-                                                <button type="button" aria-expanded="false" class="acc_btn">사은품 최대 <span>3</span>개</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div role="region">
-                                        <ul class="acc_contents">
-                                            <li>
-                                                <div class="bag_git">
-                                                    <img src="@/assets/images/component/img_gifts03.png" alt="선물상자 로고">
-                                                </div>
-                                                <span>일반 유심 무료 발송</span>
-                                            </li>
-                                            <li>
-                                                <div class="bag_git">
-                                                    <img src="@/assets/images/component/img_gifts04.png" alt="네이버페이 로고">
-                                                </div>
-                                                <span>네이버페이 5,000P 제공</span>
-                                            </li>
-                                            <li>
-                                                <div class="bag_git">
-                                                    <img src="@/assets/images/component/img_gifts02.png" alt="신세계 로고">
-                                                </div>
-                                                <span>신세계상품권 10,000원권 증정</span>
-                                            </li>
-                                            <li>
-                                                <div class="bag_git">
-                                                    <img src="@/assets/images/component/img_gifts01.png" alt="스타벅스 로고">
-                                                </div>
-                                                <span>스타벅스 아메리카노 기프티콘 2잔 제공</span>
-                                            </li>
-                                            <li>
-                                                <div class="bag_git">
-                                                    <img src="@/assets/images/component/img_gifts02.png" alt="신세계 로고">
-                                                </div>
-                                                <span>신세계 상품권 1만원</span>
-                                            </li>
-                                            <li>
-                                                <div class="bag_git">
-                                                    <img src="@/assets/images/component/img_gifts05.png" alt="데이터 로고">
-                                                </div>
-                                                <span>NFC 유심 50% 할인</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="javascript:void(0);" class="link_list">
-                                    <span class="blind">요금제 상세페이지 이동</span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="group_btn">
-                        <button type="button" class="btn_sM_c05">파트너사 요금제 더 보러가기</button>
-                    </div>
-                </div> <!-- // item_list -->
-
-            </div> <!-- // section -->
-
-            <div class="section scroll_panel" role="tabpanel" aria-expanded="false" tabindex="0" id="scroll_panel_04">
-                <h3 class="tit03">이벤트</h3>
-
-                <div class="item_list ty02">
-                    <ul>
-                        <li>
-                            <a href="javascript:void(0);" class="link_list">
-                                <span class="blind">이벤트 상세페이지 이동</span>
-                                <div class="thum_item">
-                                    <div class="thum_img">
-                                        <div class="thum_top">
-                                            <div class="bag_lft">
-                                                <div class="bag_evt_d"><b>D-1</b></div>
-                                                <div class="bag_evt_ty01"><b>이번달 이벤트</b></div>
-                                            </div>
-                                            <div class="bag_rit">
-                                                <img src="@/assets/images/data/logo_s_partner21.png" alt="tplus">
-                                            </div>
-                                        </div>
-                                        <img src="@/assets/images/data/img_card_thum07.png" alt="혜택 이벤트 썸네일">
-                                    </div>
-                                    <div class="thum_con">
-                                        <strong>무제한이 9천원대! 오직 알파에서만</strong>
-                                        <span>2023.02.02 - 2023.03.28</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="link_list">
-                                <span class="blind">이벤트 상세페이지 이동</span>
-                                <div class="thum_item">
-                                    <div class="thum_img">
-                                        <div class="thum_top">
-                                            <div class="bag_lft">
-                                                <div class="bag_evt_d"><b>D-5</b></div>
-                                                <div class="bag_evt_ty02"><b>친구초대</b></div>
-                                            </div>
-                                            <div class="bag_rit">
-                                                <img src="@/assets/images/data/logo_s_alpha_w.png" alt="tplus">
-                                            </div>
-                                        </div>
-                                        
-                                        <img src="@/assets/images/data/img_card_thum05.png" alt="혜택 이벤트 썸네일">
-                                    </div>
-                                    <div class="thum_con">
-                                        <strong>좋은 건 같이 써야죠~ 친구 추천 이벤트</strong>
-                                        <span>2023.02.02 - 2023.03.28</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="link_list">
-                                <span class="blind">이벤트 상세페이지 이동</span>
-                                <div class="thum_item">
-                                    <div class="thum_img">
-                                        <div class="thum_top">
-                                            <div class="bag_lft">
-                                                <div class="bag_evt_d"><b>D-24</b></div>
-                                                <div class="bag_evt_ty03"><b>제휴 이벤트</b></div>
-                                            </div>
-                                            <div class="bag_rit">
-                                                <img src="@/assets/images/data/logo_s_alpha_w.png" alt="tplus">
-                                            </div>
-                                        </div>
-                                        
-                                        <img src="@/assets/images/data/img_card_thum06.png" alt="혜택 이벤트 썸네일">
-                                    </div>
-                                    <div class="thum_con">
-                                        <strong>알파 신규회원 대상 개통 시 Npay 5천원 선착순 증정 리뷰이벤트</strong>
-                                        <span>2023.02.02 - 2023.03.28</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="link_list">
-                                <span class="blind">이벤트 상세페이지 이동</span>
-                                <div class="thum_item">
-                                    <div class="thum_img">
-                                        <div class="thum_top">
-                                            <div class="bag_lft">
-                                                <div class="bag_evt_d"><b>D-24</b></div>
-                                                <div class="bag_evt_ty04"><b>제휴카드</b></div>
-                                            </div>
-                                            <div class="bag_rit">
-                                                <img src="@/assets/images/data/logo_s_alpha_w.png" alt="tplus">
-                                            </div>
-                                        </div>
-                                        
-                                        <img src="@/assets/images/data/img_card_thum04.png" alt="혜택 이벤트 썸네일">
-                                    </div>
-                                    <div class="thum_con">
-                                        <strong>무제한이 9천원대! 오직 알파에서만</strong>
-                                        <span>2023.02.02 - 2023.03.28</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="link_list end_thum">
-                                <span class="blind">이벤트 상세페이지 이동</span>
-                                <b class="end_txt">본 이벤트는 종료되었습니다</b>
-                                <div class="thum_item">
-                                    <div class="thum_img">
-                                        <div class="thum_top">
-                                            <div class="bag_lft">
-                                                <div class="bag_evt_d"><b>D-24</b></div>
-                                                <div class="bag_evt_ty04"><b>제휴카드</b></div>
-                                            </div>
-                                            <div class="bag_rit">
-                                                <img src="@/assets/images/data/logo_s_alpha_w.png" alt="tplus">
-                                            </div>
-                                        </div>
-                                        
-                                        <img src="@/assets/images/data/img_card_thum04.png" alt="혜택 이벤트 썸네일">
-                                    </div>
-                                    <div class="thum_con">
-                                        <strong>무제한이 9천원대! 오직 알파에서만</strong>
-                                        <span>2023.02.02 - 2023.03.28</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="group_btn">
-                        <a href="javascript:void(0);" role="button" class="btn_sM_c05">더볼래요</a>
-                    </div>
+        <div class="item_list ty02">
+          <ul>
+            <li>
+              <div class="plan_item">
+                <div class="card_top">
+                  <div class="partner">
+                    <img src="@/assets/images/data/logo_s_partner06.png" alt="프리티">
+                    <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                  </div>
+                  <div class="beft">
+                    <img src="@/assets/images/component/img_flag01.png" alt="특가">
+                    <img src="@/assets/images/component/img_flag02.png" alt="+알파 only">
+                  </div>
                 </div>
 
-                <div class="no_dt_his">
-                    <p>
-                        등록된 이벤트가 없습니다
-                    </p>
+                <div class="card_mid">
+                  <span class="plan_tit">데이터안심15G+</span>
+                  <strong class="plan_tit_sub">
+                    월 11GB + 매일 2GB + 3Mbps
+                    <span class="tooltip">
+                      <button type="button"><span class="blind">요금제 툴팁</span></button>
+                      <span class="info">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
+                    </span>
+                  </strong>
+                  <div class="plan_info">
+                    <span class="phone"><span class="blind">통화량</span>100분</span>
+                    <span class="message"><span class="blind">문자량</span>100건</span>
+                    <span class="cellular"><span class="blind">통신기술</span>LTE</span>
+                  </div>
                 </div>
 
-            </div> <!-- // section -->
+                <div class="combi">
+                  <div class="combi_inner">
+                    <strong>
+                      <span class="tooltip">
+                        <button type="button"><span class="blind">요금제 툴팁</span></button>
+                        <span class="info">LG U+ 인터넷/IPTV 신규 가입 + 알뜰폰 결합 시, 최대 118만원의 혜택을 받을 수 있어요!</span>
+                      </span>
+                      <span class="fc01">결합하면</span> 월 10,890원
+                    </strong>
+                    <span class="period">6개월 이후 38,900원</span>
+                  </div>
+                  <a href="javascript:void(0);" class="btn_sS_c02">자세히보기</a>
+                </div>
+                  
+                <div class="acdItem">
+                  <div class="card_bot">
+                    <div class="paln_badge">
+                      <button type="button" class="bag_btn_c01"><span class="blind">찜하기</span>480</button> <!-- 활성화 class="... on" -->
+                      <button type="button" class="bag_btn_c02">비교하기</button> <!-- 활성화 class="... on" -->
+                    </div>
 
+                    <div class="gift_box">
+                      <div class="bag_list">
+                        <ul>
+                          <li>
+                            <div class="bag_git">
+                              <img src="@/assets/images/component/img_gifts01.png" alt="스타벅스 로고">
+                            </div>
+                          </li>
+                          <li>
+                            <div class="bag_git">
+                              <img src="@/assets/images/component/img_gifts02.png" alt="신세계 로고">
+                            </div>
+                          </li>
+                          <li>
+                            <div class="bag_git">
+                              <img src="@/assets/images/component/img_gifts03.png" alt="선물상자 로고">
+                            </div>
+                          </li>
+                          <li>
+                            <div class="bag_git">
+                              <img src="@/assets/images/component/img_gifts04.png" alt="네이버페이 로고">
+                            </div>
+                          </li>
+                          <li>
+                            <div class="bag_git">
+                              <img src="@/assets/images/component/img_gifts05.png" alt="데이터 로고">
+                            </div>
+                          </li>
+                          <li>
+                            <div class="bag_git">
+                              +2
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
 
+                      <div class="acc_box">
+                        <button type="button" aria-expanded="false" class="acc_btn">사은품 최대 <span>3</span>개</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="region">
+                    <ul class="acc_contents">
+                      <li>
+                        <div class="bag_git">
+                          <img src="@/assets/images/component/img_gifts03.png" alt="선물상자 로고">
+                        </div>
+                        <span>일반 유심 무료 발송</span>
+                      </li>
+                      <li>
+                        <div class="bag_git">
+                          <img src="@/assets/images/component/img_gifts04.png" alt="네이버페이 로고">
+                        </div>
+                        <span>네이버페이 5,000P 제공</span>
+                      </li>
+                      <li>
+                        <div class="bag_git">
+                          <img src="@/assets/images/component/img_gifts02.png" alt="신세계 로고">
+                        </div>
+                        <span>신세계상품권 10,000원권 증정</span>
+                      </li>
+                      <li>
+                        <div class="bag_git">
+                          <img src="@/assets/images/component/img_gifts01.png" alt="스타벅스 로고">
+                        </div>
+                        <span>스타벅스 아메리카노 기프티콘 2잔 제공</span>
+                      </li>
+                      <li>
+                        <div class="bag_git">
+                          <img src="@/assets/images/component/img_gifts02.png" alt="신세계 로고">
+                        </div>
+                        <span>신세계 상품권 1만원</span>
+                      </li>
+                      <li>
+                        <div class="bag_git">
+                          <img src="@/assets/images/component/img_gifts05.png" alt="데이터 로고">
+                        </div>
+                        <span>NFC 유심 50% 할인</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="link_list">
+                  <span class="blind">요금제 상세페이지 이동</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="plan_item">
+                <div class="card_top">
+                  <div class="partner">
+                    <img src="@/assets/images/data/logo_s_partner06.png" alt="프리티">
+                    <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                  </div>
+                  <div class="beft">
+                    <img src="@/assets/images/component/img_flag01.png" alt="특가">
+                    <img src="@/assets/images/component/img_flag02.png" alt="+알파 only">
+                  </div>
+                </div>
+
+                <div class="card_mid">
+                  <span class="plan_tit">데이터안심15G+</span>
+                  <strong class="plan_tit_sub">
+                    월 11GB + 매일 2GB + 3Mbps
+                    <span class="tooltip">
+                      <button type="button"><span class="blind">요금제 툴팁</span></button>
+                      <span class="info">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
+                    </span>
+                  </strong>
+                  <div class="plan_info">
+                    <span class="phone"><span class="blind">통화량</span>100분</span>
+                    <span class="message"><span class="blind">문자량</span>100건</span>
+                    <span class="cellular"><span class="blind">통신기술</span>LTE</span>
+                  </div>
+                </div>
+
+                <div class="combi">
+                  <div class="combi_inner">
+                    <strong>
+                      <span class="tooltip">
+                        <button type="button"><span class="blind">요금제 툴팁</span></button>
+                        <span class="info">LG U+ 인터넷/IPTV 신규 가입 + 알뜰폰 결합 시, 최대 118만원의 혜택을 받을 수 있어요!</span>
+                      </span>
+                      <span class="fc01">결합하면</span> 월 10,890원
+                    </strong>
+                    <span class="period">6개월 이후 38,900원</span>
+                  </div>
+                  <a href="javascript:void(0);" class="btn_sS_c02">자세히보기</a>
+                </div>
+                  
+                <div class="acdItem">
+                  <div class="card_bot">
+                    <div class="paln_badge">
+                      <button type="button" class="bag_btn_c01"><span class="blind">찜하기</span>480</button> <!-- 활성화 class="... on" -->
+                      <button type="button" class="bag_btn_c02">비교하기</button> <!-- 활성화 class="... on" -->
+                    </div>
+
+                    <div class="gift_box">
+                      <div class="bag_list">
+                        <ul>
+                          <li>
+                          <div class="bag_git">
+                              <img src="@/assets/images/component/img_gifts01.png" alt="스타벅스 로고">
+                          </div>
+                          </li>
+                          <li>
+                            <div class="bag_git">
+                              <img src="@/assets/images/component/img_gifts02.png" alt="신세계 로고">
+                            </div>
+                          </li>
+                          <li>
+                            <div class="bag_git">
+                              <img src="@/assets/images/component/img_gifts03.png" alt="선물상자 로고">
+                            </div>
+                          </li>
+                          <li>
+                            <div class="bag_git">
+                              <img src="@/assets/images/component/img_gifts04.png" alt="네이버페이 로고">
+                            </div>
+                          </li>
+                          <li>
+                            <div class="bag_git">
+                              <img src="@/assets/images/component/img_gifts05.png" alt="데이터 로고">
+                            </div>
+                          </li>
+                          <li>
+                            <div class="bag_git">
+                              +2
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="acc_box">
+                        <button type="button" aria-expanded="false" class="acc_btn">사은품 최대 <span>3</span>개</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="region">
+                    <ul class="acc_contents">
+                      <li>
+                        <div class="bag_git">
+                          <img src="@/assets/images/component/img_gifts03.png" alt="선물상자 로고">
+                        </div>
+                        <span>일반 유심 무료 발송</span>
+                      </li>
+                      <li>
+                        <div class="bag_git">
+                          <img src="@/assets/images/component/img_gifts04.png" alt="네이버페이 로고">
+                        </div>
+                        <span>네이버페이 5,000P 제공</span>
+                      </li>
+                      <li>
+                        <div class="bag_git">
+                          <img src="@/assets/images/component/img_gifts02.png" alt="신세계 로고">
+                        </div>
+                        <span>신세계상품권 10,000원권 증정</span>
+                      </li>
+                      <li>
+                        <div class="bag_git">
+                          <img src="@/assets/images/component/img_gifts01.png" alt="스타벅스 로고">
+                        </div>
+                        <span>스타벅스 아메리카노 기프티콘 2잔 제공</span>
+                      </li>
+                      <li>
+                        <div class="bag_git">
+                          <img src="@/assets/images/component/img_gifts02.png" alt="신세계 로고">
+                        </div>
+                        <span>신세계 상품권 1만원</span>
+                      </li>
+                      <li>
+                        <div class="bag_git">
+                          <img src="@/assets/images/component/img_gifts05.png" alt="데이터 로고">
+                        </div>
+                        <span>NFC 유심 50% 할인</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="link_list">
+                  <span class="blind">요금제 상세페이지 이동</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div class="group_btn">
+            <button type="button" class="btn_sM_c05">파트너사 요금제 더 보러가기</button>
+          </div>
+        </div> <!-- // item_list -->
+
+      </div> <!-- // section -->
+
+      <div class="section scroll_panel" role="tabpanel" aria-expanded="false" tabindex="0" id="scroll_panel_04">
+        <h3 class="tit03">이벤트</h3>
+
+        <div class="item_list ty02">
+          <ul>
+            <li>
+              <a href="javascript:void(0);" class="link_list">
+                <span class="blind">이벤트 상세페이지 이동</span>
+                <div class="thum_item">
+                  <div class="thum_img">
+                    <div class="thum_top">
+                      <div class="bag_lft">
+                        <div class="bag_evt_d"><b>D-1</b></div>
+                        <div class="bag_evt_ty01"><b>이번달 이벤트</b></div>
+                      </div>
+                      <div class="bag_rit">
+                        <img src="@/assets/images/data/logo_s_partner21.png" alt="tplus">
+                      </div>
+                    </div>
+                    <img src="@/assets/images/data/img_card_thum07.png" alt="혜택 이벤트 썸네일">
+                  </div>
+                  <div class="thum_con">
+                    <strong>무제한이 9천원대! 오직 알파에서만</strong>
+                    <span>2023.02.02 - 2023.03.28</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="link_list">
+                <span class="blind">이벤트 상세페이지 이동</span>
+                <div class="thum_item">
+                  <div class="thum_img">
+                    <div class="thum_top">
+                      <div class="bag_lft">
+                        <div class="bag_evt_d"><b>D-5</b></div>
+                        <div class="bag_evt_ty02"><b>친구초대</b></div>
+                      </div>
+                      <div class="bag_rit">
+                        <img src="@/assets/images/data/logo_s_alpha_w.png" alt="tplus">
+                      </div>
+                    </div>
+                    
+                    <img src="@/assets/images/data/img_card_thum05.png" alt="혜택 이벤트 썸네일">
+                  </div>
+                  <div class="thum_con">
+                    <strong>좋은 건 같이 써야죠~ 친구 추천 이벤트</strong>
+                    <span>2023.02.02 - 2023.03.28</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="link_list">
+                <span class="blind">이벤트 상세페이지 이동</span>
+                <div class="thum_item">
+                  <div class="thum_img">
+                    <div class="thum_top">
+                      <div class="bag_lft">
+                        <div class="bag_evt_d"><b>D-24</b></div>
+                        <div class="bag_evt_ty03"><b>제휴 이벤트</b></div>
+                      </div>
+                      <div class="bag_rit">
+                        <img src="@/assets/images/data/logo_s_alpha_w.png" alt="tplus">
+                      </div>
+                    </div>
+                    
+                    <img src="@/assets/images/data/img_card_thum06.png" alt="혜택 이벤트 썸네일">
+                  </div>
+                  <div class="thum_con">
+                    <strong>알파 신규회원 대상 개통 시 Npay 5천원 선착순 증정 리뷰이벤트</strong>
+                    <span>2023.02.02 - 2023.03.28</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="link_list">
+                <span class="blind">이벤트 상세페이지 이동</span>
+                <div class="thum_item">
+                  <div class="thum_img">
+                    <div class="thum_top">
+                      <div class="bag_lft">
+                        <div class="bag_evt_d"><b>D-24</b></div>
+                        <div class="bag_evt_ty04"><b>제휴카드</b></div>
+                      </div>
+                      <div class="bag_rit">
+                        <img src="@/assets/images/data/logo_s_alpha_w.png" alt="tplus">
+                      </div>
+                    </div>
+                      
+                    <img src="@/assets/images/data/img_card_thum04.png" alt="혜택 이벤트 썸네일">
+                  </div>
+                  <div class="thum_con">
+                    <strong>무제한이 9천원대! 오직 알파에서만</strong>
+                    <span>2023.02.02 - 2023.03.28</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="link_list end_thum">
+                <span class="blind">이벤트 상세페이지 이동</span>
+                <b class="end_txt">본 이벤트는 종료되었습니다</b>
+                <div class="thum_item">
+                  <div class="thum_img">
+                    <div class="thum_top">
+                      <div class="bag_lft">
+                        <div class="bag_evt_d"><b>D-24</b></div>
+                        <div class="bag_evt_ty04"><b>제휴카드</b></div>
+                      </div>
+                      <div class="bag_rit">
+                        <img src="@/assets/images/data/logo_s_alpha_w.png" alt="tplus">
+                      </div>
+                    </div>
+                    
+                    <img src="@/assets/images/data/img_card_thum04.png" alt="혜택 이벤트 썸네일">
+                  </div>
+                  <div class="thum_con">
+                    <strong>무제한이 9천원대! 오직 알파에서만</strong>
+                    <span>2023.02.02 - 2023.03.28</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="group_btn">
+            <a href="javascript:void(0);" role="button" class="btn_sM_c05">더볼래요</a>
+          </div>
+        </div>
+
+        <div class="no_dt_his">
+          <p>
+            등록된 이벤트가 없습니다
+          </p>
+        </div>
+
+      </div> <!-- // section -->
 
 
     </div> <!-- // content -->
@@ -687,48 +684,56 @@ export default {
   name: "GuideSticky",
   data(){
     return {
-      scrollTop: 0,
-      scrollPanel: [0, 0, 0, 0],
-      sticky: {"header": 0, "height" : 0, "stickyOn": 0, "idx": 0 },
-      click: false,
+
+      sticky: {
+        clickEvent: false,
+        headerH: 0,
+        tabH: 0,
+
+        scrollTop: 0,
+        stickyActiveSize: 0,
+        activeIdx: 0,
+        panelRealOffset: [0, 0, 0, 0],
+        panelOffset: [0, 0, 0, 0],
+      },
     }
   },
   methods: {
     onScroll(){
-      this.scrollTop = Math.round(document.querySelector("html").scrollTop);
+      this.sticky.scrollTop = Math.round(document.querySelector("html").scrollTop);
       this.getScrollData();
 
-      if( this.scrollTop >= this.sticky.stickyOn ){
+      if( this.sticky.scrollTop >= this.sticky.stickyActiveSize ){
         document.querySelector(".scroll_fixed").classList.add("on");
-        document.querySelector(".scroll_fixed").style.height = `${this.sticky.height}px`;
-        document.querySelector(".scroll_tab").style.top = `${this.sticky.header}px`;
+        document.querySelector(".scroll_fixed").style.height = `${this.sticky.tabH}px`;
+        document.querySelector(".scroll_tab").style.top = `${this.sticky.headerH}px`;
       } else {
         document.querySelector(".scroll_fixed").classList.remove("on");
         document.querySelector(".scroll_fixed").style.height = "";
         document.querySelector(".scroll_tab").style.top = "";
       }
 
-      if( this.scrollTop == this.scrollPanel[this.sticky.idx] ) this.click = false;
-      if( this.click ) return;
+      if( this.sticky.scrollTop == this.sticky.panelOffset[this.sticky.activeIdx] ) this.sticky.clickEvent = false;
+      if( this.sticky.clickEvent ) return;
 
       const gap = -10;
-      if( this.scrollTop <= this.scrollPanel[1] + gap ){            this.sticky.idx = 0;
-      } else if ( this.scrollTop <= this.scrollPanel[2] + gap ){    this.sticky.idx = 1;
-      } else if ( this.scrollTop <= this.scrollPanel[3] + gap ){    this.sticky.idx = 2;
-      } else {                                                      this.sticky.idx = 3;
+      if( this.sticky.scrollTop <= this.sticky.panelOffset[1] + gap ){            this.sticky.activeIdx = 0;
+      } else if ( this.sticky.scrollTop <= this.sticky.panelOffset[2] + gap ){    this.sticky.activeIdx = 1;
+      } else if ( this.sticky.scrollTop <= this.sticky.panelOffset[3] + gap ){    this.sticky.activeIdx = 2;
+      } else {                                                      this.sticky.activeIdx = 3;
       }
 
       this.tabActive();
 
     },
     tabClick(e){
-      this.click = true;
+      this.sticky.clickEvent = true;
       const _this = e.target;
       const _this_li = _this.parentNode;
       const _li = document.querySelectorAll(".scroll_tab > ul > li");
 
       // let idx = 0;
-      _li.forEach(( a, i ) => { if( a == _this_li ) this.sticky.idx = i });
+      _li.forEach(( a, i ) => { if( a == _this_li ) this.sticky.activeIdx = i });
 
       this.setScroll();
     },
@@ -738,7 +743,7 @@ export default {
 
       li.forEach(( a, i )=>{
         const button = a.querySelector("button");
-        if( i == this.sticky.idx ){
+        if( i == this.sticky.activeIdx ){
           button.setAttribute("aria-selected", true);
           a.classList.add("on");
           panel[i].setAttribute("aria-expanded", true);
@@ -751,24 +756,24 @@ export default {
 
     },
     setScroll(){
-      document.querySelector("html").scrollTo(0, this.scrollPanel[this.sticky.idx]);
+      document.querySelector("html").scrollTo(0, this.sticky.panelOffset[this.sticky.activeIdx]);
       this.tabActive();
     },
     getScrollData(){
-      this.sticky.header = document.querySelector("header.header").offsetHeight;
-      this.sticky.height = document.querySelector(".scroll_fixed").offsetHeight;
+      this.sticky.headerH = document.querySelector("header.header").offsetHeight;
+      this.sticky.tabH = document.querySelector(".scroll_fixed").offsetHeight;
 
-      this.scrollPanel[0] = document.querySelector("#scroll_panel_01").offsetTop;
-      this.scrollPanel[1] = document.querySelector("#scroll_panel_02").offsetTop;
-      this.scrollPanel[2] = document.querySelector("#scroll_panel_03").offsetTop;
-      this.scrollPanel[3] = document.querySelector("#scroll_panel_04").offsetTop;
+      this.sticky.panelRealOffset[0] = document.querySelector("#scroll_panel_01").offsetTop;
+      this.sticky.panelRealOffset[1] = document.querySelector("#scroll_panel_02").offsetTop;
+      this.sticky.panelRealOffset[2] = document.querySelector("#scroll_panel_03").offsetTop;
+      this.sticky.panelRealOffset[3] = document.querySelector("#scroll_panel_04").offsetTop;
 
-      this.scrollPanel.forEach( (a, i) => {
-        a = a - this.sticky.header - this.sticky.height;
-        this.scrollPanel[i] = a;
+      this.sticky.panelRealOffset.forEach( (a, i) => {
+        a = a - this.sticky.headerH - this.sticky.tabH;
+        this.sticky.panelOffset[i] = a;
       })
 
-      this.sticky.stickyOn = document.querySelector(".scroll_fixed").offsetTop - this.sticky.header;
+      this.sticky.stickyActiveSize = document.querySelector(".scroll_fixed").offsetTop - this.sticky.headerH;
     }
   },
   mounted(){

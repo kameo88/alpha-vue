@@ -17,10 +17,10 @@
     <div class="pc_header">
       <div class="inner">
         <h1><a href="javascript:void(0);"><span class="blind">+알파</span></a></h1>
-        <nav class="nav" @mouseover="gnbOpen" @mouseleave="gnbClose">
+        <nav class="nav" @mouseenter="gnbOpen" @mouseleave="gnbClose">
           <ul>
             <li>
-              <a href="javascript:void(0);" class="menu_class" @focusin="gnbOpen">유심구매</a>
+              <a href="javascript:void(0);" class="menu_class">유심구매</a>
               <Transition name="gnb">
                 <div class="sub_menu" v-if="gnbOn">
                   <ul>
@@ -182,11 +182,13 @@ export default {
   },
   methods: {
     gnbOpen(){
+      console.log('gnbOpen');
       const nav = document.querySelector("nav.nav");
       nav.classList.add("on");
       this.gnbOn = true;
     },
     gnbClose(){
+      console.log('gnbClose');
       const nav = document.querySelector("nav.nav");
       nav.classList.remove("on");
       this.gnbOn = false;

@@ -163,7 +163,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .section .section {padding:0;}
 .section .section ~ .section {padding-top:3.2rem;}
 
-.tabpanel_wrap .section {padding-top:2rem;}
+.section .tabpanel_wrap .section {padding-top:2rem;}
 .tabpanel_wrap .section ~ .section {padding-top:3.2rem;}
 
 
