@@ -278,7 +278,7 @@
               <p><b>[07/06]</b> 페이지 추가</p>
             </td>
           </tr>
-          <tr class="ing">
+          <tr class="end">
             <td></td>
             <td>animation</td>
             <td></td>
@@ -286,7 +286,9 @@
             <td class="url"><a href="/guide/animation" target="_blank">/guide/animation</a></td>
             <td class="marker"></td>
             <td class="date"></td>
-            <td></td>
+            <td>
+              <p><b>[07/05]</b> loading (lottie player)</p>
+            </td>
           </tr>
           <tr class="end">
             <td></td>
