@@ -65,13 +65,14 @@
 
 
 /* *** textarea *** */
-.textarea {min-height:12rem; padding:1.6rem; border:0.1rem solid #ddd; border-radius:0.8rem; background-color:#fff; color:#000; font-size:1.4rem; line-height:2.2rem; letter-spacing:-0.01rem; resize:none;}
+.textarea {/*min-height:12rem;*/ min-height:8.55rem; padding:1.6rem; border:0.1rem solid #ddd; border-radius:0.8rem; background-color:#fff; color:#000; font-size:1.4rem; line-height:2.2rem; letter-spacing:-0.01rem; resize:none;}
 .textarea:disabled {background-color:#f8f8f8; border-color:#ddd; color:#bbb;}
 .textarea::placeholder {color:#bbb;}
 
-.textarea_box {position:relative;}
-.textarea_box .textarea {width:100%; padding-bottom:3.25rem;}
-.textarea_box .byte_check {position:absolute; bottom:0.2rem; left:1.6rem; width:calc(100% - 3.2rem); padding:0.8rem 0 1.45rem; background-color:#fff; font-size:1.1rem; line-height:1rem;}
+.textarea_box {position:relative; padding-bottom:3.25rem; border:0.1rem solid #ddd; border-radius:0.8rem; background-color:#fff;}
+.textarea_box.disabled {background:#f8f8f8;}
+.textarea_box .textarea {width:100%; padding:1.6rem 1.6rem 0; border:0 none;}
+.textarea_box .byte_check {position:absolute; bottom:0; left:1.6rem; width:calc(100% - 3.2rem); padding:0.7rem 0 1.45rem; background-color:#fff; font-size:1.1rem; line-height:1rem;}
 .textarea_box .byte_check .count {color:#000;}
 .textarea_box .byte_check .total {color:#bbb;}
 .textarea_box .byte_check .total::before {content:'/';}
@@ -80,9 +81,11 @@
 .textarea_box .textarea:disabled + .byte_check .total {color:#bbb;}
 .textarea_box button {position:absolute; bottom:0.15rem; right:0.15rem; height:4.5rem; padding:0 1.45rem; font-size:1.4rem; font-weight:700; color:#000; line-height:1.7rem;}
 
+.textarea_box.ty02{padding-bottom:0;}
 .textarea_box.ty02 .textarea {min-height:auto; padding:1.22rem 1.6rem; overflow:hidden;}
 .textarea_box.ty02 .byte_check {display:none;}
-.textarea_box.ty02.on .textarea {padding-bottom:3.25rem;}
+.textarea_box.ty02.on{padding-bottom:3.25rem;}
+.textarea_box.ty02.on .textarea{padding-bottom:0;}
 .textarea_box.ty02.on .byte_check {display:block;}
 
 

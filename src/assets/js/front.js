@@ -503,25 +503,25 @@ const swiper = {
 }
 
 const input = {
-  elem: [],
+  inputItem: [],
+  textareaItem: [],
   btnDel: [],
   init: function(){
-    const isInput = document.querySelectorAll("input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='search'], input[type='tel'], input[type='url']");
-    if( !isInput ) return;
-    // console.log('input init');
-
-    document.querySelectorAll(".input_box .btn_del").forEach( a => { this.btnDel.push(a) });
-    isInput.forEach( a =>{
-      this.elem.push(a);
-      this.setBtnDel(a);
-    });
+    const _input = document.querySelectorAll("input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='search'], input[type='tel'], input[type='url']");
+    const _btnDel = document.querySelectorAll(".input_box .btn_del");
+    const _textarea = document.querySelectorAll(".textarea_box textarea");
+    // if( !isInput ) return;
+    _input.forEach( a => { this.inputItem.push(a); this.setBtnDel(a) });
+    _btnDel.forEach( a => { this.btnDel.push(a) });
+    _textarea.forEach( a => { this.textareaItem.push(a) });
     
     this.input();
     this.clear();
 
   },
   input: function(){
-    this.elem.forEach( a => { a.addEventListener("input", ()=>{ this.setBtnDel(a) })})
+    this.inputItem.forEach( a => { a.addEventListener("input", ()=>{ this.setBtnDel(a) })} );
+    this.textareaItem.forEach( a => { a.addEventListener("input", ()=>{ this.textarea(a) })});
   },
   setBtnDel: function(input){
     const _this = input;
@@ -546,6 +546,37 @@ const input = {
       _input.focus();
     })})
   },
+  textarea: function(textarea){
+    const _this = textarea;
+    const _textareaBox = _this.parentNode;
+    const _count = _textareaBox.querySelector(".byte_check .count");
+    
+    if( _this.value.length ){
+      _textareaBox.classList.add("on");
+      _count.innerText = _this.value.length;
+    } else {
+      _textareaBox.classList.remove("on");
+    }
+
+    const isTy02 = _textareaBox.classList.contains("ty02");
+    if( isTy02 ) this.textareaResize(_this);
+  },
+  textareaResize: function(textarea){
+    const _this = textarea;
+    _this.style.height = "auto";
+
+    const _height = _this.scrollHeight;
+    _this.style.height = `${_height}px`;
+  }
+}
+
+const select = {
+  init: function(){
+
+  },
+  click: function(){
+
+  }
 }
 
 
@@ -558,5 +589,6 @@ export default {
         Vue.config.globalProperties.$tag = tag;
         Vue.config.globalProperties.$swiper = swiper;
         Vue.config.globalProperties.$input = input;
+        Vue.config.globalProperties.$select = select;
     }
 }

@@ -100,10 +100,10 @@
 				<div class="form_group">
 					<strong class="form_label">Select Popup</strong>
 					<div class="form_item">
-            <button type="button" class="btn_select" id="btn_selectPop01" onclick="popUp.open('#selectPop01', '#btn_selectPop01');">은행계좌 자동이체</button>
+            <button type="button" class="btn_select" id="btn_selectPop01" @click="$popup.open('#selectPop01', '#btn_selectPop01');">은행계좌 자동이체</button>
 					</div>
 					<div class="form_item">
-            <button type="button" class="btn_select" id="btn_selectPop02" onclick="popUp.open('#selectPop02', '#btn_selectPop02');">전체</button>
+            <button type="button" class="btn_select" id="btn_selectPop02" @click="$popup.open('#selectPop02', '#btn_selectPop02');">전체</button>
 					</div>
 				</div>
 
@@ -125,7 +125,7 @@
           </div>
         </div>
 
-        <div class="textarea_box">
+        <div class="textarea_box disabled">
           <textarea class="textarea" placeholder="문의 내용을 입력해 주세요" maxlength="1000" disabled></textarea>
           <div class="byte_check">
             <span class="count">0</span><span class="total">1,000</span>
