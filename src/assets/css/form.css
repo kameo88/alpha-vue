@@ -356,14 +356,14 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 
 
 /* btn badge */
-[class^="bag_btn_"]{position:relative; z-index:1; font-size:1.2rem; color:#909090; line-height:1.3rem; padding:0.6rem 0.8rem 0.5rem 2.2rem; background:#f8f8f8; border-radius:10rem;}
-[class^="bag_btn_"]::before{position:absolute; left:0.8rem; top:50%; transform:translateY(-50%); content:""; display:inline-block; width:1.2rem; height:1.2rem;}
-[class^="bag_btn_"] ~ [class^="bag_btn_"]{margin-left:0.4rem;}
-[class^="bag_btn_"].on{color:#000; background:#fff0f0;}
-.bag_btn_c01::before{background:url(../images/common/ico_wish.png) no-repeat center / 1.2rem 1.2rem;}
-.bag_btn_c02::before{background:url(../images/common/ico_compare.png) no-repeat center / 1.2rem 1.2rem;}
-.bag_btn_c01.on::before{background:url(../images/common/ico_wish_active.png) no-repeat center / 1.2rem 1.2rem;}
-.bag_btn_c02.on::before{background:url(../images/common/ico_compare_active.png) no-repeat center / 1.2rem 1.2rem;}
+.btn.bag {position:relative; z-index:1; font-size:1.2rem; color:#909090; line-height:1.3rem; padding:0.6rem 0.8rem 0.5rem 2.2rem; background:#f8f8f8; border:1px solid transparent; border-radius:10rem;}
+.btn.bag::before{position:absolute; left:0.8rem; top:50%; transform:translateY(-50%); content:""; display:inline-block; width:1.2rem; height:1.2rem;}
+.btn.bag ~ .btn.bag{margin-left:0.4rem;}
+.btn.bag.on{color:#000; background:#fff0f0;}
+.btn.bag.c01::before{background:url(../images/common/ico_wish.png) no-repeat center / 1.2rem 1.2rem;}
+.btn.bag.c02::before{background:url(../images/common/ico_compare.png) no-repeat center / 1.2rem 1.2rem;}
+.btn.bag.c01.on::before{background:url(../images/common/ico_wish_active.png) no-repeat center / 1.2rem 1.2rem;}
+.btn.bag.c02.on::before{background:url(../images/common/ico_compare_active.png) no-repeat center / 1.2rem 1.2rem;}
 
 /* event badge */
 [class^="bag_evt_"] ~ [class^="bag_evt_"]{margin-left:0.4rem;}
@@ -373,9 +373,6 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 [class^="bag_evt_"][class$="_ty02"]{background-color:#fc6969;}
 [class^="bag_evt_"][class$="_ty03"]{background-color:#4369ee;}
 [class^="bag_evt_"][class$="_ty04"]{background-color:#ffb100;}
-
-
-
 
 
 /* ***** tag_list ***** */

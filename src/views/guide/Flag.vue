@@ -7,9 +7,9 @@
       <div class="page_info">flag & badge</div>
       
       <div class="section">
-        <h3 class="tit02">btn badge <strong class="fc01">(==> event 처리 필요)</strong></h3>
-        <button type="button" class="bag_btn_c01" :class="{ on : flag[0] }" @click="flag[0] = !flag[0]"><span class="blind">찜하기</span>480</button>
-        <button type="button" class="bag_btn_c02" :class="{ on : flag[1] }" @click="flag[1] = !flag[1]">비교하기</button>
+        <h3 class="tit02">btn badge</h3>
+        <button type="button" class="btn bag c01" :class="{ on : flag[0] }" @click="flag[0] = !flag[0]"><span class="blind">찜하기</span>480</button>
+        <button type="button" class="btn bag c02" :class="{ on : flag[1] }" @click="flag[1] = !flag[1]">비교하기</button>
       </div> <!-- // section -->
 
       <div class="section">

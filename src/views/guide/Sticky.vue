@@ -176,7 +176,7 @@
                     </div>
                   </li>
                 </ul>
-                <div class="group_btn">
+                <div class="btn_group">
                   <button type="button" class="btn md c05" id="btn_popup01" onclick="popUp.open('#popup01', '#btn_popup01');">전체보기</button>
                 </div>
               </div>
@@ -237,7 +237,7 @@
                     </a>
                   </li>
                 </ul>
-                <div class="group_btn">
+                <div class="btn_group">
                   <button type="button" class="btn md c05" id="btn_popup02" onclick="popUp.open('#popup02', '#btn_popup02');">전체보기</button>
                 </div>
               </div>
@@ -298,8 +298,8 @@
                 <div class="acdItem">
                   <div class="card_bot">
                     <div class="paln_badge">
-                      <button type="button" class="bag_btn_c01"><span class="blind">찜하기</span>480</button> <!-- 활성화 class="... on" -->
-                      <button type="button" class="bag_btn_c02">비교하기</button> <!-- 활성화 class="... on" -->
+                      <button type="button" class="btn bag c01"><span class="blind">찜하기</span>480</button> <!-- 활성화 class="... on" -->
+                      <button type="button" class="btn bag c02">비교하기</button> <!-- 활성화 class="... on" -->
                     </div>
 
                     <div class="gift_box">
@@ -435,8 +435,8 @@
                 <div class="acdItem">
                   <div class="card_bot">
                     <div class="paln_badge">
-                      <button type="button" class="bag_btn_c01"><span class="blind">찜하기</span>480</button> <!-- 활성화 class="... on" -->
-                      <button type="button" class="bag_btn_c02">비교하기</button> <!-- 활성화 class="... on" -->
+                      <button type="button" class="btn bag c01"><span class="blind">찜하기</span>480</button> <!-- 활성화 class="... on" -->
+                      <button type="button" class="btn bag c02">비교하기</button> <!-- 활성화 class="... on" -->
                     </div>
 
                     <div class="gift_box">
@@ -527,7 +527,7 @@
               </div>
             </li>
           </ul>
-          <div class="group_btn">
+          <div class="btn_group">
             <button type="button" class="btn md c05">파트너사 요금제 더 보러가기</button>
           </div>
         </div> <!-- // item_list -->
@@ -660,7 +660,7 @@
               </a>
             </li>
           </ul>
-          <div class="group_btn">
+          <div class="btn_group">
             <a href="javascript:void(0);" role="button" class="btn md c05">더볼래요</a>
           </div>
         </div>

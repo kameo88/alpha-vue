@@ -266,8 +266,8 @@
                   <div class="acdItem">
                     <div class="card_bot">
                       <div class="paln_badge">
-                        <button type="button" class="bag_btn_c01"><span class="blind">찜하기</span>480</button>
-                        <button type="button" class="bag_btn_c02">비교하기</button>
+                        <button type="button" class="btn bag c01"><span class="blind">찜하기</span>480</button>
+                        <button type="button" class="btn bag c02">비교하기</button>
                       </div>
 
                       <div class="gift_box">
