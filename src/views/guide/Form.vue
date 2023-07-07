@@ -85,13 +85,13 @@
 
 				<ul class="select_list" role="listbox">
           <li role="none" class="on">
-            <button type="button" role="option" aria-selected="true" data-option="은행계좌 자동이체">은행계좌 자동이체</button>
+            <button type="button" role="option" aria-selected="true" data-option="은행계좌 자동이체" @click="$selectList.click">은행계좌 자동이체</button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="신용카드 자동결제">신용카드 자동결제</button>
+            <button type="button" role="option" aria-selected="false" data-option="신용카드 자동결제" @click="$selectList.click">신용카드 자동결제</button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="지로납부">지로납부</button>
+            <button type="button" role="option" aria-selected="false" data-option="지로납부" @click="$selectList.click">지로납부</button>
           </li>
 				</ul>
 

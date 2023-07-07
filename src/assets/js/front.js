@@ -1,4 +1,9 @@
 const front = {
+  init(){
+    this.device();
+    input.init();
+    radioActive.init();
+  },
   device(){
     const elem = document.querySelector("html");
     const userAgent = navigator.userAgent;
@@ -184,6 +189,20 @@ const popup = {
 
     _btn.focus();
 
+  },
+  select: function(pop, btn){
+    let _this = event.target;
+    while( _this ){
+      if( _this.tagName == "BUTTON" ) break;
+      _this = _this.parentNode;
+    }
+
+    const _data = _this.getAttribute("data-option");
+    const _btn = document.querySelector(btn);
+    _btn.innerText = _data;
+    this.close(pop, btn);
+
+    selectList.click(event);
   }
 }
 
@@ -588,11 +607,58 @@ const input = {
   }
 }
 
-const select = {
-  init: function(){
+const selectList = {
+  click: function(e){
 
+    let _this = e.target;
+    while( _this ){
+      if( _this.tagName == "BUTTON" ) break;
+      _this = _this.parentNode;
+    }
+    
+    const _this_li = _this.parentNode;
+    const _li = _this_li.parentNode.querySelectorAll("li");
+
+    _li.forEach( a => {
+      const button = a.querySelector("button");
+      if( button == _this ){
+        a.classList.add("on");
+        button.setAttribute("aria-selected", true);
+      } else {
+        a.classList.remove("on");
+        button.setAttribute("aria-selected", false);
+      }
+    })
+  }
+}
+
+const radioActive = {
+  item: [],
+  init: function(){
+    const item = document.querySelectorAll(".radio_active input");
+    this.item = []; // reset
+    item.forEach( a => this.item.push(a) );
+
+    this.click();
   },
   click: function(){
+    this.item.forEach( a => { a.addEventListener("change", ()=>{
+
+      const _this = a;
+      const _this_li = _this.parentNode.parentNode;
+      const _li = _this_li.parentNode.querySelectorAll("li");
+
+      _li.forEach( a => {
+        const input = a.querySelector("input");
+        if( input == _this ){
+          a.classList.add("on");
+          a.classList.remove("off");
+        } else {
+          a.classList.add("off");
+          a.classList.remove("on");
+        }
+      })
+    })})
 
   }
 }
@@ -608,6 +674,7 @@ export default {
         Vue.config.globalProperties.$tag = tag;
         Vue.config.globalProperties.$swiper = swiper;
         Vue.config.globalProperties.$input = input;
-        Vue.config.globalProperties.$select = select;
+        Vue.config.globalProperties.$selectList = selectList;
+        Vue.config.globalProperties.$radioActive = radioActive;
     }
 }

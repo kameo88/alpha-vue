@@ -9,7 +9,7 @@
       <div class="section">
         <ul class="select_list02" role="listbox">
           <li role="none" class="on">
-            <button type="button" role="option" aria-selected="true" data-option="전체">
+            <button type="button" role="option" aria-selected="true" data-option="전체" @click="$selectList.click">
               <span class="img">
                 전체
               </span>
@@ -17,7 +17,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="A모바일">
+            <button type="button" role="option" aria-selected="false" data-option="A모바일" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner01.png" alt="">
               </span>
@@ -25,7 +25,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="FLASH모바일">
+            <button type="button" role="option" aria-selected="false" data-option="FLASH모바일" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner02.png" alt="">
               </span>
@@ -33,7 +33,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="KG모빌리언스">
+            <button type="button" role="option" aria-selected="false" data-option="KG모빌리언스" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner03.png" alt="">
               </span>
@@ -41,7 +41,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="U+유모바일">
+            <button type="button" role="option" aria-selected="false" data-option="U+유모바일" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner04.png" alt="">
               </span>
@@ -49,7 +49,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="WELL">
+            <button type="button" role="option" aria-selected="false" data-option="WELL" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner05.png" alt="">
               </span>
@@ -57,7 +57,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="freeT">
+            <button type="button" role="option" aria-selected="false" data-option="freeT" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner06.png" alt="">
               </span>
@@ -65,7 +65,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="mobing">
+            <button type="button" role="option" aria-selected="false" data-option="mobing" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner07.png" alt="">
               </span>
@@ -73,7 +73,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="리브모바일">
+            <button type="button" role="option" aria-selected="false" data-option="리브모바일" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner08.png" alt="">
               </span>
@@ -81,7 +81,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="마블프로듀스">
+            <button type="button" role="option" aria-selected="false" data-option="마블프로듀스" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner09.png" alt="">
               </span>
@@ -89,7 +89,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="벨류컴">
+            <button type="button" role="option" aria-selected="false" data-option="벨류컴" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner10.png" alt="">
               </span>
@@ -97,7 +97,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="슈가모바일">
+            <button type="button" role="option" aria-selected="false" data-option="슈가모바일" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner11.png" alt="">
               </span>
@@ -105,7 +105,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="스노우맨">
+            <button type="button" role="option" aria-selected="false" data-option="스노우맨" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner12.png" alt="">
               </span>
@@ -113,7 +113,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="스마텔">
+            <button type="button" role="option" aria-selected="false" data-option="스마텔" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner13.png" alt="">
               </span>
@@ -121,7 +121,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="아이즈모바일">
+            <button type="button" role="option" aria-selected="false" data-option="아이즈모바일" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner14.png" alt="">
               </span>
@@ -129,7 +129,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="앤텔레콤">
+            <button type="button" role="option" aria-selected="false" data-option="앤텔레콤" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner15.png" alt="">
               </span>
@@ -137,7 +137,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="에스원안심모바일">
+            <button type="button" role="option" aria-selected="false" data-option="에스원안심모바일" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner16.png" alt="">
               </span>
@@ -145,7 +145,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="여유텔레콤">
+            <button type="button" role="option" aria-selected="false" data-option="여유텔레콤" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner17.png" alt="">
               </span>
@@ -153,7 +153,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="이야기모바일">
+            <button type="button" role="option" aria-selected="false" data-option="이야기모바일" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner18.png" alt="">
               </span>
@@ -161,7 +161,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="이지모바일">
+            <button type="button" role="option" aria-selected="false" data-option="이지모바일" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner19.png" alt="">
               </span>
@@ -169,7 +169,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="인스모바일">
+            <button type="button" role="option" aria-selected="false" data-option="인스모바일" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner20.png" alt="">
               </span>
@@ -177,7 +177,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="티플러스">
+            <button type="button" role="option" aria-selected="false" data-option="티플러스" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner21.png" alt="">
               </span>
@@ -185,7 +185,7 @@
             </button>
           </li>
           <li role="none">
-            <button type="button" role="option" aria-selected="false" data-option="헬로모바일">
+            <button type="button" role="option" aria-selected="false" data-option="헬로모바일" @click="$selectList.click">
               <span class="img">
                 <img src="@/assets/images/data/logo_partner22.png" alt="">
               </span>

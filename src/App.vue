@@ -7,11 +7,8 @@ export default {
   name: 'App',
   watch: {
     $route(){
-      setTimeout(()=>{ this.$input.init() }, 50) 
+      setTimeout(()=>{ this.$front.init() }, 0);
     }
-  },
-  mounted(){
-    this.$front.device();
   }
 }
 </script>
