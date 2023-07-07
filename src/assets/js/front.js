@@ -273,36 +273,77 @@ const tab = {
     // tablist02 일때만 move() (좌우 스크롤)
     const isTablist02 = [...document.querySelectorAll(".tab_list02")].map( a => [...a.querySelectorAll("button[role='tab']")].filter( b => b == _this )).flat().length;
     if( isTablist02 ) this.move(_this);
-
-
   },
   move(e){
+    const _data = {
+      itemLeft: [],
+      itemWidth: [],
+    };
+
+    const _this = e;
+    const _this_li = _this.parentNode;
+    const _li = _this_li.parentNode.querySelectorAll("li");
+
     const _tabList = e.parentNode.parentNode;
 
-    const _tabListW = _tabList.offsetWidth; // 보여지는 가로 640
-    const _tabListS = _tabList.scrollLeft;  // 스크롤값
+    _data.tablist_width = _tabList.offsetWidth; // 보여지는 가로 640
+    _data.tablist_offsetLeft = _tabList.offsetLeft;
+    _data.tabList_paddingLeft = (getComputedStyle(_tabList).paddingLeft).replace("px", "") * 1;
+    _data.tabList_paddingRight = (getComputedStyle(_tabList).paddingRight).replace("px", "") * 1;
 
-    const _tabListL = _tabList.offsetLeft;
-    const _thisL = e.offsetLeft - _tabListL;
-    const _elemW = e.offsetWidth;
+    _data.scrollWidth = _tabList.scrollWidth;
+    _data.scrollLeft = _tabList.scrollLeft;
+    _data.maxScroll = _data.scrollWidth - _data.tablist_width;
 
-    const st = _tabListS;               // 탭 시작점
-    const en = _tabListS + _tabListW;   // 탭 끝점
+    _li.forEach( (a, i) =>{
+      if( a == _this_li ) _data.idx = i;
 
-    const elSt = _thisL;
-    const elEn = _thisL + _elemW;
+      _data.itemWidth.push(a.offsetWidth);
 
-    const gap = 10;
-    const move = 100;
+      const itemLeft = a.offsetLeft - _data.tablist_offsetLeft;
+      _data.itemLeft.push(itemLeft);
 
-    let goto = _tabListS;
+      _data.maxLength = i;
+    });
 
-    if( st >= elSt-gap ) goto = goto - move;
-    if( en <= elEn+gap ) goto = goto + move;
+    
+    _data.chkStart = _data.scrollLeft;
 
-    // console.log('st:', st, ' en:', en, ' elSt:', elSt, ' elEn:', elEn, ' goto:', goto );
 
-    _tabList.scrollTo(goto, 0);
+    _data.chkEnd = _data.scrollLeft + _data.tablist_width - _data.tabList_paddingRight;
+    _data.chkHalf = (_data.chkStart + _data.chkEnd) / 2;
+    _data.thisItemLeft = _data.itemLeft[_data.idx];
+    _data.thisItemWidth = _data.itemWidth[_data.idx];
+
+    _data.prevIdx = ( _data.idx > 1 ) ?  _data.idx-1 : _data.idx;
+    _data.nextIdx = ( _data.idx < _data.maxLength ) ? _data.idx+1 : _data.idx;
+
+    _data.result = 0;
+    _data.gap = 100;
+    if( document.querySelector("html").classList.contains("mobile") ){
+      _data.gap = 0;
+    }
+
+    console.log(_li[0].classList.contains("other"))
+    if( _li[0].classList.contains("other") ){
+      _data.chkStart = _data.chkStart - _data.itemLeft[1];
+    }
+
+    if( _data.chkStart + _data.gap >= _data.thisItemLeft ){
+      console.log('ss');
+      // _data.result = _data.scrollLeft - _data.gap;
+      _data.result = _data.scrollLeft - _data.itemWidth[_data.prevIdx] - _data.gap;
+      // _tabList.scrollTo(_data.result, 0);
+      _tabList.scrollLeft = _data.result;
+    } else if ( _data.chkEnd - _data.gap <= _data.thisItemLeft + _data.thisItemWidth ){
+      console.log('ee');
+      // _data.result = _data.scrollLeft + _data.gap;
+      _data.result = _data.scrollLeft + _data.itemWidth[_data.nextIdx] + _data.gap;
+      _tabList.scrollLeft = _data.result;
+    }
+
+    console.log(_data);
+    // _tabList.scrollLeft = 399;
   }
 }
 
@@ -335,7 +376,8 @@ const tag = {
         }
       }
     });
-    this.move(_this);
+    // this.move(_this);
+    tab.move(_this);
   },
   move(e){
     const _tabList = e.parentNode.parentNode;
