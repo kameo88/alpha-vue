@@ -24,21 +24,21 @@
         <div role="tabpanel" aria-expanded="true" tabindex="0" id="tab_panel_01_01">
           <h3 class="blind">주소/매장명</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             주소/매장명
           </div>
         </div> <!-- // tabpanel -->
         <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_01_02">
           <h3 class="blind">지하철</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             지하철
           </div>
         </div> <!-- // tabpanel -->
         <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_01_03">
           <h3 class="blind">내 위치</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             내 위치
           </div>
         </div> <!-- // tabpanel -->
@@ -90,77 +90,77 @@
         <div role="tabpanel" aria-expanded="true" tabindex="0" id="tab_panel_03_01">
           <h3 class="blind">데이터</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             데이터
           </div> <!-- // section -->
         </div> <!-- // tabpanel -->
         <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_03_02">
           <h3 class="blind">소진시 속도</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             소진시 속도
           </div> <!-- // section -->
         </div> <!-- // tabpanel -->
         <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_03_03">
           <h3 class="blind">가격</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             가격
           </div> <!-- // section -->
         </div> <!-- // tabpanel -->
         <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_03_04">
           <h3 class="blind">통화량</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             통화량
           </div> <!-- // section -->
         </div> <!-- // tabpanel -->
         <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_03_05">
           <h3 class="blind">문자량</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             문자량
           </div> <!-- // section -->
         </div> <!-- // tabpanel -->
         <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_03_06">
           <h3 class="blind">파트너사</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             파트너사
           </div> <!-- // section -->
         </div> <!-- // tabpanel -->
         <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_03_07">
           <h3 class="blind">통신기술</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             통신기술
           </div> <!-- // section -->
         </div> <!-- // tabpanel -->
         <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_03_08">
           <h3 class="blind">할인 기간</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             할인 기간
           </div> <!-- // section -->
         </div> <!-- // tabpanel -->
         <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_03_09">
           <h3 class="blind">부가서비스</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             부가서비스
           </div> <!-- // section -->
         </div> <!-- // tabpanel -->
         <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_03_10">
           <h3 class="blind">전용요금제</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             전용요금제
           </div> <!-- // section -->
         </div> <!-- // tabpanel -->
         <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_03_11">
           <h3 class="blind">결합요금</h3>
 
-          <div class="section">
+          <div class="panel_cnt">
             결합요금
           </div> <!-- // section -->
         </div> <!-- // tabpanel -->

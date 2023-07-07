@@ -201,10 +201,10 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .section ~ .section {padding-top:3.2rem;}
 .section ~ .section.ty02 {padding-top:6rem;}
 .section .section {padding:0;}
-/* .section .section ~ .section {padding-top:3.2rem;}
+.tabpanel_wrap .panel_cnt {padding:2rem 1.6rem 0 1.6rem;}
 
-.section .tabpanel_wrap .section {padding-top:2rem;}
-.tabpanel_wrap .section ~ .section {padding-top:3.2rem;} */
+/* .section .section ~ .section {padding-top:3.2rem;}
+.section .tabpanel_wrap .section ~ .section {padding-top:3.2rem;}  */
 
 /* *** skip *** */
 .skip {position:absolute; top:0; right:0; left:0; font-size:0; z-index:100;}
