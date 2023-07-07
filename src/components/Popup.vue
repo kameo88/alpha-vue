@@ -1003,9 +1003,7 @@
       popupItem: Array,
     },
     mounted(){
-      setTimeout(() => {
-        this.popupItem.forEach( a => { this.popup[a] = true });
-      }, 0);
+      setTimeout(() => { this.popupItem.forEach( a => { this.popup[a] = true }) }, 0);
     }
   }
   </script>

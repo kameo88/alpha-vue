@@ -165,5 +165,13 @@
 
 export default {
   name: 'GuideButton',
+  data(){
+    return {
+      popupItem: ['sharePop'],
+    }
+  },
+  mounted(){
+    this.$emit('popupItem', this.popupItem);
+  }
 }
 </script>

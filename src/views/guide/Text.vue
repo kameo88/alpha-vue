@@ -108,5 +108,13 @@
 <script>
 export default {
   name: 'GuideText',
+  data(){
+	return {
+		popupItem: ['sharePop'],
+	}
+  },
+  mounted(){
+	this.$emit('popupItem', this.popupItem);
+  }
 }
 </script>

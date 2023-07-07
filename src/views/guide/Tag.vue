@@ -240,6 +240,11 @@
 
 export default {
   name: "GuideTag",
+  data(){
+    return {
+      popupItem: ['filterPop']
+    }
+  },
   mounted(){
     this.$tag.variable.resize();
   }

@@ -714,5 +714,13 @@
 <script>
 export default {
   name: 'GuideForm',
+  data(){
+    return {
+      popupItem: ['selectPop01', 'selectPop02'],
+    }
+  },
+  mounted(){
+    this.$emit('popupItem', this.popupItem);
+  }
 }
 </script>
