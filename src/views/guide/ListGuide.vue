@@ -241,7 +241,7 @@
               <p><b>[07/04]</b> flag 이벤트 처리 완료</p>
             </td>
           </tr>
-          <tr class="mod">
+          <tr class="ing">
             <td></td>
             <td>list</td>
             <td></td>

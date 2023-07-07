@@ -88,6 +88,10 @@ const routes = [
         component: () => import('@/views/guide/FormEtc.vue'),
       },
       {
+        path: 'form_vuetify',
+        component: () => import('@/views/guide/FormVuetify.vue'),
+      },
+      {
         path: 'tab',
         component: () => import('@/views/guide/Tab.vue'),
       },
