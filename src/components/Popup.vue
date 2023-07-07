@@ -1004,9 +1004,7 @@
     },
     mounted(){
       setTimeout(() => {
-        console.log(this.popupItem);
         this.popupItem.forEach( a => { this.popup[a] = true });
-        console.log(this.popup);
       }, 0);
     }
   }

@@ -10,7 +10,6 @@
 
 	<div class="wrap">
 		<MainHeader />
-    {{ popupItem }}
 		<router-view @popupItem="popupItem = $event;" />
 		<AsideFloat />
 		<MainFooter />
