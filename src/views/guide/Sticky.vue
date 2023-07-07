@@ -80,7 +80,7 @@
           <div role="tabpanel" aria-expanded="true" tabindex="0" id="tab_panel_01_01">
             <h3 class="blind">사용자 리뷰</h3>
 
-            <div class="section">
+            <div class="panel_cnt">
                 
               <div class="review_point">
                 <div class="rp_l">
@@ -185,7 +185,7 @@
           <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_01_02">
             <h3 class="blind">블로그 리뷰</h3>
 
-            <div class="section">
+            <div class="panel_cnt">
               <div class="line_list ty02">
                 <ul>
                   <li>
