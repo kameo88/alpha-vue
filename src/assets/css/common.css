@@ -188,8 +188,8 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .text_btn.ty03::after{content:none;}
 
 /* layout */
-.wrap {display:flex; flex-direction:column; height:100%;}
-.container {flex:1 1 auto;}
+/* .wrap {display:flex; flex-direction:column; height:100%;}
+.container {flex:1 1 auto;} */
 .content {height:100%; max-width:64rem; padding:5.2rem 0 3.2rem; margin:0 auto;}
 
 /* PC nav */
@@ -212,7 +212,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 
 
 /* *** header *** */
-.header {flex:none; position:fixed; top:0; left:0; width:100%; height:5.2rem; z-index:11;}
+.header {/* flex:none; */ position:fixed; top:0; left:0; width:100%; height:5.2rem; z-index:11;}
 .header > .inner {display:flex; justify-content:space-between; align-items:center; height:5.2rem; max-width:64rem; margin:0 auto; padding:0 1.6rem; background-color: ;}
 .header > .inner .h_left {display:flex; align-items:center; flex:1 1 auto; overflow:hidden;}
 .header > .inner .h_left > *:not(:last-child) {margin-right:0.8rem;}
@@ -222,8 +222,8 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .header > .inner button,
 .header > .inner a {width:2.4rem; height:2.4rem; background:no-repeat center / 100% auto;}
 .header > .inner .h_title {flex:1 1 auto; color:#000; font-size:1.6rem; line-height:2.3rem; font-weight:700; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
-.header > .inner .h_home {flex:none; width:4.8rem; background-image:url(../images/common/logo_plusalpha.png);}
-.header > .inner .h_back {flex:none; background-image:url(../images/common/ico_back.png);}
+.header > .inner .h_home {/* flex:none; */ width:4.8rem; background-image:url(../images/common/logo_plusalpha.png);}
+.header > .inner .h_back {/* flex:none; */ background-image:url(../images/common/ico_back.png);}
 .header > .inner .h_menu {background-image:url(../images/common/ico_menu.png);}
 .header > .inner .h_close {background-image:url(../images/common/ico_close.png);}
 .header > .inner .h_rcmd {width:3.2rem; height:3.2rem; background-image:url(../images/common/ico_rcmd.png);}
@@ -274,7 +274,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .subMenu-leave-from {max-height:50rem; overflow:hidden;}
 
 /* *** aside *** */
-.aside {flex:none; display:flex; justify-content:end;}
+.aside {/* flex:none; */ display:flex; justify-content:end;}
 .aside::before {content:''; position:fixed; top:0; right:0; bottom:0; left:0; background:rgba(0, 0, 0, 0.4); opacity:0; transform:translateX(100%); transition:opacity 0.2s; z-index:99;}
 .aside.open::before {transform:translateX(0); opacity:1;}
 .aside > .inner {visibility:hidden; position:fixed; top:0; right:0; display:flex; flex-direction:column; width:calc(100% - 4rem); max-width:32rem; height:100%; background:#fff; overflow:hidden; overflow-y:auto; transform:translateX(100%); transition:0.2s; box-sizing:border-box; padding:5.2rem 0 0; z-index:100;}
@@ -287,7 +287,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .aside .asd_top .asd_home {background-image:url(../images/common/ico_home.png);}
 .aside .asd_top .asd_close {background-image:url(../images/common/ico_close.png);}
 
-.aside .aside_header {flex:none; padding:0 2rem; margin-bottom:3.2rem;}
+.aside .aside_header {/* flex:none; */ padding:0 2rem; margin-bottom:3.2rem;}
 .aside .aside_header .user {display:flex; justify-content:space-between; align-items:end; padding:3rem 2rem 0;}
 .aside .aside_header .user .tit {font-size:1.8rem; line-height:2.6rem; color:#000;}
 .aside .aside_header .user .link_login {font-weight:700; color:#fc6969; text-decoration:underline;}
@@ -310,7 +310,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .aside .aside_nav .sub_menu a sup {display:inline-block; margin-top:-0.5rem;}
 .aside .aside_nav .sub_menu a.img_delivery {height:4.2rem; background:url(../images/common/menu_delivery.png) no-repeat left center / auto 1.6rem;}
 
-.aside .aside_footer {flex:none; padding:4rem 2rem 3.2rem;}
+.aside .aside_footer {/* flex:none; */ padding:4rem 2rem 3.2rem;}
 .aside .aside_footer a {position:relative; display:block; padding:1.72rem 3.52rem 1.72rem 5.52rem; border:0.1rem solid #ddd; border-radius:1.2rem; font-size:1.4rem; line-height:2rem; color:#000;}
 .aside .aside_footer a::before {content:''; position:absolute; top:50%; left:2rem; display:block; width:2.8rem; height:2.8rem; background:no-repeat center / 100% auto; transform:translateY(-50%);}
 .aside .aside_footer a::after {content:''; position:absolute;  top:50%; right:2rem; display:block; width:1.6rem; height:1.6rem; background:url(../images/common/ico_arrowR.png) no-repeat center / 100% auto; transform:translateY(-50%);}
@@ -339,7 +339,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .aside_float .top_btn {border:0.1rem solid #ddd; font-size:1.2rem; font-weight:700; color:#777;}
 
 /* *** footer *** */
-.footer {flex:none; margin-top:2.8rem; background:#f8f8f8; font-size:1.3rem; line-height:1.9rem;}
+.footer {/* flex:none; */ margin-top:2.8rem; background:#f8f8f8; font-size:1.3rem; line-height:1.9rem;}
 .footer > .inner {padding:4rem 1.6rem; max-width:64rem; margin:0 auto;}
 .footer > .inner > *:not(:first-child) {margin-top:2rem;}
 .footer > .inner .f_logo a {display:block; width:7.6rem; height:2rem; background:url(../images/common/logo_lguplus.png) no-repeat center / 100% auto;}
@@ -415,10 +415,10 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 
 .pop_wrap {position:relative; display:flex; flex-direction:column; background:#fff; overflow:hidden; transition:0.2s;}
 .pop_wrap:focus-visible {outline:none;}
-.pop_header {flex:none;}
+.pop_header {/* flex:none; */}
 .pop_header h3 {color:#000; font-size:1.6rem; font-weight:700; line-height:2.3rem; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
 .pop_content {flex:1 1 auto; overflow:hidden; overflow-y:auto; word-break:keep-all; word-wrap:break-word;}
-.pop_footer {flex:none;}
+.pop_footer {/* flex:none; */}
 .pop_close {position:absolute; width:2.4rem; height:2.4rem; background:url(../images/common/ico_close.png) no-repeat center / 1.6rem auto;}
 
 .pop_layer.alert {align-items:center;}
