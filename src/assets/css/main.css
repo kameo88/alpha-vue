@@ -64,7 +64,7 @@
 .main_service .svc02 a::before {background-image:url(../images/content/img_main_service02.png);}
 .main_service .svc03 a::before {background-image:url(../images/content/img_main_service03.png);}
 
-.main_data_select .group_btn {margin-top:2rem;}
+.main_data_select .btn_group {margin-top:2rem;}
 
 .main_partner > ol {counter-reset:partner_rank; padding:1.2rem 3.2rem; border-radius:1.2rem; background-color:#f8f8f8; overflow:hidden;}
 .main_partner > ol li {counter-increment:partner_rank; position:relative;}
