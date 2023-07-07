@@ -299,6 +299,7 @@
             <td class="marker"></td>
             <td class="date"></td>
             <td>
+              <p><b>[07/07]</b> 사용자 & 블로그 리뷰 팝업</p>
               <p><b>[07/05]</b> sticky script 작업완료</p>
             </td>
           </tr>
