@@ -1,5 +1,4 @@
 <template>
-    {{ popupItem }}
     <div class="pop_layer alert" id="popup01" v-if="popup.popup01"> <!-- alert, normal, full -->
       <div class="pop_wrap">
         <div class="pop_header">
