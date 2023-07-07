@@ -247,6 +247,7 @@ export default {
   },
   mounted(){
     this.$tag.variable.resize();
+    this.$emit('popupItem', this.popupItem);
   }
 };
 </script>

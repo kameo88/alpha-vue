@@ -48,9 +48,10 @@ const sort = {
     }
 
     const _html = document.querySelector("html");
-    const _body = document.querySelector("body");
+    // const _body = document.querySelector("body");
 
-    if (!_html.classList.contains('mobile')) _body.classList.add("noScroll");
+    // if (_html.classList.contains('mobile')) _body.classList.add("noScroll");
+    if (_html.classList.contains('mobile')) scroll.noScroll();
 
     setTimeout(() => {
       const _sortLayer = document.querySelector('.sort_layer');
@@ -82,7 +83,7 @@ const sort = {
   },
   close(){
     const _html = document.querySelector("html");
-    const _body = document.querySelector("body");
+    // const _body = document.querySelector("body");
     const _sortLayer = document.querySelector('.sort_layer');
     const _sortLayerWrap = document.querySelector('.sort_layer_wrap');
     const _sortBtn = document.querySelector('.sort_btn');
@@ -97,7 +98,8 @@ const sort = {
 
     _sortLayerWrap.removeAttribute("tabindex");
 
-    if (_html.classList.contains('mobile')) _body.classList.remove("noScroll");
+    // if (_html.classList.contains('mobile')) _body.classList.remove("noScroll");
+    if ( _html.classList.contains('mobile') ) scroll.scroll();
   },
   select(e){
     const _this = e.target;
@@ -128,9 +130,7 @@ const sort = {
 
 const popup = {
   open : function(pop){
-
-    const _body = document.querySelector("body");
-    _body.classList.add("noScroll");
+    scroll.noScroll();
 
     const _pop = document.querySelector(pop);
     const _popWrap = _pop.querySelector(".pop_wrap");
@@ -156,9 +156,7 @@ const popup = {
 
     _pop.classList.add('open');
 
-    setTimeout(() => {
-      _popWrap.focus();
-    }, 201); // style animation/transition 속도 고려
+    setTimeout(() => { _popWrap.focus() }, 201); // style animation/transition 속도 고려
 
     sortS.addEventListener("focus", ()=>{ _popWrap.focus() });
     sortE.addEventListener("focus", ()=>{ _popWrap.focus() });
@@ -166,7 +164,6 @@ const popup = {
   },
   close : function(pop, btn){
 
-    const _body = document.querySelector("body");
     const _pop = document.querySelector(pop);
     const _isOpen = _pop.classList.contains("open");
     const _popWrap = _pop.querySelector(".pop_wrap");
@@ -183,11 +180,31 @@ const popup = {
     _popWrap.removeAttribute('tabindex');
 
     const _popupLayerOpen = document.querySelectorAll(".pop_layer.open");
-    if( _popupLayerOpen.length < 1 ){
-      _body.classList.remove("noScroll");
-    }
+    if( _popupLayerOpen.length < 1 ) scroll.scroll();
+
     _btn.focus();
 
+  }
+}
+
+const scroll = {
+  noScroll: function(){
+    const HTMLScollTop = document.querySelector("html").scrollTop * -1;
+    document.documentElement.style.setProperty('--v-scrollTop', `${HTMLScollTop}px`);
+
+    const _body = document.querySelector("body");
+    _body.classList.add('blockScroll');
+  },
+  scroll: function(){
+    let HTMLScrollTop = getComputedStyle(document.querySelector("body")).top;
+    HTMLScrollTop = HTMLScrollTop.replace("px", '') * -1;
+
+    const _body = document.querySelector("body");
+    const _html = document.querySelector("html");
+    _body.classList.remove('blockScroll');
+    _html.scrollTo(0, HTMLScrollTop);
+
+    document.documentElement.style = "";
   }
 }
 
@@ -584,6 +601,7 @@ const select = {
 export default {
     install(Vue) {
         Vue.config.globalProperties.$front = front;
+        Vue.config.globalProperties.$scroll = scroll;
         Vue.config.globalProperties.$tab = tab;
         Vue.config.globalProperties.$sort = sort;
         Vue.config.globalProperties.$popup = popup;
