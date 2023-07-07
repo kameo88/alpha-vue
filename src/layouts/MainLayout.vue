@@ -16,16 +16,16 @@
 		<MainFooter />
 	</div>
 
-  <MainPopup :popupItem="popupItem" />
+  <compPopup :popupItem="popupItem" />
 </template>
 
 <script>
 import MainHeader from '@/layouts/MainHeader.vue'
 import AsideFloat from '@/layouts/AsideFloat.vue'
 import MainFooter from '@/layouts/MainFooter.vue'
-import MainPopup from '@/layouts/MainPopup.vue'
 
 import compLottie from "@/components/Lottie.vue";
+import compPopup from "@/components/Popup.vue";
 
 export default {
   name: 'MainLayout',
@@ -45,7 +45,7 @@ export default {
     MainHeader,
     AsideFloat,
     MainFooter,
-    MainPopup,
+    compPopup,
     compLottie
   },
 }
