@@ -66,6 +66,21 @@
         </div> <!-- // section -->
 
         <div class="section">
+          <h3 class="tit02">Ratings (vuetify)</h3>
+
+					<div class="text-center">
+
+						<br>Basic<br>
+						<v-rating v-model="rating"></v-rating>
+						<br>Aria Label<br>
+						<v-rating v-model="rating2" item-aria-label="custom icon label text {0} of {1}"></v-rating>
+						<br>icons<br>
+						<v-rating v-model="rating3" empty-icon="mdi-circle-outline" full-icon="mdi-circle" ></v-rating>
+					</div>
+
+        </div> <!-- // section -->
+
+        <div class="section">
           <h3 class="tit02">line_list</h3>
 
           <div class="line_list">
@@ -463,6 +478,9 @@ export default {
   name: 'GuideTemplate',
 	data(){
     return {
+			rating: 3,
+			rating2: 5,
+			rating3: 2,
       flag: [false, false],
       tooltip: [false, false, false],
     }

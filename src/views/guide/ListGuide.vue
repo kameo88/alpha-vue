@@ -250,7 +250,7 @@
             <td class="marker"></td>
             <td class="date"></td>
             <td>
-              <!-- <p><b>[07/04]</b> </p> -->
+              <p><b>[07/07]</b> rating(vuetify) 추가</p>
               sort, item, list, pagination
             </td>
           </tr>
