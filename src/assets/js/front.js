@@ -193,7 +193,7 @@ const scroll = {
     document.documentElement.style.setProperty('--v-scrollTop', `${HTMLScollTop}px`);
 
     const _body = document.querySelector("body");
-    _body.classList.add('blockScroll');
+    _body.classList.add('noScroll');
   },
   scroll: function(){
     let HTMLScrollTop = getComputedStyle(document.querySelector("body")).top;
@@ -201,7 +201,7 @@ const scroll = {
 
     const _body = document.querySelector("body");
     const _html = document.querySelector("html");
-    _body.classList.remove('blockScroll');
+    _body.classList.remove('noScroll');
     _html.scrollTo(0, HTMLScrollTop);
 
     document.documentElement.style = "";
