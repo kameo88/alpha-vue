@@ -23,8 +23,8 @@ import MainHeader from '@/layouts/MainHeader.vue'
 import AsideFloat from '@/layouts/AsideFloat.vue'
 import MainFooter from '@/layouts/MainFooter.vue'
 
-import compLottie from "@/components/Lottie.vue";
-import compPopup from "@/components/Popup.vue";
+import compPopup from '@/components/Popup.vue'
+import compLottie from "@/components/Lottie.vue"
 
 export default {
   name: 'MainLayout',

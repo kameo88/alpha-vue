@@ -11,14 +11,16 @@
           <li>
             팝업을 부를 페이지에 popupItem 데이터 추가, $emit 추가<br>
             ex)<br>
-            data(){<br>
-              　return {<br>
-                　　<b>popupItem: ['popup01', 'popup02', 'popup03', 'noticePop'],</b><br>
-              　}<br>
-            },<br>
-            mounted(){<br>
-              　this.$emit('popupItem', this.popupItem);<br>
-            }
+<pre>
+data(){
+  return {
+    <b>popupItem: ['popup01', 'popup02', 'popup03', 'noticePop'],</b>
+  }
+},
+mounted(){
+  this.$emit('popupItem', this.popupItem);
+}
+</pre>
           </li>
           <li>/src/components/Popup.vue에 띄워질 팝업 마크업 추가</li>
         </ul>
