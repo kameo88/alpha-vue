@@ -177,7 +177,7 @@
                   </li>
                 </ul>
                 <div class="btn_group">
-                  <button type="button" class="btn md c05" id="btn_popup01" onclick="popUp.open('#popup01', '#btn_popup01');">전체보기</button>
+                  <button type="button" class="btn md c05" id="btn_userReviewPop" @click="$popup.open('#userReviewPop', '#btn_userReviewPop');">전체보기</button>
                 </div>
               </div>
             </div>
@@ -238,7 +238,7 @@
                   </li>
                 </ul>
                 <div class="btn_group">
-                  <button type="button" class="btn md c05" id="btn_popup02" onclick="popUp.open('#popup02', '#btn_popup02');">전체보기</button>
+                  <button type="button" class="btn md c05" id="btn_blogReviewPop" @click="$popup.open('#blogReviewPop', '#btn_blogReviewPop');">전체보기</button>
                 </div>
               </div>
             </div>
@@ -684,6 +684,7 @@ export default {
   name: "GuideSticky",
   data(){
     return {
+      popupItem: ['userReviewPop', 'blogReviewPop'],
 
       sticky: {
         clickEvent: false,
@@ -777,6 +778,8 @@ export default {
     }
   },
   mounted(){
+    this.$emit('popupItem', this.popupItem);
+
     document.querySelector("html").style.scrollBehavior = "smooth";
 
     window.addEventListener("scroll", ()=>{ this.onScroll() });

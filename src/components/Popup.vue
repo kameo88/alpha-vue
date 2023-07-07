@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="pop_layer alert" id="popup01" v-show="popup.popup01"> <!-- alert, normal, full -->
     <div class="pop_wrap">
       <div class="pop_header">
@@ -979,7 +980,144 @@
       <button type="button" class="pop_close" data-action="close" @click="$popup.close('#selectPop02', '#btn_selectPop02')"><span class="blind">팝업 닫기</span></button>
     </div>
   </div> <!-- // pop_layer -->
-  
+
+  <div class="pop_layer full" id="userReviewPop" v-show="popup.userReviewPop">
+		<div class="pop_wrap">
+			<div class="pop_header">
+					<h3>사용자 리뷰</h3>
+			</div>
+			<div class="pop_content">
+				<div class="section">
+						
+					<div class="line_list">
+						<ul>
+							<li>
+								<div class="list_con02">
+									<div class="cus">
+										<span class="name">김*파</span>
+										<div class="star_box">
+											<div class="star"></div>
+											<div class="star_active" style="width:40%;"></div>
+										</div>
+										<span class="score">0.0</span>
+										<span class="date">2023.04.11</span>
+									</div>
+									<span class="tit">
+											전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+									</span>
+								</div>
+							</li>
+							<li>
+								<div class="list_con02">
+									<div class="cus">
+										<span class="name">김*파</span>
+										<div class="star_box">
+											<div class="star"></div>
+											<div class="star_active" style="width:40%;"></div>
+										</div>
+										<span class="score">0.0</span>
+										<span class="date">2023.04.11</span>
+									</div>
+									<span class="tit">
+											전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+									</span>
+								</div>
+							</li>
+							<li>
+									<div class="list_con02">
+									<div class="cus">
+										<span class="name">김*파</span>
+										<div class="star_box">
+											<div class="star"></div>
+											<div class="star_active" style="width:40%;"></div>
+										</div>
+										<span class="score">0.0</span>
+										<span class="date">2023.04.11</span>
+									</div>
+									<span class="tit">
+											전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div> <!-- // section -->
+			</div>
+      <button type="button" class="pop_close" data-action="close" @click="$popup.close('#userReviewPop', '#btn_userReviewPop')"><span class="blind">팝업 닫기</span></button>
+
+		</div>
+	</div> <!-- // pop_layer -->
+
+	<div class="pop_layer full" id="blogReviewPop" v-show="popup.blogReviewPop">
+		<div class="pop_wrap">
+			<div class="pop_header">
+					<h3>블로그 리뷰</h3>
+			</div>
+			<div class="pop_content">
+				<div class="section">
+						
+					<div class="line_list">
+						<ul>
+								<li>
+									<a href="javascript:void(0);" class="list_con03">
+										<div class="list_lft">
+											<div class="cus">
+												<span class="name">올리브소스 님</span>
+												<span class="date">2023.04.11</span>
+											</div>
+											<span class="tit ellipsis2">
+													전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+											</span>
+										</div>
+										<div class="img">
+												<img src="@/assets/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="list_con03">
+										<div class="list_lft">
+											<div class="cus">
+												<span class="name">올리브소스 님</span>
+												<span class="date">2023.04.11</span>
+											</div>
+											<span class="tit ellipsis2">
+													전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+											</span>
+										</div>
+										<div class="img">
+												<img src="@/assets/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="list_con03">
+										<div class="list_lft">
+											<div class="cus">
+												<span class="name">올리브소스 님</span>
+												<span class="date">2023.04.11</span>
+											</div>
+											<span class="tit ellipsis2">
+													전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+											</span>
+										</div>
+										<div class="img">
+												<img src="@/assets/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
+										</div>
+									</a>
+								</li>
+						</ul>
+					</div>
+
+				</div> <!-- // section -->
+			</div>
+      <button type="button" class="pop_close" data-action="close" @click="$popup.close('#blogReviewPop', '#btn_blogReviewPop')"><span class="blind">팝업 닫기</span></button>
+		</div>
+	</div> <!-- // pop_layer -->
+
+
+</div>
 
 </template>
   

@@ -56,7 +56,6 @@ mounted(){
         </div>
       </div> <!-- // section -->
 
-
       <div class="section">
         <h3 class="tit02">tooltip VUETIFY</h3>
 
@@ -124,7 +123,7 @@ export default {
   name: 'GuidePopup',
   data(){
     return {
-      popupItem: ['popup01', 'popup02', 'popup03', 'noticePop'],
+      popupItem: ['popup01', 'popup02', 'popup03', 'noticePop', 'userReviewPop'],
       tooltip: [false, false, false, false],
     }
   },
