@@ -4,6 +4,24 @@
       <h2 class="title_nav">Guide</h2>
 
       <div class="page_info">Popup</div>
+
+      <div class="section">
+        <h3 class="tit02">Popup 추가하기</h3>
+        <ul class="text_list_bull">
+          <li>
+            팝업을 부를 페이지에 popupItem 데이터 추가<br>
+            ex)<br>
+            data(){<br>
+              　return {<br>
+                　　<b>popupItem: ['popup01', 'popup02', 'popup03', 'noticePop'],</b><br>
+              　}<br>
+            },
+          </li>
+          <li>/src/components/Popup.vue에 띄워질 팝업 마크업 추가</li>
+        </ul>
+        
+
+      </div>
       
       <div class="section">
         <h3 class="tit02">Popup Alert</h3>
