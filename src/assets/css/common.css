@@ -337,7 +337,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 
 /* *** footer *** */
 .footer {margin-top:2.8rem; background:#f8f8f8; font-size:1.3rem; line-height:1.9rem;}
-.footer > .inner {padding:4rem 1.6rem; max-width:64rem; margin:0 auto;}
+.footer > .inner {padding:3.2rem 1.8rem; max-width:64rem; margin:0 auto;}
 .footer > .inner > *:not(:first-child) {margin-top:2rem;}
 .footer > .inner .f_logo a {display:block; width:7.6rem; height:2rem; background:url(../images/common/logo_lguplus.png) no-repeat center / 100% auto;}
 
