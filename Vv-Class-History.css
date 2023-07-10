@@ -1,8 +1,8 @@
 ########################################
-####		class 변경 내역		####
+####		변경 내역			####
 ########################################
 
->> btn 관련 
+>> btn - class 변경
 [class^=btn_]	==> 	btn
 btn_sXS_c01	==>	btn xsm c01
 btn_sS_c01	==>	btn sm c01
@@ -12,17 +12,23 @@ btn_sL_c01	==>	btn lg c01
 group_btn	==>	btn_group
 
 
->> form 
-
+>> form - class 변경
 fali_m		==>	error
 del_btn		==>	btn_del
 search_btn	==>	btn_search
 select_btn	==>	btn_select
 
+>> form - markup 변경
+
+
+>> tab 관련
+- class 'tab_list' 과 'tabpanel_wrap' 를 'section' 으로 wrapping 함
+- class 'tabpanel_wrap' 하단의 'section' ==> 'panel_cnt' 로 변경
+
 
 >> table
-; new style
-
-.table
-.table.ty02
-.table.ty03
+; new class
+  
+'table'
+'table ty02'
+'table ty03'
