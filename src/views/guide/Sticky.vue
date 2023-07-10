@@ -250,7 +250,7 @@
       <div class="section scroll_panel" role="tabpanel" aria-expanded="false" tabindex="0" id="scroll_panel_03">
         <h3 class="tit03">요금제</h3>
 
-        <div class="item_list ty02">
+        <div class="item_list ty03">
           <ul>
             <li>
               <div class="plan_item">
@@ -269,10 +269,12 @@
                   <span class="plan_tit">데이터안심15G+</span>
                   <strong class="plan_tit_sub">
                     월 11GB + 매일 2GB + 3Mbps
-                    <span class="tooltip">
-                      <button type="button"><span class="blind">요금제 툴팁</span></button>
-                      <span class="info">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
-                    </span>
+                    <v-btn id="tooltip0" class="tooltip_btn" :class="{on : tooltip[0]}" title="툴팁" @click="tooltip[0] = !tooltip[0]">요금제 툴팁</v-btn>
+                    <v-tooltip v-model="tooltip[0]" activator="#tooltip0" location="bottom" offset="0" transition="false" :open-on-hover="false" no-click-animation>
+                      <div class="tooltip_content">
+                        데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
+                      </div>
+                    </v-tooltip>
                   </strong>
                   <div class="plan_info">
                     <span class="phone"><span class="blind">통화량</span>100분</span>
@@ -284,10 +286,12 @@
                 <div class="combi">
                   <div class="combi_inner">
                     <strong>
-                      <span class="tooltip">
-                        <button type="button"><span class="blind">요금제 툴팁</span></button>
-                        <span class="info">LG U+ 인터넷/IPTV 신규 가입 + 알뜰폰 결합 시, 최대 118만원의 혜택을 받을 수 있어요!</span>
-                      </span>
+                      <v-btn id="tooltip1" class="tooltip_btn" :class="{on : tooltip[1]}" title="툴팁" @click="tooltip[1] = !tooltip[1]">요금제 툴팁</v-btn>
+                      <v-tooltip v-model="tooltip[1]" activator="#tooltip1" location="bottom" offset="0" transition="false" :open-on-hover="false" no-click-animation>
+                        <div class="tooltip_content">
+                          LG U+ 인터넷/IPTV 신규 가입 + 알뜰폰 결합 시, 최대 118만원의 혜택을 받을 수 있어요!
+                        </div>
+                      </v-tooltip>
                       <span class="fc01">결합하면</span> 월 10,890원
                     </strong>
                     <span class="period">6개월 이후 38,900원</span>
@@ -685,6 +689,7 @@ export default {
   data(){
     return {
       popupItem: ['userReviewPop', 'blogReviewPop'],
+      tooltip: [false, false, false],
 
       sticky: {
         clickEvent: false,

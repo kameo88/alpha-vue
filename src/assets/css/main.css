@@ -52,8 +52,8 @@
 .play_box .swiper-pagination-current{color:#717171;}
 .play_box .play_start,
 .play_box .play_stop{position:absolute; bottom:0%; left:6%; width:2rem; height:2rem; z-index:11; background:no-repeat center / 100% auto;}
-.play_box .play_start{background-image:url(../../resource/images/common/ico_play.png);}
-.play_box .play_stop{background-image :url(../../resource/images/common/ico_stop.png);}
+.play_box .play_start{background-image:url(../images/common/ico_play.png);}
+.play_box .play_stop{background-image :url(../images/common/ico_stop.png);}
 
 .main_service {display:flex;}
 .main_service li {flex:1;}

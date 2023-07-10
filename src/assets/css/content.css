@@ -765,7 +765,7 @@
 .dlvr_con.ty02 .dlvr_tit{margin-bottom:0; margin-top:0.8rem;}
 
 .speech_wrap{position:relative; padding-bottom:21.2rem; max-width:30rem; margin:3.2rem auto 0;}
-.speech_wrap::after{position:absolute; bottom:0; left:50%; transform:translateX(-50%); content:""; display:inline-block; background:url(../../resource/images/content/img_char_esim.png) no-repeat center/100%; width:20rem; height:20rem;}
+.speech_wrap::after{position:absolute; bottom:0; left:50%; transform:translateX(-50%); content:""; display:inline-block; background:url(../images/content/img_char_esim.png) no-repeat center/100%; width:20rem; height:20rem;}
 .speech_wrap [class^="speech_"]{position:relative; font-size:1.4rem; display:inline-block; line-height:2rem; color:#fff; max-width:23.5rem; border-radius:1.2rem; padding:2rem;}
 .speech_wrap [class^="speech_"]::after{content:""; position:absolute; bottom:-0.5rem; left:50%; display:inline-block; height:0; width:0; border-top:5px solid #000; border-left:4px solid transparent; border-right:4px solid transparent; transform:translateX(-50%);}
 .speech_wrap [class^="speech_"] > strong{font-size:1.6rem; line-height:1.8rem; color:#000; display:block; margin-bottom:0.5rem;}
@@ -778,7 +778,7 @@
 
 .dlvr_con .dlvr_btn_wrap{position:relative; margin-top:-4rem;}
 .dlvr_con .dlvr_btn_wrap .dlvr_btn ~ .dlvr_btn{margin-top:0.8rem;}
-.dlvr_con .dlvr_btn {font-size:1.6rem; font-weight:700; text-align:left; background:#fff url(../../resource/images/common/ico_arrowR02.png) no-repeat right 2rem center / 2.4rem auto; border-radius:1.2rem; width:100%; padding:2rem 4rem 2rem 2rem;}
+.dlvr_con .dlvr_btn {font-size:1.6rem; font-weight:700; text-align:left; background:#fff url(../images/common/ico_arrowR02.png) no-repeat right 2rem center / 2.4rem auto; border-radius:1.2rem; width:100%; padding:2rem 4rem 2rem 2rem;}
 
 /* 핸드폰 모델 확인 팝업 */
 .box_line ~ .box_line{margin-top:1.2rem;}
@@ -787,7 +787,7 @@
 .box_red.ty02 {display:flex; justify-content:flex-start;}
 .box_red.ty02 > strong{font:1.3rem;}
 .box_red.ty02 .noti_img{width:4rem; height:4rem; margin-right:0.8rem;}
-.box_red.ty02 .noti_img::before{content:""; display:block; background:url(../../resource/images/common/img_noti.png) no-repeat center / 100% auto;width:100%; height:100%;}
+.box_red.ty02 .noti_img::before{content:""; display:block; background:url(../images/common/img_noti.png) no-repeat center / 100% auto;width:100%; height:100%;}
 .qr_wrap > strong{display:block; text-align:center; margin-top:1.2rem;}
 .qr_img {width:14rem; margin:0 auto;}
 .qr_img > img{width:100%;}
@@ -842,13 +842,13 @@
 .box_ico .box_ico_info > span{font-size:1.3rem; color:#717171; display:block; line-height:1.5rem; margin-bottom:0.5rem;}
 .box_ico .box_ico_info > strong{font-size:2.2rem;}
 .box_ico .box_ico_ico{width:4rem; height:4rem; margin:-0.5rem 0 0 auto;}
-.box_ico .box_ico_ico::before{content:""; width:4rem; height:4rem; display: inline-block; background:url(../../resource/images/content/img_hand.png) no-repeat center 100% / 4rem 4rem;}
-.box_ico.ty02 .box_ico_ico::before{background-image:url(../../resource/images/content/img_usim.png);}
+.box_ico .box_ico_ico::before{content:""; width:4rem; height:4rem; display: inline-block; background:url(../images/content/img_hand.png) no-repeat center 100% / 4rem 4rem;}
+.box_ico.ty02 .box_ico_ico::before{background-image:url(../images/content/img_usim.png);}
 
 .list_ico {margin-top:2rem;}
 .list_ico > ul > li:not(:last-child) {margin-bottom:2rem;}
 .list_ico_item{position:relative; display:flex; justify-content:space-between; align-items:center; padding-right:1.6rem;}
-.list_ico_item::after{position:absolute; right:0; top:50%; transform:translateY(-50%); content:""; display:block; width:1.6rem; height:1.6rem; background:url(../../resource/images/common/ico_arrowR.png) no-repeat center 100% / 1.6rem 1.6rem;}
+.list_ico_item::after{position:absolute; right:0; top:50%; transform:translateY(-50%); content:""; display:block; width:1.6rem; height:1.6rem; background:url(../images/common/ico_arrowR.png) no-repeat center 100% / 1.6rem 1.6rem;}
 .list_ico_item .tit_box {display:flex; justify-content:space-between; align-items:center;}
 .list_ico_item .tit_box .tit{font-size:1.4rem; line-height:1.6rem; margin-left:0.8rem;}
 .list_ico_item .tit_box .tit_ico{width:2.4rem; height:2.4rem;}
@@ -893,10 +893,10 @@
 .rate > input {display:none;}
 .rate > label {float:right;}
 .rate > label:not(:last-child) {padding-left: 0.8rem;}
-.rate > label:before {content:""; display:inline-block; width:4rem; height:4rem; background:url(../../resource/images/common/img_star03.png) no-repeat center / 100%;}
+.rate > label:before {content:""; display:inline-block; width:4rem; height:4rem; background:url(../images/common/img_star03.png) no-repeat center / 100%;}
 .rate input:checked ~ label:before, 
 .rate label:hover:before,
-.rate label:hover ~ label:before {background-image:url(../../resource/images/common/img_star_active03.png);} 
+.rate label:hover ~ label:before {background-image:url(../images/common/img_star_active03.png);} 
 
 .eval_list{margin-top:6rem;}
 .eval_list > ul > li:not(:first-child){margin-top:3.2rem;}

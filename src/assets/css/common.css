@@ -180,7 +180,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .btn_share::before {content:''; display:inline-block; width:1.6rem; height:1.6rem; margin-right:0.2rem; background:url(../images/common/share.png) no-repeat left center / 100% auto; vertical-align:text-bottom;}
 
 .text_btn{position:relative; display:inline-block; padding-right:1.8rem; margin-top:1.2rem; font-size:1.3rem; line-height:1.9rem; color:#717171;}
-.text_btn::after{content:''; position:absolute; top:50%; right:0; width:1.6rem; height:1.6rem; margin-top:-0.8rem; background:url(../../resource/images/common/ico_arrowR.png) no-repeat center / 100% auto;}
+.text_btn::after{content:''; position:absolute; top:50%; right:0; width:1.6rem; height:1.6rem; margin-top:-0.8rem; background:url(../images/common/ico_arrowR.png) no-repeat center / 100% auto;}
 
 .text_btn.ty02{color:#909090; text-decoration:underline; display:block; margin-top:0; margin-left:auto; margin-bottom:0.8rem; padding-right:0;}
 .text_btn.ty02::after{content:none;}
