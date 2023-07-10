@@ -1,6 +1,9 @@
+import { setTimeout } from "core-js";
+
 const front = {
   init(){
     this.device();
+    layout.footer();
     input.init();
     radioActive.init();
   },
@@ -41,6 +44,30 @@ const front = {
     chrome.test(userAgent) ?  elem.classList.add('chrome') : null;
     safari.test(userAgent) ? elem.classList.add('safari') : null;
     firefox.test(userAgent) ? elem.classList.add('firefox') : null;
+  }
+}
+
+const layout = {
+  footer: function(){
+    const bottomFloat = document.querySelector(".bottom_float");
+    if( bottomFloat == null ) return;
+
+    const paddingB = bottomFloat.querySelector('.inner').offsetHeight;
+    // .outerHeight(true);
+    // console.log('_paddingB', paddingB);
+
+    const footer = document.querySelector(".footer");
+    let target = ( footer != null ) ? footer : document.querySelectorAll(".container");
+
+    target.style.paddingBottom = `${paddingB}px`;
+
+    const asideFloat = document.querySelector(".aside_float");
+    if( asideFloat == null ) return;
+
+    const asideFloatInner = asideFloat.querySelector(".inner");
+    let bottom = (getComputedStyle(asideFloatInner).bottom).replace("px", "") * 1;
+    
+    asideFloatInner.style.bottom = `${paddingB + bottom}px`;
   }
 }
 
@@ -207,6 +234,14 @@ const popup = {
 }
 
 const scroll = {
+  top: function(){
+    const html = document.querySelector("html");
+    html.style.scrollBehavior = 'smooth';
+    
+    document.querySelector("html").scrollTo(0,0);
+
+    setTimeout(()=>{ html.style.scrollBehavior = '' }, 500)
+  },
   noScroll: function(){
     if( document.querySelector("html").style[0] == '--v-scrollTop' ) return;  // 이미 계산되어 있는 경우 제외
     
@@ -226,7 +261,7 @@ const scroll = {
     _html.scrollTo(0, HTMLScrollTop);
 
     document.documentElement.style = "";
-  }
+  },
 }
 
 const tab = {
@@ -379,34 +414,34 @@ const tag = {
     // this.move(_this);
     tab.move(_this);
   },
-  move(e){
-    const _tabList = e.parentNode.parentNode;
+  // move(e){
+    // const _tabList = e.parentNode.parentNode;
 
-    const _tabListW = _tabList.offsetWidth; // 보여지는 가로 640
-    const _tabListS = _tabList.scrollLeft;  // 스크롤값
+    // const _tabListW = _tabList.offsetWidth; // 보여지는 가로 640
+    // const _tabListS = _tabList.scrollLeft;  // 스크롤값
 
-    const _tabListL = _tabList.offsetLeft;
-    const _thisL = e.offsetLeft - _tabListL;
-    const _elemW = e.offsetWidth;
+    // const _tabListL = _tabList.offsetLeft;
+    // const _thisL = e.offsetLeft - _tabListL;
+    // const _elemW = e.offsetWidth;
 
-    const st = _tabListS;               // 탭 시작점
-    const en = _tabListS + _tabListW;   // 탭 끝점
+    // const st = _tabListS;               // 탭 시작점
+    // const en = _tabListS + _tabListW;   // 탭 끝점
 
-    const elSt = _thisL;
-    const elEn = _thisL + _elemW;
+    // const elSt = _thisL;
+    // const elEn = _thisL + _elemW;
 
-    const gap = 100;
-    const move = 200;
+    // const gap = 100;
+    // const move = 200;
 
-    let goto = _tabListS;
+    // let goto = _tabListS;
 
-    if( st >= elSt-gap ) goto = goto - move;
-    if( en <= elEn+gap ) goto = goto + move;
+    // if( st >= elSt-gap ) goto = goto - move;
+    // if( en <= elEn+gap ) goto = goto + move;
 
-    // console.log('st:', st, ' en:', en, ' elSt:', elSt, ' elEn:', elEn, ' goto:', goto );
+    // // console.log('st:', st, ' en:', en, ' elSt:', elSt, ' elEn:', elEn, ' goto:', goto );
 
-    _tabList.scrollTo(goto, 0);
-  },
+    // _tabList.scrollTo(goto, 0);
+  // },
   delete(e){
     const _this = e.target;
     const _li = _this.parentNode;
@@ -710,6 +745,7 @@ export default {
     install(Vue) {
         Vue.config.globalProperties.$front = front;
         Vue.config.globalProperties.$scroll = scroll;
+        Vue.config.globalProperties.$layout = layout;
         Vue.config.globalProperties.$tab = tab;
         Vue.config.globalProperties.$sort = sort;
         Vue.config.globalProperties.$popup = popup;
