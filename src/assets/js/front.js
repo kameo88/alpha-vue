@@ -6,6 +6,7 @@ const front = {
     layout.footer();
     input.init();
     radioActive.init();
+    scroll.isScroll();
   },
   device(){
     const elem = document.querySelector("html");
@@ -234,6 +235,14 @@ const popup = {
 }
 
 const scroll = {
+  isScroll: function(){
+    window.addEventListener("scroll", ()=>{
+      const scroll = document.querySelector("html").scrollTop;
+      const body = document.querySelector("body");
+      
+      ( scroll > 10 ) ? body.classList.add("scroll") : body.classList.remove("scroll");
+    })
+  },
   top: function(){
     const html = document.querySelector("html");
     html.style.scrollBehavior = 'smooth';
