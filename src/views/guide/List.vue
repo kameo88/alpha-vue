@@ -68,14 +68,21 @@
         <div class="section">
           <h3 class="tit02">Ratings (vuetify)</h3>
 
-					<div class="text-center">
-
-						<br>Basic<br>
-						<v-rating v-model="rating"></v-rating>
-						<br>Aria Label<br>
-						<v-rating v-model="rating2" item-aria-label="custom icon label text {0} of {1}"></v-rating>
-						<br>icons<br>
-						<v-rating v-model="rating3" empty-icon="mdi-circle-outline" full-icon="mdi-circle" ></v-rating>
+					<div class="eval_wrap">
+            <div class="eval_item">
+              <h3 class="tit02">개통과정은 잘 되었나요?</h3>
+              <div class="eval_star">
+                <v-rating v-model="rating"></v-rating>
+              </div>
+              <div class="eval_desc">{{rating}}</div>
+            </div>
+            <div class="eval_item">
+              <h3 class="tit02">개통과정은 잘 되었나요?</h3>
+              <div class="eval_star">
+                <v-rating v-model="rating2" item-aria-label="custom icon label text {0} of {1}"></v-rating>
+              </div>
+              <div class="eval_desc">{{rating2}}</div>
+            </div>
 					</div>
 
         </div> <!-- // section -->
@@ -479,8 +486,7 @@ export default {
 	data(){
     return {
 			rating: 3,
-			rating2: 5,
-			rating3: 2,
+			rating2: 4,
       flag: [false, false],
       tooltip: [false, false, false],
     }
