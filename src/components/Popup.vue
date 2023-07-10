@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="pop_layer alert" id="popup01" v-show="popup.popup01"> <!-- alert, normal, full -->
+  <div class="pop_layer alert" id="popup01" v-if="popup.popup01"> <!-- alert, normal, full -->
     <div class="pop_wrap">
       <div class="pop_header">
         <h3>안내</h3>
@@ -20,7 +20,7 @@
   </div> <!-- // pop_layer -->
 
 
-  <div class="pop_layer normal" id="popup02" v-show="popup.popup02">
+  <div class="pop_layer normal" id="popup02" v-if="popup.popup02">
     <div class="pop_wrap">
       <div class="pop_header">
         <h3>안내</h3>
@@ -48,7 +48,7 @@
   </div> <!-- // pop_layer -->
 
 
-  <div class="pop_layer full" id="popup03" v-show="popup.popup03">
+  <div class="pop_layer full" id="popup03" v-if="popup.popup03">
     <div class="pop_wrap">
       <div class="pop_header">
         <h3>안내</h3>
@@ -88,7 +88,7 @@
   </div> <!-- // pop_layer -->
   
 
-  <div class="pop_layer notice" id="noticePop" v-show="popup.noticePop">
+  <div class="pop_layer notice" id="noticePop" v-if="popup.noticePop">
     <div class="pop_wrap">
       <div class="pop_content">
         <div class="swiper">
@@ -121,7 +121,7 @@
 
 
   <!-- 공유하기 -->
-  <div class="pop_layer alert" id="sharePop" v-show="popup.sharePop">
+  <div class="pop_layer alert" id="sharePop" v-if="popup.sharePop">
     <div class="pop_wrap">
       <div class="pop_header">
         <h3>공유하기</h3>
@@ -156,7 +156,7 @@
   </div> <!-- // pop_layer -->
 
 
-  <div class="pop_layer normal filter_pop" id="filterPop" v-show="popup.filterPop">
+  <div class="pop_layer normal filter_pop" id="filterPop" v-if="popup.filterPop">
     <div class="pop_wrap">
       <div class="pop_header">
         <h3>꼼꼼하게 찾기</h3>
@@ -761,7 +761,7 @@
   </div><!-- // pop_layer -->
 
 
-  <div class="pop_layer normal" id="selectPop01" v-show="popup.selectPop01">
+  <div class="pop_layer normal" id="selectPop01" v-if="popup.selectPop01">
     <div class="pop_wrap">
       <div class="pop_header">
         <h3>선택</h3>
@@ -784,7 +784,7 @@
   </div> <!-- // pop_layer -->
 
 
-  <div class="pop_layer normal" id="selectPop02" v-show="popup.selectPop02">
+  <div class="pop_layer normal" id="selectPop02" v-if="popup.selectPop02">
     <div class="pop_wrap">
       <div class="pop_header">
         <h3>통신사 선택</h3>
@@ -981,7 +981,7 @@
     </div>
   </div> <!-- // pop_layer -->
 
-  <div class="pop_layer full" id="userReviewPop" v-show="popup.userReviewPop">
+  <div class="pop_layer full" id="userReviewPop" v-if="popup.userReviewPop">
 		<div class="pop_wrap">
 			<div class="pop_header">
 					<h3>사용자 리뷰</h3>
@@ -1049,7 +1049,7 @@
 		</div>
 	</div> <!-- // pop_layer -->
 
-	<div class="pop_layer full" id="blogReviewPop" v-show="popup.blogReviewPop">
+	<div class="pop_layer full" id="blogReviewPop" v-if="popup.blogReviewPop">
 		<div class="pop_wrap">
 			<div class="pop_header">
 					<h3>블로그 리뷰</h3>

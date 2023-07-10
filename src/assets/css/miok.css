@@ -2,6 +2,7 @@
 
 
 /* vuetify v-slider (꼼꼼하게 찾기 - 가격) */
+.v-slider.v-input--horizontal{width:calc(100% - 1.6rem);}
 .v-slider.v-input--horizontal .v-slider-thumb {left: calc(var(--v-slider-thumb-position) - var(--v-slider-thumb-size) / 2)}
 .v-slider-thumb__surface{width:1.6rem!important; height:1.6rem!important; box-sizing:border-box; background:#fff!important; border:0.2rem solid #fc6969;}
 .v-slider-track__fill{height:0.4rem!important;}

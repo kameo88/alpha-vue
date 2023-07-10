@@ -128,8 +128,8 @@ export default {
     }
   },
   mounted(){
-    this.$swiper.notice();
     this.$emit('popupItem', this.popupItem);
+    setTimeout(() => { this.$swiper.notice() }, 50);
   }
 }
 </script>

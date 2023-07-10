@@ -306,7 +306,6 @@ const tab = {
       _data.maxLength = i;
     });
 
-    
     _data.chkStart = _data.scrollLeft;
 
 
@@ -321,28 +320,27 @@ const tab = {
     _data.result = 0;
     _data.gap = 100;
     if( document.querySelector("html").classList.contains("mobile") ){
-      _data.gap = 0;
+      _data.gap = 50;
     }
+    
 
-    console.log(_li[0].classList.contains("other"))
     if( _li[0].classList.contains("other") ){
-      _data.chkStart = _data.chkStart - _data.itemLeft[1];
+      // console.log("other");
+      _data.result = _data.thisItemLeft - _data.itemLeft[1];
+      _tabList.scrollLeft = _data.result;
+      return;
     }
 
     if( _data.chkStart + _data.gap >= _data.thisItemLeft ){
-      console.log('ss');
-      // _data.result = _data.scrollLeft - _data.gap;
       _data.result = _data.scrollLeft - _data.itemWidth[_data.prevIdx] - _data.gap;
-      // _tabList.scrollTo(_data.result, 0);
       _tabList.scrollLeft = _data.result;
+
     } else if ( _data.chkEnd - _data.gap <= _data.thisItemLeft + _data.thisItemWidth ){
-      console.log('ee');
-      // _data.result = _data.scrollLeft + _data.gap;
       _data.result = _data.scrollLeft + _data.itemWidth[_data.nextIdx] + _data.gap;
       _tabList.scrollLeft = _data.result;
     }
 
-    console.log(_data);
+    // console.log(_data);
     // _tabList.scrollLeft = 399;
   }
 }
