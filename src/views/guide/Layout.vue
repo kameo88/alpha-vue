@@ -56,5 +56,6 @@
 
 export default {
   name: 'GuideLayout',
+  emits: ['popupItem'],
 }
 </script>

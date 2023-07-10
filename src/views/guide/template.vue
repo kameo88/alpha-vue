@@ -20,5 +20,6 @@
 
 export default {
   name: 'GuideTemplate',
+  emits: ['popupItem'],
 }
 </script>
