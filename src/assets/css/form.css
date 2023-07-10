@@ -521,6 +521,9 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 /* 요금제 */
 .plan_item{position:relative; padding:2rem; border-radius:1.2rem; box-shadow:0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.08); background-color:#fff; overflow:hidden;}
 .plan_item .tooltip {vertical-align:super; font-weight:500; z-index:2;}
+.plan_item .combi .tooltip_btn{vertical-align:super;}
+.pc .plan_item .combi .tooltip_btn{vertical-align:middle;}
+.plan_item .combi .tooltip_btn.v-btn.v-btn--density-default{margin-right:0.5rem;}
 .plan_item .tooltip > .info {margin:0 3.2rem;}
 .plan_item img{height: 100%;}
 
@@ -589,8 +592,11 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 
 .item_list .btn_group {margin-top:1.2rem;}
 .item_list > ul > li:not(:first-child) {margin-top:0.8rem;}
-.item_list.ty02 > ul > li:not(:first-child) {margin-top:1.2rem;}
-.item_list.ty03 > ul > li:not(:first-child) {margin-top:2rem;}
+/* .item_list.ty02 > ul > li:not(:first-child) {margin-top:1.2rem;}
+.item_list.ty03 > ul > li:not(:first-child) {margin-top:2rem;} */
+.item_list.ty02 > .plan_item + .plan_item {margin-top:1.2rem;}
+.item_list.ty03 > .plan_item + .plan_item {margin-top:2rem;}
+
 
 .item_list02 > ul {display:flex; flex-wrap:wrap;}
 .item_list02 > ul > li {width:calc((100% - 0.8rem) / 2);}
@@ -792,7 +798,7 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 /* 요금제 */
 .pc .plan_item .combi {justify-content:flex-start; align-items:center; text-align:left;}
 .pc .plan_item .combi .choice {flex:none; width:100%; margin-top:1.2rem; order:3;}
-.pc .plan_item .combi .period {display:inline-block; margin-left:0.4rem;}
+.pc .plan_item .combi .period {display:inline-block; margin-left:0.4rem; margin-top:0;}
 .pc .plan_item .combi .combi_inner {display:block; order:1;}
 .pc .plan_item .combi .combi_inner strong {display:inline-block;}
 .pc .plan_item .combi .btn {display:inline-block; min-width:12rem; margin-left:auto; order:2;}

@@ -109,3 +109,13 @@
     /* contained */
 .v-tooltip.v-overlay--contained > .v-overlay__content {left:0!important;}
 
+
+
+/* card */
+.cardDetail-enter-active{ transition:all .3s; }
+.cardDetail-leave-active{ transition:all .3s; }
+.cardDetail-enter-from,
+.cardDetail-leave-to {max-height:0; overflow:hidden;}
+.cardDetail-enter-to,
+.cardDetail-leave-from {max-height:25rem; overflow:hidden;}
+
