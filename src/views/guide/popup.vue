@@ -121,6 +121,7 @@ import '@/assets/css/swiper-bundle.css';
 
 export default {
   name: 'GuidePopup',
+  emits: ['popupItem'],
   data(){
     return {
       popupItem: ['popup01', 'popup02', 'popup03', 'noticePop', 'userReviewPop'],

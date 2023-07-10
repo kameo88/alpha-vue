@@ -208,6 +208,8 @@ const popup = {
 
 const scroll = {
   noScroll: function(){
+    if( document.querySelector("html").style[0] == '--v-scrollTop' ) return;  // 이미 계산되어 있는 경우 제외
+    
     const HTMLScollTop = document.querySelector("html").scrollTop * -1;
     document.documentElement.style.setProperty('--v-scrollTop', `${HTMLScollTop}px`);
 
