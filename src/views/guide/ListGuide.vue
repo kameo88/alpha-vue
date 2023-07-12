@@ -85,6 +85,7 @@
             <td class="marker"></td>
             <td class="date"></td>
             <td>
+              <p><b>[07/12]</b> Header Layout 정리</p>
               <p><b>[07/05]</b> loading (lottie player) 작업완료</p>
               <p><b>[07/04]</b> gnb, aside script, skip menu 작업완료</p>
               <p class="fc"><b>[07/03]</b> aside float 추가</p>
