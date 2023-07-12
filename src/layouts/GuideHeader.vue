@@ -13,7 +13,7 @@
       </div>
       <ul class="tab_nav">
         <li v-for="(a, i) in page" :key="i" :class="{ on : pageOn==i }">
-          <router-link :to="`${a.path}`" @click="changeGuidePage(i)">{{ a.name }}</router-link>
+          <router-link :to="`${a.path}`">{{ a.name }}</router-link>
         </li>
       </ul>
       <div class="marker">
@@ -31,11 +31,6 @@
 <script>
 export default {
   name: 'GuideHeader',
-  methods:{
-    changeGuidePage(num){
-      this.$emit('changeGuidePage', num);
-    },
-  },
   props : {
     page: Object,
     pageOn: Number,

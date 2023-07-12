@@ -1,6 +1,6 @@
 <template>
 	<div class="wrap">
-		<GuideHeader :page="page" :pageOn="pageOn" :pageInfo="pageInfo" @changeGuidePage="changeGuidePage" />
+		<GuideHeader :page="page" :pageOn="pageOn" :pageInfo="pageInfo" />
 		<router-view />
 	</div>
 </template>
@@ -28,9 +28,15 @@ export default {
       pageInfo: {"total": 0, "end": 0, "per": 0 },
     }
   },
+  watch: {
+    $route(){
+      this.getPageOn();
+    }
+  },
   methods: {
-    changeGuidePage(num){
-      this.pageOn = num;
+    getPageOn(){
+      this.page.forEach((a, i)=>{ if( this.$route.path.includes(a.path) ){ this.pageOn = i; } });
+      setTimeout(() => { this.getPageInfo() }, 0);
     },
     getPageInfo(){
       let tr = document.querySelectorAll("tbody tr").length;
@@ -43,18 +49,13 @@ export default {
       let pageEnd = end + mod;
       let pagePer = (pageEnd == 0 ) ? 0 : ( ( pageEnd * 100 ) / pageTotal ).toFixed(1);
 
-      // console.log(pagePer);
-
       this.pageInfo.total = pageTotal;
       this.pageInfo.end = pageEnd;
       this.pageInfo.per = pagePer;
     }
   },
   mounted(){
-    this.getPageInfo();
-  },
-  updated(){
-    this.getPageInfo();
+    this.getPageOn();
   },
   components:{
     GuideHeader,
