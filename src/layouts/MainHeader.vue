@@ -84,7 +84,7 @@
 
   </header>
   <!-- // header -->
-  <aside class="aside">
+  <aside class="aside" v-if=" layout.header == 'main' || layout.header == 'sub' ">
     <div class="inner">
       <div class="aside_header">
         <div class="user">

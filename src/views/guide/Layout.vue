@@ -111,7 +111,7 @@ export default {
   emits: ['popupItem', 'setLayout'],
   data(){
     return {
-      layout: { "header" : 'sub' },
+      layout: { "header" : 'main' },
     }
   },
   mounted(){
@@ -122,8 +122,8 @@ export default {
 
 <style scope="this api replaced by slot-scope in 2.5.0+">
 .header_guide{border:1px solid #ddd; height:5.2rem; box-sizing:border-box; display:flex; align-items:center; justify-content: space-between; padding:0 1.6rem;}
-.header_guide .h_left{margin-right:auto; display:flex;}
-.header_guide .h_right{display:flex;}
+.header_guide .h_left{margin-right:auto; display:flex; align-items:center;}
+.header_guide .h_right{display:flex; align-items:center;}
 .header_guide span{display:block; width:4.8rem; height:2.4rem; background: no-repeat center / 100% auto;}
 .header_guide .logo{background-image: url(@/assets/images/common/logo_plusalpha.png);}
 .header_guide .back{width:2.4rem; background-image: url(/src/assets/images/common/ico_back.png); margin-right:0.8rem;}
