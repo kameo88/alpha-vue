@@ -159,86 +159,87 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="">
+				<tr class="end">
 					<td>email</td>
 					<td>회원가입 완료 안내</td>
 					<td></td>
 					<td></td>
 					<td class="url"><a href="/email/ALFP-CM01-PG00" target="_blank">/email/ALFP-CM01-PG00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.12</td>
 					<td>
+						<p><b>[07/12]</b><br>vue의 index.html 에 있는 css가 먹어서 화면이 약간 달라보나, 실제 메일링 테스트 시 문제없음</p>
 						<p><b>[07/11]</b><br>네이버 메일에서 a태그의 width, height, line-height가 제대로 나오지 않는 이슈가 있어 padding으로 버튼 사이즈 조절</p>
 					</td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td>탈퇴 완료 안내</td>
 					<td></td>
 					<td></td>
 					<td class="url"><a href="/email/ALFP-CM01-PG01" target="_blank">/email/ALFP-CM01-PG01</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.12</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td>휴면회원 전환 안내</td>
 					<td></td>
 					<td></td>
 					<td class="url"><a href="/email/ALFP-CM01-PG02" target="_blank">/email/ALFP-CM01-PG02</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.12</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td>휴면회원 해제 안내</td>
 					<td></td>
 					<td></td>
 					<td class="url"><a href="/email/ALFP-CM01-PG03" target="_blank">/email/ALFP-CM01-PG03</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.12</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td>1:1 문의내역 답변 안내</td>
 					<td></td>
 					<td></td>
 					<td class="url"><a href="/email/ALFP-CM01-PG04" target="_blank">/email/ALFP-CM01-PG04</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.12</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td>휴대폰 번호 변경 완료 안내</td>
 					<td></td>
 					<td></td>
 					<td class="url"><a href="/email/ALFP-CM01-PG05" target="_blank">/email/ALFP-CM01-PG05</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.12</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td>요금제 가입신청 완료 안내</td>
 					<td></td>
 					<td></td>
 					<td class="url"><a href="/email/ALFP-CM01-PG06" target="_blank">/email/ALFP-CM01-PG06</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.12</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td>요금제 가입신청 이어하기 안내</td>
 					<td></td>
 					<td></td>
 					<td class="url"><a href="/email/ALFP-CM01-PG07" target="_blank">/email/ALFP-CM01-PG07</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.12</td>
 					<td></td>
 				</tr>
 			</tbody>
