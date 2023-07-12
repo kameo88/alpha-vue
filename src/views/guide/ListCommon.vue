@@ -168,6 +168,7 @@
 					<td class="marker"></td>
 					<td class="date">07.12</td>
 					<td>
+						<p><b>[07/12]</b> email TEmplate 변수(Data) 적용 코딩 반영</p>
 						<p><b>[07/12]</b><br>vue의 index.html 에 있는 css가 먹어서 화면이 약간 달라보나, 실제 메일링 테스트 시 문제없음</p>
 						<p><b>[07/11]</b><br>네이버 메일에서 a태그의 width, height, line-height가 제대로 나오지 않는 이슈가 있어 padding으로 버튼 사이즈 조절</p>
 					</td>
