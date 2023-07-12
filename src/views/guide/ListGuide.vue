@@ -138,7 +138,7 @@
             <td class="date"></td>
             <td></td>
           </tr>
-          <tr class="ing">
+          <tr class="end">
             <td></td>
             <td>form</td>
             <td></td>
@@ -148,7 +148,7 @@
             <td class="date"></td>
             <td>06.21 디자인 적용된 form &gt; form etc 페이지 분리</td>
           </tr>
-          <tr class="ing">
+          <tr class="end">
             <td></td>
             <td>form etc</td>
             <td></td>
@@ -171,7 +171,7 @@
               <p><b>[06/29]</b> tab scroll script 작업완료</p>
             </td>
           </tr>
-          <tr class="ing">
+          <tr class="end">
             <td></td>
             <td>filter &amp; tag</td>
             <td></td>
@@ -241,7 +241,7 @@
               <p><b>[07/04]</b> flag 이벤트 처리 완료</p>
             </td>
           </tr>
-          <tr class="ing">
+          <tr class="end">
             <td></td>
             <td>list</td>
             <td></td>
