@@ -43,10 +43,15 @@
 
 export default {
   name: 'GuideFlag',
+  emits: ['popupItem', 'setLayout'],
   data(){
     return {
+      layout: { "header" : 'sub' },
       flag: [false, false],
     }
-  }
+  },
+  mounted(){
+    this.$emit('setLayout', this.layout);
+  },
 }
 </script>

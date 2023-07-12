@@ -240,13 +240,16 @@
 
 export default {
   name: "GuideTag",
+  emits: ['popupItem', 'setLayout'],
   data(){
     return {
+      layout: { "header" : 'sub' },
       popupItem: ['filterPop']
     }
   },
   mounted(){
     this.$tag.variable.resize();
+    this.$emit('setLayout', this.layout);
     this.$emit('popupItem', this.popupItem);
   }
 };

@@ -197,12 +197,17 @@
 
 export default {
   name: "GuideAccorion",
+  emits: ['popupItem', 'setLayout'],
   data(){
     return {
+      layout: { "header" : 'sub' },
       acd: [1],
       acd2: [0],
       toggle: [0],
     }
+  },
+  mounted(){
+    this.$emit('setLayout', this.layout);
   },
 };
 </script>

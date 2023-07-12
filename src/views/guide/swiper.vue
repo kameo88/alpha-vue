@@ -669,7 +669,14 @@ import '@/assets/css/swiper-bundle.css';
 
 export default {
   name: "GuideSwiper",
+  emits: ['popupItem', 'setLayout'],
+  data(){
+    return {
+      layout: { "header" : 'sub' },
+    }
+  },
   mounted(){
+    this.$emit('setLayout', this.layout);
     this.$swiper.cardSwiper();
     this.$swiper.flowSwiper();
     this.$swiper.bnrSwiper();

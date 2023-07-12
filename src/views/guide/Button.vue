@@ -165,12 +165,15 @@
 
 export default {
   name: 'GuideButton',
+  emits: ['popupItem', 'setLayout'],
   data(){
     return {
+      layout: { "header" : 'sub' },
       popupItem: ['sharePop'],
     }
   },
   mounted(){
+    this.$emit('setLayout', this.layout);
     this.$emit('popupItem', this.popupItem);
   }
 }

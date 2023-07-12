@@ -163,5 +163,14 @@
 <script>
 export default {
   name: 'GuideTable',
+  emits: ['popupItem', 'setLayout'],
+  data(){
+    return {
+      layout: { "header" : 'sub' },
+    }
+  },
+  mounted(){
+    this.$emit('setLayout', this.layout);
+  },
 }
 </script>

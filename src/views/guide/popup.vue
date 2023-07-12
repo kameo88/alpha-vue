@@ -121,14 +121,16 @@ import '@/assets/css/swiper-bundle.css';
 
 export default {
   name: 'GuidePopup',
-  emits: ['popupItem'],
+  emits: ['popupItem', 'setLayout'],
   data(){
     return {
+      layout: { "header" : 'sub' },
       popupItem: ['popup01', 'popup02', 'popup03', 'noticePop', 'userReviewPop'],
       tooltip: [false, false, false, false],
     }
   },
   mounted(){
+    this.$emit('setLayout', this.layout);
     this.$emit('popupItem', this.popupItem);
     setTimeout(() => { this.$swiper.notice() }, 50);
   }

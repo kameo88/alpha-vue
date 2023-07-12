@@ -77,6 +77,15 @@
 
 export default {
   name: 'GuideLogo',
+  emits: ['popupItem', 'setLayout'],
+  data(){
+    return {
+      layout: { "header" : 'sub2' },
+    }
+  },
+  mounted(){
+    this.$emit('setLayout', this.layout);
+  },
 }
 </script>
 <style scoped>

@@ -1,15 +1,15 @@
 <template>
 
-  <header class="header">
+  <header class="header" v-if="layout.header != 'none'">
     <div class="inner">
       <div class="h_left">
-        <a href="javascript:void(0);" class="h_home"><span class="blind">+알파</span></a>
-        <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
-        <h2 class="h_title">header</h2>
+        <a href="javascript:void(0);" class="h_home" v-if="layout.header == 'main'"><span class="blind">+알파</span></a>
+        <button type="button" class="h_back" v-if="layout.header != 'main'"><span class="blind">이전 화면으로 이동</span></button>
+        <h2 class="h_title" v-if="layout.header != 'main'">header</h2>
       </div>
       <div class="h_right">
-        <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
-        <button type="button" class="h_menu" @click="asideOpen"><span class="blind">전체메뉴 열기</span></button>
+        <button type="button" class="h_rcmd" v-if="layout.header != 'sub2'"><span class="blind">친구추천</span></button>
+        <button type="button" class="h_menu" v-if="layout.header != 'sub2'" @click="asideOpen"><span class="blind">전체메뉴 열기</span></button>
         <!-- <button type="button" class="h_close"><span class="blind">닫기</span></button> -->
       </div>
     </div>
@@ -167,7 +167,6 @@
       </div>
     </div>
   </aside>
-
 </template>
 
 <script>
@@ -175,6 +174,7 @@ export default {
   name: 'MainHeader',
   data(){
     return {
+      header : 'ty01',
       gnbOn: false,
       aside: [false, false, false, false],
     }
@@ -260,6 +260,9 @@ export default {
         
       }
     }
+  },
+  props: {
+    layout: Object,
   }
 }
 </script>

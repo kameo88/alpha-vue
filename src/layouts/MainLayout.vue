@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="loading" v-if="loading">
     <div class="lottie"><compLottie name="loading" /></div>
     <span class="blind">loading</span>
@@ -9,13 +10,14 @@
   </div>    
 
 	<div class="wrap">
-		<MainHeader />
-		<router-view @popupItem="popupItem = $event;" />
+		<MainHeader :layout="layout" />
+		<router-view @popup-item="popupItem = $event;" @set-layout="getLayout($event)" />
 		<AsideFloat />
 		<MainFooter />
 	</div>
 
   <compPopup :popupItem="popupItem" />
+</div>
 </template>
 
 <script>
@@ -30,8 +32,14 @@ export default {
   name: 'MainLayout',
   data(){
     return {
+      layout: { "header" : 1 },
       loading: false,
       popupItem: [],
+    }
+  },
+  methods: {
+    getLayout(Obj){
+      this.layout = Obj;
     }
   },
   mounted(){

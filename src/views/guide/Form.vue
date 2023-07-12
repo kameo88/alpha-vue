@@ -714,12 +714,15 @@
 <script>
 export default {
   name: 'GuideForm',
+  emits: ['popupItem', 'setLayout'],
   data(){
     return {
+      layout: { "header" : 'sub' },
       popupItem: ['selectPop01', 'selectPop02'],
     }
   },
   mounted(){
+    this.$emit('setLayout', this.layout);
     this.$emit('popupItem', this.popupItem);
   }
 }

@@ -407,8 +407,10 @@ import compCard from '@/components/Card.vue'
 
 export default {
   name: "GuideSticky",
+  emits: ['popupItem', 'setLayout'],
   data(){
     return {
+      layout: { "header" : 'sub' },
       popupItem: ['userReviewPop', 'blogReviewPop'],
       tooltip: [false, false, false],
 
@@ -504,6 +506,7 @@ export default {
     }
   },
   mounted(){
+    this.$emit('setLayout', this.layout);
     this.$emit('popupItem', this.popupItem);
 
     document.querySelector("html").style.scrollBehavior = "smooth";

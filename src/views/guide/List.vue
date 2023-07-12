@@ -305,8 +305,10 @@ import compCard from '@/components/Card.vue'
 
 export default {
   name: 'GuideTemplate',
+  emits: ['popupItem', 'setLayout'],
 	data(){
     return {
+      layout: { "header" : 'sub' },
 			rating: 3,
 			rating2: 4,
       flag: [false, false],
@@ -315,6 +317,9 @@ export default {
   },
   components: {
     compCard,
-  }
+  },
+  mounted(){
+    this.$emit('setLayout', this.layout);
+  },
 }
 </script>

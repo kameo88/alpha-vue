@@ -56,6 +56,15 @@ import compLottie from "@/components/Lottie.vue";
 
 export default {
   name: "GuideAnimation",
+  emits: ['popupItem', 'setLayout'],
+  data(){
+    return {
+      layout: { "header" : 'sub2' },
+    }
+  },
+  mounted(){
+    this.$emit('setLayout', this.layout);
+  },
   components: {
     compLottie,
   }
