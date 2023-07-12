@@ -3,6 +3,7 @@
 /* vuetify customizing */
 
 .v-input {width:220px;}
+.v-rating__hidden {overflow:hidden;}
 
 /* rating */
 .eval_wrap {margin-top:6rem; text-align:center;}
