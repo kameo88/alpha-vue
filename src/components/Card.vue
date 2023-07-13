@@ -26,7 +26,7 @@
         <span class="cellular"><span class="blind">통신기술</span>LTE</span>
       </div>
     </div>
-    <v-tooltip v-model="tooltip[0]" :activator="`#${cardInfo.name}-1`" location="top" offset="0" scroll-strategy="none" :open-on-hover="false" no-click-animation contained>
+    <v-tooltip v-model="tooltip[0]" :activator="`#${cardInfo.name}-1`" :attach="`#${cardInfo.name}-1`" location="top" offset="0" scroll-strategy="none" :open-on-hover="false" no-click-animation contained>
       <div class="tooltip_content">
         데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
       </div>
@@ -44,7 +44,7 @@
 
       <!-- <div class="choice">22,521명이 선택했어요</div> -->
     </div>
-    <v-tooltip v-model="tooltip[1]" :activator="`#${cardInfo.name}-2`" location="top" offset="0" scroll-strategy="none" :open-on-hover="false" no-click-animation contained>
+    <v-tooltip v-model="tooltip[1]" :activator="`#${cardInfo.name}-2`" :attach="`#${cardInfo.name}-2`" location="top" offset="0" scroll-strategy="none" :open-on-hover="false" no-click-animation contained>
       <div class="tooltip_content">
         LG U+ 인터넷/IPTV 신규 가입 + 알뜰폰 결합 시, 최대 118만원의 혜택을 받을 수 있어요!
       </div>
@@ -168,7 +168,7 @@
         <span class="cellular"><span class="blind">통신기술</span>LTE</span>
       </div>
     </div>
-    <v-tooltip v-model="tooltip[2]" :activator="`#${cardInfo.name}-1`" location="top" offset="0" scroll-strategy="none" :open-on-hover="false" no-click-animation contained>
+    <v-tooltip v-model="tooltip[2]" :activator="`#${cardInfo.name}-1`" :attach="`#${cardInfo.name}-1`" location="top" offset="0" scroll-strategy="none" :open-on-hover="false" no-click-animation contained>
       <div class="tooltip_content">
         데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
       </div>
