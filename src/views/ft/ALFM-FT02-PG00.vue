@@ -9,7 +9,7 @@
           <ul>
             <li>
               <div class="form_item">
-                <button type="button" class="select_btn" id="btn_selectPop01" onclick="popUp.open('#selectPop01', '#btn_selectPop01');">⁠버전 V.20230303</button>
+                <button type="button" class="btn_select" id="btn_selectPop01" onclick="popUp.open('#selectPop01', '#btn_selectPop01');">⁠버전 V.20230303</button>
               </div>
             </li>
           </ul>
