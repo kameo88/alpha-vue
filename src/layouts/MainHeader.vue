@@ -5,7 +5,7 @@
       <div class="h_left">
         <a href="javascript:void(0);" class="h_home" v-if="layout.header == 'main'"><span class="blind">+알파</span></a>
         <button type="button" class="h_back" v-if="layout.header != 'main'"><span class="blind">이전 화면으로 이동</span></button>
-        <h2 class="h_title" v-if="layout.header != 'main'">header</h2>
+        <h2 class="h_title" v-if="layout.header != 'main'">{{ layout.title }}</h2>
       </div>
       <div class="h_right">
         <button type="button" class="h_rcmd" v-if="layout.header != 'sub2'"><span class="blind">친구추천</span></button>
@@ -174,7 +174,6 @@ export default {
   name: 'MainHeader',
   data(){
     return {
-      header : 'ty01',
       gnbOn: false,
       aside: [false, false, false, false],
     }

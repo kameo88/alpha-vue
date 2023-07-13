@@ -118,11 +118,49 @@
       </div>
     </div>
   </div> <!-- // pop_layer -->
+
+
+
+
+  <!-- [공통] -->
+  <div class="pop_layer full map_pop" id="popup07">
+    <div class="pop_wrap height_fix">
+      <div class="pop_header">
+        <h3>지도 보기</h3>
+      </div>
+      <div class="pop_content">
+        <div class="map_address">
+          <dl>
+            <dt>GS25상일동아점</dt>
+            <dd>서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</dd>
+          </dl>
+          <div class="btn_group">
+            <a href="javascript:void(0);" class="btn md c03">전화하기</a>
+          </div>
+        </div>
+        <div class="map_area">
+          <span style="display:block; padding:5rem; text-align:center;">지도</span>
+
+          <div class="map_pin_shop" style="position:absolute; left:150px; top:200px;">
+            <i>
+              <img src="@/assets/images/component/img_gs25.png" alt="gs25">
+                <!--
+                <img src="@/assets/images/component/img_cu.png" alt="cu">
+                <img src="@/assets/images/component/img_emart.png" alt="emart">
+                <img src="@/assets/images/component/img_seven_eleven.png" alt="seven eleven">
+                -->
+            </i>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="pop_close" data-action="close" @click="$popup.close('#popup07', '#btn_popup07')"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
   
 
-
   <!-- [공통][ALFM-CM08-PO00] eSIM 활성화 방법 팝업 -->
-  <div class="pop_layer full" id="popup08" >
+  <div class="pop_layer full" id="popup08" v-if="popup.popup08">
     <div class="pop_wrap height_fix">
       <div class="pop_header">
         <h3>eSIM 활성화 방법</h3>
@@ -1377,11 +1415,11 @@ export default {
     return {
       value: [0, 60000],
       popup: { "popup01" : false },
-      toggle08: [0],
+      toggle08: [0],  // eSIM 활성화 방법 팝업 toggle
     }
   },
   watch: {
-    toggle08(a, b){
+    toggle08(a, b){ // eSIM 활성화 방법 팝업 swiper
       if( b[1] != "1" ) setTimeout(()=>{ this.$swiper.cardSwiper() }, 1);
     }
   },
@@ -1398,7 +1436,7 @@ export default {
     setTimeout(() => {
       this.popupItem.forEach( a => { this.popup[a] = true;});
 
-      if( this.toggle08[0] == 1 ) this.$swiper.cardSwiper();
+      if( this.toggle08[0] == 1 ) this.$swiper.cardSwiper();  // eSIM 활성화 방법 팝업 swiper
   
     }, 0);
   }

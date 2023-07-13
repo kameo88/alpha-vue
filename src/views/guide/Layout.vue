@@ -34,8 +34,9 @@
       
       <div class="section">
         <h3 class="tit02">Header Layout</h3>
-        해당 페이지 내의 data 수정 후 mounted() 이벤트로 MainLayout.vue 에 전송<br>
-        this.$emit('setLayout', this.layout);
+        해당 페이지 내의 data 수정 후 mounted() 이벤트로 MainLayout.vue 에 전송<br><br>
+        <b>layout: { "header" : 'sub2', 'title': '공통' },</b><br>
+        <b>this.$emit('setLayout', this.layout);</b>
         
         <br><br>
 
