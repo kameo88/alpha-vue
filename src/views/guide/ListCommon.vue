@@ -39,7 +39,7 @@
 				<tr class="">
 					<td></td>
 					<td></td>
-					<td>서비스 점검중</td>
+					<td>서비스 점검중 (팝업)</td>
 					<td></td>
 					<td class="url"><a href="/cm/ALFM-CM02-PG00" target="_blank">/cm/ALFM-CM02-PG00</a></td>
 					<td class="marker"></td>
@@ -49,9 +49,9 @@
 				<tr class="">
 					<td></td>
 					<td></td>
-					<td>에러페이지</td>
+					<td>IE11 미지원</td>
 					<td></td>
-					<td class="url"><a href="/cm/ALFM-CM03-PG00" target="_blank">/cm/ALFM-CM03-PG00</a></td>
+					<td class="url"><a href="/cm/ALFM-CM11-PG00" target="_blank">/cm/ALFM-CM11-PG00</a></td>
 					<td class="marker"></td>
 					<td class="date"></td>
 					<td>Microsoft Internet Explorer 11 사용 중지 에러 페이지</td>
@@ -121,7 +121,7 @@
 					<td></td>
 					<td>공유하기 팝업</td>
 					<td></td>
-					<td class="url"><a href="/cm/ALFM-CM11-PO00" target="_blank">/cm/ALFM-CM11-PO00</a></td>
+					<td class="url"><a href="/cm/ALFM-CM12-PG00" target="_blank">/cm/ALFM-CM12-PG00</a></td>
 					<td class="marker"></td>
 					<td class="date"></td>
 					<td></td>

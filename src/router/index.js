@@ -151,12 +151,46 @@ const routes = [
     children: [
       {
         path: 'ALFM-CM01-PG00',
-        component: () => import('@/views/guide/ALFM-CM01-PG00.vue'),
+        component: () => import('@/views/cm/ALFM-CM01-PG00.vue'),
+      },
+      {
+        path: 'ALFM-CM02-PG00',
+        component: () => import('@/views/cm/ALFM-CM02-PG00.vue'),
+      },
+      {
+        path: 'ALFM-CM11-PG00',
+        component: () => import('@/views/cm/ALFM-CM11-PG00.vue'),
+      },
+      {
+        path: 'ALFM-CM05-PO00',
+        component: () => import('@/views/cm/ALFM-CM05-PO00.vue'),
+      },
+      {
+        path: 'ALFM-CM06-PO00',
+        component: () => import('@/views/cm/ALFM-CM06-PO00.vue'),
+      },
+      {
+        path: 'ALFM-CM07-PO00',
+        component: () => import('@/views/cm/ALFM-CM07-PO00.vue'),
+      },
+      {
+        path: 'ALFM-CM08-PO00',
+        component: () => import('@/views/cm/ALFM-CM08-PO00.vue'),
+      },
+      {
+        path: 'ALFM-CM09-PO00',
+        component: () => import('@/views/cm/ALFM-CM09-PO00.vue'),
+      },
+      {
+        path: 'ALFM-CM10-PO00',
+        component: () => import('@/views/cm/ALFM-CM10-PO00.vue'),
+      },
+      {
+        path: 'ALFM-CM12-PG00',
+        component: () => import('@/views/cm/ALFM-CM12-PG00.vue'),
       },
     ]
   },
-
-  
 
 
   // email
