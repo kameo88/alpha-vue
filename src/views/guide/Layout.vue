@@ -120,7 +120,7 @@ export default {
 }
 </script>
 
-<style scope="this api replaced by slot-scope in 2.5.0+">
+<style>
 .header_guide{border:1px solid #ddd; height:5.2rem; box-sizing:border-box; display:flex; align-items:center; justify-content: space-between; padding:0 1.6rem;}
 .header_guide .h_left{margin-right:auto; display:flex; align-items:center;}
 .header_guide .h_right{display:flex; align-items:center;}
