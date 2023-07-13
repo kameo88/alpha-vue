@@ -97,7 +97,7 @@
 					<td class="date"></td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="ing">
 					<td></td>
 					<td>이메일무단수집거부</td>
 					<td></td>

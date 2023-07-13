@@ -192,6 +192,30 @@ const routes = [
     ]
   },
 
+  // footer  
+  {
+    path: '/ft',
+    component: () => import('@/layouts/MainLayout.vue'),
+    children: [
+      {
+        path: 'ALFM-FT01-PG00',
+        component: () => import('@/views/ft/ALFM-FT01-PG00.vue'),
+      },
+      {
+        path: 'ALFM-FT02-PG00',
+        component: () => import('@/views/ft/ALFM-FT02-PG00.vue'),
+      },
+      {
+        path: 'ALFM-FT03-PG00',
+        component: () => import('@/views/ft/ALFM-FT03-PG00.vue'),
+      },
+      {
+        path: 'ALFM-FT04-PG00',
+        component: () => import('@/views/ft/ALFM-FT04-PG00.vue'),
+      },
+    ]
+  },
+
 
   // email
   {
