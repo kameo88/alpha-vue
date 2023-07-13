@@ -143,7 +143,7 @@
 
         <div class="section">
           <h3 class="tit02">share btn</h3>
-          <button type="button" class="btn_share" id="btn_share" @click="$popup.open('#sharePop', '#btn_share');">공유하기</button>
+          <button type="button" class="btn_share" id="btn_popup12" @click="$popup.open('#popup12', '#btn_popup12');">공유하기</button>
 					<!-- <button type="button" class="btn_share" id="btn_share" @click="$popup.open('#sharePop', '#btn_share');"><span class="blind">공유하기</span></button> -->
 
           <button type="button" class="btn_share"><span class="blind">공유하기</span></button>
@@ -169,7 +169,7 @@ export default {
   data(){
     return {
       layout: { "header" : 'sub' },
-      popupItem: ['sharePop'],
+      popupItem: ['popup12'],
     }
   },
   mounted(){

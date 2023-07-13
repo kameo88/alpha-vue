@@ -118,10 +118,251 @@
       </div>
     </div>
   </div> <!-- // pop_layer -->
+  
 
 
-  <!-- 공유하기 -->
-  <div class="pop_layer alert" id="sharePop" v-if="popup.sharePop">
+  <!-- [공통][ALFM-CM08-PO00] eSIM 활성화 방법 팝업 -->
+  <div class="pop_layer full" id="popup08" >
+    <div class="pop_wrap height_fix">
+      <div class="pop_header">
+        <h3>eSIM 활성화 방법</h3>
+      </div>
+      <div class="pop_content">
+        <div class="section">
+          <div class="box_red ty02">
+            <div class="noti_img"></div>
+            <strong class="fc01">eSIM을 활성화 하기 위해서는 <br>반드시 인터넷에 연결 되어 있어야 해요</strong>
+          </div>
+          <div class="box_gray mgt12">
+            <ul class="text_list_bull">
+              <li>eSIM을 가입하면, 내 휴대폰 설정 메뉴 또는 QR코드를 스캔해서 eSIM을 활성화 후 바로 사용할 수 있어요.</li>
+              <li>한개의 단말에 동일 명의의 번호만 사용 가능해요!</li>
+            </ul>
+          </div>
+        </div> <!-- // section -->
+
+
+        <div class="section">
+          <v-expansion-panels class="acd_wrap"  v-model="toggle08" multiple>
+            <v-expansion-panel class="acd_item">
+              <div class="acd_title">
+                <v-expansion-panel-title>QR 스캔해서 개통하는 방법</v-expansion-panel-title>
+              </div>
+              <div class="acd_panel">
+                <v-expansion-panel-text>
+                  <div class="qr_wrap">
+                    <div class="qr_img">
+                      <img src="@/assets/images/content/img_qr.png" alt="">
+                    </div>
+                    <strong>
+                      eSIM 개통할 휴대폰으로 <br>
+                      QR코드를 스캔해주세요
+                    </strong>
+                  </div>
+                </v-expansion-panel-text>
+              </div>
+            </v-expansion-panel>
+
+            <v-expansion-panel class="acd_item">
+              <div class="acd_title">
+                <v-expansion-panel-title>내 휴대폰 설정에서 개통하는 방법</v-expansion-panel-title>
+              </div>
+              <div class="acd_panel">
+                <v-expansion-panel-text>
+                  
+                  <strong>아이폰</strong>
+                
+                  <div class="swiper cardSwiper ty04">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="guid_img_item ty03">
+                          <strong class="fs12 fc01">step 01</strong>
+                          <h3 class="tit02">eSIM을 개통한 아이폰에 오는 <br>Push 메시지를 눌러주세요</h3>
+                          <div class="guid_img">
+                            <img src="@/assets/images/content/img_ios_set01.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="guid_img_item">
+                          <strong class="fs12 fc01">step 02</strong>
+                          <h3 class="tit02">eSIM 활성화를 해주세요</h3>
+                          <div class="guid_img">
+                            <img src="@/assets/images/content/img_ios_set02.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="guid_img_item">
+                          <strong class="fs12 fc01">step 03</strong>
+                          <h3 class="tit02">새로 개통할 eSIM 요금제 <br>레이블을 선택해주세요</h3>
+                          <div class="guid_img">
+                            <img src="@/assets/images/content/img_ios_set03.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="guid_img_item">
+                          <strong class="fs12 fc01">step 04</strong>
+                          <h3 class="tit02">기본회선을 선택하고 <br>계속을 눌러주세요</h3>
+                          <div class="guid_img">
+                            <img src="@/assets/images/content/img_ios_set04.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="guid_img_item">
+                          <strong class="fs12 fc01">step 05</strong>
+                          <h3 class="tit02">애플 ID를 연동할 회선을 <br>선택하고 계속을 눌러주세요!</h3>
+                          <div class="guid_img">
+                            <img src="@/assets/images/content/img_ios_set05.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="guid_img_item">
+                          <strong class="fs12 fc01">step 06</strong>
+                          <h3 class="tit02">셀룰러 데이터에 사용할 회선을 <br>선택 후 계속을 누르면 끝!</h3>
+                          <div class="guid_img">
+                            <img src="@/assets/images/content/img_ios_set06.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- swiper_control -->
+                    <div class="card_swiper_control">
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- //swiper_control -->
+                      
+                  </div>
+
+                  <strong>갤럭시(안드로이드)</strong>
+                    
+                  <div class="swiper cardSwiper ty04">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="guid_img_item ty03">
+                          <strong class="fs12 fc01">step 01</strong>
+                          <h3 class="tit02">휴대폰 [설정] 메뉴의 <br>[연결]을 눌러주세요</h3>
+                          <div class="guid_img">
+                            <img src="@/assets/images/content/img_and_set01.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="guid_img_item">
+                          <strong class="fs12 fc01">step 02</strong>
+                          <h3 class="tit02">[SIM 카드 관리자] 메뉴를 <br>눌러주세요</h3>
+                          <div class="guid_img">
+                            <img src="@/assets/images/content/img_and_set02.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="guid_img_item">
+                          <strong class="fs12 fc01">step 03</strong>
+                          <h3 class="tit02">[모바일 요금제 추가] 메뉴를 <br>눌러주세요</h3>
+                          <div class="guid_img">
+                            <img src="@/assets/images/content/img_and_set03.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="guid_img_item">
+                          <strong class="fs12 fc01">step 04</strong>
+                          <h3 class="tit02">요금제 추가 되는 동안 <br>잠시만 기다려주세요!</h3>
+                          <div class="guid_img">
+                            <img src="@/assets/images/content/img_and_set04.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="guid_img_item">
+                          <strong class="fs12 fc01">step 05</strong>
+                          <h3 class="tit02">[확인]버튼을 눌러주세요!</h3>
+                          <div class="guid_img">
+                            <img src="@/assets/images/content/img_and_set05.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- swiper_control -->
+                    <div class="card_swiper_control">
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- //swiper_control -->
+
+                  </div>
+
+                </v-expansion-panel-text>
+              </div>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </div><!-- .section -->
+      </div>
+      
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn md c03" @click="$popup.close('#popup08', '#btn_popup08');">확인</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" @click="$popup.close('#popup08', '#btn_popup08');"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+
+
+  <!-- [공통][ALFM-CM09-PO00] 가입신청 프로세스 이탈 안내 팝업 -->
+  <div class="pop_layer alert" id="popup09" v-if="popup.popup09">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>안내</h3>
+      </div>
+      <div class="pop_content">
+        <div class="info_con">
+          ⁠신청을 종료하시겠어요? <br>
+          ⁠진행중인 내용은 저장됩니다.
+        </div>
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn sm c07" data-action="close" @click="$popup.close('#popup09', '#btn_popup09')">취소</button>
+          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#popup09', '#btn_popup09')">종료하기</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- // pop_layer -->
+  
+
+  <!-- [공통][ALFM-CM10-PO00] 가입신청 이어하기 안내 팝업 -->
+  <div class="pop_layer alert" id="popup10" v-if="popup.popup10">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>안내</h3>
+      </div>
+      <div class="pop_content">
+        <div class="info_con">
+          ⁠작성중인 신청서가 있습니다.<br>
+          ⁠이어서 신청할까요?
+        </div>
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn sm c07" data-action="close" @click="$popup.close('#popup10', '#btn_popup10')">취소</button>
+          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#popup10', '#btn_popup10')">이어하기</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- // pop_layer -->
+
+
+  <!-- [공통][ALFM-CM12-PG00] 공유하기 -->
+  <div class="pop_layer alert" id="popup12" v-if="popup.popup12">
     <div class="pop_wrap">
       <div class="pop_header">
         <h3>공유하기</h3>
@@ -149,11 +390,15 @@
       </div>
       <div class="pop_footer">
         <div class="btn_group">
-          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#sharePop', '#btn_share')">닫기</button>
+          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#popup12', '#btn_popup12')">닫기</button>
         </div>
       </div>
     </div>
   </div> <!-- // pop_layer -->
+
+
+
+
 
 
   <div class="pop_layer normal filter_pop" id="filterPop" v-if="popup.filterPop">
@@ -1123,12 +1368,21 @@
 </template>
   
 <script>
+import '@/assets/js/swiper-bundle.min.js';
+import '@/assets/css/swiper-bundle.css';
+
 export default {
   name: 'compPopup',
   data(){
     return {
       value: [0, 60000],
       popup: { "popup01" : false },
+      toggle08: [0],
+    }
+  },
+  watch: {
+    toggle08(a, b){
+      if( b[1] != "1" ) setTimeout(()=>{ this.$swiper.cardSwiper() }, 1);
     }
   },
   methods: {
@@ -1141,7 +1395,12 @@ export default {
     popupItem: Array,
   },
   mounted(){
-    setTimeout(() => { this.popupItem.forEach( a => { this.popup[a] = true }) }, 0);
+    setTimeout(() => {
+      this.popupItem.forEach( a => { this.popup[a] = true;});
+
+      if( this.toggle08[0] == 1 ) this.$swiper.cardSwiper();
+  
+    }, 0);
   }
 }
 </script>

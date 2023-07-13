@@ -19,7 +19,7 @@
 
 				<div class="share_box">
 					<span>text</span>
-					<button type="button" class="btn_share" id="btn_share" @click="$popup.open('#sharePop', '#btn_share');"><span class="blind">공유하기</span></button>
+					<button type="button" class="btn_share" id="btn_popup12" @click="$popup.open('#popup12', '#btn_popup12');"><span class="blind">공유하기</span></button>
 
 				</div>
 			</div> <!-- // section -->
@@ -112,7 +112,7 @@ export default {
   data(){
 	return {
 		layout: { "header" : 'sub' },
-		popupItem: ['sharePop'],
+		popupItem: ['popup12'],
 	}
   },
   mounted(){

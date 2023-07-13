@@ -198,6 +198,8 @@ const popup = {
   close : function(pop, btn){
 
     const _pop = document.querySelector(pop);
+    if( _pop == null ) return;
+
     const _isOpen = _pop.classList.contains("open");
     const _popWrap = _pop.querySelector(".pop_wrap");
     const _btn = document.querySelector(btn);
