@@ -27,14 +27,14 @@
         </tr>
       </thead>
 			<tbody>
-				<tr class="">
+				<tr class="ing">
 					<td>footer</td>
 					<td>이용약관</td>
 					<td>서비스 이용약관(T)</td>
 					<td></td>
 					<td class="url"><a href="/ft/ALFM-FT01-PG00" target="_blank">/ft/ALFM-FT01-PG00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date"><!-- [07/13] --></td>
 					<td></td>
 				</tr>
 				<tr class="">
@@ -77,24 +77,24 @@
 					<td class="date"></td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="ing">
 					<td></td>
 					<td>개인정보처리방침</td>
 					<td></td>
 					<td></td>
 					<td class="url"><a href="/ft/ALFM-FT02-PG00" target="_blank">/ft/ALFM-FT02-PG00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date"><!-- [07/13] --></td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="ing">
 					<td></td>
 					<td>개인정보이용내역</td>
 					<td></td>
 					<td></td>
 					<td class="url"><a href="/ft/ALFM-FT03-PG00" target="_blank">/ft/ALFM-FT03-PG00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date"><!-- [07/13] --></td>
 					<td></td>
 				</tr>
 				<tr class="ing">
@@ -104,7 +104,7 @@
 					<td></td>
 					<td class="url"><a href="/ft/ALFM-FT04-PG00" target="_blank">/ft/ALFM-FT04-PG00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date"><!-- [07/13] --></td>
 					<td></td>
 				</tr>
 				<tr class="">

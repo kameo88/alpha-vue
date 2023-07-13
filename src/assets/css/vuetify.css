@@ -19,7 +19,7 @@
 
 
 /* footer contents */
-.btn_download {display:inline-block; width:2.4rem; height:2.4rem; border:none; background:url(../images/ico/ico_download.png) no-repeat center center / 100% auto;}
+.btn_download {display:inline-block; width:2.4rem; height:2.4rem; border:none; background:url(../images/common/ico_download.png) no-repeat center center / 100% auto;}
 
 ol.list.decimal li {list-style:decimal; list-style-position:inside; margin-top:2rem; margin-left:1.5rem; text-indent:-1.5rem;}
 .box_gray.terms {margin:3.2rem 0; padding:1.2rem 3.2rem 3.2rem; font-size:1.3rem;}
@@ -45,4 +45,4 @@ ol.list.decimal li {list-style:decimal; list-style-position:inside; margin-top:2
 .pc .terms_wrap .info_files {display:flex; justify-content:space-between;}
 .pc .terms_wrap .info_files .box_gray {width:calc(50% - .6rem); margin-top:0;}
 .pc .form_list.version .form_item {justify-content:end;}
-.pc .form_list.version .select_btn {flex:none; width:30rem;}
+.pc .form_list.version .btn_select {flex:none; width:30rem;}
