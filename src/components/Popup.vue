@@ -122,8 +122,212 @@
 
 
 
-  <!-- [공통] -->
-  <div class="pop_layer full map_pop" id="popup07">
+
+  
+
+
+
+
+  <!-- [공통][ALFM-CM05-PO00] 우편번호 검색 -->
+  <div class="pop_layer full" id="popup05" v-if="popup.popup05">
+    <div class="pop_wrap height_fix">
+      <div class="pop_header">
+        <h3>⁠우편번호 검색</h3>
+      </div>
+      <div class="pop_content">
+        <div class="section">
+          <div class="form_list">
+            <ul>
+              <li>
+                <div class="input_box search">
+                  <input type="text" class="input" placeholder="⁠도로명+건물번호 / 지역명(동/리)+번지">
+                  <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
+                  <button type="button" class="btn_search"><span class="blind">검색</span></button>
+                </div>
+              </li>
+              <li>
+                <div class="addr_search_info"> <!-- 우편번호 검색 시 미노출 -->
+                  <span class="info_desc">⁠아래와 같은 조합으로 검색을 하시면 더욱 정확한 결과가 검색됩니다.</span>
+                  <ul>
+                    <li>
+                      <span class="tit">⁠도로명 주소 검색</span>
+                      <span class="fc03">예) 한강대로 32</span>
+                    </li>
+                    <li>
+                      <span class="tit">⁠도로명+건물번호 검색</span>
+                      <span class="fc03">예) 한강대로 32</span>
+                    </li>
+                    <li>
+                      <span class="tit">⁠건물명 검색</span>
+                      <span class="fc03">예) 엘지유플러스</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="sort_wrap">
+                  <div>총 1342건 검색되었습니다</div>
+                </div>
+
+                <div class="line_list">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0);" class="list_con02">
+                        <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
+                        <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="list_con02">
+                        <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
+                        <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="list_con02">
+                        <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
+                        <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="list_con02">
+                        <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
+                        <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="btn_group">
+                    <button type="button"  role="button" class="btn md c05">더볼래요</button>
+                  </div>
+
+                  <div class="form_item mgt20"><!-- 주소 선택 시 노출 -->
+                    <div class="input_box">
+                      <input type="text" class="input" placeholder="⁠상세주소 입력">
+                      <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="no_dt_sch">
+            <p>
+              검색 결과가 없습니다.<br>
+              ⁠정확한 주소인지 다시 한번 확인해주세요.
+            </p>
+          </div>
+        </div> <!-- // section -->
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn md c03" id="nextBtn">확인</button>
+        </div>
+      </div>
+      
+      <button type="button" class="pop_close" @click="$popup.close('#popup05', '#btn_popup05');"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+
+  <!-- [공통][ALFM-CM06-PO00] 약관 상세 팝업 : 약관 상세 -->
+  <div class="pop_layer full" id="popup06" v-if="popup.popup06">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>약관 상세</h3>
+      </div>
+      <div class="pop_content">
+        <div class="section">
+            
+          <div class="terms_area">
+            위치정보  활용정보 제공에 관한 동의서 <br>
+            <br>
+            제 1조(목적) <br>
+            (주)뉴플로이(이하 ‘회사’라 한다)의 뉴플로이에 관한 모든 관련 서비스(이하 ‘서비스’라 한다)는 회원님에게 보다 다양한 정보를 제공하고, 서비스의 질을 향상시키기 위하여 당사의 제휴사에게 「개인정보보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률 」및 「신용정보의 이용 및 보호에 관한 법률」의 규정을 준수하여 회원님의 개인(신용)정보를 제3자에게 상품소개 및 홍보 등 영업목적으로 제공할 수 있습니다. <br>
+            <br>
+            제 2조(수집 및 활용 관련 정보) <br>
+            개인정보가 제공되는 비즈니스 파트너사, 제공 정보, 제공된 정보의 이용목적은 아래와 같습니다. 회원님들 중 이 개인정보의 제3자 마케팅 활용동의서 등에 동의하신 회원님들의 정보만이 제공되며, 제공된 정보는 명시된 이용목적을 벗어나 이용되지 않고, 개인정보의 유출 등 사고가 일어나지 않도록 더욱 철저한 보안이 이루어지도록 노력하고 있습니다. <br>
+            <br>
+            제 3조(제3자 정보제공의 동의 철회) <br>
+            본 동의서에 동의하고 가입하신 신규회원 중 제3자 정보제공을 철회하고 싶은 회원은 이미 제3자에게 제공된 개인정보라 하더라도, 언제든지 열람, 정정, 삭제를 요구할 수 있습니다. 열람, 정정, 삭제 및 정보제공 동의 철회는 뉴플로이 고객센터(02-6956-4660)를 통해 본인확인 후 요청할 수 있습니다. 해당 요청의 근거자료를 남기기 위해 해당 통화내역은 녹취될 수 있으며 회원은 이에 동의하는 것으로 간주합니다. <br>
+            이미 제공된 회원정보를 철회하는 데는 최대 10일의 기간이 소요됩니다. 활용동의 철회를 요청하시더라도 위와 같은 이유로 해당 철회 적용 이전까지 마케팅에 활용 될 수 있음을 알려드립니다. <br>
+            회사는 회원님의 소중한 정보를 보호하기 위하여 신속하게 처리되도록 최선의 노력을 다하겠습니다. <br>
+          </div>
+
+        </div> <!-- // section -->
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn md c03" data-action="close" @click="$popup.close('#popup06','#btn_popup06')">확인</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" data-action="close" @click="$popup.close('#popup06','#btn_popup06')"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+
+  <!-- [공통][ALFM-CM06-PO00] 약관 상세 팝업 : 위치정보 활용 동의 -->
+  <div class="pop_layer full" id="popup06_2" v-if="popup.popup06_2">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>위치정보 활용 동의</h3>
+      </div>
+      <div class="pop_content">
+        <div class="section">
+          <div class="terms_area">
+            위치정보  활용정보 제공에 관한 동의서 <br>
+            <br>
+            제 1조(목적) <br>
+            (주)뉴플로이(이하 ‘회사’라 한다)의 뉴플로이에 관한 모든 관련 서비스(이하 ‘서비스’라 한다)는 회원님에게 보다 다양한 정보를 제공하고, 서비스의 질을 향상시키기 위하여 당사의 제휴사에게 「개인정보보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률 」및 「신용정보의 이용 및 보호에 관한 법률」의 규정을 준수하여 회원님의 개인(신용)정보를 제3자에게 상품소개 및 홍보 등 영업목적으로 제공할 수 있습니다. <br>
+            <br>
+            제 2조(수집 및 활용 관련 정보) <br>
+            개인정보가 제공되는 비즈니스 파트너사, 제공 정보, 제공된 정보의 이용목적은 아래와 같습니다. 회원님들 중 이 개인정보의 제3자 마케팅 활용동의서 등에 동의하신 회원님들의 정보만이 제공되며, 제공된 정보는 명시된 이용목적을 벗어나 이용되지 않고, 개인정보의 유출 등 사고가 일어나지 않도록 더욱 철저한 보안이 이루어지도록 노력하고 있습니다. <br>
+            <br>
+            제 3조(제3자 정보제공의 동의 철회) <br>
+            본 동의서에 동의하고 가입하신 신규회원 중 제3자 정보제공을 철회하고 싶은 회원은 이미 제3자에게 제공된 개인정보라 하더라도, 언제든지 열람, 정정, 삭제를 요구할 수 있습니다. 열람, 정정, 삭제 및 정보제공 동의 철회는 뉴플로이 고객센터(02-6956-4660)를 통해 본인확인 후 요청할 수 있습니다. 해당 요청의 근거자료를 남기기 위해 해당 통화내역은 녹취될 수 있으며 회원은 이에 동의하는 것으로 간주합니다. <br>
+            이미 제공된 회원정보를 철회하는 데는 최대 10일의 기간이 소요됩니다. 활용동의 철회를 요청하시더라도 위와 같은 이유로 해당 철회 적용 이전까지 마케팅에 활용 될 수 있음을 알려드립니다. <br>
+            회사는 회원님의 소중한 정보를 보호하기 위하여 신속하게 처리되도록 최선의 노력을 다하겠습니다. <br>
+          </div>
+        </div> <!-- // section -->
+      </div>
+      <div class="pop_footer">
+        <div class="terms_consent mgb32">
+          <div class="cst_box check_st">
+            <input type="checkbox" id="check_01" name="">
+            <label for="check_01">매장안내를 받기 위해 위치정보 활용 이용약관에 동의합니다. (필수)</label>
+          </div>
+        </div>
+        <div class="btn_group">
+          <button type="button" class="btn md c03" id="btn_popup06_3" @click="popup06_2_termsCheck();">확인</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" data-action="close" @click="$popup.close('#popup06_2','#btn_popup06_2')"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+
+  <!-- [공통][ALFM-CM06-PO00] 약관 상세 팝업 : 위치정보 활용 동의 : 동의체크 X -->
+  <div class="pop_layer alert" id="popup06_3" v-if="popup.popup06_2">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>위치정보 활용 동의 안내</h3>
+      </div>
+      <div class="pop_content">
+        <div class="info_con">
+          [내 주변 매장 찾기] 메뉴를 <br>이용하기 위해서는 <br>위치정보 활용 동의가 꼭 필요해요!
+        </div>
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#popup06_3', '#btn_popup06_3');">확인</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- // pop_layer -->
+
+
+  <!-- [공통][ALFM-CM07-PO00] 지도 보기 팝업 -->
+  <div class="pop_layer full map_pop" id="popup07" v-if="popup.popup07">
     <div class="pop_wrap height_fix">
       <div class="pop_header">
         <h3>지도 보기</h3>
@@ -157,7 +361,6 @@
     </div>
   </div> <!-- // pop_layer -->
 
-  
 
   <!-- [공통][ALFM-CM08-PO00] eSIM 활성화 방법 팝업 -->
   <div class="pop_layer full" id="popup08" v-if="popup.popup08">
@@ -354,7 +557,6 @@
   </div> <!-- // pop_layer -->
 
 
-
   <!-- [공통][ALFM-CM09-PO00] 가입신청 프로세스 이탈 안내 팝업 -->
   <div class="pop_layer alert" id="popup09" v-if="popup.popup09">
     <div class="pop_wrap">
@@ -433,6 +635,9 @@
       </div>
     </div>
   </div> <!-- // pop_layer -->
+
+
+
 
 
 
@@ -1415,7 +1620,7 @@ export default {
     return {
       value: [0, 60000],
       popup: { "popup01" : false },
-      toggle08: [0],  // eSIM 활성화 방법 팝업 toggle
+      toggle08: [0],      // eSIM 활성화 방법 팝업 toggle
     }
   },
   watch: {
@@ -1427,6 +1632,12 @@ export default {
     rangeChange(e){
       this.value[0] = e.target.getAttribute("data-min");
       this.value[1] = e.target.getAttribute("data-max");
+    },
+    popup06_2_termsCheck(){  // 위치정보 활용동의 checkbox 체크 여부
+      const isChecked = document.querySelector("#check_01").checked;
+      if( isChecked ){  this.$popup.close('#popup06_2', '#btn_popup06_2');
+      } else {          this.$popup.open('#popup06_3', '#btn_popup06_3');
+      }
     }
   },
   props: {

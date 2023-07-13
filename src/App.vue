@@ -7,7 +7,8 @@ export default {
   name: 'App',
   watch: {
     $route(){
-      setTimeout(()=>{ this.$front.init() }, 0);
+      console.log('init');
+      setTimeout(()=>{ this.$front.init() }, 100);
     }
   }
 }
