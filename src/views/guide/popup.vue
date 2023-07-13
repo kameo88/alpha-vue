@@ -66,7 +66,7 @@ mounted(){
         <div>
           데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
           <v-btn id="tooltip0" class="tooltip_btn" :class="{on : tooltip[0]}" title="툴팁" @click="tooltip[0] = !tooltip[0]">툴팁</v-btn>
-          <v-tooltip v-model="tooltip[0]" activator="#tooltip0" location="top" offset="0" :open-on-hover="false" no-click-animation>
+          <v-tooltip v-model="tooltip[0]" activator="#tooltip0" location="top" offset="0" scroll-strategy="none" :open-on-hover="false" no-click-animation>
             <div class="tooltip_content">
               데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
             </div>
@@ -77,7 +77,7 @@ mounted(){
 
         <div>
           데이터 소진 시 유튜브 화질 1080p로 <v-btn id="tooltip1" class="tooltip_btn" :class="{on : tooltip[1]}" title="툴팁" @click="tooltip[1] = !tooltip[1]">툴팁</v-btn> 원활히 볼 수 있어요
-          <v-tooltip v-model="tooltip[1]" activator="#tooltip1" location="top" offset="0" :open-on-hover="false" no-click-animation>
+          <v-tooltip v-model="tooltip[1]" activator="#tooltip1" location="top" offset="0" scroll-strategy="none" :open-on-hover="false" no-click-animation>
             <div class="tooltip_content">
               데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
             </div>
@@ -89,7 +89,7 @@ mounted(){
         <div>
           <v-btn id="tooltip2" class="tooltip_btn" :class="{on : tooltip[2]}" title="툴팁" @click="tooltip[2] = !tooltip[2]">툴팁</v-btn>
           데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
-          <v-tooltip v-model="tooltip[2]" activator="#tooltip2" location="top" offset="0" :open-on-hover="false" no-click-animation>
+          <v-tooltip v-model="tooltip[2]" activator="#tooltip2" location="top" offset="0" scroll-strategy="none" :open-on-hover="false" no-click-animation>
             <div class="tooltip_content">
               데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
             </div>
@@ -103,7 +103,7 @@ mounted(){
           <v-btn id="tooltip3" class="tooltip_btn" :class="{on : tooltip[3]}" title="툴팁" @click="tooltip[3] = !tooltip[3]">툴팁</v-btn>
           원활히 볼 수 있어요
           contained
-          <v-tooltip v-model="tooltip[3]" activator="#tooltip3" location="top" offset="0" :open-on-hover="false" no-click-animation contained>
+          <v-tooltip v-model="tooltip[3]" activator="#tooltip3" location="top" offset="0" scroll-strategy="none" :open-on-hover="false" no-click-animation contained>
             <div class="tooltip_content">
               v-tooltip contained 옵션, 부모에 position:relative
             </div>
