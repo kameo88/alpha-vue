@@ -2,7 +2,7 @@
 
 	<div class="container">
 		<div class="content" id="content">
-			<h2 class="title_nav">개인정보이용내역</h2>
+			<h2 class="title_nav">{{ layout.title }}</h2>
 		
       <div class="section">
         <h3 class="tit_terms">위치정보 활용정보 제공에 관한 동의서</h3>
@@ -41,7 +41,7 @@ export default {
   emits: ['popupItem', 'setLayout'],
   data(){
     return {
-      layout: { header: 'sub', footer: '', title: '' },
+      layout: { header: 'sub', footer: '', title: '개인정보이용내역' },
     }
   },
   mounted(){

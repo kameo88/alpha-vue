@@ -2,7 +2,7 @@
 
 	<div class="container">
 		<div class="content" id="content">
-			<h2 class="title_nav">이용약관</h2>
+			<h2 class="title_nav">{{ layout.title }}</h2>
 		
       <div class="section">
         <div class="tag_list mgb32">
@@ -67,7 +67,7 @@ export default {
   emits: ['popupItem', 'setLayout'],
   data(){
     return {
-      layout: { header: 'sub', footer: '', title: '' },
+      layout: { header: 'sub', footer: '', title: '이용약관' },
     }
   },
   mounted(){
