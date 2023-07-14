@@ -308,7 +308,7 @@ export default {
   emits: ['popupItem', 'setLayout'],
 	data(){
     return {
-      layout: { "header" : 'sub' },
+      layout: { header: 'sub', footer: '', title: '' },
 			rating: 3,
 			rating2: 4,
       flag: [false, false],

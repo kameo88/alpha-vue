@@ -58,7 +58,7 @@ const layout = {
     // console.log('_paddingB', paddingB);
 
     const footer = document.querySelector(".footer");
-    let target = ( footer != null ) ? footer : document.querySelectorAll(".container");
+    let target = ( footer != null ) ? footer : document.querySelector(".container");
 
     target.style.paddingBottom = `${paddingB}px`;
 

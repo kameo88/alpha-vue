@@ -80,7 +80,7 @@ export default {
   emits: ['popupItem', 'setLayout'],
   data(){
     return {
-      layout: { "header" : 'sub2' },
+      layout: { header: 'sub2', footer: '', title: '' },
     }
   },
   mounted(){

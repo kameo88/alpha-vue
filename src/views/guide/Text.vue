@@ -110,14 +110,14 @@ export default {
   name: 'GuideText',
   emits: ['popupItem', 'setLayout'],
   data(){
-	return {
-		layout: { "header" : 'sub' },
-		popupItem: ['popup12'],
-	}
+    return {
+      layout: { header: 'sub', footer: '', title: '' },
+      popupItem: ['popup12'],
+    }
   },
   mounted(){
-	this.$emit('setLayout', this.layout);
-	this.$emit('popupItem', this.popupItem);
+    this.$emit('setLayout', this.layout);
+    this.$emit('popupItem', this.popupItem);
   }
 }
 </script>

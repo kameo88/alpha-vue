@@ -121,3 +121,15 @@
 .cardDetail-enter-to,
 .cardDetail-leave-from {max-height:25rem; overflow:hidden;}
 
+
+/* error page */
+.error_area{text-align:center; padding-top:8rem;}
+.error_area .ttl{text-align:center;}
+.error_area .ttl::before{content:''; display:block; max-width:10rem; height:10rem; background:url(../images/content/img_error.png) 50% 50% no-repeat; background-size:100% auto; margin:0 auto 3.2rem;}
+.error_area .ttl h2{font-size:2.2rem; font-weight:700; color:#000; line-height:3rem;}
+.error_area .ttl p{font-size:1.3rem; color:#909090; line-height:1.9rem; margin-top:1.3rem;}
+.error_area .error_time {margin-top:3.2rem; background:#F8F8F8; border-radius:0.8rem; padding:1.8rem;}
+.error_area .error_time strong{display:block; font-size:1.5rem; font-weight:700; line-height:2.2rem;}
+.error_area .error_time span{display:block; font-size:1.2rem; color:#909090; line-height:1.8rem; margin-top:0.4rem;}
+
+.error_area.ty02 .ttl::before{background-image:url(../images/content/img_error_chk.png)}

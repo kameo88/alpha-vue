@@ -132,7 +132,7 @@ export default {
   emits: ['popupItem', 'setLayout'],
   data(){
     return {
-      layout: { "header" : 'sub' },
+      layout: { header: 'sub', footer: '', title: '' },
       popupItem: ['popup01', 'popup02', 'popup03', 'noticePop', 'userReviewPop'],
       tooltip: [false, false, false, false, false],
     }
