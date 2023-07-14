@@ -1606,6 +1606,43 @@
 
 
 
+  <div class="pop_layer full" id="inspectionPopup01" v-if="popup.inspectionPopup01">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>안내</h3>
+      </div>
+      <div class="pop_content">
+        <div class="section error_area ty02">
+          <div class="ttl">
+            <h2>지금은<br>시스템 점검중입니다</h2>
+            <p>
+              다 나은 서비스 제공을 위해<br>
+              서비스 점검 작업을 진행하고 있습니다.<br>
+              이용에 불편을 드려 죄송합니다.<br>
+              빠른 시간 내에 정상적인 서비스가 가능하도록<br>
+              최선을 다하겠습니다.<br><br>
+
+              감사합니다.
+            </p>
+            <div class="error_time">
+              <strong>점검시간</strong>
+              <span>1월25일 00:00 ~ 1월 25일 04:00</span>
+            </div>
+          </div>
+        </div> <!-- // section -->
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn lg c01" data-action="close" @click="$popup.close('#inspectionPopup01','#btn_inspectionPopup01')">이전 화면으로 돌아가기</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" data-action="close" @click="$popup.close('#inspectionPopup01','#btn_inspectionPopup01')"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+
+
+
 </div>
 
 </template>
@@ -1644,10 +1681,9 @@ export default {
     popupItem: Array,
   },
   mounted(){
-
-    if( this.popupItem.length < 1 ) return;
-
     setTimeout(() => {
+      if( this.popupItem.length < 1 ) return;
+
       this.popupItem.forEach( a => { this.popup[a] = true;});
 
       if( this.toggle08[0] == 1 ) this.$swiper.cardSwiper();  // eSIM 활성화 방법 팝업 swiper
