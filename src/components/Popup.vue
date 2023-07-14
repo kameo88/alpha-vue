@@ -1777,6 +1777,44 @@
 		</div>
 	</div> <!-- // pop_layer -->
 
+  <!-- login [ALFM-LG04-PO00] alert popup01 -->
+  <div class="pop_layer alert" id="loginPop01" v-if="popup.loginPop01">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>안내</h3>
+      </div>
+      <div class="pop_content">
+          <div class="info_con">
+            이용 가능한 메일 주소입니다!<br>가입을 계속 진행해주세요.
+          </div>
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#loginPop01', '#btn_loginPop01');">확인</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- // pop_layer -->
+
+  <!-- login [ALFM-LG04-PO00] alert popup02 -->
+  <div class="pop_layer alert" id="loginPop02" v-if="popup.loginPop02">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>안내</h3>
+      </div>
+      <div class="pop_content">
+          <div class="info_con">
+            입력하신 이메일 주소는 <br> 이미 사용중이거나 탈퇴한 계정입니다. <br> 다른 이메일 주소를 입력해 주세요.
+          </div>
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#loginPop02', '#btn_loginPop02');">확인</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- // pop_layer -->
+
 
 </div>
 
