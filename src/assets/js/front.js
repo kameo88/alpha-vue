@@ -3,13 +3,19 @@ import { setTimeout } from "core-js";
 const front = {
   init(){
     this.device();
-    layout.footer();
-    input.init();
     radioActive.init();
     scroll.isScroll();
     
-    layout.getFullH();
+    // 로딩순서 고려
+    setTimeout(()=>{
+      layout.footer();
+      layout.getFullH();
+    }, 0);
     window.addEventListener("resize", layout.getFullH);
+
+    // form input
+    setTimeout(()=>{ input.init() }, 100);
+
   },
   device(){
     const elem = document.querySelector("html");

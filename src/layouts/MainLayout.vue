@@ -45,7 +45,11 @@ export default {
   mounted(){
     if( this.$route.path == "/guide/layout" ){
       this.loading = true;
-      setTimeout(() => { this.loading = false }, 2000);
+      this.$scroll.noScroll();
+      setTimeout(() => {
+        this.loading = false;
+        this.$scroll.scroll();
+      }, 2000);
     }
   },
   components:{

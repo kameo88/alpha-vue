@@ -35,8 +35,16 @@
       <div class="section">
         <h3 class="tit02">Layout (header, footer, title)</h3>
         해당 페이지 내의 data 수정 후 mounted() 이벤트로 MainLayout.vue 에 전송<br><br>
-        <b>layout: { header: 'sub', footer: 'none', title: '공통' },,</b><br>
+
+        <b>layout: { header: 'sub', footer: 'none', title: '공통', floatMenu: 'none' },</b><br>
         <b>this.$emit('setLayout', this.layout);</b>
+
+        <ul class="text_list_bull">
+          <li><b>header</b> : 'main', 'sub', 'sub2', 'none' (필수)</li>
+          <li><b>footer</b> : '', 'none'</li>
+          <li><b>title</b> : '', 'text'</li>
+          <li><b>floatMenu</b> : '', 'none'</li>
+        </ul>
         
         <br><br>
 
