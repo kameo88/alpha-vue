@@ -1644,6 +1644,9 @@ export default {
     popupItem: Array,
   },
   mounted(){
+
+    if( this.popupItem.length < 1 ) return;
+
     setTimeout(() => {
       this.popupItem.forEach( a => { this.popup[a] = true;});
 
