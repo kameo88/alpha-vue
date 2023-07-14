@@ -7,10 +7,9 @@ const front = {
     scroll.isScroll();
     
     // 로딩순서 고려
-    setTimeout(()=>{
-      layout.footer();
-      layout.getFullH();
-    }, 0);
+    setTimeout(()=>{ layout.footer() }, 1);
+    
+    setTimeout(()=>{ layout.getFullH() }, 0);
     window.addEventListener("resize", layout.getFullH);
 
     // form input
