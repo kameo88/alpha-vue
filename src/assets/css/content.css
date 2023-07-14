@@ -297,7 +297,7 @@
 .compare_pop .comp_hea span::after {content:''; position:absolute; top:50%; right:0; display:block; width:2.4rem; height:2.4rem; margin-top:-1.2rem; background:url(../images/common/ico_arrowB02.png) no-repeat center / 100% auto; transform:rotate(180deg);}
 .compare_pop.open .comp_hea span::after {transform:rotate(0deg);}
 .compare_pop .comp_hea em {position:absolute; top:50%; right:1.6rem; display:block; width:2rem; height:2rem; margin-top:-1rem; border-radius:50%; background-color:#fc6969; font-size:1.4rem; line-height:2rem; color:#fff; text-align:center;}
-.compare_pop .comp_con {display:none; padding:0 1.6rem 2.4rem; background:#fff;}
+.compare_pop .comp_con {/*display:none;*/ padding:0 1.6rem 2.4rem; background:#fff;}
 .compare_pop .comp_con .info {padding:2rem 0 1.2rem; font-size:1.3rem; line-height:1.9rem; color:#909090; text-align:center;}
 .compare_pop .comp_con .btn_group {margin-top:2rem;}
 
@@ -1025,9 +1025,13 @@
 .pc .cont_ratePlan .title_nav {display:flex; justify-content:space-between;}
 .pc .cont_ratePlan .title_nav .btn_share {font-weight:500;}
 
-.pc .crp_wrap {display:flex; padding:1.2rem 1.6rem 0;}
+/* .pc .crp_wrap {display:flex; padding:1.2rem 1.6rem 0;}
 .pc .crp_wrap .crp_l {width:28.8rem; margin-right:3.2rem;}
-.pc .crp_wrap .crp_r {flex:1;}
+.pc .crp_wrap .crp_r {flex:1;} */
+.pc .crp_wrap {display:flex; padding:1.2rem 1.6rem 0;}
+.pc .crp_wrap .crp_l {/*flex:1 1 28.8rem;*/ max-width:28.8rem; margin-right:3.2rem;}
+.pc .crp_wrap .crp_r {/*flex:1 1 60.8rem;*/ max-width:60.8rem;}
+
 
 .pc .crp_wrap .section {padding-left:0; padding-right:0;}
 

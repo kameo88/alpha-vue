@@ -122,6 +122,15 @@
 .cardDetail-leave-from {max-height:25rem; overflow:hidden;}
 
 
+/* compCon */
+.compCon-enter-active{ transition:all .3s; }
+.compCon-leave-active{ transition:all .3s; }
+.compCon-enter-from,
+.compCon-leave-to {max-height:0; padding:0; overflow:hidden;}
+.compCon-enter-to,
+.compCon-leave-from {max-height:28rem; overflow:hidden;}
+
+
 /* error page */
 .error_area{text-align:center; padding-top:8rem;}
 .error_area .ttl{text-align:center;}

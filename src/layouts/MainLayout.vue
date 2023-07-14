@@ -12,7 +12,7 @@
 	<div class="wrap">
 		<MainHeader :layout="layout" />
 		<router-view @popup-item="popupItem = $event;" @set-layout="getLayout($event)" />
-		<AsideFloat />
+		<AsideFloat :layout="layout" />
 		<MainFooter :layout="layout" />
 	</div>
 
