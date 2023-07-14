@@ -1249,6 +1249,122 @@
   </div><!-- // pop_layer -->
 
 
+  <div class="pop_layer full" id="comparePop" v-if="popup.comparePop">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>요금제 비교</h3>
+      </div>
+      <div class="pop_content">
+        <div class="section">
+            
+          <div class="comp_item_area">
+            <div class="comp_item">
+              <div>
+                <em>인스 모바일 인터넷결합 5G 150GB+</em>
+                <strong>월 <span>14,900</span>원</strong>
+                <button type="button">삭제</button>
+              </div>
+            </div>
+            <div class="comp_item">
+              <button type="button" @click="$popup.close('#comparePop', '#content');">요금제를 선택해주세요</button>
+            </div>
+            <div class="comp_item pc_show">
+              <button type="button" @click="$popup.close('#comparePop', '#content');">요금제를 선택해주세요</button>
+            </div>
+          </div>
+
+          <div class="comp_item_info">
+            <dl>
+                <dt>파트너사</dt>
+                <dd>
+                    <div class="comp_dat">
+                        <div class="img"><img src="@/assets/images/data/logo_partner20.png" alt=""></div>
+                        <b>인스모바일</b>
+                    </div>
+                </dd>
+                <dd></dd>
+                <dd class="pc_show"></dd>
+            </dl>
+            <dl>
+              <dt>월 요금</dt>
+              <dd>
+                <div class="comp_dat">
+                  <strong>월 <span>14,900</span>원</strong>
+                  <em>6개월 이후 38,900원 (VAT 포함)</em>
+                </div>
+              </dd>
+              <dd></dd>
+              <dd class="pc_show"></dd>
+            </dl>
+            <dl>
+              <dt>데이터</dt>
+              <dd>
+                <div class="comp_dat">
+                  <strong>150GB</strong>
+                  <em>매일 2GB+3Mbps 속도로 무제한</em>
+                </div>
+              </dd>
+              <dd></dd>
+              <dd class="pc_show"></dd>
+            </dl>
+            <dl>
+              <dt>음성</dt>
+              <dd>
+                <div class="comp_dat">
+                  <strong>기본제공</strong>
+                  <em>부가/영상 100분</em>
+                </div>
+              </dd>
+              <dd></dd>
+              <dd class="pc_show"></dd>
+            </dl>
+            <dl>
+              <dt>문자</dt>
+              <dd>
+                <div class="comp_dat">
+                  <strong>기본제공</strong>
+                </div>
+              </dd>
+              <dd></dd>
+              <dd class="pc_show"></dd>
+            </dl>
+            <dl>
+              <dt>초과 이용요금</dt>
+              <dd>
+                <ul class="text_list_bull">
+                  <li>음성통화(초) 1.98원, 영상통화(초) 3.3원</li>
+                  <li>문자 SMS(건) 22원, LMS(건) 44원</li>
+                  <li>MMS 사진/그림/배경음악(건) 220원</li>
+                  <li>MMS 동영상 첨부(건) 440원</li>
+                  <li>데이터 22.528원</li>
+                </ul>
+              </dd>
+              <dd></dd>
+              <dd class="pc_show"></dd>
+            </dl>
+            <dl>
+              <dt>유의사항</dt>
+              <dd>
+                <ul class="text_list_bull">
+                  <li>
+                    잔여 음성/문자/데이터는 이월불가<br>
+                    ※ [예시] USIM LTE 35 고객이 2016년 5월에 데이터를 550MB사용 200MB 미사용 시 200MB 소멸 (6월로 이월 불가)
+                  </li>
+                  <li>요금제의 변경신청을 하는 경우에는 변경신청일 당일부터 변경된 요금을 적용합니다.</li>
+                </ul>
+              </dd>
+              <dd></dd>
+              <dd class="pc_show"></dd>
+            </dl>
+          </div>
+
+        </div> <!-- // section -->
+      </div>
+      <button type="button" class="pop_close" data-action="close" @click="$popup.close('#comparePop','#content')"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+
   <div class="pop_layer normal" id="selectPop01" v-if="popup.selectPop01">
     <div class="pop_wrap">
       <div class="pop_header">
