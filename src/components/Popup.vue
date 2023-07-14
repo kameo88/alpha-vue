@@ -1604,8 +1604,6 @@
 		</div>
 	</div> <!-- // pop_layer -->
 
-
-
   <div class="pop_layer full" id="inspectionPopup01" v-if="popup.inspectionPopup01">
     <div class="pop_wrap">
       <div class="pop_header">
@@ -1640,6 +1638,28 @@
     </div>
   </div> <!-- // pop_layer -->
 
+  <!-- [ALFM-FT02-PG00] 개인정보처리방침 -->
+  <div class="pop_layer normal" id="termsVerPop" v-if="popup.termsVerPop">
+		<div class="pop_wrap">
+			<div class="pop_header">
+					<h3>선택</h3>
+			</div>
+			<div class="pop_content">
+        <ul class="select_list" role="listbox">
+          <li role="none" class="on">
+            <button type="button" role="option" aria-selected="true" data-option="버전 V.20230204" @click="$popup.select('#termsVerPop', '#btn_termsVerPop');">⁠버전 V.20230204</button>
+          </li>
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="버전 V.20230203" @click="$popup.select('#termsVerPop', '#btn_termsVerPop');">버전 V.20230203</button>
+          </li>
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="버전 V.20230103" @click="$popup.select('#termsVerPop', '#btn_termsVerPop');">버전 V.20230103</button>
+          </li>
+        </ul>
+			</div>
+      <button type="button" class="pop_close" data-action="close" @click="$popup.close('#termsVerPop', '#btn_termsVerPop')"><span class="blind">팝업 닫기</span></button>
+		</div>
+	</div> <!-- // pop_layer -->
 
 
 

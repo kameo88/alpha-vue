@@ -2,14 +2,14 @@
 
 	<div class="container">
 		<div class="content" id="content">
-			<h2 class="title_nav">개인정보처리방침</h2>
+			<h2 class="title_nav">{{ layout.title }}</h2>
 		
       <div class="section">
         <div class="form_list version">
           <ul>
             <li>
               <div class="form_item">
-                <button type="button" class="btn_select" id="btn_selectPop01" onclick="popUp.open('#selectPop01', '#btn_selectPop01');">⁠버전 V.20230303</button>
+                <button type="button" class="btn_select" id="btn_termsVerPop" @click="$popup.open('#termsVerPop', '#btn_termsVerPop');">⁠버전 V.20230303</button>
               </div>
             </li>
           </ul>
@@ -150,12 +150,14 @@ export default {
   emits: ['popupItem', 'setLayout'],
   data(){
     return {
-      layout: { header: 'sub', footer: '', title: '' },
+      layout: { header: 'sub', footer: '', title: '개인정보처리방침' },
+      popupItem: ['termsVerPop'],
     }
   },
   mounted(){
     this.$emit('setLayout', this.layout);
     this.$emit('popupItem', this.popupItem);
+    
   },
 }
 </script>
