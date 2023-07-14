@@ -77,6 +77,8 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .fc04 {color:#717171;}
 
 /* *** 정렬 *** */
+.center {text-align:center;}
+.right {text-align:right;}
 
 /* *** 말줄임 *** */
 .ellipsis {word-break:keep-all; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
