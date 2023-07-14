@@ -21,27 +21,8 @@
               <v-text-field placeholder="이메일 입력" variant="outlined" :rules="[rules.required]" hide-details="auto" clearable></v-text-field>
             </div>
             <div class="form_item">
-              <v-text-field type="password" placeholder="비밀번호 입력" variant="outlined" :rules="[rules.required]" clearable></v-text-field>
+              <v-text-field type="password" placeholder="비밀번호 입력" variant="outlined" :rules="[rules.required]" hide-details="auto" clearable></v-text-field>
             </div>
-          </div>
-
-          <div class="form_group">
-            <div class="form_item"><!-- class="form_item val_chk" -->
-              <div class="input_box">
-                <input type="text" class="input" placeholder="이메일 입력">
-                <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
-              </div>
-            </div>
-            <div class="error">이메일을 입력해주세요</div>
-
-            <div class="form_item"><!-- class="form_item val_chk" -->
-              <div class="input_box">
-                <input type="password" class="input" placeholder="비밀번호 입력">
-                <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
-              </div>
-            </div>
-            <div class="error">비밀번호를 입력해주세요</div>
-            <div class="error">비밀번호를 다시 확인해주세요</div>
           </div>
           <div class="btn_group">
             <button type="button" class="btn lg c01">로그인</button>
