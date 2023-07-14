@@ -7,6 +7,9 @@ const front = {
     input.init();
     radioActive.init();
     scroll.isScroll();
+    
+    layout.getFullH();
+    window.addEventListener("resize", layout.getFullH);
   },
   device(){
     const elem = document.querySelector("html");
@@ -49,6 +52,16 @@ const front = {
 }
 
 const layout = {
+  getFullH: function(){
+    const fullH = document.querySelector(".fullH");
+    if( fullH == null ) return;
+
+    const isPC = document.querySelector("html").classList.contains("pc");
+    if( !isPC ) return;
+
+    const docH = window.innerHeight;
+    fullH.style.minHeight = `${docH}px`;
+  },
   footer: function(){
     const bottomFloat = document.querySelector(".bottom_float");
     if( bottomFloat == null ) return;
