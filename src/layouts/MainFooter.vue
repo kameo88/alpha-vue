@@ -1,6 +1,6 @@
 <template>
 
-  <footer class="footer">
+  <footer class="footer" v-if="layout.footer != 'none'">
     <div class="inner">
       <div class="f_logo">
         <a href="javascript:void(0);"><span class="blind">LG U+</span></a>
@@ -33,6 +33,9 @@
 
 <script>
 export default {
-  name: 'MainFooter'
+  name: 'MainFooter',
+  props: {
+    layout: Object,
+  }
 }
 </script>

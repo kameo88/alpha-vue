@@ -13,7 +13,7 @@
 		<MainHeader :layout="layout" />
 		<router-view @popup-item="popupItem = $event;" @set-layout="getLayout($event)" />
 		<AsideFloat />
-		<MainFooter />
+		<MainFooter :layout="layout" />
 	</div>
 
   <compPopup :popupItem="popupItem" />
