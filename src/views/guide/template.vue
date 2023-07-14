@@ -2,7 +2,7 @@
 
   <div class="container">
     <div class="content" id="content">
-      <h2 class="title_nav">Guide</h2>
+      <h2 class="title_nav">{{ layout.title }}</h2>
 
       <div class="page_info">page info</div>
       
@@ -23,11 +23,15 @@ export default {
   emits: ['popupItem', 'setLayout'],
   data(){
     return {
-      layout: { header: 'sub', footer: '', title: '' },
+      layout: { header: 'sub', footer: '', title: 'Guide' },
+      // popup이 있는 경우 set
+      // popupItem: ['termsVerPop'],
     }
   },
   mounted(){
     this.$emit('setLayout', this.layout);
+    // popup이 있는 경우 set
+    // this.$emit('popupItem', this.popupItem);
   }
 }
 </script>

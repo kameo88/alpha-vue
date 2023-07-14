@@ -146,7 +146,11 @@
             <td>form</td>
             <td></td>
             <td></td>
-            <td class="url"><a href="/guide/form" target="_blank">/guide/form</a></td>
+            <td class="url">
+              <a href="/guide/form" target="_blank">/guide/form</a>
+              <br>
+              <a href="/guide/form_vuetify" target="_blank">/guide/form_vuetify</a>
+            </td>
             <td class="marker"></td>
             <td class="date"></td>
             <td>06.21 디자인 적용된 form &gt; form etc 페이지 분리</td>

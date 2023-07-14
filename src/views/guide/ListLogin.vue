@@ -27,12 +27,16 @@
         </tr>
       </thead>
 			<tbody>
-				<tr class="">
+				<tr class="ing">
 					<td>로그인</td>
 					<td></td>
 					<td></td>
 					<td></td>
-					<td class="url"><a href="/lg/ALFM-LG01-PG00" target="_blank">/lg/ALFM-LG01-PG00</a></td>
+					<td class="url">
+						<a href="/lg/ALFM-LG01-PG00" target="_blank">/lg/ALFM-LG01-PG00</a>
+						<br>
+						<a href="/lg/ALFM-LG01-PG00-vuetify" target="_blank">/lg/ALFM-LG01-PG00-vuetify</a>
+					</td>
 					<td class="marker"></td>
 					<td class="date"></td>
 					<td></td>
@@ -67,7 +71,7 @@
 					<td class="date"></td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="ing">
 					<td></td>
 					<td>회원가입 메인</td>
 					<td></td>
@@ -87,7 +91,7 @@
 					<td class="date"></td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="ing">
 					<td></td>
 					<td></td>
 					<td></td>
