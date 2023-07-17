@@ -2413,6 +2413,30 @@
   </div> <!-- // pop_layer -->
 
 
+  <!-- USIM 모델 선택 -->
+  <div class="pop_layer normal" id="selectUSIMModel" v-if="popup.selectUSIMModel">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>USIM 모델 선택</h3>
+      </div>
+      <div class="pop_content">
+        <ul class="select_list" role="listbox">
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="K3830" @click="$popup.select('#selectUSIMModel', '#btn_selectUSIMModel');">K3830</button>
+          </li>
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="K3840" @click="$popup.select('#selectUSIMModel', '#btn_selectUSIMModel');">K3840</button>
+          </li>
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="K3620" @click="$popup.select('#selectUSIMModel', '#btn_selectUSIMModel');">K3620</button>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="pop_close" data-action="close" @click="$popup.close('#selectUSIMModel', '#btn_selectUSIMModel')"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+
 
 
 </div>
