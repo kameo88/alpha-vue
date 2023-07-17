@@ -12,8 +12,8 @@
       </div>
       <div class="pop_footer">
         <div class="btn_group">
-          <button type="button" class="btn sm c07" data-action="close" @click="$popup.close('#popup01', '#btn_popup01')">취소</button>
-          <button type="button" class="btn sm c02" @click="$popup.close('#popup01', '#btn_popup01'); $popup.close('#popup03', '#btn_popup01'); $popup.close('#findRatePlanIntro', '#btn_findRatePlanIntro'); $popup.close('#findRatePlan01', '#btn_findRatePlan01')">확인</button>
+          <button type="button" class="btn sm c07" data-action="close" @click="$popup.close('#popup01', '#btn_popup01')">계속할래요</button>
+          <button type="button" class="btn sm c02" @click="$popup.close('#popup01', '#btn_popup01'); $popup.close('#popup03', '#btn_popup01'); $popup.close('#findRatePlanIntro', '#btn_findRatePlanIntro'); $popup.close('#findRatePlan01', '#btn_findRatePlan01')">닫을래요</button>
         </div>
       </div>
     </div>
