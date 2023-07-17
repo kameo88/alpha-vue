@@ -1816,6 +1816,25 @@
   </div> <!-- // pop_layer -->
 
 
+
+
+  <div class="pop_layer full" id="starbucks" v-if="popup.starbucks">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>스타벅스</h3>
+      </div>
+      <div class="pop_content">
+        <div class="section">
+          <img src="@/assets/images/data/img_benefits02.png" alt="" style="width:100%">
+        </div>
+      </div>
+      <button type="button" class="pop_close" data-action="close" @click="$popup.close('#starbucks', '#btn_starbucks')"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div>
+
+
+
+
 </div>
 
 </template>
