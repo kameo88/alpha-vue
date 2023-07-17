@@ -472,12 +472,12 @@
 
 
 [class*="usage_"]::after{position:absolute; bottom:0; left:50%; transform:translateX(-50%); content:""; display:inline-block; width:23.2rem; height:29.7rem;}
-.mypl_fin lottie-player,
-.mypl_char lottie-player{position:absolute; bottom:0; left:50%; transform:translateX(-50%);}
+.mypl_fin .lottie-animation-container,
+.mypl_char .lottie-animation-container{position:absolute; bottom:0; left:50%; transform:translateX(-50%);}
 .mypl_fin{position:relative; padding-bottom:15.7rem; margin-top:10.5rem;}
 .mypl_fin lottie-player{width:23.2rem; height:16rem;}
 .mypl_char{position:relative; padding-bottom:29.7rem; margin-top:4.5rem}
-.mypl_char lottie-player{width:24rem; height:36rem;}
+.mypl_char .lottie-animation-container{width:24rem; height:36rem;}
 
 .usage_result {padding-bottom:19.4rem;}
 .usage_result lottie-player{position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:23.2rem; height:16rem;}

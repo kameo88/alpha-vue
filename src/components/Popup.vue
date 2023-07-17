@@ -13,7 +13,7 @@
       <div class="pop_footer">
         <div class="btn_group">
           <button type="button" class="btn sm c07" data-action="close" @click="$popup.close('#popup01', '#btn_popup01')">취소</button>
-          <button type="button" class="btn sm c02" @click="$popup.close('#popup01', '#btn_popup01'); $popup.close('#popup03', '#btn_popup01');">확인</button>
+          <button type="button" class="btn sm c02" @click="$popup.close('#popup01', '#btn_popup01'); $popup.close('#popup03', '#btn_popup01'); $popup.close('#findRatePlan_intro', '#btn_findRatePlan_intro');">확인</button>
         </div>
       </div>
     </div>
@@ -1834,6 +1834,36 @@
 
 
 
+  <!-- [ALFM-PR02-PO00] 내게 맞는 요금제 찾기 intro -->
+  <div class="pop_layer full" id="findRatePlan_intro" v-if="popup.findRatePlan_intro">
+    <div class="pop_wrap height_fix">
+      <div class="pop_header">
+        <h3>내게 맞는 요금제 찾기</h3>
+      </div>
+      <div class="pop_content">
+        <div class="page_info">
+          고객님에게 꼭 맞는 <br>
+          요금제를 추천해드리기 위해 <br>
+          몇가지만 물어볼게요!
+        </div>
+        <div class="section">
+          <div class="mypl_char">
+            <compLottie name="plan02" />
+          </div>
+        </div> <!-- // section -->
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn lg c01">시작하기</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+
+
+
 
 </div>
 
@@ -1842,6 +1872,7 @@
 <script>
 import '@/assets/js/swiper-bundle.min.js';
 import '@/assets/css/swiper-bundle.css';
+import compLottie from "@/components/Lottie.vue";
 
 export default {
   name: 'compPopup',
@@ -1881,6 +1912,9 @@ export default {
       // if( this.toggle08[0] == 1 ) this.$swiper.init();  // eSIM 활성화 방법 팝업 swiper
   
     }, 0);
+  },
+  components: {
+    compLottie,
   }
 }
 </script>
