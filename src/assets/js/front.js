@@ -3,11 +3,13 @@ import { setTimeout } from "core-js";
 const front = {
   init(){
     this.device();
-    radioActive.init();
     scroll.isScroll();
     
     // 로딩순서 고려
-    setTimeout(()=>{ layout.footer() }, 1);
+    setTimeout(()=>{
+      layout.footer();
+      radioActive.init();
+    }, 1);
     
     setTimeout(()=>{ layout.getFullH() }, 0);
     window.addEventListener("resize", layout.getFullH);
@@ -758,6 +760,8 @@ const radioActive = {
     const item = document.querySelectorAll(".radio_active input");
     this.item = []; // reset
     item.forEach( a => this.item.push(a) );
+
+    console.log(this.item);
 
     this.click();
   },
