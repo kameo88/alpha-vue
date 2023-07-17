@@ -59,7 +59,7 @@ export default {
   emits: ['popupItem', 'setLayout'],
   data(){
     return {
-      layout: { header: 'sub', footer: '', title: '로그인' },
+      layout: { header: 'sub', footer: 'none', floatMenu: 'none', title: '로그인' },
     }
   },
   mounted(){

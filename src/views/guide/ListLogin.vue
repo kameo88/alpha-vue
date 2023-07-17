@@ -41,12 +41,24 @@
 						<td></td>
 					</tr>
 					<tr class="ing">
-						<td>로그인</td>
+						<td></td>
 						<td></td>
 						<td></td>
 						<td></td>
 						<td class="url">
 							<a href="/lg/ALFM-LG01-PG00-vuetify" target="_blank">/lg/ALFM-LG01-PG00-vuetify</a>
+						</td>
+						<td class="marker"></td>
+						<td class="date"></td>
+						<td></td>
+					</tr>
+					<tr class="ing">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="url">
+							<a href="/lg/ALFM-LG01-PO00" target="_blank">/lg/ALFM-LG01-PO00</a>
 						</td>
 						<td class="marker"></td>
 						<td class="date"></td>

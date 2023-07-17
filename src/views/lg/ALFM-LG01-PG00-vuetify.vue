@@ -57,7 +57,7 @@ export default {
         v => !!v || '이메일은 필수입니다',
         v => (v && v.length >= 5) || '이메일은 5자 이상 입력주세요',
       ],
-      layout: { header: 'sub', footer: '', title: '로그인' },
+      layout: { header: 'sub', footer: 'none', floatMenu: 'none', title: '로그인' },
     }
   },
   methods: {
