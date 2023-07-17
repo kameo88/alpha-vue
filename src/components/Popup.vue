@@ -1854,7 +1854,7 @@ export default {
   },
   watch: {
     toggle08(a, b){ // eSIM 활성화 방법 팝업 swiper
-      if( b[1] != "1" ) setTimeout(()=>{ this.$swiper.cardSwiper() }, 1);
+      if( b[1] != "1" ) setTimeout(()=>{ this.$swiper.init() }, 1);
     }
   },
   methods: {
@@ -1878,7 +1878,7 @@ export default {
 
       this.popupItem.forEach( a => { this.popup[a] = true;});
 
-      if( this.toggle08[0] == 1 ) this.$swiper.cardSwiper();  // eSIM 활성화 방법 팝업 swiper
+      // if( this.toggle08[0] == 1 ) this.$swiper.init();  // eSIM 활성화 방법 팝업 swiper
   
     }, 0);
   }

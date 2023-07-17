@@ -15,6 +15,9 @@ const front = {
     // form input
     setTimeout(()=>{ input.init() }, 100);
 
+    // swiper
+    setTimeout(()=>{ swiper.init() }, 100);
+
   },
   device(){
     const elem = document.querySelector("html");
@@ -570,6 +573,17 @@ const tag = {
 }
 
 const swiper = {
+  init: function(){
+    const cardSwiper = document.querySelectorAll(".cardSwiper").length;
+    const flowSwiper = document.querySelectorAll(".flowSwiper").length;
+    const bnrSwiper = document.querySelectorAll(".bnrSwiper").length;
+    const noticePop = document.querySelectorAll("#noticePop").length;
+
+    if( cardSwiper > 0 ) this.cardSwiper();
+    if( flowSwiper > 0 ) this.flowSwiper();
+    if( bnrSwiper > 0 ) this.bnrSwiper();
+    if( noticePop > 0 ) this.notice();
+  },
   cardSwiper: function(){
     var swiperItem = new Swiper(".cardSwiper", {
       slidesPerView: "auto",

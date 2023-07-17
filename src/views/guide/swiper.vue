@@ -677,9 +677,9 @@ export default {
   },
   mounted(){
     this.$emit('setLayout', this.layout);
-    this.$swiper.cardSwiper();
-    this.$swiper.flowSwiper();
-    this.$swiper.bnrSwiper();
+    // this.$swiper.cardSwiper();
+    // this.$swiper.flowSwiper();
+    // this.$swiper.bnrSwiper();
   }
 };
 </script>

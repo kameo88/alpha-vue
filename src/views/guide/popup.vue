@@ -140,7 +140,7 @@ export default {
   mounted(){
     this.$emit('setLayout', this.layout);
     this.$emit('popupItem', this.popupItem);
-    setTimeout(() => { this.$swiper.notice() }, 50);
+    // setTimeout(() => { this.$swiper.notice() }, 50);
   }
 }
 </script>
