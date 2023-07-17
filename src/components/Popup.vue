@@ -2388,6 +2388,30 @@
     </div>
   </div> <!-- // pop_layer -->
 
+  
+
+
+  <!-- [ALFM-PR03-PO00] 셀프개통 불가 경우 -->
+  <div class="pop_layer alert" id="ALFMPR03PO00" v-if="popup.ALFMPR03PO00">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>안내</h3>
+      </div>
+      <div class="pop_content">
+        <div class="info_con">
+          지금은 온라인 신청만 가능한 시간이에요. <br>
+          신청서 접수 후, <br>
+          ⁠개통이 가능할 때 알려드릴게요!
+        </div>
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#ALFMPR03PO00', '#btn_ALFMPR03PO00')">확인</button> <!-- onclick="popUp.close('#popup01', '#btn_popup01');" -->
+        </div>
+      </div>
+    </div>
+  </div> <!-- // pop_layer -->
+
 
 
 
