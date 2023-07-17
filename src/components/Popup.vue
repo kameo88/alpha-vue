@@ -12,8 +12,8 @@
       </div>
       <div class="pop_footer">
         <div class="btn_group">
-          <button type="button" class="btn sm c07" data-action="close" @click="$popup.close('#popup01', '#btn_popup01')">취소</button>
-          <button type="button" class="btn sm c02" @click="$popup.close('#popup01', '#btn_popup01'); $popup.close('#popup03', '#btn_popup01'); $popup.close('#findRatePlanIntro', '#btn_findRatePlanIntro'); $popup.close('#findRatePlan01', '#btn_findRatePlan01')">확인</button>
+          <button type="button" class="btn sm c07" data-action="close" @click="$popup.close('#popup01', '#btn_popup01')">계속할래요</button>
+          <button type="button" class="btn sm c02" @click="$popup.close('#popup01', '#btn_popup01'); $popup.close('#popup03', '#btn_popup01'); $popup.close('#findRatePlanIntro', '#btn_findRatePlanIntro'); $popup.close('#findRatePlan01', '#btn_findRatePlan01')">닫을래요</button>
         </div>
       </div>
     </div>
@@ -1878,43 +1878,43 @@
             <ul>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_01" name="step01">
+                  <input type="radio" id="step01_01" name="step01" @click="findRatePlan01 = true">
                   <label for="step01_01">LG U+</label>
                 </div>
               </li>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_02" name="step01">
+                  <input type="radio" id="step01_02" name="step01" @click="findRatePlan01 = true">
                   <label for="step01_02">KT</label>
                 </div>
               </li>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_03" name="step01">
+                  <input type="radio" id="step01_03" name="step01" @click="findRatePlan01 = true">
                   <label for="step01_03">SKT</label>
                 </div>
               </li>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_04" name="step01">
+                  <input type="radio" id="step01_04" name="step01" @click="findRatePlan01 = true">
                   <label for="step01_04">LG U+ 알뜰폰</label>
                 </div>
               </li>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_05" name="step01">
+                  <input type="radio" id="step01_05" name="step01" @click="findRatePlan01 = true">
                   <label for="step01_05">KT 알뜰폰</label>
                 </div>
               </li>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_06" name="step01">
+                  <input type="radio" id="step01_06" name="step01" @click="findRatePlan01 = true">
                   <label for="step01_06">SKT 알뜰폰</label>
                 </div>
               </li>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_07" name="step01">
+                  <input type="radio" id="step01_07" name="step01" @click="findRatePlan01 = true">
                   <label for="step01_07">사용중인 통신사가 없어요</label>
                 </div>
               </li>
@@ -1924,7 +1924,7 @@
       </div>
       <div class="pop_footer">
         <div class="btn_group">
-          <button type="button" class="btn lg c01" id="nextBtn" disabled>다음으로</button>
+          <button type="button" class="btn lg c01" id="nextBtn" v-bind:disabled="findRatePlan01 == false">다음으로</button>
         </div>
       </div>
       <button type="button" class="pop_close" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
@@ -1950,7 +1950,8 @@ export default {
     return {
       value: [0, 60000],
       popup: { "popup01" : false },
-      toggle08: [0],      // eSIM 활성화 방법 팝업 toggle
+      toggle08: [0],          // eSIM 활성화 방법 팝업 toggle
+      findRatePlan01: false,  // 내게 맞는 요금제 찾기 step1
     }
   },
   watch: {
