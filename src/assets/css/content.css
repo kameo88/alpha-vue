@@ -934,7 +934,7 @@
 
 /* 회원가입 완료 */
 .join_char{margin-top:10rem;}
-.join_char lottie-player{width:27rem; height:22rem; margin:0 auto}
+.join_char .lottie-animation-container{width:27rem; height:22rem; margin:0 auto}
 
 
 
