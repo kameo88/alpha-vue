@@ -13,7 +13,7 @@
       <div class="pop_footer">
         <div class="btn_group">
           <button type="button" class="btn sm c07" data-action="close" @click="$popup.close('#popup01', '#btn_popup01')">계속할래요</button>
-          <button type="button" class="btn sm c02" @click="$popup.close('#popup01', '#btn_popup01'); $popup.close('#popup03', '#btn_popup01'); $popup.close('#findRatePlanIntro', '#btn_findRatePlanIntro'); $popup.close('#findRatePlan01', '#btn_findRatePlan01')">닫을래요</button>
+          <button type="button" class="btn sm c02" @click="$popup.close('#popup01', '#btn_popup01'); $popup.close('#popup03', '#btn_popup01'); $popup.close('#findRatePlanIntro', '#btn_findRatePlanIntro'); $popup.close('#findRatePlan01', '#btn_findRatePlan01'); $popup.close('#findRatePlan02', '#btn_findRatePlan02'); $popup.close('#findRatePlan03', '#btn_findRatePlan03'); $popup.close('#findRatePlan04', '#btn_findRatePlan04'); $popup.close('#findRatePlan05', '#btn_findRatePlan05'); $popup.close('#findRatePlan06', '#btn_findRatePlan06'); $popup.close('#findRatePlan07', '#btn_findRatePlan07'); $popup.close('#findRatePlan08', '#btn_findRatePlan08');">닫을래요</button>
         </div>
       </div>
     </div>
@@ -1816,8 +1816,6 @@
   </div> <!-- // pop_layer -->
 
 
-
-
   <div class="pop_layer full" id="starbucks" v-if="popup.starbucks">
     <div class="pop_wrap">
       <div class="pop_header">
@@ -1861,7 +1859,7 @@
     </div>
   </div> <!-- // pop_layer -->
 
-  <!-- [ALFM-PR02-PO01] 내게 맞는 요금제 찾기 : STEP1_통신사 선택 -->
+  <!-- [ALFM-PR02-PO01] 내게 맞는 요금제 찾기 : STEP1 통신사 선택 -->
   <div class="pop_layer full" id="findRatePlan01" v-if="popup.findRatePlan01">
     <div class="pop_wrap height_fix">
       <div class="pop_header">
@@ -1878,43 +1876,43 @@
             <ul>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_01" name="step01" @click="findRatePlan01 = true">
+                  <input type="radio" id="step01_01" name="step01" @change="findRatePlan = true">
                   <label for="step01_01">LG U+</label>
                 </div>
               </li>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_02" name="step01" @click="findRatePlan01 = true">
+                  <input type="radio" id="step01_02" name="step01" @change="findRatePlan = true">
                   <label for="step01_02">KT</label>
                 </div>
               </li>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_03" name="step01" @click="findRatePlan01 = true">
+                  <input type="radio" id="step01_03" name="step01" @change="findRatePlan = true">
                   <label for="step01_03">SKT</label>
                 </div>
               </li>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_04" name="step01" @click="findRatePlan01 = true">
+                  <input type="radio" id="step01_04" name="step01" @change="findRatePlan = true">
                   <label for="step01_04">LG U+ 알뜰폰</label>
                 </div>
               </li>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_05" name="step01" @click="findRatePlan01 = true">
+                  <input type="radio" id="step01_05" name="step01" @change="findRatePlan = true">
                   <label for="step01_05">KT 알뜰폰</label>
                 </div>
               </li>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_06" name="step01" @click="findRatePlan01 = true">
+                  <input type="radio" id="step01_06" name="step01" @change="findRatePlan = true">
                   <label for="step01_06">SKT 알뜰폰</label>
                 </div>
               </li>
               <li>
                 <div class="radio_ty01">
-                  <input type="radio" id="step01_07" name="step01" @click="findRatePlan01 = true">
+                  <input type="radio" id="step01_07" name="step01" @change="findRatePlan = true">
                   <label for="step01_07">사용중인 통신사가 없어요</label>
                 </div>
               </li>
@@ -1924,7 +1922,337 @@
       </div>
       <div class="pop_footer">
         <div class="btn_group">
-          <button type="button" class="btn lg c01" id="nextBtn" v-bind:disabled="findRatePlan01 == false">다음으로</button>
+          <button type="button" class="btn lg c01" id="nextBtn" v-bind:disabled="findRatePlan == false">다음으로</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+  <!-- [ALFM-PR02-PO02] 내게 맞는 요금제 찾기 : STEP2 데이터 이용량 -->
+  <div class="pop_layer full" id="findRatePlan02" v-if="popup.findRatePlan02">
+    <div class="pop_wrap height_fix">
+      <div class="pop_header">
+        <h3>내게 맞는 요금제 찾기</h3>
+      </div>
+      <div class="pop_content">
+        <div class="page_info">
+          하루에 <span class="fc01">데이터</span>는 <br>
+          얼마나 사용하세요?
+        </div>
+
+        <div class="section">
+          <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
+            <ul>
+              <li>
+                <div class="radio_ty02">
+                  <input type="radio" id="step02_01" name="step02" @change="findRatePlan = true">
+                  <label for="step02_01">
+                    <span class="text_box">
+                      <span class="desc">
+                        초고화질의 영상을 자주보고,
+                        게임 등 다양한 컨텐츠 소비를 해요
+                      </span>
+                      <span class="info">
+                        100GB 보다 많이 사용
+                      </span>
+                    </span>
+                    <img src="@/assets/images/component/img_game.png" alt="">
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty02">
+                  <input type="radio" id="step02_02" name="step02" @change="findRatePlan = true">
+                  <label for="step02_02">
+                    <span class="text_box">
+                      <span class="desc">
+                        1-2시간 이상 영상을 보고,
+                        SNS 등 사용량이 많아요
+                      </span>
+                      <span class="info">
+                        약 50~100B 사용
+                      </span>
+                    </span>
+                    <img src="@/assets/images/component/img_thum.png" alt="">
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty02">
+                  <input type="radio" id="step02_03" name="step02" @change="findRatePlan = true">
+                  <label for="step02_03">
+                    <span class="text_box">
+                      <span class="desc">
+                        카톡이나 SNS, 인터넷 검색 등에
+                        주로 데이터를 사용해요
+                      </span>
+                      <span class="info">
+                        약 10~50GB 사용
+                      </span>
+                    </span>
+                    <img src="@/assets/images/component/img_sns.png" alt="">
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty02">
+                  <input type="radio" id="step02_04" name="step02" @change="findRatePlan = true">
+                  <label for="step02_04">
+                    <span class="text_box">
+                      <span class="desc">
+                        와이파이를 주로 이용하고,
+                        데이터는 거의 사용하지 않아요
+                      </span>
+                      <span class="info">
+                        약 10GB 미만 사용
+                      </span>
+                    </span>
+                    <img src="@/assets/images/component/img_wifi.png" alt="">
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> <!-- // section -->
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn lg c01" id="nextBtn" v-bind:disabled="findRatePlan == false">다음으로</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+  <!-- [ALFM-PR02-PO03] 내게 맞는 요금제 찾기 : STEP3 통화 이용량 -->
+  <div class="pop_layer full" id="findRatePlan03" v-if="popup.findRatePlan03">
+    <div class="pop_wrap  height_fix">
+      <div class="pop_header">
+        <h3>내게 맞는 요금제 찾기</h3>
+      </div>
+      <div class="pop_content">
+        <div class="page_info">
+          한달에 <span class="fc01">통화</span>는 <br>
+          얼마나 하시나요?
+        </div>
+
+        <div class="section">
+          <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
+            <ul>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step03_01" name="step03" @change="findRatePlan = true">
+                  <label for="step03_01">3시간 이상 해요</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step03_02" name="step03" @change="findRatePlan = true">
+                  <label for="step03_02">1-2시간 정도 해요</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step03_03" name="step03" @change="findRatePlan = true">
+                  <label for="step03_03">30분을 넘지 않아요</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step03_04" name="step03" @change="findRatePlan = true">
+                  <label for="step03_04">전화는 거의 하지 않아요</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> <!-- // section -->
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn lg c01" id="nextBtn" v-bind:disabled="findRatePlan == false">다음으로</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+  <!-- [ALFM-PR02-PO04] 내게 맞는 요금제 찾기 : STEP4 통신 요금 -->
+  <div class="pop_layer full" id="findRatePlan04" v-if="popup.findRatePlan04">
+    <div class="pop_wrap height_fix">
+      <div class="pop_header">
+        <h3>내게 맞는 요금제 찾기</h3>
+      </div>
+      <div class="pop_content">
+        <div class="page_info">
+          지금 월 <span class="fc01">통신요금</span>은 <br>
+          얼마나 내고 있으세요?
+          <div class="sub">기기 할부금 제외</div>
+        </div>
+
+        <div class="section">
+          <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
+            <ul>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step04_01" name="step04" @change="findRatePlan = true">
+                  <label for="step04_01">7만원 이상</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step04_02" name="step04" @change="findRatePlan = true">
+                  <label for="step04_02">5-6만원 대</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step04_03" name="step04" @change="findRatePlan = true">
+                  <label for="step04_03">3-4만원 대</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step04_04" name="step04" @change="findRatePlan = true">
+                  <label for="step04_04">1-2만원 대</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> <!-- // section -->
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn lg c01" id="nextBtn" v-bind:disabled="findRatePlan == false">다음으로</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+  <!-- [ALFM-PR02-PO05] 내게 맞는 요금제 찾기 : STEP5 인터넷/TV 결합 -->
+  <div class="pop_layer full" id="findRatePlan05" v-if="popup.findRatePlan05">
+    <div class="pop_wrap height_fix">
+      <div class="pop_header">
+        <h3>내게 맞는 요금제 찾기</h3>
+      </div>
+      <div class="pop_content">
+        <div class="page_info">
+          혹시 <span class="fc01">인터넷/TV 결합</span>도 <br>
+          필요하신가요?
+        </div>
+
+        <div class="section">
+          <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
+            <ul>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step05_01" name="step05" @change="findRatePlan = true">
+                  <label for="step05_01">필요해요!</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step05_02" name="step05" @change="findRatePlan = true">
+                  <label for="step05_02">필요하지 않아요</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> <!-- // section -->
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn lg c01" id="nextBtn" v-bind:disabled="findRatePlan == false">다음으로</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+  <!-- [ALFM-PR02-PO06] 내게 맞는 요금제 찾기 : 요금제 로딩 -->
+  <div class="pop_layer full" id="findRatePlan06" v-if="popup.findRatePlan06">
+    <div class="pop_wrap height_fix">
+      <div class="pop_header">
+        <h3>내게 맞는 요금제 찾기</h3>
+      </div>
+      <div class="pop_content">
+        <div class="page_info">
+          지금 고객님의 취향에 <br>
+          딱 맞는 요금제만 고르고 있어요
+        </div>
+
+        <div class="section">
+          <div class="mypl_fin">
+            <compLottie name="plan03" />
+          </div>
+        </div> <!-- // section -->
+      </div>
+      <div class="pop_footer" style="display:none;">
+        <div class="group_btn">
+          <button type="button" class="btn lg c01" disabled>다음으로</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+  <!-- [ALFM-PR02-PO07] 내게 맞는 요금제 찾기 : step6 추천 요금제 보기 -->
+  <div class="pop_layer full" id="findRatePlan07" v-if="popup.findRatePlan07">
+    <div class="pop_wrap height_fix">
+      <div class="pop_header">
+        <h3>내게 맞는 요금제 찾기</h3>
+      </div>
+      <div class="pop_content">
+        <div class="section">
+          <div class="usage_result">
+            <p class="speech_gray">1-2시간 이상 영상을 시청하고, SNS 등 사용량이 많은 편이시군요</p>
+            <p class="speech_darkblue">1-2시간 정도 통화를 하시네요!</p>
+            <compLottie name="plan04" />
+          </div>
+        </div>
+
+        <div class="section ty02">
+          <div class="page_info mgb20">
+            <sup>+</sup>알파 요금제라면, <br>
+            연간 <span class="fc01">최대 466,000원</span> 절약!
+          </div>
+
+          <div class="box_gray">
+            <span class="bar_date">12개월 기준</span>
+            <div class="bar_cmpri">
+              <div class="before">
+                <div class="bar">
+                    <div class="bar_inner"><b>2,280,000원</b></div>
+                </div>
+                <span>변경 전</span>
+              </div>
+              <div class="after">
+                <div class="bar">
+                  <div class="bar_inner" style="height: 50%;"><b>979,400원</b></div>
+                </div>
+                <span>변경 후</span>
+              </div>
+            </div>
+          </div>
+        </div> <!-- // section -->
+
+        <div class="section ty02">
+          <div class="page_info mgb20">
+            고객님에게 딱 맞는 <br>
+            요금제를 추천 드려요!
+          </div>
+
+          <div class="item_list ty02">
+            <compCard :cardInfo="{type: 'ty01', name: 'rateplan1'}" />
+            <compCard :cardInfo="{type: 'ty02', name: 'rateplan2'}" />
+            <compCard :cardInfo="{type: 'ty02', name: 'rateplan3'}" />
+          </div>
+        </div> <!-- // section -->
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn lg c01">추천 요금제 더 보러가기</button>
         </div>
       </div>
       <button type="button" class="pop_close" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
@@ -1943,6 +2271,7 @@
 import '@/assets/js/swiper-bundle.min.js';
 import '@/assets/css/swiper-bundle.css';
 import compLottie from "@/components/Lottie.vue";
+import compCard from '@/components/Card.vue'
 
 export default {
   name: 'compPopup',
@@ -1951,7 +2280,7 @@ export default {
       value: [0, 60000],
       popup: { "popup01" : false },
       toggle08: [0],          // eSIM 활성화 방법 팝업 toggle
-      findRatePlan01: false,  // 내게 맞는 요금제 찾기 step1
+      findRatePlan: false,    // 내게 맞는 요금제 찾기 버튼 활성화
     }
   },
   watch: {
@@ -1986,6 +2315,7 @@ export default {
   },
   components: {
     compLottie,
+    compCard
   }
 }
 </script>
