@@ -26,104 +26,104 @@
         </tr>
       </thead>
 			<tbody>
-				<tr class="">
+				<tr class="end">
 					<td>etc</td>
 					<td>페이지</td>
 					<td>페이지 접속 오류</td>
 					<td></td>
 					<td class="url"><a href="/cm/ALFM-CM01-PG00" target="_blank">/cm/ALFM-CM01-PG00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.17</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td></td>
 					<td>서비스 점검중 (팝업)</td>
 					<td></td>
 					<td class="url"><a href="/cm/ALFM-CM02-PG00" target="_blank">/cm/ALFM-CM02-PG00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.17</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td></td>
 					<td>IE11 미지원</td>
 					<td></td>
 					<td class="url"><a href="/cm/ALFM-CM11-PG00" target="_blank">/cm/ALFM-CM11-PG00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.17</td>
 					<td>Microsoft Internet Explorer 11 사용 중지 에러 페이지</td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td>공통 팝업</td>
 					<td>우편번호 검색</td>
 					<td></td>
 					<td class="url"><a href="/cm/ALFM-CM05-PO00" target="_blank">/cm/ALFM-CM05-PO00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.17</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td></td>
 					<td>약관 상세 팝업</td>
 					<td></td>
 					<td class="url"><a href="/cm/ALFM-CM06-PO00" target="_blank">/cm/ALFM-CM06-PO00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.17</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td></td>
 					<td>지도 보기 팝업</td>
 					<td></td>
 					<td class="url"><a href="/cm/ALFM-CM07-PO00" target="_blank">/cm/ALFM-CM07-PO00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.17</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td></td>
 					<td>eSIM 활성화 방법 팝업</td>
 					<td></td>
 					<td class="url"><a href="/cm/ALFM-CM08-PO00" target="_blank">/cm/ALFM-CM08-PO00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.17</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td></td>
 					<td>가입신청 프로세스 이탈 안내 팝업</td>
 					<td></td>
 					<td class="url"><a href="/cm/ALFM-CM09-PO00" target="_blank">/cm/ALFM-CM09-PO00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.17</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td></td>
 					<td>가입신청 이어하기 안내 팝업</td>
 					<td></td>
 					<td class="url"><a href="/cm/ALFM-CM10-PO00" target="_blank">/cm/ALFM-CM10-PO00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.17</td>
 					<td></td>
 				</tr>
-				<tr class="">
+				<tr class="end">
 					<td></td>
 					<td></td>
 					<td>공유하기 팝업</td>
 					<td></td>
 					<td class="url"><a href="/cm/ALFM-CM12-PG00" target="_blank">/cm/ALFM-CM12-PG00</a></td>
 					<td class="marker"></td>
-					<td class="date"></td>
+					<td class="date">07.17</td>
 					<td></td>
 				</tr>
 			</tbody>
