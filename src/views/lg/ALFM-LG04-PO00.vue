@@ -30,7 +30,7 @@ export default {
   emits: ['popupItem', 'setLayout'],
   data(){
     return {
-      layout: { header: 'sub', footer: '', title: '회원가입 메인 > 정보입력' },
+      layout: { header: 'sub2', footer: '', title: '회원가입 메인 > 정보입력' },
       popupItem: ['loginPop01', 'loginPop02'],
     }
   },

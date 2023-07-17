@@ -1777,8 +1777,47 @@
 		</div>
 	</div> <!-- // pop_layer -->
 
-  <!-- login [ALFM-LG04-PO00] alert popup01 -->
+  <!-- login [ALFM-LG01-PO00] alert popup01 -->
   <div class="pop_layer alert" id="loginPop01" v-if="popup.loginPop01">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>회원가입 안내</h3>
+      </div>
+      <div class="pop_content">
+          <div class="info_con">
+            아직 <sup>+</sup>알파의 회원이 아니신가요? <br>지금 바로 가입하시고 <br> 회원만의 혜택을 놓치지 마세요!
+          </div>
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn sm c07" data-action="close" @click="$popup.close('#loginPop01', '#btn_loginPop01');">취소</button>
+          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#loginPop01', '#btn_loginPop01');" >회원가입</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- // pop_layer -->
+
+  <!-- login [ALFM-LG01-PO00] alert popup02 -->
+  <div class="pop_layer alert" id="loginPop02" v-if="popup.loginPop02">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>사이트 이용 제한 안내</h3>
+      </div>
+      <div class="pop_content">
+          <div class="info_con">
+            관리자 요청에 의해 <br> 사이트 이용이 제한된 계정입니다. <br>문의사항이 있으실 경우,<br> 1:1 문의하기를 이용해 주세요.
+          </div>
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#loginPop02', '#btn_loginPop02');">확인</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- // pop_layer -->
+
+  <!-- login [ALFM-LG04-PO00] alert popup03 -->
+  <div class="pop_layer alert" id="loginPop03" v-if="popup.loginPop03">
     <div class="pop_wrap">
       <div class="pop_header">
         <h3>안내</h3>
@@ -1790,14 +1829,14 @@
       </div>
       <div class="pop_footer">
         <div class="btn_group">
-          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#loginPop01', '#btn_loginPop01');">확인</button>
+          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#loginPop03', '#btn_loginPop03');">확인</button>
         </div>
       </div>
     </div>
   </div> <!-- // pop_layer -->
 
-  <!-- login [ALFM-LG04-PO00] alert popup02 -->
-  <div class="pop_layer alert" id="loginPop02" v-if="popup.loginPop02">
+  <!-- login [ALFM-LG04-PO00] alert popup04 -->
+  <div class="pop_layer alert" id="loginPop04" v-if="popup.loginPop04">
     <div class="pop_wrap">
       <div class="pop_header">
         <h3>안내</h3>
@@ -1809,7 +1848,7 @@
       </div>
       <div class="pop_footer">
         <div class="btn_group">
-          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#loginPop02', '#btn_loginPop02');">확인</button>
+          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#loginPop04', '#btn_loginPop04');">확인</button>
         </div>
       </div>
     </div>

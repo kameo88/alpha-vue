@@ -494,6 +494,9 @@ const routes = [
         path: 'ALFM-LG01-PG00-vuetify',         component: () => import('@/views/lg/ALFM-LG01-PG00-vuetify.vue'),
       },
       {
+        path: 'ALFM-LG01-PO00',         component: () => import('@/views/lg/ALFM-LG01-PO00.vue'),
+      },
+      {
         path: 'ALFM-LG02-PG00',         component: () => import('@/views/lg/ALFM-LG02-PG00.vue'),
       },
       {
