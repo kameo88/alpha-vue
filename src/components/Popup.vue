@@ -2283,7 +2283,7 @@
           </div>
 
           <div class="item_list ty02">
-            <compCard :cardInfo="{type: 'ty01', name: 'rateplan1'}" />
+            <compCard :cardInfo="{type: 'ty02', name: 'rateplan1'}" />
             <compCard :cardInfo="{type: 'ty02', name: 'rateplan2'}" />
             <compCard :cardInfo="{type: 'ty02', name: 'rateplan3'}" />
           </div>
@@ -2298,6 +2298,50 @@
     </div>
   </div> <!-- // pop_layer -->
 
+  <!-- [ALFM-PR02-PO08] 내게 맞는 요금제 찾기 : step6 추천 요금제 보기 (추천 요금제가 없을 경우) -->
+  <div class="pop_layer full" id="findRatePlan08" v-if="popup.findRatePlan08">
+    <div class="pop_wrap height_fix">
+      <div class="pop_header">
+        <h3>내게 맞는 요금제 찾기</h3>
+      </div>
+      <div class="pop_content">
+          <div class="section">
+            <div class="usage_no">
+              <p class="speech_darkblue">아쉽게도 고객님에게 맞는 요금제를 찾지 못했어요</p>
+              <compLottie name="plan01" />
+            </div>
+          </div>
+
+          <div class="section ty02">
+            <div class="page_info mgb20">
+              이용하시는 <span class="fc01">데이터</span>만큼 제공하면서 <br>
+              제일 저렴한 요금제를 추천드려요!
+            </div>
+
+            <div class="item_list ty02">
+              <compCard :cardInfo="{type: 'ty02', name: 'rateplan1'}" />
+            </div>
+          </div> <!-- // section -->
+
+          <div class="section ty02">
+            <div class="page_info mgb20">
+              이용하시는 <span class="fc01">통화량</span>만큼 제공하면서 <br>
+              제일 저렴한 요금제를 추천드려요!
+            </div>
+
+            <div class="item_list ty02">
+              <compCard :cardInfo="{type: 'ty02', name: 'rateplan2'}" />
+            </div>
+          </div> <!-- // section -->
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn lg c01">추천 요금제 더 보러가기</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
 
 
 

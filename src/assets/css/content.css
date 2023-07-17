@@ -475,16 +475,16 @@
 .mypl_fin .lottie-animation-container,
 .mypl_char .lottie-animation-container{position:absolute; bottom:0; left:50%; transform:translateX(-50%);}
 .mypl_fin{position:relative; padding-bottom:15.7rem; margin-top:10.5rem;}
-.mypl_fin lottie-player{width:23.2rem; height:16rem;}
+.mypl_fin .lottie-animation-container{width:23.2rem; height:16rem;}
 .mypl_char{position:relative; padding-bottom:29.7rem; margin-top:4.5rem}
 .mypl_char .lottie-animation-container{width:24rem; height:36rem;}
 
 .usage_result {padding-bottom:19.4rem;}
-.usage_result lottie-player{position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:23.2rem; height:16rem;}
+.usage_result .lottie-animation-container{position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:23.2rem; height:16rem;}
 .usage_result::after{display:none;}
 
 .usage_no {padding-bottom:22.4rem;}
-.usage_no lottie-player{position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:24rem; height:20rem;}
+.usage_no .lottie-animation-container{position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:24rem; height:20rem;}
 .usage_no::after{display:none;}
 
 
@@ -562,7 +562,7 @@
 
 .mypl_char.ty02{margin-top:11.1rem;padding-bottom:25rem;}
 .mypl_char.ty02::after{display:none;}
-.mypl_char.ty02 lottie-player {position:absolute; top:0; left:50%; transform:translateX(-50%); width:23.6rem; height:21.1rem;}
+.mypl_char.ty02 .lottie-animation-container {position:absolute; top:0; left:50%; transform:translateX(-50%); width:23.6rem; height:21.1rem;}
 
 
 

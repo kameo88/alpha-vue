@@ -110,6 +110,8 @@
     /* contained */
 .v-tooltip.v-overlay--contained > .v-overlay__content {left:0!important;}
 .v-tooltip.v-overlay--contained > .v-overlay__content > .tooltip_content{margin:0 1.2rem;}
+    /* popup */
+.pop_layer .v-tooltip > .v-overlay__content > .tooltip_content {max-width:calc(100% - 7rem); margin:0 auto;}
 
 
 
