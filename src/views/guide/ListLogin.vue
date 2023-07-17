@@ -139,7 +139,7 @@
 						<td></td>
 						<td class="url"><a href="/lg/ALFM-LG04-PG04" target="_blank">/lg/ALFM-LG04-PG04</a></td>
 						<td class="marker"></td>
-						<td class="date"></td>
+						<td class="date"><!-- [07/17] --></td>
 						<td></td>
 					</tr>
 				</tbody>

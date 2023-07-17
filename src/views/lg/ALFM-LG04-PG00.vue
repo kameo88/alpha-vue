@@ -4,7 +4,7 @@
     <div class="content" id="content">
       <h2 class="title_nav">{{ layout.title }}</h2>
 
-      <div class="page_info center">간편하게 회원가입 하고, <br>회원 서비스를 이용해 보세요!</div>
+      <div class="page_info">간편하게 회원가입 하고, <br>회원 서비스를 이용해 보세요!</div>
 
       <div class="section">
         <div class="btn_wrap">
@@ -26,7 +26,7 @@ export default {
   emits: ['popupItem', 'setLayout'],
   data(){
     return {
-      layout: { header: 'sub', footer: '', title: '회원가입' },
+      layout: { header: 'sub2', footer: 'none', floatMenu: 'none', title: '회원가입' },
     }
   },
   mounted(){
