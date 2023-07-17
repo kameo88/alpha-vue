@@ -112,7 +112,7 @@ input[type="checkbox"] + label {cursor:pointer;}
 
 /* ** radio_ty00 ** */
 .radio_ty00 > label {display:flex; align-items:center; justify-content:center; text-align:center; padding:1.32rem 1rem; border:0.1rem solid #ddd; border-radius:0.8rem; background:#fff; color:#909090; line-height:2rem;}
-.radio_ty00 > input:checked + label {padding:1.24rem 0.8rem; border:0.2rem solid #fc6969; color:#000; font-weight:700;}
+.radio_ty00 > input:checked + label {padding:1.22rem 0.9rem; border:0.2rem solid #fc6969; color:#000; font-weight:700;}
 .radio_ty00 > input:disabled + label {background-color:#f8f8f8; border-color:#ddd; color:#bbb;}
 
 
@@ -120,7 +120,7 @@ input[type="checkbox"] + label {cursor:pointer;}
 .radio_ty01 > label {display:flex; align-items:center; padding:1.72rem 1.92rem; border:0.1rem solid #ddd; border-radius:1.2rem; background:#fff; color:#000; font-size:1.6rem; font-weight:700; line-height:2rem;}
 .radio_ty01 > label::after {content:''; display:inline-block; width:2.4rem; height:2.4rem; background:no-repeat center / contain;}
 .radio_ty01 > label img {width:auto; height:2.4rem; margin-right:1.2rem;}
-.radio_ty01 > input:checked + label {padding:1.64rem 1.84rem; border:0.2rem solid #fc6969;}
+.radio_ty01 > input:checked + label {padding:1.62rem 1.82rem; border:0.2rem solid #fc6969;}
 .radio_ty01 > input:checked + label::after {margin-left:auto; background-image:url(../images/common/img_check.png);}
 .radio_ty01 > input:disabled + label {background-color:#f8f8f8; border-color:#ddd; color:#bbb;}
 
@@ -131,7 +131,7 @@ input[type="checkbox"] + label {cursor:pointer;}
 .radio_ty02 > label .text_box .desc {display:block; line-height:2.3rem;}
 .radio_ty02 > label .text_box .info {color:#717171; font-size:1.3rem; line-height:1.9rem; font-weight:500;}
 .radio_ty02 > label img {width:auto; height:4rem; margin-left:0.8rem;}
-.radio_ty02 > input:checked + label {padding:1.84rem; border:0.2rem solid #fc6969;}
+.radio_ty02 > input:checked + label {padding:1.82rem; border:0.2rem solid #fc6969;}
 .radio_ty02 > input:disabled + label {background-color:#f8f8f8; border-color:#ddd; color:#bbb;}
 .radio_ty02.ty02 > label {align-items:center; padding-left:3.22rem;}
 .radio_ty02.ty02 > input:checked + label {padding-left:3.14rem;}
@@ -157,7 +157,7 @@ input[type="checkbox"] + label {cursor:pointer;}
 .radio_ty04 > label.img_pay03::before{background-image:url(../images/common/img_samsung_pay.png);}
 .radio_ty04 > label.img_pay04::before{background-image:url(../images/common/img_kakao_pay.png);}
 .radio_ty04 > label.img_pay05::before{background-image:url(../images/common/img_n_pay.png);}
-.radio_ty04 > input:checked + label {padding:1.84rem 0.84rem; border:0.2rem solid #fc6969; color:#000; font-weight:700;}
+.radio_ty04 > input:checked + label {padding:1.82rem 0.92rem; border:0.2rem solid #fc6969; color:#000; font-weight:700;}
 
 
 
