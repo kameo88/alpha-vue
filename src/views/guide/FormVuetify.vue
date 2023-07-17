@@ -11,7 +11,9 @@
           
           <div class="form_group">
             <div class="form_label">수령인</div>
-            <v-text-field placeholder="고객명" variant="outlined" clearable></v-text-field>
+            <div class="form_item">
+              <v-text-field placeholder="고객명" variant="outlined" clearable></v-text-field>
+            </div>
           </div>
           <v-text-field placeholder="고객명 disabled" variant="outlined" disabled></v-text-field>
           <v-text-field placeholder="고객명 readonly" variant="outlined" readonly></v-text-field>

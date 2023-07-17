@@ -14,20 +14,20 @@
         <!-- 임시 -->
         <div class="center mgt32 mgb32">or</div>
         <!-- //임시 -->
-        <div class="form_wrap">
+        <v-form class="form_wrap" ref="form">
 
           <div class="form_group">
             <div class="form_item">
-              <v-text-field placeholder="이메일 입력" variant="outlined" :rules="[rules.required]" hide-details="auto" clearable></v-text-field>
+              <v-text-field placeholder="이메일 입력" variant="outlined" :rules="emailRules" required hide-details="auto" clearable></v-text-field>
             </div>
             <div class="form_item">
               <v-text-field type="password" placeholder="비밀번호 입력" variant="outlined" :rules="[rules.required]" hide-details="auto" clearable></v-text-field>
             </div>
           </div>
           <div class="btn_group">
-            <button type="button" class="btn lg c01">로그인</button>
+            <button type="button" class="btn lg c01" @click="validate">로그인</button>
           </div>
-        </div>
+        </v-form>
         <div class="acc_set">
           <ul>
             <li><a href="javascript:void(0);" target="_blank" title="새 창 열림" >이메일 찾기</a></li>
@@ -50,10 +50,22 @@ export default {
   data(){
     return {
       rules:{
-        required: value => !!value || '필수 입력입니다'
+        required: v => !!v || '비밀번호는 필수입니다'
       },
+      // name:'',
+      emailRules: [
+        v => !!v || '이메일은 필수입니다',
+        v => (v && v.length >= 5) || '이메일은 5자 이상 입력주세요',
+      ],
       layout: { header: 'sub', footer: '', title: '로그인' },
     }
+  },
+  methods: {
+    async validate () {
+        const { valid } = await this.$refs.form.validate()
+
+        //if (valid) alert('Form is valid')
+      },
   },
   mounted(){
     this.$emit('setLayout', this.layout);
