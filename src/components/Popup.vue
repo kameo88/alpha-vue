@@ -1854,6 +1854,51 @@
     </div>
   </div> <!-- // pop_layer -->
 
+  <!-- login [ALFM-LG04-PG02] select popup -->
+  <div class="pop_layer normal" id="selectDomainPop" v-if="popup.selectDomainPop">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>도메인 선택</h3>
+      </div>
+      <div class="pop_content">
+        <ul class="select_list" role="listbox">
+          <li role="none" class="on">
+            <button type="button" role="option" aria-selected="true" data-option="직접입력" @click="$popup.select('#selectDomainPop', '#btn_selectDomainPop');">직접입력</button>
+          </li>
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="naver.com" @click="$popup.select('#selectDomainPop', '#btn_selectDomainPop');">naver.com</button>
+          </li>
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="daum.net" @click="$popup.select('#selectDomainPop', '#btn_selectDomainPop');">daum.net</button>
+          </li>
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="hanmail.net" @click="$popup.select('#selectDomainPop', '#btn_selectDomainPop');">hanmail.net</button>
+          </li>
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="nate.com" @click="$popup.select('#selectDomainPop', '#btn_selectDomainPop');">nate.com</button>
+          </li>
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="gmail.com" @click="$popup.select('#selectDomainPop', '#btn_selectDomainPop');">gmail.com</button>
+          </li>
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="dreamwiz.com" @click="$popup.select('#selectDomainPop', '#btn_selectDomainPop');">dreamwiz.com</button>
+          </li>
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="lycos.co.kr" @click="$popup.select('#selectDomainPop', '#btn_selectDomainPop');">lycos.co.kr</button>
+          </li>
+          <li role="none">
+            <button type="button" role="option" aria-selected="false" data-option="chol.com" @click="$popup.select('#selectDomainPop', '#btn_selectDomainPop');">chol.com</button>
+          </li>
+        </ul>
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn md c03" data-action="close" @click="$popup.close('#selectDomainPop', '#btn_selectDomainPop')">확인</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" data-action="close" @click="$popup.close('#selectDomainPop', '#btn_selectDomainPop')"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
 
   <div class="pop_layer full" id="starbucks" v-if="popup.starbucks">
     <div class="pop_wrap">
