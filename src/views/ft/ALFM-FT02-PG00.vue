@@ -5,14 +5,8 @@
 			<h2 class="title_nav">{{ layout.title }}</h2>
 		
       <div class="section">
-        <div class="form_list version">
-          <ul>
-            <li>
-              <div class="form_item">
-                <button type="button" class="btn_select" id="btn_termsVerPop" @click="$popup.open('#termsVerPop', '#btn_termsVerPop');">⁠버전 V.20230303</button>
-              </div>
-            </li>
-          </ul>
+        <div class="list_version">
+          <button type="button" class="btn_select" id="btn_termsVerPop" @click="$popup.open('#termsVerPop', '#btn_termsVerPop');">⁠버전 V.20230303</button>
         </div>
         <div class="box_gray terms">
           <ol class="list decimal">
