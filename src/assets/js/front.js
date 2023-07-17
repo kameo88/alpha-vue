@@ -3,17 +3,22 @@ import { setTimeout } from "core-js";
 const front = {
   init(){
     this.device();
-    radioActive.init();
     scroll.isScroll();
     
     // 로딩순서 고려
-    setTimeout(()=>{ layout.footer() }, 1);
+    setTimeout(()=>{
+      layout.footer();
+      radioActive.init();
+    }, 1);
     
     setTimeout(()=>{ layout.getFullH() }, 0);
     window.addEventListener("resize", layout.getFullH);
 
     // form input
     setTimeout(()=>{ input.init() }, 100);
+
+    // swiper
+    setTimeout(()=>{ swiper.init() }, 100);
 
   },
   device(){
@@ -570,6 +575,17 @@ const tag = {
 }
 
 const swiper = {
+  init: function(){
+    const cardSwiper = document.querySelectorAll(".cardSwiper").length;
+    const flowSwiper = document.querySelectorAll(".flowSwiper").length;
+    const bnrSwiper = document.querySelectorAll(".bnrSwiper").length;
+    const noticePop = document.querySelectorAll("#noticePop").length;
+
+    if( cardSwiper > 0 ) this.cardSwiper();
+    if( flowSwiper > 0 ) this.flowSwiper();
+    if( bnrSwiper > 0 ) this.bnrSwiper();
+    if( noticePop > 0 ) this.notice();
+  },
   cardSwiper: function(){
     var swiperItem = new Swiper(".cardSwiper", {
       slidesPerView: "auto",
