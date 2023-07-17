@@ -16,7 +16,7 @@
         <!-- //임시 -->
         <div class="form_wrap">
           <div class="form_group">
-            <div class="form_item"><!-- class="form_item val_chk" -->
+            <div class="form_item val_chk"><!-- class="form_item val_chk" -->
               <div class="input_box">
                 <input type="text" class="input" placeholder="이메일 입력">
                 <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
