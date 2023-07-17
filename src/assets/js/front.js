@@ -761,8 +761,6 @@ const radioActive = {
     this.item = []; // reset
     item.forEach( a => this.item.push(a) );
 
-    console.log(this.item);
-
     this.click();
   },
   click: function(){

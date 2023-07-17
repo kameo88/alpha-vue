@@ -13,7 +13,7 @@
       <div class="pop_footer">
         <div class="btn_group">
           <button type="button" class="btn sm c07" data-action="close" @click="$popup.close('#popup01', '#btn_popup01')">취소</button>
-          <button type="button" class="btn sm c02" @click="$popup.close('#popup01', '#btn_popup01'); $popup.close('#popup03', '#btn_popup01'); $popup.close('#findRatePlan_intro', '#btn_findRatePlan_intro');">확인</button>
+          <button type="button" class="btn sm c02" @click="$popup.close('#popup01', '#btn_popup01'); $popup.close('#popup03', '#btn_popup01'); $popup.close('#findRatePlanIntro', '#btn_findRatePlanIntro'); $popup.close('#findRatePlan01', '#btn_findRatePlan01')">확인</button>
         </div>
       </div>
     </div>
@@ -1834,8 +1834,8 @@
 
 
 
-  <!-- [ALFM-PR02-PO00] 내게 맞는 요금제 찾기 intro -->
-  <div class="pop_layer full" id="findRatePlan_intro" v-if="popup.findRatePlan_intro">
+  <!-- [ALFM-PR02-PO00] 내게 맞는 요금제 찾기 : intro -->
+  <div class="pop_layer full" id="findRatePlanIntro" v-if="popup.findRatePlanIntro">
     <div class="pop_wrap height_fix">
       <div class="pop_header">
         <h3>내게 맞는 요금제 찾기</h3>
@@ -1855,6 +1855,76 @@
       <div class="pop_footer">
         <div class="btn_group">
           <button type="button" class="btn lg c01">시작하기</button>
+        </div>
+      </div>
+      <button type="button" class="pop_close" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+  <!-- [ALFM-PR02-PO01] 내게 맞는 요금제 찾기 : STEP1_통신사 선택 -->
+  <div class="pop_layer full" id="findRatePlan01" v-if="popup.findRatePlan01">
+    <div class="pop_wrap height_fix">
+      <div class="pop_header">
+        <h3>내게 맞는 요금제 찾기</h3>
+      </div>
+      <div class="pop_content">
+        <div class="page_info">
+          현재 사용하고 있는<br>
+          <span class="fc01">통신사</span>는 어디인가요?
+        </div>
+
+        <div class="section">
+          <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
+            <ul>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step01_01" name="step01">
+                  <label for="step01_01">LG U+</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step01_02" name="step01">
+                  <label for="step01_02">KT</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step01_03" name="step01">
+                  <label for="step01_03">SKT</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step01_04" name="step01">
+                  <label for="step01_04">LG U+ 알뜰폰</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step01_05" name="step01">
+                  <label for="step01_05">KT 알뜰폰</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step01_06" name="step01">
+                  <label for="step01_06">SKT 알뜰폰</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio_ty01">
+                  <input type="radio" id="step01_07" name="step01">
+                  <label for="step01_07">사용중인 통신사가 없어요</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> <!-- // section -->
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn lg c01" id="nextBtn" disabled>다음으로</button>
         </div>
       </div>
       <button type="button" class="pop_close" id="btn_popup01" @click="$popup.open('#popup01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
