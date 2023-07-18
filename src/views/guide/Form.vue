@@ -279,40 +279,40 @@
           <div class="form_group">
             <strong class="form_label">수령인</strong>
             <div class="form_item">
-            <div class="input_box">
-              <input type="text" class="input">
-              <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
-            </div>
+              <div class="input_box">
+                <input type="text" class="input">
+                <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
+              </div>
             </div>
             <div class="error">고객명을 입력해 주세요</div>
           </div>
           <div class="form_group">
             <strong class="form_label">수령인</strong>
             <div class="form_item">
-            <div class="input_box">
-              <input type="text" class="input" value="김알파">
-              <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
-            </div>
+              <div class="input_box">
+                <input type="text" class="input" value="김알파">
+                <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
+              </div>
             </div>
             <div class="error">고객명을 입력해 주세요</div>
           </div>
           <div class="form_group">
             <strong class="form_label">수령인</strong>
             <div class="form_item val_chk">
-            <div class="input_box">
-              <input type="text" class="input" placeholder="고객명">
-              <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
-            </div>
+              <div class="input_box">
+                <input type="text" class="input" placeholder="고객명">
+                <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
+              </div>
             </div>
             <div class="error">고객명을 입력해 주세요</div>
           </div>
           <div class="form_group">
             <div class="form_item">
-            <div class="input_box search">
-              <input type="text" class="input" placeholder="검색어를 입력해주세요">
-              <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
-              <button type="button" class="btn_search"><span class="blind">검색</span></button>
-            </div>
+              <div class="input_box search">
+                <input type="text" class="input" placeholder="검색어를 입력해주세요">
+                <button type="button" class="btn_del"><span class="blind">입력 내용 삭제</span></button>
+                <button type="button" class="btn_search"><span class="blind">검색</span></button>
+              </div>
             </div>
             <div class="error">검색어를 입력 해주세요</div>
           </div>
@@ -331,11 +331,11 @@
           <div class="form_group">
             <div class="form_item">
               <select name="" class="select" style="flex:none; width:30%;">
-                  <option disabled selected>전체</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
+                <option disabled selected>전체</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
               </select>
               <div class="input_box search">
                 <input type="text" class="input" placeholder="검색어를 입력해주세요" value="김알파">
@@ -346,6 +346,7 @@
           </div>
           <div class="form_group">
             <strong class="form_label">휴대폰 번호</strong>
+            
             <div class="form_item">
                 <div class="input_box">
                   <input type="tel" class="input" placeholder="'-'없이 숫자만 입력">

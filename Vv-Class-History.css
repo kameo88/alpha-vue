@@ -20,14 +20,14 @@ select_btn	==>	btn_select
 
 
 >> form - markup 변경
-
-form_wrap
-    form_group
-        form_item
-	item_content
-		label
-		input
-	item_content
+.form_wrap
+	.form_group
+		strong.form_label
+        .form_item
+			.input_box
+				input
+				button.btn_del
+		.error
 
 
 >> tab 관련
