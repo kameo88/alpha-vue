@@ -52,3 +52,17 @@ select_btn	==>	btn_select
 'table'
 'table ty02'
 'table ty03'
+
+
+
+
+>> *= 선택자
+[class*="usage_"]						==> .usage_result, .usage_no
+[class*="usage_"] [class*="speech_"]	==>	.speech_gray, .speech_darkblue
+
+
+>> ^= 선택자
+[class^="list_con"] .cus.comnt_co		==> .list_con02 .cus.comnt_cor
+.asso [class^="table_"]					==> .asso .table_ty02
+.speech_wrap [class^="speech_"]			==> .speech_wrap .speech_bg01, .speech_wrap .speech_bg02
+
