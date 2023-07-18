@@ -133,7 +133,7 @@
 .shop_search_area {z-index:2;}
 
 .shop_none {position:absolute; left:0; right:0; top:11.2rem; bottom:0; padding:0 1.6rem; background:#fff;}
-.shop_none [class^="no_dt_"] {margin:10rem 0;}
+.shop_none .no_dt_sch {margin:10rem 0;}
 .shop_none .box_gray {display:flex; justify-content:space-between; align-items:center;}
 .shop_none .box_gray p {flex:1; font-size:1.2rem; line-height:1.8rem; color:#717171;}
 .shop_none .box_gray .btn {flex:none; margin-left:2rem;}
@@ -244,8 +244,7 @@
 
 
 /* ** 공지사항 ** */
-.tit [class*="bag_clr_"]{margin-left:0.3rem; vertical-align:text-top; font-weight:500;}
-
+.tit .bag_clr_c06{margin-left:0.3rem; vertical-align:text-top; font-weight:500;}
 
 /* ** 자주하는 질문 ** */
 .qna_tit{position:relative; display:block; padding:2rem 3rem 2rem 2.5rem;}

@@ -59,10 +59,71 @@ select_btn	==>	btn_select
 >> *= 선택자
 [class*="usage_"]						==> .usage_result, .usage_no
 [class*="usage_"] [class*="speech_"]	==>	.speech_gray, .speech_darkblue
+.tit [class*="bag_clr_"]				==> .tit .bag_clr_c06
 
 
 >> ^= 선택자
-[class^="list_con"] .cus.comnt_co		==> .list_con02 .cus.comnt_cor
-.asso [class^="table_"]					==> .asso .table_ty02
-.speech_wrap [class^="speech_"]			==> .speech_wrap .speech_bg01, .speech_wrap .speech_bg02
+[class^="list_con"] .cus.comnt_co
+	==>
+	.list_con02 .cus.comnt_cor
+
+.asso [class^="table_"]
+	==>
+	.asso .table_ty02
+
+.speech_wrap [class^="speech_"]
+	==>
+	.speech_wrap .speech_bg01,
+	.speech_wrap .speech_bg02
+
+.radio_ty03 > label[class^='img_os']::before
+	==>
+	.radio_ty03 > label.img_os01::before,
+	.radio_ty03 > label.img_os02::before
+
+.radio_ty04 > label[class^='img_pay']::before
+	==>
+	.radio_ty04 > label.img_pay01::before,
+	.radio_ty04 > label.img_pay02::before,
+	.radio_ty04 > label.img_pay03::before,
+	.radio_ty04 > label.img_pay04::before,
+	.radio_ty04 > label.img_pay05::before
+
+.tit_wrap [class^=tit]
+	==> 
+	.tit_wrap .tit03
+
+[class^='text_list_']
+	==>
+	.text_list_bull
+	.text_list_dash
+
+[class^="table_ty"]
+	==>
+	.table_ty02
+
+[class^="bag_clr_"]
+	==>
+	.bag_clr_c01 부터 .bag_clr_c09 까지
+
+[class^="bag_evt_"]
+	==>
+	.bag_evt_d
+	.bag_evt_ty01 부터 .bag_evt_ty04 까지
+
+.shop_none [class^="no_dt_"]
+	==>
+	.shop_none .no_dt_sch
+
+
+[class^="list_con"]
+	==>
+
+
+.radio_active .on [class^='radio_ty']
+	==>
+
+
+[class^="no_dt_"]
+	==>
 
