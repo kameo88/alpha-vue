@@ -11,6 +11,17 @@ btn_sL_c01	==>	btn lg c01
 
 group_btn	==>	btn_group
 
+text_btn		==> btn_text
+reco_btn		==> btn_reco
+deli_btn		==> btn_deli
+top_btn			==> btn_top
+acd_btn			==> btn_acd
+dlvr_btn		==> btn_dlvr
+sort_btn		==> btn_sort
+tooltip_btn		==> btn_tooltip
+acc_btn			==> btn_acc
+
+
 
 >> form - class 변경
 fali_m		==>	error

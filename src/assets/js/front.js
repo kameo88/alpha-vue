@@ -142,7 +142,7 @@ const sort = {
     // const _body = document.querySelector("body");
     const _sortLayer = document.querySelector('.sort_layer');
     const _sortLayerWrap = document.querySelector('.sort_layer_wrap');
-    const _sortBtn = document.querySelector('.sort_btn');
+    const _sortBtn = document.querySelector('.btn_sort');
 
     _sortLayer.classList.remove("open");
     _sortBtn.focus();
@@ -175,7 +175,7 @@ const sort = {
 
     const isSortLayer = [...document.querySelectorAll(".sort_layer.open .sort_group > li > button")].filter( a => a == _this ).length;
     if( isSortLayer ){
-      const button = document.querySelector(".sort_layer.open").parentNode.querySelector(".sort_btn");
+      const button = document.querySelector(".sort_layer.open").parentNode.querySelector(".btn_sort");
       const text = _this.innerText;
       button.innerText = text;
       this.close();

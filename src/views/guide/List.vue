@@ -13,7 +13,7 @@
             <div>총 1,438개</div>
             <div>
               <div class="sort_pop">
-                <button type="button" class="sort_btn" aria-haspopup="true" @click="$sort.open">추천 순</button>
+                <button type="button" class="btn_sort" aria-haspopup="true" @click="$sort.open">추천 순</button>
                 <div class="sort_layer">
                   <div class="sort_layer_wrap">
                     <div class="sort_layer_header">

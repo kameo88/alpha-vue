@@ -101,9 +101,9 @@
 .partner_title .img img {display:block; width:100%;}
 .partner_title .tit {display:block; font-size:2.2rem; font-weight:700; line-height:3rem; color:#000;}
 .partner_title .tex {display:block; margin-top:0.8rem; font-size:1.3rem; line-height:1.9rem; color:#717171;}
-.partner_title .text_btn {padding-left:1.4rem; margin-top:1.6rem; font-size:1.2rem; line-height:1.8rem; color:#000;}
-.partner_title .text_btn::before {content:''; position:absolute; top:50%; left:0; display:block; width:1.2rem; height:1.2rem; background:url(../images/common/img_star_active.png) no-repeat center / 100% auto; transform:translateY(-50%);}
-.partner_title .text_btn span {color:#909090;}
+.partner_title .btn_text {padding-left:1.4rem; margin-top:1.6rem; font-size:1.2rem; line-height:1.8rem; color:#000;}
+.partner_title .btn_text::before {content:''; position:absolute; top:50%; left:0; display:block; width:1.2rem; height:1.2rem; background:url(../images/common/img_star_active.png) no-repeat center / 100% auto; transform:translateY(-50%);}
+.partner_title .btn_text span {color:#909090;}
 
 .partner_info dl ~ dl {margin-top:2rem;}
 .partner_info dt {margin-bottom:0.8rem; font-size:1.3rem; font-weight:700; line-height:1.9rem; color:#717171;}

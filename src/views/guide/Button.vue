@@ -136,9 +136,9 @@
 
         <div class="section">
           <h3 class="tit02">button text</h3>
-          <a href="javascript:void(0);" class="text_btn">button text</a>
-          <button type="button" class="text_btn ty02">button text type02</button>
-          <button type="button" class="text_btn ty03">button text type03</button>
+          <a href="javascript:void(0);" class="btn_text">button text</a>
+          <button type="button" class="btn_text ty02">button text type02</button>
+          <button type="button" class="btn_text ty03">button text type03</button>
         </div> <!-- // section -->
 
         <div class="section">

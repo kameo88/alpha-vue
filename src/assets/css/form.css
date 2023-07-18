@@ -436,8 +436,8 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 
 /* ***** sort ***** */
 .sort_wrap {display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; margin-bottom:0.8rem; font-size:1.3rem; line-height:1.9rem; color:#000;}
-.sort_wrap .sort_btn {position:relative; padding-left:1.8rem;}
-.sort_wrap .sort_btn::before {content:''; position:absolute; top:50%; left:0; display:block; width:1.6rem; height:1.6rem; margin-top:-0.8rem; background:url(../images/common/ico_sort.png) no-repeat center / 100% auto;}
+.sort_wrap .btn_sort {position:relative; padding-left:1.8rem;}
+.sort_wrap .btn_sort::before {content:''; position:absolute; top:50%; left:0; display:block; width:1.6rem; height:1.6rem; margin-top:-0.8rem; background:url(../images/common/ico_sort.png) no-repeat center / 100% auto;}
 
 .sort_group {font-size:0; line-height:0;}
 .sort_group > li {position:relative; display:inline-block; font-size:1.3rem; line-height:1.9rem;}
@@ -519,9 +519,9 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 /* 요금제 */
 .plan_item{position:relative; padding:2rem; border-radius:1.2rem; box-shadow:0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.08); background-color:#fff; overflow:hidden;}
 .plan_item .tooltip {vertical-align:super; font-weight:500; z-index:2;}
-.plan_item .combi .tooltip_btn{vertical-align:super;}
-.pc .plan_item .combi .tooltip_btn{vertical-align:middle;}
-.plan_item .combi .tooltip_btn.v-btn.v-btn--density-default{margin-right:0.5rem;}
+.plan_item .combi .btn_tooltip{vertical-align:super;}
+.pc .plan_item .combi .btn_tooltip{vertical-align:middle;}
+.plan_item .combi .btn_tooltip.v-btn.v-btn--density-default{margin-right:0.5rem;}
 .plan_item .tooltip > .info {margin:0 3.2rem;}
 .plan_item img{height: 100%;}
 
@@ -563,9 +563,9 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 
 .plan_item .card_bot{display:flex; flex-wrap:wrap; justify-content:space-between; gap:0.8rem; margin-top:2.4rem;}
 .plan_item .card_bot .acc_box{margin-left:0.4rem;}
-.plan_item .card_bot .acc_btn{position:relative; font-size:1.2rem; line-height:2rem; color:#717171; padding-right:2rem;}
-.plan_item .card_bot .acc_btn:after{position:absolute; right:0; top:50%; background:url(../images/common/ico_arrowB.png) no-repeat center / 1.6rem 1.6rem; margin-top:-0.8rem; content:""; display:inline-block; width:1.6rem; height:1.6rem;}
-.plan_item .acdItem.on .acc_btn:after{transform:rotate(180deg);}
+.plan_item .card_bot .btn_acc{position:relative; font-size:1.2rem; line-height:2rem; color:#717171; padding-right:2rem;}
+.plan_item .card_bot .btn_acc:after{position:absolute; right:0; top:50%; background:url(../images/common/ico_arrowB.png) no-repeat center / 1.6rem 1.6rem; margin-top:-0.8rem; content:""; display:inline-block; width:1.6rem; height:1.6rem;}
+.plan_item .acdItem.on .btn_acc:after{transform:rotate(180deg);}
 .plan_item .card_bot .gift_box{display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; z-index:1;}
 
 .plan_item .acc_contents{font-size:1.2rem; color:#717171; line-height:1.3rem; background:#f8f8f8; border-radius:1.2rem; padding:2rem; margin-top:1.2rem;}

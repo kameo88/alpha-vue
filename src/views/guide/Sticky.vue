@@ -13,7 +13,7 @@
           </div>
           <strong class="tit">이야기모바일</strong>
           <em class="tex">똑똑한 통신요금의 기준 이야기 알뜰폰</em>
-          <a href="javascript:void(0);" class="text_btn">4.5 <span>(56개)</span></a>
+          <a href="javascript:void(0);" class="btn_text">4.5 <span>(56개)</span></a>
         </div>
 
         <div class="scroll_fixed">

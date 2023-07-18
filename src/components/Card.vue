@@ -18,7 +18,7 @@
       <span class="plan_tit">데이터안심15G+</span>
       <strong class="plan_tit_sub">
         월 11GB + 매일 2GB + 3Mbps
-        <v-btn :id="`${cardInfo.name}-1`" class="tooltip_btn" :class="{on : tooltip[0]}" title="툴팁" @click="tooltip[0] = !tooltip[0]">요금제 툴팁</v-btn>
+        <v-btn :id="`${cardInfo.name}-1`" class="btn_tooltip" :class="{on : tooltip[0]}" title="툴팁" @click="tooltip[0] = !tooltip[0]">요금제 툴팁</v-btn>
       </strong>
       <div class="plan_info">
         <span class="phone"><span class="blind">통화량</span>100분</span>
@@ -35,7 +35,7 @@
     <div class="combi">
       <div class="combi_inner">
         <strong>
-          <v-btn :id="`${cardInfo.name}-2`" class="tooltip_btn" :class="{on : tooltip[1]}" title="툴팁" @click="tooltip[1] = !tooltip[1]">요금제 툴팁</v-btn>
+          <v-btn :id="`${cardInfo.name}-2`" class="btn_tooltip" :class="{on : tooltip[1]}" title="툴팁" @click="tooltip[1] = !tooltip[1]">요금제 툴팁</v-btn>
           <span class="fc01">결합하면</span> 월 10,890원
         </strong>
         <span class="period">6개월 이후 38,900원</span>
@@ -94,7 +94,7 @@
           </div>
 
           <div class="acc_box">
-            <button type="button" :aria-expanded="detail" class="acc_btn" @click="detail = !detail">사은품 최대 <span>3</span>개</button>
+            <button type="button" :aria-expanded="detail" class="btn_acc" @click="detail = !detail">사은품 최대 <span>3</span>개</button>
           </div>
         </div>
       </div>
@@ -160,7 +160,7 @@
     <div class="card_mid">
       <strong class="plan_tit_sub">
         월 11GB + 매일 2GB + 3Mbps
-        <v-btn :id="`${cardInfo.name}-1`" class="tooltip_btn" :class="{on : tooltip[2]}" title="툴팁" @click="tooltip[2] = !tooltip[2]">툴팁</v-btn>
+        <v-btn :id="`${cardInfo.name}-1`" class="btn_tooltip" :class="{on : tooltip[2]}" title="툴팁" @click="tooltip[2] = !tooltip[2]">툴팁</v-btn>
       </strong>
       <div class="plan_info">
         <span class="phone"><span class="blind">통화량</span>100분</span>

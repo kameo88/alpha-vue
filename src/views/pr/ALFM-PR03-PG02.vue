@@ -53,7 +53,7 @@
           </a>
         </div>
         <strong>USIM없이 eSIM으로 개통하시겠어요?</strong>
-        <a href="javascript:void(0);" class="text_btn">eSIM 지원 휴대폰 확인하러 가기</a>
+        <a href="javascript:void(0);" class="btn_text">eSIM 지원 휴대폰 확인하러 가기</a>
       </div> <!-- // section-->
 
       <div class="bottom_float">

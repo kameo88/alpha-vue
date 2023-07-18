@@ -521,7 +521,7 @@
 .bottom_link_item > strong {display:block; font-size:1.3rem; font-weight:700; line-height:1.9rem;}
 .bottom_link_item > strong ~ strong {margin-top:3.2rem;}
 .bottom_link_item .bnr_area {margin-top:1.2rem;}
-.bottom_link_item .text_btn {margin-top:0.8rem;}
+.bottom_link_item .btn_text {margin-top:0.8rem;}
 
 /* 가입신청 > USIM 정보 입력 */
 .info_input_img > img {width:100%;}
@@ -710,7 +710,7 @@
 .list_box_gray > ul > li:nth-child(2) .list_box_num > b::before {content:"2";}
 .list_box_gray > ul > li:nth-child(3) .list_box_num > b::before {content:"3";}
 
-.asso .acd_btn{font-size:1.5rem; line-height:1.8rem; font-weight:700;}
+.asso .btn_acd{font-size:1.5rem; line-height:1.8rem; font-weight:700;}
 .asso .acd_st{margin-top:4.8rem;}
 .asso .acd_st ~ .acd_st{margin-top:0.8rem}
 
@@ -799,8 +799,8 @@
 .speech_wrap [class^="speech_"][class$="_bg02"]::after{left:31%; border-top:5px solid #FFE4D6;}
 
 .dlvr_con .dlvr_btn_wrap{position:relative; margin-top:-4rem;}
-.dlvr_con .dlvr_btn_wrap .dlvr_btn ~ .dlvr_btn{margin-top:0.8rem;}
-.dlvr_con .dlvr_btn {font-size:1.6rem; font-weight:700; text-align:left; background:#fff url(../images/common/ico_arrowR02.png) no-repeat right 2rem center / 2.4rem auto; border-radius:1.2rem; width:100%; padding:2rem 4rem 2rem 2rem;}
+.dlvr_con .dlvr_btn_wrap .btn_dlvr ~ .btn_dlvr{margin-top:0.8rem;}
+.dlvr_con .btn_dlvr {font-size:1.6rem; font-weight:700; text-align:left; background:#fff url(../images/common/ico_arrowR02.png) no-repeat right 2rem center / 2.4rem auto; border-radius:1.2rem; width:100%; padding:2rem 4rem 2rem 2rem;}
 
 /* 핸드폰 모델 확인 팝업 */
 .box_line ~ .box_line{margin-top:1.2rem;}
@@ -880,7 +880,7 @@
 .list_ico_item .count{color:#717171; line-height:1.6rem;}
 
 /* 내가 신청한 요금제 상세 */
-.acd_st.ty02 .acd_btn {display:flex; justify-content:space-between; padding:2rem 5.2rem 2rem 2rem;}
+.acd_st.ty02 .btn_acd {display:flex; justify-content:space-between; padding:2rem 5.2rem 2rem 2rem;}
 .acd_st.ty02 .acd_panel{border-top:1px solid #ddd; margin:0rem 2rem; padding:0rem 0rem 2rem;}
 .panel_inner_list{color:#000; line-height:1.5rem; margin-top:2rem;}
 .panel_inner_list > ul > li{display:flex; justify-content:space-between; margin-top:1.2rem;}
@@ -1084,8 +1084,8 @@
 .pc .va_services > div ~ div {margin-top:0;}
 
 /* 알파만의 혜택 */
-.pc .crp_benefits_list .acd_st .acd_btn {pointer-events:none;}
-.pc .crp_benefits_list .acd_st .acd_btn::after {display:none;}
+.pc .crp_benefits_list .acd_st .btn_acd {pointer-events:none;}
+.pc .crp_benefits_list .acd_st .btn_acd::after {display:none;}
 .pc .crp_benefits_list .acdItem [role=region] {display:block !important; height:auto !important; padding:0 2rem 2rem !important;}
 
 /* 사용자 리뷰 */

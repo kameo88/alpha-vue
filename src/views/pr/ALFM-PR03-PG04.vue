@@ -23,7 +23,7 @@
           <input class="blind" type="file" id="imgUpload" name="imgUpload" accept="image/*">
         </div>
 
-        <button type="button" class="text_btn" @click="selfInput = true">직접 입력하기</button>
+        <button type="button" class="btn_text" @click="selfInput = true">직접 입력하기</button>
       </div> <!-- // section -->
 
       <div class="section">
