@@ -60,6 +60,14 @@ select_btn	==>	btn_select
 [class*="usage_"]						==> .usage_result, .usage_no
 [class*="usage_"] [class*="speech_"]	==>	.speech_gray, .speech_darkblue
 .tit [class*="bag_clr_"]				==> .tit .bag_clr_c06
+.eval_list .eval_item [class*="desc_s"]
+.radio_ty02.ty02 .text_box .desc [class*="bag_"]
+.cir_icon_link [class *="_icon_link"]
+
+[class^="list_con"] .bo_btn_list [class*="bo_btn_"]
+
+
+
 
 
 >> ^= 선택자
@@ -127,3 +135,19 @@ select_btn	==>	btn_select
 [class^="no_dt_"]
 	==>
 
+
+[class^="bag_"] img
+	==>
+	.bag_rit img,
+	.bag_git img
+
+.my_box [class^="btn_sS_"]
+	==>
+	.my_box .btn
+
+[class^='radio_ty']
+
+.star_box [class^=star]
+
+[class^="bag_"]
+.my_box [class^="btn_sS_"]

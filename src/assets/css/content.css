@@ -608,7 +608,8 @@
 
 
 /* ** 이벤트 ** */
-[class^="bag_"] img{height:100%;}
+.bag_rit img,
+.bag_git img{height:100%;}
 .evt_dtl_item .evt_dtl_tit{border-top:1px solid #000; border-bottom:1px solid #ddd; padding:2rem 0.8rem;}
 .evt_dtl_item .evt_dtl_tit .dtl_tit_top{width:100%; height:1.6rem; display:flex; justify-content:space-between; margin-bottom:1.6rem;}
 .evt_dtl_item .evt_dtl_tit .dtl_tit_bot > strong{font-size:1.5rem; line-height:2.2rem; color:#000;}
@@ -897,7 +898,7 @@
 .my_box{text-align:center; padding:2rem 0;}
 .my_box > p{color:#717171; line-height:1.8rem; margin-bottom:1.2rem;}
 .my_box > p > span{color:#000;}
-.my_box [class^="btn_sS_"]{max-width:14.1rem;}
+.my_box .btn{max-width:14.1rem;}
 .my_box .btn_group{justify-content:center;}
 
 .qna_tit.ty02 {padding:2rem 3rem 2rem 0.8rem;}
