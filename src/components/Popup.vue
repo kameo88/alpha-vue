@@ -2437,6 +2437,29 @@
   </div> <!-- // pop_layer -->
 
 
+  <!-- [ALFM-PR03-PO04] eSIM 미지원 단말기인 경우 -->
+  <div class="pop_layer alert" id="ALFMPR03PO04" v-if="popup.ALFMPR03PO04">
+    <div class="pop_wrap">
+      <div class="pop_header">
+        <h3>안내</h3>
+      </div>
+      <div class="pop_content">
+        <div class="info_con">
+          해당 단말기는 eSIM을 지원하지 않습니다.<br>
+          계속해서 가입신청 후<br>
+          상담사를 통해 개통하시겠어요?
+        </div>
+      </div>
+      <div class="pop_footer">
+        <div class="btn_group">
+          <button type="button" class="btn sm c07" data-action="close" @click="$popup.close('#ALFMPR03PO04', '#btn_ALFMPR03PO04')">상담받고<br>개통할래요</button>
+          <button type="button" class="btn sm c02" data-action="close" @click="$popup.close('#ALFMPR03PO04', '#btn_ALFMPR03PO04')">USIM으로<br>개통할래요</button> <!-- onclick="popUp.close('#popup01', '#btn_popup01');" -->
+        </div>
+      </div>
+    </div>
+  </div> <!-- // pop_layer -->
+
+
 
 
 </div>
