@@ -2460,6 +2460,53 @@
   </div> <!-- // pop_layer -->
 
 
+  <!-- [ALFM-PR03-PO01] 이미지 업로드 가이드 팝업 -->
+  <div class="pop_layer full" id="ALFMPR03PO01" v-if="popup.ALFMPR03PO01">
+    <div class="pop_wrap height_fix">
+      <div class="pop_header">
+        <h3>이미지 업로드 가이드</h3>
+      </div>
+      <div class="pop_content">
+        <div class="section">
+          <div class="box_gray">
+            <div class="guid_img_item">
+              <strong class="fs12 fc01">step 01</strong>
+              <h3 class="tit02">통화창에 *#06# 입력</h3>
+              <div class="guid_img">
+                <img src="@/assets/images/content/img_s_num_01.png" alt="통화창 예시">
+              </div>
+            </div>
+
+            <div class="next_arrow_bott">
+              <img src="@/assets/images/common/ico_arrowB03.png" alt="">
+            </div>
+
+            <div class="guid_img_item">
+                <strong class="fs12 fc01">step 02</strong>
+              <h3 class="tit02">이미지 캡처본 업로드</h3>
+              <div class="guid_img">
+                <img src="@/assets/images/content/img_s_num_02.png" alt="이미지 캡쳐 예시">
+              </div>
+            </div>
+              
+          </div>
+        </div> <!-- // section -->
+          
+        <div class="section">
+          <div class="box_gray">
+            <ul class="text_list_bull">
+              <li>eSIM 개통을 위해서는 가지고 계신 단말기의 EID 및 IMEI 정보 입력이 필요합니다.</li>
+              <li>이미지 업로드 시 각 항목이 자동으로 입력됩니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <button type="button" class="pop_close" id="btn_popup02" @click="$popup.close('#ALFMPR03PO01', '#btn_ALFMPR03PO01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+  </div> <!-- // pop_layer -->
+
+
 
 
 </div>
