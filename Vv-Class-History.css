@@ -121,9 +121,9 @@ no_dt_his			==> no_dt his
 >> radio 관련 [class^='radio_ty'] - class 변경
 radio_ty00				==> radio_item ty01
 radio_ty01				==> radio_item ty02
-radio_ty01.radio_ty02	==> radio_item ty03
+radio_ty01 radio_ty02	==> radio_item ty03
 radio_ty02				==> radio_item ty04
-radio_ty02.ty02			==> radio_item ty05
+radio_ty02 ty02			==> radio_item ty05
 radio_ty03				==> radio_item ty06
 radio_ty04				==> radio_item ty07
 
