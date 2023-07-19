@@ -47,7 +47,7 @@
 
       <div class="section">
         <div class="box_gray">
-          <ul class="text_list_bull">
+          <ul class="text_list bull">
             <li>USIM 종류에 따라 비용이 청구될 수 있어요.</li>
             <li>USIM 비용은 다음달 청구서에 함께 청구 될 거에요.</li>
             <li>택배사의 사정에 따라 USIM 배송이 지연될 수 있어요.</li>

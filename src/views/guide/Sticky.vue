@@ -128,7 +128,7 @@
               <div class="line_list ty02">
                 <ul>
                   <li>
-                    <div class="list_con02">
+                    <div class="list_con ty02">
                       <div class="cus">
                         <span class="name">김*파</span>
                         <div class="star_box">
@@ -144,7 +144,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="list_con02">
+                    <div class="list_con ty02">
                       <div class="cus">
                         <span class="name">김*파</span>
                         <div class="star_box">
@@ -160,7 +160,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="list_con02">
+                    <div class="list_con ty02">
                       <div class="cus">
                         <span class="name">김*파</span>
                         <div class="star_box">
@@ -189,7 +189,7 @@
               <div class="line_list ty02">
                 <ul>
                   <li>
-                    <a href="javascript:void(0);" class="list_con03">
+                    <a href="javascript:void(0);" class="list_con ty03">
                       <div class="list_lft">
                         <div class="cus">
                           <span class="name">올리브소스 님</span>
@@ -205,7 +205,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="list_con03">
+                    <a href="javascript:void(0);" class="list_con ty03">
                       <div class="list_lft">
                         <div class="cus">
                           <span class="name">올리브소스 님</span>
@@ -221,7 +221,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="list_con03">
+                    <a href="javascript:void(0);" class="list_con ty03">
                       <div class="list_lft">
                         <div class="cus">
                           <span class="name">올리브소스 님</span>

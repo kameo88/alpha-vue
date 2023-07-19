@@ -49,7 +49,7 @@
       <div class="section">
         <div class="box_gray">
           <strong>셀프개통 업무시간 안내</strong>
-          <ul class="text_list_bull">
+          <ul class="text_list bull">
             <li>신규가입 : 오전8시 ~ 오후 8시 (평일/토요일)</li>
             <li>번호이동 : 오전10시 ~ 오후 8시 (평일/토요일)</li>
           </ul>

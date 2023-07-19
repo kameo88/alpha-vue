@@ -53,7 +53,7 @@
       <div class="section">
         <div class="box_gray">
           <strong>비밀번호 필수조건</strong>
-          <ul class="text_list_bull">
+          <ul class="text_list bull">
             <li>10~20자의 영문과 숫자를 혼용해서 사용해야 합니다.</li>
             <li>동일한 문자/숫자를 연속으로 4자리 이상 포함할 수 없습니다. (예. aaaa, 1111)</li>
             <li>연속된 숫자는 4자리 이상 사용하실 수 없습니다. (예. 1234…..5678)</li>

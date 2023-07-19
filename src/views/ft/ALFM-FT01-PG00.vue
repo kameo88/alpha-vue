@@ -48,7 +48,7 @@
         </div>
         <div class="info_pdf">
           <div class="box_gray">
-            <ul class="text_list_bull">
+            <ul class="text_list bull">
               <li>⁠이용약관을 실행할 수 있는 프로그램이 없으신 분은 Acrobat Reader를 먼저 다운받아 설치하시기 바랍니다.</li>
             </ul>
             <a href="javascript:void(0);" class="btn xsm c07" title="새 창 열림">Acrobat Reader 다운로드</a>

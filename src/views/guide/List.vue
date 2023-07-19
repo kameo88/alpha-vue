@@ -93,26 +93,26 @@
           <div class="line_list">
             <ul>
               <li>
-                <a href="javascript:void(0);" class="list_con01">
+                <a href="javascript:void(0);" class="list_con ty01">
                   <span class="tit">[안내] eSIM 안내</span>
                   <span class="date">2022.02.02</span>
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0);" class="list_con01">
+                <a href="javascript:void(0);" class="list_con ty01">
                   <span class="date_rel">발표일 2023.10.10</span>
                   <span class="tit">[안내] eSIM 안내</span>
                   <span class="date">2022.02.02</span>
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0);" class="list_con01">
+                <a href="javascript:void(0);" class="list_con ty01">
                   <span class="tit ty02">모두의 유심, 원칩 | 택배배송</span>
                   <span class="date">2022.02.02</span>
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0);" class="list_con02">
+                <a href="javascript:void(0);" class="list_con ty02">
                   <div class="cus">
                     <span class="name">김*파</span>
                     <div class="star_box">
@@ -126,7 +126,7 @@
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0);" class="list_con02">
+                <a href="javascript:void(0);" class="list_con ty02">
                   <div class="cus">
                     <span class="name">김*파</span>
                   </div>
@@ -134,7 +134,7 @@
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0);" class="list_con02">
+                <a href="javascript:void(0);" class="list_con ty02">
                   <div class="cus">
                     <span class="name">김*파</span>
                   </div>
@@ -142,7 +142,7 @@
                 </a>
               </li>
               <li>
-                <div class="list_con02">
+                <div class="list_con ty02">
                   <div class="cus comnt_cor">
                     <span class="name">김*파</span>
                     <div class="comnt_box">
@@ -162,7 +162,7 @@
 
               </li>
               <li>
-                <a href="javascript:void(0);" class="list_con03">
+                <a href="javascript:void(0);" class="list_con ty03">
                   <div class="list_lft">
                     <div class="cus">
                       <span class="name">김*파</span>
@@ -176,7 +176,7 @@
                 </a>
               </li>
               <li>
-                <div class="list_con03">
+                <div class="list_con ty03">
                   <div class="list_lft">
                     <div class="cus">
                       <span class="tit_bo">GS25상일동아점</span>
@@ -189,17 +189,17 @@
                     </div>
                   </div>
                   <div class="bo_btn_list">
-                    <button type="button" class="bo_btn_local">
+                    <button type="button" class="btn_bo local bo_btn_local">
                       <span class="blind">지도 보기</span>
                     </button>
-                    <button type="button" class="bo_btn_call">
+                    <button type="button" class="btn_bo call bo_btn_call">
                       <span class="blind">전화 걸기</span>
                     </button>
                   </div>
                 </div>
               </li>
               <li>
-                <a href="javascript:void(0);" class="list_con02">
+                <a href="javascript:void(0);" class="list_con ty02">
                   <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
                   <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
                 </a>
@@ -277,17 +277,17 @@
           <div class="cir_icon_link">
             <ul>
               <li>
-                <a href="javascript:void(0);" class="facebook_icon_link">
+                <a href="javascript:void(0);" class="icon_link facebook">
                   <span>페이스북</span>
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0);" class="kakao_icon_link">
+                <a href="javascript:void(0);" class="icon_link kakao">
                   <span>카카오톡</span>
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0);" class="url_icon_link">
+                <a href="javascript:void(0);" class="icon_link url">
                   <span>URL 복사</span>
                 </a>
               </li>

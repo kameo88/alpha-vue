@@ -25,11 +25,11 @@
 			</div> <!-- // section -->
 
 			<div class="section">
-				<h3 class="tit02">text_list_bull</h3>
-				<ul class="text_list_bull">
+				<h3 class="tit02">text_list bull</h3>
+				<ul class="text_list bull">
 					<li>
 						비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.
-						<ul class="text_list_dash">
+						<ul class="text_list dash">
 							<li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
 							<li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
 						</ul>
@@ -37,25 +37,25 @@
 					<li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
 				</ul>
 
-				<ul class="text_list_bull">
+				<ul class="text_list bull">
 					<li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
 					<li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
 				</ul>
 			</div> <!-- // section -->
 
 			<div class="section">
-				<h3 class="tit02">text_list_dash</h3>
-				<ul class="text_list_dash">
+				<h3 class="tit02">text_list dash</h3>
+				<ul class="text_list dash">
 					<li>
 						비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.
-						<ul class="text_list_bull">
+						<ul class="text_list bull">
 							<li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
 							<li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
 						</ul>
 					</li>
 					<li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
 				</ul>
-				<ul class="text_list_dash">
+				<ul class="text_list dash">
 					<li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
 					<li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
 				</ul>
@@ -70,28 +70,28 @@
 			<div class="section">
 				<h3 class="tit02">box</h3>
 				<div class="box_gray">
-					<ul class="text_list_bull">
+					<ul class="text_list bull">
 						<li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
 						<li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
 					</ul>
 				</div>
 
 				<div class="box_line">
-					<ul class="text_list_bull">
+					<ul class="text_list bull">
 						<li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
 						<li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
 					</ul>
 				</div>
 
 				<div class="box_red">
-					<ul class="text_list_bull">
+					<ul class="text_list bull">
 						<li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
 						<li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
 					</ul>
 				</div>
 
 				<div class="box_yellow">
-					<ul class="text_list_bull">
+					<ul class="text_list bull">
 						<li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
 						<li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
 					</ul>

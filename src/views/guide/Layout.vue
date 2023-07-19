@@ -39,7 +39,7 @@
         <b>layout: { header: 'sub', footer: 'none', title: '공통', floatMenu: 'none' },</b><br>
         <b>this.$emit('setLayout', this.layout);</b>
 
-        <ul class="text_list_bull">
+        <ul class="text_list bull">
           <li><b>header</b> : 'main', 'sub', 'sub2', 'none' (필수)</li>
           <li><b>footer</b> : '', 'none'</li>
           <li><b>title</b> : '', 'text'</li>

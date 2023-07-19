@@ -7,7 +7,7 @@
 
       <div class="section">
         <h3 class="tit02">Popup 추가하기</h3>
-        <ul class="text_list_bull">
+        <ul class="text_list bull">
           <li>
             팝업을 부를 페이지에 popupItem 데이터 추가, $emit 추가<br>
             ex)<br>

@@ -11,6 +11,8 @@ btn_sL_c01	==>	btn lg c01
 
 group_btn	==>	btn_group
 
+
+>> 기타 btn - class 변경
 text_btn		==> btn_text
 reco_btn		==> btn_reco
 deli_btn		==> btn_deli
@@ -36,6 +38,35 @@ search_btn	==>	btn_search
 select_btn	==>	btn_select
 
 
+>> desc_s - class 변경
+desc_s00	==> desc s00 ~ s05	(별점)
+
+
+>> [class*="usage_"] (usage_result, usage_no) - class 변경
+usage_result		==> usage_wrap result
+usage_no			==> usage_wrap no
+speech_gray			==> speech gray
+speech_darkblue		==> speech darkblue
+
+
+>> .cir_icon_link [class *="_icon_link"] - class 변경
+facebook_icon_link	==> icon_link facebook
+kakao_icon_link		==> icon_link kaka
+url_icon_link		==> icon_link url
+naver_icon_link		==> icon_link naver
+youtube_icon_link	==> icon_link youtube
+blog_icon_link		==> icon_link blog
+
+
+>> .cir_icon_radio div.naver_icon_link - class 변경
+naver_icon_link		==> icon_link naver
+pass_icon_link		==> icon_link pass
+credit_icon_link	==> icon_link credit
+
+
+
+
+
 >> form - markup 변경
 .form_wrap
 	.form_group
@@ -54,61 +85,41 @@ select_btn	==>	btn_select
 
 >> table
 ; new class
-  
-'table'
-'table ty02'
-'table ty03'
+
+table
+table_02	==> table ty02
+table_03	==> table ty03
+
+
+
+>> [class^="list_con"] - class 변경
+list_con01			==> list_con ty01
+list_con02			==> list_con ty02
+list_con03			==> list_con ty03
+
+
+>> .bo_btn_list [class*="bo_btn_"] - class 변경
+bo_btn_local		==>	btn_bo local
+bo_btn_call			==>	btn_bo call
+
+
+>> .speech_wrap [class^="speech_"] - class 변경
+speech_bg01			==> speech bg01
+speech_bg02			==> speech bg02
+
+
+>> [class^='text_list_'] - class 변경
+text_list_bull		==>	text_list bull
+text_list_dash		==>	text_list dash
 
 
 
 
 
 
->> *= 선택자
-
->> [class*="usage_"] (usage_result, usage_no)
-usage_result		==> usage_wrap result
-usage_no			==> usage_wrap no
-speech_gray			==> speech gray
-speech_darkblue		==> speech darkblue
 
 
 
-
-
-
-.eval_list .eval_item [class*="desc_s"]	==> .eval_list .eval_item .eval_desc > span
-
-
-.cir_icon_link [class *="_icon_link"]
-	=>
-	.cir_icon_link .facebook_icon_link,
-	.cir_icon_link .kakao_icon_link,
-	.cir_icon_link .url_icon_link,
-	.cir_icon_link .naver_icon_link,
-	.cir_icon_link .youtube_icon_link,
-	.cir_icon_link .blog_icon_link,
-	.cir_icon_link .insta_icon_link{}
-
-[class^="list_con"] .bo_btn_list [class*="bo_btn_"]
-
-
-
-
-
->> ^= 선택자
-[class^="list_con"] .cus.comnt_co
-	==>
-	.list_con02 .cus.comnt_cor
-
-.asso [class^="table_"]
-	==>
-	.asso .table_ty02
-
-.speech_wrap [class^="speech_"]
-	==>
-	.speech_wrap .speech_bg01,
-	.speech_wrap .speech_bg02
 
 .radio_ty03 > label[class^='img_os']::before
 	==>
@@ -123,18 +134,11 @@ speech_darkblue		==> speech darkblue
 	.radio_ty04 > label.img_pay04::before,
 	.radio_ty04 > label.img_pay05::before
 
-.tit_wrap [class^=tit]
-	==> 
-	.tit_wrap .tit03
 
-[class^='text_list_']
-	==>
-	.text_list_bull
-	.text_list_dash
 
-[class^="table_ty"]
-	==>
-	.table_ty02
+
+
+
 
 
 

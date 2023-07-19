@@ -277,7 +277,7 @@
               <div class="line_list ty02">
                 <ul>
                   <li>
-                    <div class="list_con02">
+                    <div class="list_con ty02">
                       <div class="cus">
                         <span class="name">김*파</span>
                         <div class="star_box">
@@ -293,7 +293,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="list_con02">
+                    <div class="list_con ty02">
                       <div class="cus">
                         <span class="name">김*파</span>
                         <div class="star_box">
@@ -309,7 +309,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="list_con02">
+                    <div class="list_con ty02">
                       <div class="cus">
                         <span class="name">김*파</span>
                         <div class="star_box">
@@ -338,7 +338,7 @@
               <div class="line_list ty02">
                 <ul>
                   <li>
-                    <a href="javascript:void(0);" class="list_con03">
+                    <a href="javascript:void(0);" class="list_con ty03">
                       <div class="list_lft">
                         <div class="cus">
                           <span class="name">올리브소스 님</span>
@@ -354,7 +354,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="list_con03">
+                    <a href="javascript:void(0);" class="list_con ty03">
                       <div class="list_lft">
                         <div class="cus">
                           <span class="name">올리브소스 님</span>
@@ -370,7 +370,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="list_con03">
+                    <a href="javascript:void(0);" class="list_con ty03">
                       <div class="list_lft">
                         <div class="cus">
                           <span class="name">올리브소스 님</span>
@@ -693,7 +693,7 @@
                   </dl>
                 </div>
 
-                <ul class="text_list_bull">
+                <ul class="text_list bull">
                   <li>SMS : 단문 Text형 문자 (한글 70자/영문 140자 이하)</li>
                   <li>LMS : 장문 Text형 문자 (한글 71자/영문 141자 이상)</li>
                   <li>MMS : 멀티미디어형 문자 (사진, 동영상)</li>
@@ -708,7 +708,7 @@
             </div>
             <div class="acd_panel">
               <v-expansion-panel-text>
-                <ul class="text_list_bull">
+                <ul class="text_list bull">
                   <li>데이터(상세)</li>
                 </ul>
               </v-expansion-panel-text>
@@ -720,7 +720,7 @@
             </div>
             <div class="acd_panel">
               <v-expansion-panel-text>
-                <ul class="text_list_bull">
+                <ul class="text_list bull">
                   <li>음성(상세)</li>
                 </ul>
               </v-expansion-panel-text>
@@ -732,7 +732,7 @@
             </div>
             <div class="acd_panel">
               <v-expansion-panel-text>
-                <ul class="text_list_bull">
+                <ul class="text_list bull">
                   <li>메시지(상세)</li>
                 </ul>
               </v-expansion-panel-text>
@@ -744,7 +744,7 @@
             </div>
             <div class="acd_panel">
               <v-expansion-panel-text>
-                <ul class="text_list_bull">
+                <ul class="text_list bull">
                   <li>유의사항</li>
                 </ul>
               </v-expansion-panel-text>

@@ -13,7 +13,7 @@
       <div class="section">
         <div class="box_gray">
           <strong>정보(EID, IMEI1, IMEI2) 확인 방법</strong>
-          <ul class="text_list_bull">
+          <ul class="text_list bull">
             <li>통화 키패드에서 [<span class="fc01">*#06#</span>] 입력하여 표시되는 화면을 캡처 <br><a href="javascript:void(0);" role="button" class="btn xsm c07 mgt8">자세히 보기</a></li>
           </ul>
         </div>
@@ -68,7 +68,7 @@
 
       <div class="section">
         <div class="box_gray">
-          <ul class="text_list_bull">
+          <ul class="text_list bull">
             <li>EID, IMEI 정보는 맨 마지막 자리를 제외한 숫자를 입력해주세요.</li>
             <li>입력한 단말정보가 불일치 할 경우 eSIM 개통이 되지 않습니다. 꼭 확인해주세요.</li>
           </ul>

@@ -172,25 +172,25 @@
                 <div class="line_list">
                   <ul>
                     <li>
-                      <a href="javascript:void(0);" class="list_con02">
+                      <a href="javascript:void(0);" class="list_con ty02">
                         <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
                         <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="list_con02">
+                      <a href="javascript:void(0);" class="list_con ty02">
                         <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
                         <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="list_con02">
+                      <a href="javascript:void(0);" class="list_con ty02">
                         <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
                         <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="list_con02">
+                      <a href="javascript:void(0);" class="list_con ty02">
                         <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
                         <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
                       </a>
@@ -375,7 +375,7 @@
             <strong class="fc01">eSIM을 활성화 하기 위해서는 <br>반드시 인터넷에 연결 되어 있어야 해요</strong>
           </div>
           <div class="box_gray mgt12">
-            <ul class="text_list_bull">
+            <ul class="text_list bull">
               <li>eSIM을 가입하면, 내 휴대폰 설정 메뉴 또는 QR코드를 스캔해서 eSIM을 활성화 후 바로 사용할 수 있어요.</li>
               <li>한개의 단말에 동일 명의의 번호만 사용 가능해요!</li>
             </ul>
@@ -611,17 +611,17 @@
         <div class="cir_icon_link">
           <ul>
             <li>
-              <a href="javascript:void(0);" class="facebook_icon_link"> <!-- onclick="popUp.close('#popup01', '#btn_popup01');" -->
+              <a href="javascript:void(0);" class="icon_link facebook"> <!-- onclick="popUp.close('#popup01', '#btn_popup01');" -->
                 <span>페이스북</span>
               </a>
             </li>
             <li>
-              <a href="javascript:void(0);" class="kakao_icon_link">
+              <a href="javascript:void(0);" class="icon_link kakao">
                 <span>카카오톡</span>
               </a>
             </li>
             <li>
-              <a href="javascript:void(0);" class="url_icon_link">
+              <a href="javascript:void(0);" class="icon_link url">
                 <span>URL 복사</span>
               </a>
             </li>
@@ -1331,7 +1331,7 @@
             <dl>
               <dt>초과 이용요금</dt>
               <dd>
-                <ul class="text_list_bull">
+                <ul class="text_list bull">
                   <li>음성통화(초) 1.98원, 영상통화(초) 3.3원</li>
                   <li>문자 SMS(건) 22원, LMS(건) 44원</li>
                   <li>MMS 사진/그림/배경음악(건) 220원</li>
@@ -1345,7 +1345,7 @@
             <dl>
               <dt>유의사항</dt>
               <dd>
-                <ul class="text_list_bull">
+                <ul class="text_list bull">
                   <li>
                     잔여 음성/문자/데이터는 이월불가<br>
                     ※ [예시] USIM LTE 35 고객이 2016년 5월에 데이터를 550MB사용 200MB 미사용 시 200MB 소멸 (6월로 이월 불가)
@@ -1596,7 +1596,7 @@
 					<div class="line_list">
 						<ul>
 							<li>
-								<div class="list_con02">
+								<div class="list_con ty02">
 									<div class="cus">
 										<span class="name">김*파</span>
 										<div class="star_box">
@@ -1612,7 +1612,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="list_con02">
+								<div class="list_con ty02">
 									<div class="cus">
 										<span class="name">김*파</span>
 										<div class="star_box">
@@ -1628,7 +1628,7 @@
 								</div>
 							</li>
 							<li>
-									<div class="list_con02">
+									<div class="list_con ty02">
 									<div class="cus">
 										<span class="name">김*파</span>
 										<div class="star_box">
@@ -1664,7 +1664,7 @@
 					<div class="line_list">
 						<ul>
 								<li>
-									<a href="javascript:void(0);" class="list_con03">
+									<a href="javascript:void(0);" class="list_con ty03">
 										<div class="list_lft">
 											<div class="cus">
 												<span class="name">올리브소스 님</span>
@@ -1680,7 +1680,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="javascript:void(0);" class="list_con03">
+									<a href="javascript:void(0);" class="list_con ty03">
 										<div class="list_lft">
 											<div class="cus">
 												<span class="name">올리브소스 님</span>
@@ -1696,7 +1696,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="javascript:void(0);" class="list_con03">
+									<a href="javascript:void(0);" class="list_con ty03">
 										<div class="list_lft">
 											<div class="cus">
 												<span class="name">올리브소스 님</span>
@@ -2494,7 +2494,7 @@
           
         <div class="section">
           <div class="box_gray">
-            <ul class="text_list_bull">
+            <ul class="text_list bull">
               <li>eSIM 개통을 위해서는 가지고 계신 단말기의 EID 및 IMEI 정보 입력이 필요합니다.</li>
               <li>이미지 업로드 시 각 항목이 자동으로 입력됩니다.</li>
             </ul>

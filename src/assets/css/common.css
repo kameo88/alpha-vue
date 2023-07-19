@@ -372,41 +372,6 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .box.ty02 {padding:2rem; border-radius:1.2rem; background:#fff4f6;}
 .box_yellow {padding:2rem; border-radius:1.2rem; background:#FEFAF3;}
 
-/* table */
-.table {font-size:1.2rem; color:#000; line-height:1.9rem; border-top:1px solid #000;/*  border-bottom:1px solid #ddd; */}
-.table thead th {padding:1.2rem 0.4rem; background-color:#f1f3f4; color:#000;}
-.table th,
-.table td {padding:1.6rem 0.6rem; border-bottom:1px solid #ddd; font-weight:normal; text-align:center;}
-.table.ty02 td {padding:2rem 0.8rem;}
-.table.ty03 {font-size:1.3rem;}
-.table.ty03 tbody th {color:#717171; text-align:left;}
-.table.ty03 td {padding:2rem 0.8rem; text-align:left;}
-
-.table table .tb_stat{color:#717171; text-align:center; vertical-align:middle;}
-/*.table table .ann_fee{font-size:1.6rem; text-align:right;}
-.table table.tb_center td,
-.table table.tb_center th {text-align: center;}
-.table table.nrw_st th,
-.table table.nrw_st td{font-size:1.2rem; padding:1.6rem 0.6rem;}
-.table table.nrw_st thead th{padding:1.2rem 0.4rem;}
-.table table.nrw_st_ty02 thead th{font-size:1.2rem; padding:1.2rem 0.4rem;}
-.table table.nrw_st_ty02 tbody td{font-size:1.2rem;}
-.table table dl dt{color:#777; margin-top:1.3rem;}
-.table table dl dt > b{color:#909090;}
-.table table dl dt:first-child{margin-top:0;}
- .table table .th_ico{position:relative; padding:2rem 0.8rem 2rem 2rem;}
-.table table .th_ico::before{content:""; position:absolute; left:0; top:2rem; width:1.6rem; height:1.6rem; background:no-repeat center/1.6rem;}
-.table table .tb_right {text-align:right;}
-tr:nth-child(1) .th_ico::before{background-image:url(../images/common/ico_loca.png);}
-tr:nth-child(2) .th_ico::before{background-image:url(../images/common/ico_phone.png);}
-tr:nth-child(3) .th_ico::before{background-image:url(../images/common/ico_clock.png);}
-tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.png);}
-
-.table_ty02 {padding:0;}
-.table_ty02 th, 
-.table_ty02 td{padding:2rem 0.8rem; border-bottom:1px solid #ddd;}
-.table_ty02 tbody tr:last-child th, 
-.table_ty02 tbody tr:last-child td{border-bottom:0;} */
 
 
 /* *** pop layer *** */
