@@ -44,6 +44,14 @@ ol.list.decimal li {list-style:decimal; list-style-position:inside; margin-top:2
 .info_pdf {margin-top:3.2rem;}
 .info_pdf .box_gray a {margin:.8rem 0 0 .7rem ;}
 
+.form_item.auth_num .v-field__clearable {margin-right:11rem;}
+/* .form_item.auth_num .btn_del {right:12.5rem;} */
+.form_item.auth_num .timer {position:absolute; top:50%; right:1.7rem; font-size:0; line-height:2.2rem; transform:translateY(-50%);}
+.form_item.auth_num .timer * {display:inline-block; font-size:1.3rem; vertical-align:middle;}
+.form_item.auth_num .timer span {color:#fc6969;}
+.form_item.auth_num .timer button {margin-left:0.8rem; color:#909090; text-decoration:underline;}
+.form_item.auth_num .input:disabled ~ .timer span {color:#bbb;}
+
 .pc ol.list.decimal {display:flex; flex-wrap:wrap;}
 .pc ol.list.decimal li {width:calc(50% - 1.5rem);}
 .pc .terms .list .link {text-decoration:none;}

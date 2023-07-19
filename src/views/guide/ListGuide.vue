@@ -153,7 +153,7 @@
             <td class="date"></td>
             <td>06.21 디자인 적용된 form &gt; form etc 페이지 분리</td>
           </tr>
-          <!-- <tr class="ing">
+          <tr class="ing">
             <td></td>
             <td>form</td>
             <td></td>
@@ -164,7 +164,7 @@
             <td class="marker"></td>
             <td class="date"></td>
             <td>vuetify form</td>
-          </tr> -->
+          </tr>
           <tr class="end">
             <td></td>
             <td>form etc</td>
