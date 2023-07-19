@@ -2289,9 +2289,9 @@
       </div>
       <div class="pop_content">
         <div class="section">
-          <div class="usage_result">
-            <p class="speech_gray">1-2시간 이상 영상을 시청하고, SNS 등 사용량이 많은 편이시군요</p>
-            <p class="speech_darkblue">1-2시간 정도 통화를 하시네요!</p>
+          <div class="usage_wrap result">
+            <p class="speech gray">1-2시간 이상 영상을 시청하고, SNS 등 사용량이 많은 편이시군요</p>
+            <p class="speech darkblue">1-2시간 정도 통화를 하시네요!</p>
             <compLottie name="plan04" />
           </div>
         </div>
@@ -2351,8 +2351,8 @@
       </div>
       <div class="pop_content">
           <div class="section">
-            <div class="usage_no">
-              <p class="speech_darkblue">아쉽게도 고객님에게 맞는 요금제를 찾지 못했어요</p>
+            <div class="usage_wrap no">
+              <p class="speech darkblue">아쉽게도 고객님에게 맞는 요금제를 찾지 못했어요</p>
               <compLottie name="plan01" />
             </div>
           </div>

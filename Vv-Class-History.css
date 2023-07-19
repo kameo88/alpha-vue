@@ -57,12 +57,36 @@ select_btn	==>	btn_select
 
 
 >> *= 선택자
-[class*="usage_"]						==> .usage_result, .usage_no
+[class*="usage_"] (usage_result, usage_no)
+
+usage_result		==> usage_wrap result
+usage_no			==> usage_wrap no
+speech_gray			==> speech gray
+speech_darkblue		==> speech darkblue
+
+
+
+
+
 [class*="usage_"] [class*="speech_"]	==>	.speech_gray, .speech_darkblue
+
+
+
 .tit [class*="bag_clr_"]				==> .tit .bag_clr_c06
-.eval_list .eval_item [class*="desc_s"]
-.radio_ty02.ty02 .text_box .desc [class*="bag_"]
+
+.eval_list .eval_item [class*="desc_s"]	==> .eval_list .eval_item .eval_desc > span
+
+.radio_ty02.ty02 .text_box .desc [class*="bag_"]	==> .radio_ty02.ty02 .text_box .desc .bag_clr_c06
+
 .cir_icon_link [class *="_icon_link"]
+	=>
+	.cir_icon_link .facebook_icon_link,
+	.cir_icon_link .kakao_icon_link,
+	.cir_icon_link .url_icon_link,
+	.cir_icon_link .naver_icon_link,
+	.cir_icon_link .youtube_icon_link,
+	.cir_icon_link .blog_icon_link,
+	.cir_icon_link .insta_icon_link{}
 
 [class^="list_con"] .bo_btn_list [class*="bo_btn_"]
 

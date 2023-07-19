@@ -477,26 +477,25 @@
 
 
 
-.usage_result,
-.usage_no{position:relative; max-width:30rem; margin:2rem auto 2.8rem;}
-.usage_result .lottie-animation-container,
-.usage_no .lottie-animation-container {position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:23.2rem; height:16rem;}
-.speech_gray,
-.speech_darkblue{position:relative; font-size:1.4rem; display:inline-block; line-height:2rem; color:#fff; max-width:23rem; border-radius:1.2rem; padding:1.2rem 2rem; background-color:#73819B; margin-right:7rem;}
-.speech_darkblue{background-color:#273550; margin:2rem 0 0 8.5rem;}
-.speech_gray::after,
-.speech_darkblue::after{content:""; position:absolute; bottom:-0.5rem; left:50%; display:inline-block; height:0; width:0; border-top:5px solid #73819b; border-left:4px solid transparent; border-right:4px solid transparent; transform:translateX(-50%);}
-.speech_darkblue::after{border-top:5px solid #273550;}
+/* 내게 맞는 요금제 찾기 > STEP6_추천 요금제 보기 */
+.usage_wrap{position:relative; max-width:30rem; margin:2rem auto 2.8rem;}
+.usage_wrap .lottie-animation-container{position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:23.2rem; height:16rem;}
 
+.usage_wrap .speech{position:relative; font-size:1.4rem; display:inline-block; line-height:2rem; color:#fff; max-width:23rem; border-radius:1.2rem; padding:1.2rem 2rem; background:#73819B; margin:0 7rem 0 0;}
+.usage_wrap .speech::after{content:""; position:absolute; bottom:-0.5rem; left:50%; display:inline-block; height:0; width:0; border-left:4px solid transparent; border-right:4px solid transparent; transform:translateX(-50%);}
+.usage_wrap .speech.gray{background:#73819B; margin:0 7rem 0 0;}
+.usage_wrap .speech.darkblue{background:#273550; margin:2rem 0 0 8.5rem;}
+.usage_wrap .speech.gray::after{border-top:5px solid #73819b;}
+.usage_wrap .speech.darkblue::after{border-top:5px solid #273550;}
 
-.usage_result {padding-bottom:19.4rem;}
-.usage_result .speech_gray::after{left:71%;}
-.usage_result .speech_darkblue::after{left:31%;}
+.usage_wrap.result{padding-bottom:19.4rem;}
+.usage_wrap.result .speech.gray::after{left:71%;}
+.usage_wrap.result .speech.darkblue::after{left:31%;}
 
-.usage_no {padding-bottom:22.4rem;}
-.usage_no .lottie-animation-container{width:24rem; height:20rem;}
-.usage_no .speech_darkblue{display:block; margin:0 auto;}
-.usage_no .speech_darkblue::after{left:50%}
+.usage_wrap.no{padding-bottom:22.4rem;}
+.usage_wrap.no .lottie-animation-container{width:24rem; height:20rem;}
+.usage_wrap.no .speech.darkblue{display:block; margin:0 auto;}
+.usage_wrap.no .speech.darkblue::after{left:50%}
 
 
 
@@ -938,7 +937,15 @@
 .eval_list .eval_item .eval_star{text-align:center;}
 .eval_list .eval_item .eval_star{margin-bottom:1.2rem;}
 .eval_list .eval_item .tit02{margin-bottom:2rem;}
-.eval_list .eval_item [class*="desc_s"]{font-size:1.3rem; color:#909090; display:none;}
+.eval_list .eval_item .eval_desc > span{font-size:1.3rem; color:#909090; display:none;}
+/* 
+    desc_s00
+    desc_s01
+    desc_s02
+    desc_s03
+    desc_s04
+    desc_s05
+*/
 
 
 /* 회원가입 완료 */
