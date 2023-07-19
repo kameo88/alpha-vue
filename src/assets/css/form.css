@@ -137,7 +137,7 @@ input[type="checkbox"] + label {cursor:pointer;}
 .radio_ty02.ty02 > input:checked + label {padding-left:3.14rem;}
 .radio_ty02.ty02 > label img {height:8rem; margin-left:0.8rem;}
 .radio_ty02.ty02 .text_box .desc {font-size:1.9rem;}
-.radio_ty02.ty02 .text_box .desc [class*="bag_"]{vertical-align:middle; margin-top:-0.4rem;}
+.radio_ty02.ty02 .text_box .desc .bag.clr{vertical-align:middle; margin-top:-0.4rem;}
 .radio_ty02.ty02 .text_box .info {display:inline-block; line-height:1.9rem; margin-top:0.8rem;}
 
 
@@ -353,20 +353,6 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 
 
 /* ***** flag and badge ***** */
-
-/* text badge */
-[class^="bag_clr_"]{font-size:1rem; line-height:1rem; display:inline-block; border-radius:10rem; padding:0.3rem 0.6rem;}
-.bag_clr_c01{color:#fc6969; background-color:#fff4f6;}
-.bag_clr_c02{color:#73819b; background-color:#f0f4fa;}
-.bag_clr_c03{color:#59ac80; background-color:#ecfaec;}
-.bag_clr_c04{color:#ffb100; background-color:#fff7e3;}
-.bag_clr_c05{color:#9a83c1; background-color: #f0eafa;}
-.bag_clr_c06{color:#fff; background-color:#fc6969;}
-.bag_clr_c07{color:#909090; background-color:#f8f8f8;}
-.bag_clr_c08{color:#909090; background-color:#fff;}
-.bag_clr_c09{color:#6485DD; background-color:#ebf3ff;}
-
-
 /* btn badge */
 .btn.bag {position:relative; z-index:1; font-size:1.2rem; color:#909090; line-height:1.3rem; padding:0.6rem 0.8rem 0.5rem 2.2rem; background:#f8f8f8; border:1px solid transparent; border-radius:10rem;}
 .btn.bag::before{position:absolute; left:0.8rem; top:50%; transform:translateY(-50%); content:""; display:inline-block; width:1.2rem; height:1.2rem;}
@@ -377,22 +363,27 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 .btn.bag.c01.on::before{background:url(../images/common/ico_wish_active.png) no-repeat center / 1.2rem 1.2rem;}
 .btn.bag.c02.on::before{background:url(../images/common/ico_compare_active.png) no-repeat center / 1.2rem 1.2rem;}
 
+/* text badge */
+.bag.clr{font-size:1rem; line-height:1rem; display:inline-block; border-radius:10rem; padding:0.3rem 0.6rem;}
+.bag.clr ~ .bag.clr {margin-left:0.2rem;}
+.bag.clr.c01{color:#fc6969; background-color:#fff4f6;}
+.bag.clr.c02{color:#73819b; background-color:#f0f4fa;}
+.bag.clr.c03{color:#59ac80; background-color:#ecfaec;}
+.bag.clr.c04{color:#ffb100; background-color:#fff7e3;}
+.bag.clr.c05{color:#9a83c1; background-color: #f0eafa;}
+.bag.clr.c06{color:#fff; background-color:#fc6969;}
+.bag.clr.c07{color:#909090; background-color:#f8f8f8;}
+.bag.clr.c08{color:#909090; background-color:#fff;}
+.bag.clr.c09{color:#6485DD; background-color:#ebf3ff;}
+
 /* event badge */
-/* [class^="bag_evt_"] ~ [class^="bag_evt_"]{margin-left:0.4rem;} */
-.bag_evt_d,
-.bag_evt_ty01,
-.bag_evt_ty02,
-.bag_evt_ty03,
-.bag_evt_ty04{font-size:1rem; font-weight:700; color:#fff; line-height:1.2rem; border-radius:0.4rem; padding:0.2rem 0.4rem; float:left;}
-.bag_evt_ty01,
-.bag_evt_ty02,
-.bag_evt_ty03,
-.bag_evt_ty04{margin-left:0.4rem;}
-.bag_evt_d{background-color:#000;}
-.bag_evt_ty01{background-color:#33c979;}
-.bag_evt_ty02{background-color:#fc6969;}
-.bag_evt_ty03{background-color:#4369ee;}
-.bag_evt_ty04{background-color:#ffb100;}
+.bag.evt{font-size:1rem; font-weight:700; color:#fff; line-height:1.2rem; border-radius:0.4rem; padding:0.2rem 0.4rem; float:left;}
+.bag.evt ~ .bag.evt{margin-left:0.4rem;}
+.bag.evt.dday{background-color:#000;}
+.bag.evt.ty01{background-color:#33c979;}
+.bag.evt.ty02{background-color:#fc6969;}
+.bag.evt.ty03{background-color:#4369ee;}
+.bag.evt.ty04{background-color:#ffb100;}
 
 
 /* ***** tag_list ***** */
@@ -760,9 +751,34 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 
 
 /* ***** circle icon link ***** */
-.cir_icon_link [class *="_icon_link"]{text-align:center; font-size:1.2rem; line-height:1.8rem; height:100%; display:inline-block;}
+/* .cir_icon_link [class *="_icon_link"]{text-align:center; font-size:1.2rem; line-height:1.8rem; height:100%; display:inline-block;}
 .cir_icon_link [class *="_icon_link"]::before{content:"";width:6rem; height:6rem; border-radius:10rem; overflow:hidden; display:inline-block;}
-.cir_icon_link [class *="_icon_link"] > span{font-size:1.2rem; line-height:1.5rem; color:#000; display:inline-block; width:100%; margin-top:0.8rem;}
+.cir_icon_link [class *="_icon_link"] > span{font-size:1.2rem; line-height:1.5rem; color:#000; display:inline-block; width:100%; margin-top:0.8rem;} */
+
+.cir_icon_link .facebook_icon_link,
+.cir_icon_link .kakao_icon_link,
+.cir_icon_link .url_icon_link,
+.cir_icon_link .naver_icon_link,
+.cir_icon_link .youtube_icon_link,
+.cir_icon_link .blog_icon_link,
+.cir_icon_link .insta_icon_link{text-align:center; font-size:1.2rem; line-height:1.8rem; height:100%; display:inline-block;}
+
+.cir_icon_link .facebook_icon_link::before,
+.cir_icon_link .kakao_icon_link::before,
+.cir_icon_link .url_icon_link::before,
+.cir_icon_link .naver_icon_link::before,
+.cir_icon_link .youtube_icon_link::before,
+.cir_icon_link .blog_icon_link::before,
+.cir_icon_link .insta_icon_link::before{content:"";width:6rem; height:6rem; border-radius:10rem; overflow:hidden; display:inline-block;}
+
+.cir_icon_link .facebook_icon_link > span,
+.cir_icon_link .kakao_icon_link > span,
+.cir_icon_link .url_icon_link > span,
+.cir_icon_link .naver_icon_link > span,
+.cir_icon_link .youtube_icon_link > span,
+.cir_icon_link .blog_icon_link > span,
+.cir_icon_link .insta_icon_link > span{font-size:1.2rem; line-height:1.5rem; color:#000; display:inline-block; width:100%; margin-top:0.8rem;}
+
 .cir_icon_link .facebook_icon_link::before {background:url(../images/common/img_facebook_cir.png) no-repeat center / 100%;}
 .cir_icon_link .kakao_icon_link::before {background:url(../images/common/img_kakao_cir.png) no-repeat center / 100%;}
 .cir_icon_link .url_icon_link::before {background:url(../images/common/img_url_cir.png) no-repeat center / 100%;}
@@ -770,6 +786,7 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/common/ico_cale.p
 .cir_icon_link .blog_icon_link::before {background:url(../images/common/img_blog_cir.png) no-repeat center / 100%;}
 .cir_icon_link .insta_icon_link::before {background:url(../images/common/img_insta_cir.png) no-repeat center / 100%;}
 .cir_icon_link .naver_icon_link::before {background:url(../images/common/img_naver_cir.png) no-repeat center / 100%;}
+
 .cir_icon_link > ul {display:flex; justify-content:center; max-width:28rem; margin: 0 auto;}
 .cir_icon_link > ul > li {margin-left:2.4rem;}
 .cir_icon_link > ul > li:first-child {margin-left:0;}

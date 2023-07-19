@@ -244,7 +244,9 @@
 
 
 /* ** 공지사항 ** */
-.tit .bag_clr_c06{margin-left:0.3rem; vertical-align:text-top; font-weight:500;}
+.tit .btn.clr{margin-left:0.3rem; vertical-align:text-top; font-weight:500;}
+
+
 
 /* ** 자주하는 질문 ** */
 .qna_tit{position:relative; display:block; padding:2rem 3rem 2rem 2.5rem;}

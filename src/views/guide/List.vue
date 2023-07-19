@@ -184,8 +184,8 @@
                     </div>
                     <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
                     <div class="bag_list">
-                      <span class="bag_clr_c02">유심판매</span>
-                      <span class="bag_clr_c03">바로픽업</span>
+                      <span class="bag clr c02">유심판매</span>
+                      <span class="bag clr c03">바로픽업</span>
                     </div>
                   </div>
                   <div class="bo_btn_list">

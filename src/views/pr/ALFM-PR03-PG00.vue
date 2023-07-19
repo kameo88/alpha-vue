@@ -16,7 +16,7 @@
                   <span class="text_box">
                     <span class="desc">
                       번호이동
-                      <span class="bag_clr_c06">혜택</span>
+                      <span class="bag clr c06">혜택</span>
                     </span>
                     <span class="info">
                       지금 쓰고 있는 내 번호 그대로!

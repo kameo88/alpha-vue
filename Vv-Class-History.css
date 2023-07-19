@@ -22,6 +22,12 @@ tooltip_btn		==> btn_tooltip
 acc_btn			==> btn_acc
 
 
+>> badge - class 변경
+bag_btn_c01		==> btn bag c01 ~ c02
+bag_clr_c01		==> bag clr c01 ~ c09
+bag_evt_d		==> bag evt dday
+bag_evt_ty01	==> bag evt ty01 ~ ty04
+
 
 >> form - class 변경
 fali_m		==>	error
@@ -56,9 +62,11 @@ select_btn	==>	btn_select
 
 
 
->> *= 선택자
-[class*="usage_"] (usage_result, usage_no)
 
+
+>> *= 선택자
+
+>> [class*="usage_"] (usage_result, usage_no)
 usage_result		==> usage_wrap result
 usage_no			==> usage_wrap no
 speech_gray			==> speech gray
@@ -68,15 +76,9 @@ speech_darkblue		==> speech darkblue
 
 
 
-[class*="usage_"] [class*="speech_"]	==>	.speech_gray, .speech_darkblue
-
-
-
-.tit [class*="bag_clr_"]				==> .tit .bag_clr_c06
 
 .eval_list .eval_item [class*="desc_s"]	==> .eval_list .eval_item .eval_desc > span
 
-.radio_ty02.ty02 .text_box .desc [class*="bag_"]	==> .radio_ty02.ty02 .text_box .desc .bag_clr_c06
 
 .cir_icon_link [class *="_icon_link"]
 	=>
@@ -134,14 +136,7 @@ speech_darkblue		==> speech darkblue
 	==>
 	.table_ty02
 
-[class^="bag_clr_"]
-	==>
-	.bag_clr_c01 부터 .bag_clr_c09 까지
 
-[class^="bag_evt_"]
-	==>
-	.bag_evt_d
-	.bag_evt_ty01 부터 .bag_evt_ty04 까지
 
 .shop_none [class^="no_dt_"]
 	==>

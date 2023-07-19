@@ -267,8 +267,8 @@
                   <div class="thum_img">
                     <div class="thum_top">
                       <div class="bag_lft">
-                        <div class="bag_evt_d"><b>D-1</b></div>
-                        <div class="bag_evt_ty01"><b>이번달 이벤트</b></div>
+                        <div class="bag evt dday"><b>D-1</b></div>
+                        <div class="bag evt ty01"><b>이번달 이벤트</b></div>
                       </div>
                       <div class="bag_rit">
                         <img src="@/assets/images/data/logo_s_partner21.png" alt="tplus">
@@ -290,8 +290,8 @@
                   <div class="thum_img">
                     <div class="thum_top">
                       <div class="bag_lft">
-                        <div class="bag_evt_d"><b>D-5</b></div>
-                        <div class="bag_evt_ty02"><b>친구초대</b></div>
+                        <div class="bag evt dday"><b>D-5</b></div>
+                        <div class="bag evt ty02"><b>친구초대</b></div>
                       </div>
                       <div class="bag_rit">
                         <img src="@/assets/images/data/logo_s_alpha_w.png" alt="tplus">
@@ -314,8 +314,8 @@
                   <div class="thum_img">
                     <div class="thum_top">
                       <div class="bag_lft">
-                        <div class="bag_evt_d"><b>D-24</b></div>
-                        <div class="bag_evt_ty03"><b>제휴 이벤트</b></div>
+                        <div class="bag evt dday"><b>D-24</b></div>
+                        <div class="bag evt ty03"><b>제휴 이벤트</b></div>
                       </div>
                       <div class="bag_rit">
                         <img src="@/assets/images/data/logo_s_alpha_w.png" alt="tplus">
@@ -338,8 +338,8 @@
                   <div class="thum_img">
                     <div class="thum_top">
                       <div class="bag_lft">
-                        <div class="bag_evt_d"><b>D-24</b></div>
-                        <div class="bag_evt_ty04"><b>제휴카드</b></div>
+                        <div class="bag evt dday"><b>D-24</b></div>
+                        <div class="bag evt ty04"><b>제휴카드</b></div>
                       </div>
                       <div class="bag_rit">
                         <img src="@/assets/images/data/logo_s_alpha_w.png" alt="tplus">
@@ -363,8 +363,8 @@
                   <div class="thum_img">
                     <div class="thum_top">
                       <div class="bag_lft">
-                        <div class="bag_evt_d"><b>D-24</b></div>
-                        <div class="bag_evt_ty04"><b>제휴카드</b></div>
+                        <div class="bag evt dday"><b>D-24</b></div>
+                        <div class="bag evt ty04"><b>제휴카드</b></div>
                       </div>
                       <div class="bag_rit">
                         <img src="@/assets/images/data/logo_s_alpha_w.png" alt="tplus">
