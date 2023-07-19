@@ -10,7 +10,7 @@
         <div class="item_list radio_active">
           <ul>
             <li>
-              <div class="radio_ty02 ty02">
+              <div class="radio_item ty05">
                 <input type="radio" id="step01_01" name="step01" @change="next = true">
                 <label for="step01_01">
                   <span class="text_box">
@@ -27,7 +27,7 @@
               </div>
             </li>
             <li>
-              <div class="radio_ty02 ty02">
+              <div class="radio_item ty05">
                 <input type="radio" id="step01_02" name="step01" @change="next = true">
                 <label for="step01_02">
                   <span class="text_box">

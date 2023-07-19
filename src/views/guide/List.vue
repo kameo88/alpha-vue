@@ -256,10 +256,10 @@
         <div class="section">
           <h3 class="tit02">None Data</h3>
 
-          <div class="no_dt_sch">
+          <div class="no_dt sch">
             <p><span>날씨</span>에 대한 검색 결과가 없습니다.</p>
           </div>
-          <div class="no_dt_his">
+          <div class="no_dt his">
             <strong>
               지금 바로 셀프개통하고 <br>
               사용자 평점·후기를 남겨보세요!

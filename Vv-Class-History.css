@@ -78,6 +78,7 @@ credit_icon_link	==> icon_link credit
 		.error
 
 
+
 >> tab 관련
 - class 'tab_list' 과 'tabpanel_wrap' 를 'section' 으로 wrapping 함
 - class 'tabpanel_wrap' 하단의 'section' ==> 'panel_cnt' 로 변경
@@ -89,7 +90,6 @@ credit_icon_link	==> icon_link credit
 table
 table_02	==> table ty02
 table_03	==> table ty03
-
 
 
 >> [class^="list_con"] - class 변경
@@ -113,64 +113,24 @@ text_list_bull		==>	text_list bull
 text_list_dash		==>	text_list dash
 
 
+>> [class^="no_dt_"] - class 변경
+no_dt_sch			==> no_dt sch
+no_dt_his			==> no_dt his
 
 
+>> radio 관련 [class^='radio_ty'] - class 변경
+radio_ty00				==> radio_item ty01
+radio_ty01				==> radio_item ty02
+radio_ty01.radio_ty02	==> radio_item ty03
+radio_ty02				==> radio_item ty04
+radio_ty02.ty02			==> radio_item ty05
+radio_ty03				==> radio_item ty06
+radio_ty04				==> radio_item ty07
 
 
-
-
-
-
-.radio_ty03 > label[class^='img_os']::before
-	==>
-	.radio_ty03 > label.img_os01::before,
-	.radio_ty03 > label.img_os02::before
-
-.radio_ty04 > label[class^='img_pay']::before
-	==>
-	.radio_ty04 > label.img_pay01::before,
-	.radio_ty04 > label.img_pay02::before,
-	.radio_ty04 > label.img_pay03::before,
-	.radio_ty04 > label.img_pay04::before,
-	.radio_ty04 > label.img_pay05::before
-
-
-
-
-
-
-
-
-
-.shop_none [class^="no_dt_"]
-	==>
-	.shop_none .no_dt_sch
-
-
-[class^="list_con"]
-	==>
-
-
-.radio_active .on [class^='radio_ty']
-	==>
-
-
-[class^="no_dt_"]
-	==>
-
-
-[class^="bag_"] img
-	==>
-	.bag_rit img,
-	.bag_git img
-
-.my_box [class^="btn_sS_"]
-	==>
-	.my_box .btn
-
-[class^='radio_ty']
-
-.star_box [class^=star]
-
-[class^="bag_"]
-.my_box [class^="btn_sS_"]
+>> label[class^='img_pay'] - class 변경
+img_pay01			==> img_pay ty01
+img_pay02			==> img_pay ty02
+img_pay03			==> img_pay ty03
+img_pay04			==> img_pay ty04
+img_pay05			==> img_pay ty05

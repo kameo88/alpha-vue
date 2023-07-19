@@ -10,7 +10,7 @@
         <div class="item_list radio_active">
           <ul>
             <li>
-              <div class="radio_ty02 ty02">
+              <div class="radio_item ty05">
                 <input type="radio" id="step03_01" name="step03" value="step03_01" v-model="checked">
                 <label for="step03_01">
                   <span class="text_box">
@@ -26,7 +26,7 @@
               </div>
             </li>
             <li>
-              <div class="radio_ty02 ty02">
+              <div class="radio_item ty05">
                 <input type="radio" id="step03_02" name="step03" value="step03_02" v-model="checked">
                 <label for="step03_02">
                   <span class="text_box">

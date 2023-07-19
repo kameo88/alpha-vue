@@ -7,6 +7,7 @@
       <div class="page_info">form etc</div>
 
       <div class="section">
+        <h3 class="tit02">select_list02</h3>
         <ul class="select_list02" role="listbox">
           <li role="none" class="on">
             <button type="button" role="option" aria-selected="true" data-option="전체" @click="$selectList.click">
@@ -195,59 +196,121 @@
         </ul>
       </div> <!-- // section -->
 
+
+
       <div class="section">
-        <div class="radio_ty00">
-          <input type="radio" id="radio02_01" name="radio02">
-          <label for="radio02_01">radio02_01</label>
+        <h3 class="tit02">radio_item ty01</h3>
+        <div class="radio_item ty01">
+          <input type="radio" id="radio01_01" name="radio01">
+          <label for="radio01_01">radio01_01</label>
         </div>
-        <div class="radio_ty00">
-          <input type="radio" id="radio02_02" name="radio02" checked>
-          <label for="radio02_02">radio02_02</label>
+        <div class="radio_item ty01">
+          <input type="radio" id="radio01_02" name="radio01" checked>
+          <label for="radio01_02">radio01_02</label>
         </div>
-        <div class="radio_ty00">
-          <input type="radio" id="radio02_03" name="radio02" disabled>
-          <label for="radio02_03">radio02_03</label>
+        <div class="radio_item ty01">
+          <input type="radio" id="radio01_03" name="radio01" disabled>
+          <label for="radio01_03">radio01_03</label>
         </div>
-        <div class="radio_ty00">
-          <input type="radio" id="radio02_04" name="radio02" disabled>
-          <label for="radio02_04">radio02_04</label>
+        <div class="radio_item ty01">
+          <input type="radio" id="radio01_04" name="radio01" disabled>
+          <label for="radio01_04">radio01_04</label>
         </div>
+      </div><!-- .section -->
 
-        <br><br>
 
+      <div class="section">
+        <div class="tit_wrap">
+          <h3 class="tit02">radio_item ty01</h3>
+          <span>item_list02 radio_active</span>
+        </div>
+        <div class="item_list02 radio_active">
+          <ul>
+            <li>
+              <div class="radio_item ty01">
+                <input type="radio" id="ty01_radio_01" name="ty01_radio">
+                <label for="ty01_radio_01">전체</label>
+              </div>
+            </li>
+            <li>
+              <div class="radio_item ty01">
+                <input type="radio" id="ty01_radio_02" name="ty01_radio">
+                <label for="ty01_radio_02">데이터 무제한</label>
+              </div>
+            </li>
+            <li>
+              <div class="radio_item ty01">
+                <input type="radio" id="ty01_radio_03" name="ty01_radio">
+                <label for="ty01_radio_03">1GB 미만</label>
+              </div>
+            </li>
+            <li>
+              <div class="radio_item ty01">
+                <input type="radio" id="ty01_radio_04" name="ty01_radio">
+                <label for="ty01_radio_04">1~5GB</label>
+              </div>
+            </li>
+            <li>
+              <div class="radio_item ty01">
+                <input type="radio" id="ty01_radio_05" name="ty01_radio">
+                <label for="ty01_radio_05">5~15GB</label>
+              </div>
+            </li>
+            <li>
+              <div class="radio_item ty01">
+                <input type="radio" id="ty01_radio_06" name="ty01_radio">
+                <label for="ty01_radio_06">15~50GB</label>
+              </div>
+            </li>
+            <li>
+              <div class="radio_item ty01">
+                <input type="radio" id="ty01_radio_07" name="ty01_radio">
+                <label for="ty01_radio_07">50~100GB</label>
+              </div>
+            </li>
+          </ul>
+        </div> <!-- // item_list03 -->
+      </div><!-- .section -->
+
+
+      <div class="section">
+        <div class="tit_wrap">
+          <h3 class="tit02">radio_item ty02</h3>
+          <span>item_list radio_active</span>
+        </div>
         <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
           <ul>
             <li>
-              <div class="radio_ty01">
-                <input type="radio" id="ty_list_01_01" name="ty_list_01">
-                <label for="ty_list_01_01">
+              <div class="radio_item ty02">
+                <input type="radio" id="ty02_radio_01" name="ty02_radio">
+                <label for="ty02_radio_01">
                   <img src="@/assets/images/component/img_delivery.png" alt="">
                   바로배송/택배
                 </label>
               </div>
             </li>
             <li>
-              <div class="radio_ty01">
-                <input type="radio" id="ty_list_01_02" name="ty_list_01">
-                <label for="ty_list_01_02">
+              <div class="radio_item ty02">
+                <input type="radio" id="ty02_radio_02" name="ty02_radio">
+                <label for="ty02_radio_02">
                   <img src="@/assets/images/component/img_gs25.png" alt="">
                   GS25 바로픽업
                 </label>
               </div>
             </li>
             <li>
-              <div class="radio_ty01">
-                <input type="radio" id="ty_list_01_03" name="ty_list_01">
-                <label for="ty_list_01_03">
+              <div class="radio_item ty02">
+                <input type="radio" id="ty02_radio_03" name="ty02_radio">
+                <label for="ty02_radio_03">
                   <img src="@/assets/images/component/img_seven_eleven.png" alt="">
                   세븐일레븐 바로픽업
                 </label>
               </div>
             </li>
             <li>
-              <div class="radio_ty01">
-                <input type="radio" id="ty_list_01_04" name="ty_list_01">
-                <label for="ty_list_01_04">
+              <div class="radio_item ty02">
+                <input type="radio" id="ty02_radio_04" name="ty02_radio">
+                <label for="ty02_radio_04">
                   <img src="@/assets/images/component/img_emart.png" alt="">
                   이마트24 바로픽업
                 </label>
@@ -255,34 +318,116 @@
             </li>
           </ul>
         </div> <!-- // item_list -->
+      </div><!-- .section -->
 
-        <br><br>
 
+      <div class="section">
+        <div class="tit_wrap">
+          <h3 class="tit02">radio_item ty02</h3>
+          <span>item_list radio_active</span>
+        </div>
         <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
           <ul>
             <li>
-              <div class="radio_ty01">
-                <input type="radio" id="ty_list_02_01" name="ty_list_02">
-                <label for="ty_list_02_01">필요해요!</label>
+              <div class="radio_item ty02">
+                <input type="radio" id="ty02_radio02_01" name="ty02_radio02">
+                <label for="ty02_radio02_01">필요해요!</label>
               </div>
             </li>
             <li>
-              <div class="radio_ty01">
-                <input type="radio" id="ty_list_02_02" name="ty_list_02">
-                <label for="ty_list_02_02">필요하지 않아요</label>
+              <div class="radio_item ty02">
+                <input type="radio" id="ty02_radio02_02" name="ty02_radio02">
+                <label for="ty02_radio02_02">필요하지 않아요</label>
               </div>
             </li>
           </ul>
         </div> <!-- // item_list -->
+      </div><!-- .section -->
 
-        <br><br>
 
+      <div class="section">
+        <div class="tit_wrap">
+          <h3 class="tit02">radio_item ty03</h3>
+          <span>item_list radio_active</span>
+        </div>
+        <div class="item_list radio_active">
+          <ul>
+            <li>
+              <div class="radio_item ty03">
+                <input type="radio" id="ty03_list_01_01" name="ty03_list_01">
+                <label for="ty03_list_01_01">
+                  <span class="text_box">
+                    <span class="desc">
+                      일반
+                    </span>
+                    <span class="info">
+                      만 19세 이상의 성인이에요
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="radio_item ty03">
+                <input type="radio" id="ty03_list_01_02" name="ty03_list_01">
+                <label for="ty03_list_01_02">
+                  <span class="text_box">
+                    <span class="desc">
+                      미성년자
+                    </span>
+                    <span class="info">
+                      만 19세 미만이에요
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="radio_item ty03">
+                <input type="radio" id="ty03_list_01_03" name="ty03_list_01">
+                <label for="ty03_list_01_03">
+                  <span class="text_box">
+                    <span class="desc">
+                      외국인(Foreigner)
+                    </span>
+                    <span class="info">
+                      외국인 번호가 있어요
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="radio_item ty03">
+                <input type="radio" id="ty03_list_01_04" name="ty03_list_01">
+                <label for="ty03_list_01_04">
+                  <span class="text_box">
+                    <span class="desc">
+                      외국인 미성년자⁠(Foreigner Minors)
+                    </span>
+                    <span class="info">
+                      만 19세 미만이고 외국인 번호가 있어요
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div> <!-- // item_list -->
+      </div><!-- .section -->
+
+
+      <div class="section">
+        <div class="tit_wrap">
+          <h3 class="tit02">radio_item ty04</h3>
+          <span>item_list radio_active</span>
+        </div>
         <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
           <ul>
             <li>
-              <div class="radio_ty02">
-                <input type="radio" id="ty_list_03_01" name="ty_list_03">
-                <label for="ty_list_03_01">
+              <div class="radio_item ty04">
+                <input type="radio" id="ty04_radio_01" name="ty04_radio">
+                <label for="ty04_radio_01">
                   <span class="text_box">
                     <span class="desc">
                       초고화질의 영상을 자주보고,
@@ -297,9 +442,9 @@
               </div>
             </li>
             <li>
-              <div class="radio_ty02">
-                <input type="radio" id="ty_list_03_02" name="ty_list_03">
-                <label for="ty_list_03_02">
+              <div class="radio_item ty04">
+                <input type="radio" id="ty04_radio_02" name="ty04_radio">
+                <label for="ty04_radio_02">
                   <span class="text_box">
                     <span class="desc">
                       1-2시간 이상 영상을 보고,
@@ -314,9 +459,9 @@
               </div>
             </li>
             <li>
-              <div class="radio_ty02">
-                <input type="radio" id="ty_list_03_03" name="ty_list_03">
-                <label for="ty_list_03_03">
+              <div class="radio_item ty04">
+                <input type="radio" id="ty04_radio_03" name="ty04_radio">
+                <label for="ty04_radio_03">
                   <span class="text_box">
                     <span class="desc">
                       카톡이나 SNS, 인터넷 검색 등에
@@ -331,9 +476,9 @@
               </div>
             </li>
             <li>
-              <div class="radio_ty02">
-                <input type="radio" id="ty_list_03_04" name="ty_list_03">
-                <label for="ty_list_03_04">
+              <div class="radio_item ty04">
+                <input type="radio" id="ty04_radio_04" name="ty04_radio">
+                <label for="ty04_radio_04">
                   <span class="text_box">
                     <span class="desc">
                       와이파이를 주로 이용하고,
@@ -349,15 +494,20 @@
             </li>
           </ul>
         </div> <!-- // item_list -->
+      </div><!-- .section -->
 
-        <br><br>
 
+      <div class="section">
+        <div class="tit_wrap">
+          <h3 class="tit02">radio_item ty05</h3>
+          <span>item_list radio_active</span>
+        </div>
         <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
           <ul>
             <li>
-              <div class="radio_ty02 ty02">
-                <input type="radio" id="ty_list_08_01" name="ty_list_08">
-                <label for="ty_list_08_01">
+              <div class="radio_item ty05">
+                <input type="radio" id="ty05_radio_01" name="ty05_radio">
+                <label for="ty05_radio_01">
                   <span class="text_box">
                     <span class="desc">
                       번호이동
@@ -372,9 +522,9 @@
               </div>
             </li>
             <li>
-              <div class="radio_ty02 ty02">
-                <input type="radio" id="ty_list_08_02" name="ty_list_08">
-                <label for="ty_list_08_02">
+              <div class="radio_item ty05">
+                <input type="radio" id="ty05_radio_02" name="ty05_radio">
+                <label for="ty05_radio_02">
                   <span class="text_box">
                     <span class="desc">
                       신규가입
@@ -389,135 +539,95 @@
             </li>
           </ul>
         </div> <!-- // item_list -->
+      </div><!-- .section -->
 
-        <br><br>
 
+      <div class="section">
+        <div class="tit_wrap">
+          <h3 class="tit02">radio_item ty06</h3>
+          <span>item_list02</span>
+        </div>
         <div class="item_list02">
           <ul>
             <li>
-              <div class="radio_ty03">
-                <input type="radio" id="ty_list_05_01" name="ty_list_05">
-                <label for="ty_list_05_01" class="img_os01">아이폰</label>
+              <div class="radio_item ty06">
+                <input type="radio" id="ty06_radio_01" name="ty06_radio">
+                <label for="ty06_radio_01" class="img_os01">아이폰</label>
               </div>
             </li>
             <li>
-              <div class="radio_ty03">
-                <input type="radio" id="ty_list_05_02" name="ty_list_05">
-                <label for="ty_list_05_02" class="img_os02">갤럭시</label>
+              <div class="radio_item ty06">
+                <input type="radio" id="ty06_radio_02" name="ty06_radio">
+                <label for="ty06_radio_02" class="img_os02">갤럭시</label>
               </div>
             </li>
           </ul>
         </div> <!-- // item_list02 -->
+      </div><!-- .section -->
 
-        <br><br>
 
+      <div class="section">
+        <div class="tit_wrap">
+          <h3 class="tit02">radio_item ty07</h3>
+          <span>item_list03</span>
+        </div>
         <div class="item_list03">
           <ul>
             <li>
-              <div class="radio_ty04">
-                <input type="radio" id="ty_list_06_01" name="ty_list_06">
-                <label for="ty_list_06_01" class="img_pay01">신용카드</label>
+              <div class="radio_item ty07">
+                <input type="radio" id="ty07_radio_01" name="ty07_radio">
+                <label for="ty07_radio_01" class="img_pay ty01">신용카드</label>
               </div>
             </li>
             <li>
-              <div class="radio_ty04">
-                <input type="radio" id="ty_list_06_02" name="ty_list_06">
-                <label for="ty_list_06_02" class="img_pay02">실시간 계좌이체</label>
+              <div class="radio_item ty07">
+                <input type="radio" id="ty07_radio_02" name="ty07_radio">
+                <label for="ty07_radio_02" class="img_pay ty02">실시간 계좌이체</label>
               </div>
             </li>
             <li>
-              <div class="radio_ty04">
-                <input type="radio" id="ty_list_06_03" name="ty_list_06">
-                <label for="ty_list_06_03" class="img_pay03">삼성페이</label>
+              <div class="radio_item ty07">
+                <input type="radio" id="ty07_radio_03" name="ty07_radio">
+                <label for="ty07_radio_03" class="img_pay ty03">삼성페이</label>
               </div>
             </li>
             <li>
-              <div class="radio_ty04">
-                <input type="radio" id="ty_list_06_04" name="ty_list_06">
-                <label for="ty_list_06_04" class="img_pay04">카카오페이</label>
+              <div class="radio_item ty07">
+                <input type="radio" id="ty07_radio_04" name="ty07_radio">
+                <label for="ty07_radio_04" class="img_pay ty04">카카오페이</label>
               </div>
             </li>
             <li>
-              <div class="radio_ty04">
-                <input type="radio" id="ty_list_06_05" name="ty_list_06">
-                <label for="ty_list_06_05" class="img_pay05">네이버페이</label>
-              </div>
-            </li>
-          </ul>
-        </div> <!-- // item_list03 -->
-
-        <br><br>
-
-        <div class="item_list02 radio_active">
-          <ul>
-            <li>
-              <div class="radio_ty00">
-                <input type="radio" id="ty_list_04_01" name="ty_list_04">
-                <label for="ty_list_04_01">전체</label>
-              </div>
-            </li>
-            <li>
-              <div class="radio_ty00">
-                <input type="radio" id="ty_list_04_02" name="ty_list_04">
-                <label for="ty_list_04_02">데이터 무제한</label>
-              </div>
-            </li>
-            <li>
-              <div class="radio_ty00">
-                <input type="radio" id="ty_list_04_03" name="ty_list_04">
-                <label for="ty_list_04_03">1GB 미만</label>
-              </div>
-            </li>
-            <li>
-              <div class="radio_ty00">
-                <input type="radio" id="ty_list_04_04" name="ty_list_04">
-                <label for="ty_list_04_04">1~5GB</label>
-              </div>
-            </li>
-            <li>
-              <div class="radio_ty00">
-                <input type="radio" id="ty_list_04_05" name="ty_list_04">
-                <label for="ty_list_04_05">5~15GB</label>
-              </div>
-            </li>
-            <li>
-              <div class="radio_ty00">
-                <input type="radio" id="ty_list_04_06" name="ty_list_04">
-                <label for="ty_list_04_06">15~50GB</label>
-              </div>
-            </li>
-            <li>
-              <div class="radio_ty00">
-                <input type="radio" id="ty_list_04_07" name="ty_list_04">
-                <label for="ty_list_04_07">50~100GB</label>
+              <div class="radio_item ty07">
+                <input type="radio" id="ty07_radio_05" name="ty07_radio">
+                <label for="ty07_radio_05" class="img_pay ty05">네이버페이</label>
               </div>
             </li>
           </ul>
         </div> <!-- // item_list03 -->
       </div> <!-- // section -->
 
-      <div class="section">
+      <!-- <div class="section">
+        <h3 class="tit02">radio_item ty01</h3>
         <div class="form_list">
           <ul>
-            <li>
-              <strong class="form_tit">item_list02</strong>
-              
+            <li>              
               <div class="form_item item_list02">
                 <ul>
                   <li>
-                    <div class="radio_ty00">
+                    <div class="radio_item ty01">
                       <input type="radio" id="radio04_01" name="radio04">
                       <label for="radio04_01">아이폰</label>
                     </div>
                   </li>
                   <li>
-                    <div class="radio_ty00">
+                    <div class="radio_item ty01">
                       <input type="radio" id="radio04_02" name="radio04">
                       <label for="radio04_02">갤럭시</label>
                     </div>
                   </li>
                   <li>
-                    <div class="radio_ty00">
+                    <div class="radio_item ty01">
                       <input type="radio" id="radio04_03" name="radio04">
                       <label for="radio04_03">아이폰</label>
                     </div>
@@ -528,7 +638,10 @@
             </li>
           </ul>
         </div>
-      </div> <!-- // section -->
+      </div> -->
+
+
+
 
 
     </div> <!-- // content -->

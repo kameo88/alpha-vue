@@ -148,7 +148,6 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .btn.sm {padding:0.72rem 1.12rem; font-size:1.4rem; line-height:2rem; border-radius:0.6rem;}
 .btn.md {padding:1.22rem 1.92rem; font-size:1.5rem; line-height:2.2rem;}
 .btn.lg {padding:1.22rem 1.92rem; font-size:1.6rem; font-weight:700; line-height:2.2rem;}
-/* [class^=btn_][class*=_sS][class*=w_ty02] {padding:0.72rem 0.7rem;} */
 
 .btn.c01 {border-color:#fc6969; background-color:#fc6969; color:#fff;}
 .btn.c02 {border-color:#fc6969; background-color:#fff; color:#fc6969;}

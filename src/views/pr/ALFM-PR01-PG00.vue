@@ -43,13 +43,13 @@
                   <div class="item_list02">
                     <ul>
                       <li>
-                        <div class="radio_ty00">
+                        <div class="radio_item ty01">
                           <input type="radio" id="filter_other_01" name="filter_other" checked>
                           <label for="filter_other_01">후불유심요금제</label>
                         </div>
                       </li>
                       <li>
-                        <div class="radio_ty00">
+                        <div class="radio_item ty01">
                           <input type="radio" id="filter_other_02" name="filter_other">
                           <label for="filter_other_02">선불유심요금제</label>
                         </div>

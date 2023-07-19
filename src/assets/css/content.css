@@ -133,7 +133,7 @@
 .shop_search_area {z-index:2;}
 
 .shop_none {position:absolute; left:0; right:0; top:11.2rem; bottom:0; padding:0 1.6rem; background:#fff;}
-.shop_none .no_dt_sch {margin:10rem 0;}
+.shop_none .no_dt.sch {margin:10rem 0;}
 .shop_none .box_gray {display:flex; justify-content:space-between; align-items:center;}
 .shop_none .box_gray p {flex:1; font-size:1.2rem; line-height:1.8rem; color:#717171;}
 .shop_none .box_gray .btn {flex:none; margin-left:2rem;}
@@ -335,8 +335,8 @@
 /* ** filter ** */
 .filter_other {display:none;}
 .filter_other .item_list02 {padding:0.4rem; border-radius:0.8rem; background-color:#f8f8f8;}
-.filter_other .radio_ty00 > label {padding:1rem; border:none; border-radius:0.6rem; background-color:transparent;}
-.filter_other .radio_ty00 > input:checked + label {padding:1rem; border:none; box-shadow:0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.08); background-color:#fff;}
+.filter_other .radio_item.ty01 > label {padding:1rem; border:none; border-radius:0.6rem; background-color:transparent;}
+.filter_other .radio_item.ty01 > input:checked + label {padding:1rem; border:none; box-shadow:0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.08); background-color:#fff;}
 
 .filter_tit {display:none; margin:3.2rem 0 2rem; color:#000; font-size:1.6rem; font-weight:700; line-height:2.3rem;}
 

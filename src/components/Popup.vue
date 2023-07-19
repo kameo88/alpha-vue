@@ -211,7 +211,7 @@
             </ul>
           </div>
 
-          <div class="no_dt_sch">
+          <div class="no_dt sch">
             <p>
               검색 결과가 없습니다.<br>
               ⁠정확한 주소인지 다시 한번 확인해주세요.
@@ -692,43 +692,43 @@
             <div class="item_list02">
               <ul>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio01_01" name="filter_radio01" checked>
                     <label for="filter_radio01_01">전체</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio01_02" name="filter_radio01">
                     <label for="filter_radio01_02">데이터 무제한</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio01_03" name="filter_radio01">
                     <label for="filter_radio01_03">1GB 미만</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio01_04" name="filter_radio01">
                     <label for="filter_radio01_04">1~5GB</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio01_05" name="filter_radio01">
                     <label for="filter_radio01_05">5~15GB</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio01_06" name="filter_radio01">
                     <label for="filter_radio01_06">15~50GB</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio01_07" name="filter_radio01">
                     <label for="filter_radio01_07">50~100GB</label>
                   </div>
@@ -809,43 +809,43 @@
             <div class="item_list02">
               <ul>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio02_01" name="filter_radio02" data-min="0" data-max="60000" checked @change="rangeChange">
                     <label for="filter_radio02_01">전체</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio02_02" name="filter_radio02" data-min="0" data-max="10000" @change="rangeChange">
                     <label for="filter_radio02_02">1만원 이하</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio02_03" name="filter_radio02" data-min="10000" data-max="20000" @change="rangeChange">
                     <label for="filter_radio02_03">1만원 대</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio02_04" name="filter_radio02" data-min="20000" data-max="30000" @change="rangeChange">
                     <label for="filter_radio02_04">2만원 대</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio02_05" name="filter_radio02" data-min="30000" data-max="40000" @change="rangeChange">
                     <label for="filter_radio02_05">3만원 대</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio02_06" name="filter_radio02" data-min="40000" data-max="50000" @change="rangeChange">
                     <label for="filter_radio02_06">4만원 대</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio02_07" name="filter_radio02" data-min="50000" data-max="100000" @change="rangeChange">
                     <label for="filter_radio02_07">5만원 이상</label>
                   </div>
@@ -1079,19 +1079,19 @@
             <div class="item_list02">
               <ul>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio03_01" name="filter_radio03" checked>
                     <label for="filter_radio03_01">전체</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio03_02" name="filter_radio03">
                     <label for="filter_radio03_02">4G(LTE)</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio03_03" name="filter_radio03">
                     <label for="filter_radio03_03">5G</label>
                   </div>
@@ -1106,25 +1106,25 @@
             <div class="item_list02">
               <ul>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio04_01" name="filter_radio04" checked>
                     <label for="filter_radio04_01">전체</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio04_02" name="filter_radio04">
                     <label for="filter_radio04_02">6개월 미만</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio04_03" name="filter_radio04">
                     <label for="filter_radio04_03">6~12개월</label>
                   </div>
                 </li>
                 <li>
-                  <div class="radio_ty00">
+                  <div class="radio_item ty01">
                     <input type="radio" id="filter_radio04_04" name="filter_radio04">
                     <label for="filter_radio04_04">12개월 이상</label>
                   </div>
@@ -1959,43 +1959,43 @@
           <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
             <ul>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step01_01" name="step01" @change="findRatePlan = true">
                   <label for="step01_01">LG U+</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step01_02" name="step01" @change="findRatePlan = true">
                   <label for="step01_02">KT</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step01_03" name="step01" @change="findRatePlan = true">
                   <label for="step01_03">SKT</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step01_04" name="step01" @change="findRatePlan = true">
                   <label for="step01_04">LG U+ 알뜰폰</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step01_05" name="step01" @change="findRatePlan = true">
                   <label for="step01_05">KT 알뜰폰</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step01_06" name="step01" @change="findRatePlan = true">
                   <label for="step01_06">SKT 알뜰폰</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step01_07" name="step01" @change="findRatePlan = true">
                   <label for="step01_07">사용중인 통신사가 없어요</label>
                 </div>
@@ -2029,7 +2029,7 @@
           <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
             <ul>
               <li>
-                <div class="radio_ty02">
+                <div class="radio_item ty04">
                   <input type="radio" id="step02_01" name="step02" @change="findRatePlan = true">
                   <label for="step02_01">
                     <span class="text_box">
@@ -2046,7 +2046,7 @@
                 </div>
               </li>
               <li>
-                <div class="radio_ty02">
+                <div class="radio_item ty04">
                   <input type="radio" id="step02_02" name="step02" @change="findRatePlan = true">
                   <label for="step02_02">
                     <span class="text_box">
@@ -2063,7 +2063,7 @@
                 </div>
               </li>
               <li>
-                <div class="radio_ty02">
+                <div class="radio_item ty04">
                   <input type="radio" id="step02_03" name="step02" @change="findRatePlan = true">
                   <label for="step02_03">
                     <span class="text_box">
@@ -2080,7 +2080,7 @@
                 </div>
               </li>
               <li>
-                <div class="radio_ty02">
+                <div class="radio_item ty04">
                   <input type="radio" id="step02_04" name="step02" @change="findRatePlan = true">
                   <label for="step02_04">
                     <span class="text_box">
@@ -2125,25 +2125,25 @@
           <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
             <ul>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step03_01" name="step03" @change="findRatePlan = true">
                   <label for="step03_01">3시간 이상 해요</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step03_02" name="step03" @change="findRatePlan = true">
                   <label for="step03_02">1-2시간 정도 해요</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step03_03" name="step03" @change="findRatePlan = true">
                   <label for="step03_03">30분을 넘지 않아요</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step03_04" name="step03" @change="findRatePlan = true">
                   <label for="step03_04">전화는 거의 하지 않아요</label>
                 </div>
@@ -2178,25 +2178,25 @@
           <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
             <ul>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step04_01" name="step04" @change="findRatePlan = true">
                   <label for="step04_01">7만원 이상</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step04_02" name="step04" @change="findRatePlan = true">
                   <label for="step04_02">5-6만원 대</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step04_03" name="step04" @change="findRatePlan = true">
                   <label for="step04_03">3-4만원 대</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step04_04" name="step04" @change="findRatePlan = true">
                   <label for="step04_04">1-2만원 대</label>
                 </div>
@@ -2230,13 +2230,13 @@
           <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
             <ul>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step05_01" name="step05" @change="findRatePlan = true">
                   <label for="step05_01">필요해요!</label>
                 </div>
               </li>
               <li>
-                <div class="radio_ty01">
+                <div class="radio_item ty02">
                   <input type="radio" id="step05_02" name="step05" @change="findRatePlan = true">
                   <label for="step05_02">필요하지 않아요</label>
                 </div>
