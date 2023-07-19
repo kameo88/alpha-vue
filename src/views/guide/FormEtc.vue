@@ -634,7 +634,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="fali_m">...</div>
+              <div class="error">...</div>
             </li>
           </ul>
         </div>
