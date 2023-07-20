@@ -26,7 +26,7 @@
               <button type="button" class="btn_select" id="btn_selectDomainPop" @click="$popup.open('#selectDomainPop', '#btn_selectDomainPop');">직접입력</button>
             </div>
           </div>
-          <div class="btn_group">
+          <div class="btn_group mgt20">
             <button type="button" class="btn md c03">중복확인</button>
 					</div>
           <div class="form_group">

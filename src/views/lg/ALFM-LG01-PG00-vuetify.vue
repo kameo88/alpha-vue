@@ -24,7 +24,7 @@
               <v-text-field type="password" placeholder="비밀번호 입력" variant="outlined" :rules="[rules.required]" hide-details="auto" clearable></v-text-field>
             </div>
           </div>
-          <div class="btn_group">
+          <div class="btn_group mgt20">
             <button type="button" class="btn lg c01" @click="validate">로그인</button>
           </div>
         </v-form>
