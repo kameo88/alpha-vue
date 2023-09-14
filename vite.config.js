@@ -8,6 +8,11 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/alpha-vue/dist/",
+  transpileDependencies: true,
+  outputDir: "/alpha-vue/dist/",
+  publicPath: "/alpha-vue/dist/",
+  assetsDir: '../',
   plugins: [
     vue({ 
       template: { transformAssetUrls }
