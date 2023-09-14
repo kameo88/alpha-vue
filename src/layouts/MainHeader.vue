@@ -84,7 +84,7 @@
 
   </header>
   <!-- // header -->
-  <aside class="aside" v-if=" layout.header == 'main' || layout.header == 'sub' ">
+  <aside class="aside" :class="{ open : asideOn }" v-if=" layout.header == 'main' || layout.header == 'sub' ">
     <div class="inner">
       <div class="aside_header">
         <div class="user">
@@ -175,6 +175,7 @@ export default {
   data(){
     return {
       gnbOn: false,
+      asideOn: false,
       aside: [false, false, false, false],
     }
   },
@@ -194,48 +195,50 @@ export default {
       this.gnbOn = false;
     },
     asideOpen(){
-      const aside = document.querySelector("aside.aside");
-      const inner = aside.querySelector(".inner");
-      aside.classList.add("open");
+      this.asideOn = true;
+      // const aside = document.querySelector("aside.aside");
+      // const inner = aside.querySelector(".inner");
+      // aside.classList.add("open");
 
-      const focusS = document.createElement("div");
-      focusS.classList.add("focus_s");
-      focusS.setAttribute( 'tabindex', 0);
-      aside.prepend(focusS);
+      // const focusS = document.createElement("div");
+      // focusS.classList.add("focus_s");
+      // focusS.setAttribute( 'tabindex', 0);
+      // aside.prepend(focusS);
 
-      const focusE = document.createElement("div");
-      focusE.classList.add("focus_e");
-      focusE.setAttribute( 'tabindex', 0);
-      aside.append(focusE);
+      // const focusE = document.createElement("div");
+      // focusE.classList.add("focus_e");
+      // focusE.setAttribute( 'tabindex', 0);
+      // aside.append(focusE);
 
-      inner.setAttribute("tabindex", 0);
+      // inner.setAttribute("tabindex", 0);
 
-      setTimeout(() => { inner.focus() }, 200); // style animation/transition 속도 고려
+      // setTimeout(() => { inner.focus() }, 200); // style animation/transition 속도 고려
 
-      focusS.addEventListener("focus", ()=>{ inner.focus() });
-      focusE.addEventListener("focus", ()=>{ inner.focus() });
+      // focusS.addEventListener("focus", ()=>{ inner.focus() });
+      // focusE.addEventListener("focus", ()=>{ inner.focus() });
 
-      document.querySelector("body").classList.add("noScroll");
-      document.querySelector("html").classList.add("noScroll");
+      // document.querySelector("body").classList.add("noScroll");
+      // document.querySelector("html").classList.add("noScroll");
 
     },
     asideClose(){
-      const _html = document.querySelector("html");
-      const aside = document.querySelector("aside.aside");
-      const inner = aside.querySelector(".inner");
-      const btn = document.querySelector("header.header .h_menu");
+      this.asideOn = false;
+      // const _html = document.querySelector("html");
+      // const aside = document.querySelector("aside.aside");
+      // const inner = aside.querySelector(".inner");
+      // const btn = document.querySelector("header.header .h_menu");
       
-      aside.classList.remove("open");
-      btn.focus();
+      // aside.classList.remove("open");
+      // btn.focus();
     
-      aside.querySelector(".focus_s").remove();
-      aside.querySelector(".focus_e").remove();
-      inner.removeAttribute("tabindex");
+      // aside.querySelector(".focus_s").remove();
+      // aside.querySelector(".focus_e").remove();
+      // inner.removeAttribute("tabindex");
       
-      if (_html.classList.contains('mobile')) {
-        document.querySelector("body").classList.remove("noScroll");
-        document.querySelector("html").classList.remove("noScroll");
-      }
+      // if (_html.classList.contains('mobile')) {
+      //   document.querySelector("body").classList.remove("noScroll");
+      //   document.querySelector("html").classList.remove("noScroll");
+      // }
     },
     asideMenuClick(e){
       const btn = e.target;
