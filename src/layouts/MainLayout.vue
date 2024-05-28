@@ -1,7 +1,7 @@
 <template>
   <div>
   <div class="loading" v-if="loading">
-    <!-- <div class="lottie"><compLottie name="loading" /></div> -->
+    <div class="lottie"><compLottie name="loading" /></div>
     <span class="blind">loading</span>
   </div>
 
@@ -26,14 +26,14 @@ import AsideFloat from '@/layouts/AsideFloat.vue'
 import MainFooter from '@/layouts/MainFooter.vue'
 
 import compPopup from '@/components/Popup.vue'
-// import compLottie from "@/components/Lottie.vue"
+import compLottie from "@/components/Lottie.vue"
 
 export default {
   name: 'MainLayout',
   data(){
     return {
       layout: { "header" : 1 },
-      loading: false,
+      loading: true,
       popupItem: [],
     }
   },
@@ -57,7 +57,7 @@ export default {
     AsideFloat,
     MainFooter,
     compPopup,
-    // compLottie
+    compLottie
   },
 }
 </script>

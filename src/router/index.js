@@ -552,9 +552,9 @@ const routes = [
       {
         path: 'ALFM-FT04-PG00',         component: () => import('@/views/ft/ALFM-FT04-PG00.vue'),
       },
-      {
-        path: 'ALFM-FT05-PG00',         component: () => import('@/views/ft/ALFM-FT05-PG00.vue'),
-      },
+      // {
+      //   path: 'ALFM-FT05-PG00',         component: () => import('@/views/ft/ALFM-FT05-PG00.vue'),
+      // },
     ]
   },
 
