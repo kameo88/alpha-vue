@@ -33,7 +33,7 @@ export default {
   data(){
     return {
       layout: { "header" : 1 },
-      loading: true,
+      loading: false,
       popupItem: [],
     }
   },

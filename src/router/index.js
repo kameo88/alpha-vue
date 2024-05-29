@@ -106,6 +106,9 @@ const routes = [
         path: 'animation',      component: () => import('@/views/guide/Animation.vue'),
       },
       {
+        path: 'animationkameo',      component: () => import('@/views/guide/AnimationKameo.vue'),
+      },
+      {
         path: 'sticky',         component: () => import('@/views/guide/Sticky.vue'),
       },
     ]
