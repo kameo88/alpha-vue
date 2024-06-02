@@ -2,7 +2,28 @@
   <div class="container">
     <div class="content" id="content">
       <h2 class="title_nav">Guide</h2>
-      
+      <div class="section">
+        <div class="tit_wrap">
+          <h3 class="tit03">swiper</h3>
+        </div>
+        <div class="">
+          <swiper
+            :spaceBetween="30"
+            class="mySwiper">
+          <swiper-slide>
+            <video autoplay muted src="https://her2237.github.io/img1/pf/space/Earth - 733.mp4"></video>
+          </swiper-slide>
+          <swiper-slide>
+            <video autoplay muted src="https://her2237.github.io/img1/pf/space/Space%20Ship%20-%203.mp4"></video>
+          </swiper-slide>
+          <swiper-slide>Slide 3</swiper-slide>
+          <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
+          <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
+          <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+        </swiper>
+        </div>
+      </div>
+
       <div class="page_info">Animation</div>
 
 
@@ -12,6 +33,8 @@
         <LottieCameo name="loading" />
       </div><!-- // section -->
 
+
+
     </div> <!-- // content -->
   </div> <!-- // container -->
 </template>
@@ -19,8 +42,14 @@
 
 
 <script>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
 import LottieKameo from "@/components/LottieKameo.vue";
 import LottieCameo from "@/components/LottieCameo.vue";
+
+// import 'swiper/css';
+
+// import './style.css';
 
 export default {
   name: "GuideAnimation",
@@ -36,6 +65,13 @@ export default {
   components: {
     LottieKameo,
     LottieCameo,
+    Swiper,
+    SwiperSlide,
+
   }
 };
 </script>
+<style scoped>
+.swiper-slide {height:200px; background: gray;}
+.swiper-slide video {width:100%; height:100%; object-fit: cover;}
+</style>

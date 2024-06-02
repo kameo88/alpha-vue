@@ -8,6 +8,21 @@
 
       <div class="section ty02">
         <div class="tit_wrap">
+          <h3 class="tit03">까메오</h3>
+        </div>
+        <div class="">
+          <swiper class="mySwiper">
+            <swiper-slide>Slide 1</swiper-slide>
+            <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
+            <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
+            <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+        </swiper>
+        </div>
+      </div>
+
+      <div class="section ty02">
+        <div class="tit_wrap">
           <h3 class="tit03">내가 찜한 요금제 (7개)</h3>
           <a href="javascript:void(0);" class="more">더보기</a>
         </div>
