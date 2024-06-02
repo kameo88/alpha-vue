@@ -7,6 +7,30 @@
       <div class="page_info">form etc</div>
 
       <div class="section">
+        <h3 class="tit02">kameo 추가</h3>
+        <div class="radio_group">
+            <div class="radio_item box_type">
+                <input type="radio" id="item01" name="modelcode" checked>
+                <label for="item01" class="label">item01</label>
+            </div>
+            <div class="radio_item box_type">
+                <input type="radio" id="item02" name="modelcode">
+                <label for="item02" class="label">item02</label>
+            </div>
+            <div class="radio_item box_type">
+                <input type="radio" id="item03" name="modelcode">
+                <label for="item03" class="label">item03</label>
+            </div>
+            <div class="radio_item box_type">
+                <input type="radio" id="item04" name="modelcode">
+                <label for="item04" class="label">item04</label>
+            </div>
+            <div class="radio_item box_type">
+                <input type="radio" id="item05" name="modelcode">
+                <label for="item05" class="label">item05</label>
+            </div>
+        </div>
+
         <h3 class="tit02">select_list02</h3>
         <ul class="select_list02" role="listbox">
           <li role="none" class="on">
