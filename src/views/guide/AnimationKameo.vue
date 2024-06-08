@@ -3,17 +3,35 @@
     <div class="content" id="content">
       <h2 class="title_nav">Guide</h2>
       <div class="section">
+        <video autoplay loop muted playsinline src="/src/assets/images/hw.mp4" style="width:300px;"></video>
         <div class="tit_wrap">
           <h3 class="tit03">swiper</h3>
         </div>
+        
+
+        <div>siwper할 때, 재생하는 스크립트가 필요함</div>
         <div class="">
           <swiper
             :spaceBetween="30"
             class="mySwiper">
           <swiper-slide>
-            <video autoplay muted src="https://her2237.github.io/img1/pf/space/Earth - 733.mp4"></video>
+            <video autoplay loop muted playsinline src="/src/assets/images/hw.mp4"></video>
+
           </swiper-slide>
           <swiper-slide>
+            <video autoplay playsinline preload="none">
+              <source src="/src/assets/images/hw.mp4" type="video/mp4">
+            </video>
+          </swiper-slide>
+          <swiper-slide>
+            <video controls>
+              <source src="https://her2237.github.io/img1/pf/space/Earth - 733.mp4" type="video/mp4">
+            </video>
+          </swiper-slide>
+          <swiper-slide>
+            <!-- <video controls>
+              <source src="https://her2237.github.io/img1/pf/space/Space%20Ship%20-%203.mp4" type="video/mp4">
+            </video> -->
             <video autoplay muted src="https://her2237.github.io/img1/pf/space/Space%20Ship%20-%203.mp4"></video>
           </swiper-slide>
           <swiper-slide>Slide 3</swiper-slide>

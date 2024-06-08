@@ -8,6 +8,21 @@ const routes = [
     redirect: '/list/ListGuide',
   },
 
+
+  
+  {
+    path: '/kameo',
+    component: () => import('@/layouts/MainLayout.vue'),
+    children: [
+      {
+        path: 'page01',         component: () => import('@/views/kameo/page01.vue'),
+      },
+      {
+        path: 'page02',         component: () => import('@/views/kameo/page02.vue'),
+      },
+    ]
+  },
+
   // guide list
   {
     path: '/list',
