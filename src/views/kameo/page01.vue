@@ -9,7 +9,11 @@
             <v-radio :label="radioGroup.radioLabelTwo" :value="radioGroup.radioLabelTwo"></v-radio>
           </v-radio-group>
         </template>
+        <button @click="toggleClass" :class="{ done: isDone }">
+          Click me!
+        </button>
       </div>
+
     </div>
 </template>
 
@@ -36,12 +40,23 @@ emits: ['setLayout'],
 data() {
     return {
       layout: { header: 'none', footer: 'none' },
+      isDone: true,
         
     }
 },
+methods: {
+    toggleClass() {
+      this.isDone = !this.isDone;
+    },
+  },
 mounted(){
     this.$emit('setLayout', this.layout);
   }
 }
 </script>
+
+<style>.done {
+  background-color: blue;
+  color: white;
+}</style>
 
