@@ -15,6 +15,16 @@
       </div>
 
     </div>
+    <div>
+    <input type="radio" id="option1" value="option1" v-model="selectedOption">
+    <label for="option1">Option 1</label><br>
+    
+    <input type="radio" id="option2" value="option2" v-model="selectedOption">
+    <label for="option2">Option 2</label><br>
+    
+    <button :disabled="!selectedOption" class="btn">Submit</button>
+  </div>
+
 </template>
 
 <script setup>
@@ -41,9 +51,15 @@ data() {
     return {
       layout: { header: 'none', footer: 'none' },
       isDone: true,
-        
+      selectedOption: false,
     }
 },
+watch: {
+    selectedOption(newVal) {
+      // 선택된 옵션이 있을 때만 버튼을 활성화
+      this.buttonDisabled = !newVal;
+    }
+  },
 methods: {
     toggleClass() {
       this.isDone = !this.isDone;
