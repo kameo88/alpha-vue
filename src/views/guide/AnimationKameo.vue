@@ -14,30 +14,34 @@
           <swiper
             :spaceBetween="30"
             class="mySwiper">
+          <swiper-slide>Slide 1</swiper-slide>
           <swiper-slide>
             <video autoplay loop muted playsinline src="/src/assets/images/hw.mp4"></video>
-
           </swiper-slide>
-          <swiper-slide>
+          <!-- <swiper-slide>
+            <video autoplay loop muted playsinline src="/src/assets/images/hw.mp4"></video>
+          </swiper-slide> -->
+          <!-- <swiper-slide>
             <video autoplay playsinline preload="none">
               <source src="/src/assets/images/hw.mp4" type="video/mp4">
             </video>
-          </swiper-slide>
+          </swiper-slide> 
           <swiper-slide>
             <video controls>
               <source src="https://her2237.github.io/img1/pf/space/Earth - 733.mp4" type="video/mp4">
             </video>
-          </swiper-slide>
-          <swiper-slide>
+          </swiper-slide>-->
+          <!-- <swiper-slide> -->
             <!-- <video controls>
               <source src="https://her2237.github.io/img1/pf/space/Space%20Ship%20-%203.mp4" type="video/mp4">
             </video> -->
-            <video autoplay muted src="https://her2237.github.io/img1/pf/space/Space%20Ship%20-%203.mp4"></video>
-          </swiper-slide>
+            <!-- <video autoplay muted src="https://her2237.github.io/img1/pf/space/Space%20Ship%20-%203.mp4"></video> -->
+          <!-- </swiper-slide> -->
           <swiper-slide>Slide 3</swiper-slide>
-          <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-          <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-          <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+          <swiper-slide>Slide 4</swiper-slide>
+          <swiper-slide>
+            <video autoplay loop muted playsinline src="/src/assets/images/hw.mp4"></video>
+          </swiper-slide>
         </swiper>
         </div>
       </div>
@@ -58,6 +62,34 @@
 </template>
 
 
+<script setup>
+// document.addEventListener('DOMContentLoaded', function () {
+//     const swiper = new Swiper('.swiper-container', {
+//         on: {
+//             slideChange: function () {
+//                 let videos = document.querySelectorAll('video');
+//                 videos.forEach(video => {
+//                     video.pause();
+//                     video.currentTime = 0;
+//                 });
+
+//                 let activeSlide = swiper.slides[swiper.activeIndex];
+//                 let video = activeSlide.querySelector('video');
+//                 if (video) {
+//                     video.play();
+//                 }
+//             },
+//             init: function () {
+//                 let activeSlide = swiper.slides[swiper.activeIndex];
+//                 let video = activeSlide.querySelector('video');
+//                 if (video) {
+//                     video.play();
+//                 }
+//             }
+//         }
+//     });
+// });
+</script>
 
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';

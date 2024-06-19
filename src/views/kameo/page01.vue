@@ -22,7 +22,7 @@
     <input type="radio" id="option2" value="option2" v-model="selectedOption">
     <label for="option2">Option 2</label><br>
     
-    <button :disabled="!selectedOption" class="btn">Submit</button>
+    <button :disabled="next == false" class="btn">Submit</button>
   </div>
 
 </template>
@@ -51,7 +51,7 @@ data() {
     return {
       layout: { header: 'none', footer: 'none' },
       isDone: true,
-      selectedOption: false,
+      next: false,
     }
 },
 watch: {
