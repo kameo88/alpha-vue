@@ -20,6 +20,9 @@ const routes = [
       {
         path: 'page02',         component: () => import('@/views/kameo/page02.vue'),
       },
+      {
+        path: 'page03',         component: () => import('@/views/kameo/page03.vue'),
+      },
     ]
   },
 
