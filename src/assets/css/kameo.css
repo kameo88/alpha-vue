@@ -58,3 +58,42 @@
 /* .radio_item.box_type > label span:not(.badge):not(.line_group) {display:block;}
 .radio_item.box_type > label span:not(.badge):not(.line_group) + span {margin-top:0.6rem;}
 .radio_item.box_type > label .ex {font-size:1.3rem; line-height:2rem; color:var(--gray_04); font-weight:400;} */
+
+/* ================================== */
+#videoContainer {
+    position: relative;
+}
+#videoContainer video {
+    width: 500px;
+}
+
+#video-controls {
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+background: rgba(0, 0, 0, 0.5);
+padding: 10px;
+border-radius: 5px;
+}
+
+button {
+margin: 0 5px;
+background: none;
+border: 1px solid white;
+color: white;
+padding: 5px 10px;
+cursor: pointer;
+}
+
+input[type="range"] {
+width: 200px;
+margin: 0 10px;
+}
+
+button:hover, input[type="range"]:hover {
+opacity: 0.7;
+}

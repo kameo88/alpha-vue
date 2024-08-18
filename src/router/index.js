@@ -15,7 +15,7 @@ const routes = [
     component: () => import('@/layouts/MainLayout.vue'),
     children: [
       {
-        path: 'page01',         component: () => import('@/views/kameo/page01.vue'),
+        path: 'template',         component: () => import('@/views/kameo/template.vue'),
       },
       {
         path: 'page02',         component: () => import('@/views/kameo/page02.vue'),
@@ -131,6 +131,9 @@ const routes = [
       },
       {
         path: 'sticky',         component: () => import('@/views/guide/Sticky.vue'),
+      },
+      {
+        path: 'VideoControls',         component: () => import('@/views/guide/VideoControls.vue'),
       },
     ]
   },
