@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    <div class="pc_header">
+    <div class="pc_header" style="display:none;">
       <div class="inner">
         <h1><a href="javascript:void(0);"><span class="blind">+알파</span></a></h1>
         <nav class="nav" @mouseenter="gnbOpen" @mouseleave="gnbClose">
