@@ -7,7 +7,7 @@
             Your browser does not support the video tag.
           </video>
           <div id="video-controls" v-show="videoControlsVisible" >  <!-- v-show="videoControlsVisible"  삭제 -->
-            <button class="btn_play" @click="togglePlayPause">{{ isPlaying ? 'Pause' : 'Play' }}</button> <!--  v-if="isPlayButtonVisible" 삭제 -->
+            <button class="btn_play" v-if="isPlayButtonVisible" @click="togglePlayPause">{{ isPlaying ? 'Pause' : 'Play' }}</button> <!--  v-if="isPlayButtonVisible" 삭제 -->
             <button class="btn_stop" @click="stopVideo">Stop</button>
             <button @click="toggleMute">{{ isMuted ? 'Unmute' : 'Mute' }}</button>
             <!-- <button @click="alterVolume('+')">Volume +</button>
@@ -33,7 +33,8 @@ const currentTime = ref(0);
 const duration = ref(0);
 const videoControlsVisible = ref(true);
 // const fullscreenEnabled = ref(false);
-// const isPlayButtonVisible = ref(true);
+const isPlayButtonVisible = ref(true);
+
 
 const video = ref(null);
 // const progress = ref(null);
@@ -58,9 +59,9 @@ function togglePlayPause() {
     video.value.pause();
     isPlaying.value = false;
   }
-  // setTimeout(() => {
-  //   isPlayButtonVisible.value = false;
-  // }, 3000);
+  setTimeout(() => {
+    isPlayButtonVisible.value = false;
+  }, 3000);
 }
 
 function stopVideo() {
@@ -135,6 +136,9 @@ function seek(event) {
   position: absolute;
   top: -100px;
   margin: auto;
+  /* transition:  opacity 400ms ease-in-out; */
+  transition: 0.4s all ease-in-out;
+  
 }
 #videoContainer {
   position: relative;

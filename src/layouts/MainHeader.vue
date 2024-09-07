@@ -268,3 +268,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+.header .inner {
+  border-bottom: 2px solid red;
+  background-color: rgba(0, 0, 0, .09);
+  }
+</style>

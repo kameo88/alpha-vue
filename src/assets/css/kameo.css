@@ -60,11 +60,16 @@
 .radio_item.box_type > label .ex {font-size:1.3rem; line-height:2rem; color:var(--gray_04); font-weight:400;} */
 
 /* ================================== */
+
+.kameo .container {background-color: gray;}
+
+
+.video_wrap {width: 360px;}
 #videoContainer {
     position: relative;
 }
 #videoContainer video {
-    width: 500px;
+    width: 100%;
 }
 
 #video-controls {
@@ -89,11 +94,11 @@ padding: 5px 10px;
 cursor: pointer;
 }
 
-input[type="range"] {
+/* input[type="range"] {
 width: 200px;
 margin: 0 10px;
 }
 
 button:hover, input[type="range"]:hover {
 opacity: 0.7;
-}
+} */

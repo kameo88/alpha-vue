@@ -52,7 +52,7 @@ export default {
   emits: ['popupItem', 'setLayout'],
   data(){
     return {
-      layout: { header: 'sub2', title: '' },
+      layout: { header: 'sub2', title: '', footer: `none` },
     }
   },
   mounted(){
@@ -70,3 +70,6 @@ export default {
 };
 
 </script>
+<style scoped>
+.content {height: 1000px; border: 1px solid gray;}
+</style>
