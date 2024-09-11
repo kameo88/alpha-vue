@@ -46,3 +46,77 @@ function setAndroidSafeAreaTop () {
 
 */
 
+
+///////////////////////////////////////
+    vue3 vue js 인 경우
+///////////////////////////////////////
+
+<script setup>
+import { onMounted } from 'vue';
+
+const setAndroidSafeAreaTop = () => {
+    const elem = document.body;
+    const userAgent = navigator.userAgent;
+    const aosApp = /Newward_AOS/i; //userAgent에 기록된 문자열를 호출 (예 - Newward_AOS)
+    const iso = /iPhone|iPad/i;
+    const aso = /Android/i;
+
+    if ( aosApp.test(userAgent) ) {
+        try {
+            let sh = navigator.userAgent.split("TopMargin/"); // agent 에서 주는 방식대로
+            sh = sh[sh.length-1]*1; 
+            sh = Math.floor(sh);
+
+            document.documentElement.style.setProperty('--sat', `${shK}px`); // body 에 속성 넣기
+        } catch (e) {
+			console.error(e);
+        }
+    };
+}
+
+// ios 체크 후, body에 class="ios" 추가
+if (ios.test(userAgent)) {
+	elem.classList.add(`ios`);
+}
+// aos 체크 후, body에 class="aos" 추가
+if (aos.test(userAgent)) {
+	elem.classList.add(`aos`);
+}
+
+// 컴포넌트가 마운트될 때 setAndroidSafeAreaTop 실행
+onMounted(() => {
+  setAndroidSafeAreaTop();
+});
+</script>
+
+
+
+
+///////////////////////////////////////
+    vue3 lang="ts" 인 경우
+///////////////////////////////////////
+
+<script setup lang="ts">
+import { onMounted } from 'vue';
+
+const setAndroidSafeAreaTop = () => {
+    const userAgent = navigator.userAgent;
+    const aosApp = /liivm_android/i; //userAgent에 기록된 문자열를 호출 (예- liivm_android)
+
+    if ( aosApp.test(userAgent) ) {
+        try {
+            const sh = navigator.userAgent.split("marginTop/"); // agent 에서 주는 방식대로
+            let shK = Number(sh[sh.length-1])*1; 
+            shK = Math.floor(shK);
+
+            document.documentElement.style.setProperty('--sat', `${shK}px`);
+        } catch (e) {
+			console.error(e);
+        }
+    };
+}
+// 컴포넌트가 마운트될 때 setAndroidSafeAreaTop 실행
+onMounted(() => {
+  setAndroidSafeAreaTop();
+});
+</script>
