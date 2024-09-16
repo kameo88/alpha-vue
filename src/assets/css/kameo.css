@@ -64,7 +64,7 @@
 .kameo .container {background-color: gray;}
 
 
-.video_wrap {width: 360px;}
+/*.video_wrap {width: 360px;}
 #videoContainer {
     position: relative;
 }
@@ -72,7 +72,7 @@
     width: 100%;
 }
 
-#video-controls {
+ #video-controls {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -83,7 +83,7 @@ transform: translateX(-50%);
 background: rgba(0, 0, 0, 0.5);
 padding: 10px;
 border-radius: 5px;
-}
+} */
 
 button {
 margin: 0 5px;
