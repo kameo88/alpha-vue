@@ -15,7 +15,8 @@
             <!-- <input type="range" ref="progress" @click="seek" min="0" :max="duration" v-model="currentTime"> -->
             <!-- <button v-if="fullscreenEnabled" @click="toggleFullscreen">Fullscreen</button> -->
             <div>
-              <button @click="toggleClass">full</button>
+              <!-- <button @click="toggleClass">full</button> -->
+              <button @click="toggleFullscreen">{{ isFullscreen ? '축소' : '확대' }}</button>
             </div>
             <div class="progress-bar" @click="seek">
               <div class="progress-filled" :style="{ width: progressPercentage + '%' }"></div>
@@ -63,12 +64,64 @@ let addAnimationTimeout = null;  // 2초 후 애니메이션 추가를 위한 �
 //   video.value.controls = false;
 // };
 
+// 0919
+// 전체 화면 여부를 추적하는 상태 변수
+const isFullscreen = ref(false);
+
+// 전체 화면 토글 함수 (확대/축소 기능)
+const toggleFullscreen = async () => {
+  const elem = document.documentElement; // 전체 화면으로 전환할 요소
+
+  try {
+    if (!isFullscreen.value) {
+      // 전체 화면으로 진입 및 가로 모드로 전환
+      if (elem.requestFullscreen) {
+        await elem.requestFullscreen();
+      } else if (elem.mozRequestFullScreen) { // 파이어폭스
+        await elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) { // 사파리
+        await elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { // IE/엣지
+        await elem.msRequestFullscreen();
+      }
+
+      // 가로 모드로 전환
+      if (screen.orientation && screen.orientation.lock) {
+        await screen.orientation.lock('landscape');
+      }
+
+      // 전체 화면 상태 업데이트
+      isFullscreen.value = true;
+
+    } else {
+      // 전체 화면 해제 및 세로 모드로 전환
+      if (document.exitFullscreen) {
+        await document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) { // 파이어폭스
+        await document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) { // 사파리
+        await document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { // IE/엣지
+        await document.msExitFullscreen();
+      }
+
+      // 세로 모드로 전환
+      if (screen.orientation && screen.orientation.lock) {
+        await screen.orientation.lock('portrait');
+      }
+
+      // 전체 화면 상태 업데이트
+      isFullscreen.value = false;
+    }
+  } catch (err) {
+    console.log("화면 전환 실패:", err);
+  }
+};
 
 onMounted(() => {
   // fullscreenEnabled.value = document.fullscreenEnabled;
   video.value.controls = false;
 });
-
 
 function togglePlayPause() {
   if (video.value.paused || video.value.ended) {
