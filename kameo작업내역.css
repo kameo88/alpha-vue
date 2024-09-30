@@ -7,3 +7,14 @@
 2. 동영상 진행바
 - template.vue
 - CntsImgVideo
+
+#### 0930
+1. v-select dropdown에 class 추가하기
+<v-select 
+  trainsition="none"
+:menu-props="{contentsClass : `terms`}"
+/>
+
+v-overlay__content v-select__content
+====> 아래와 같이 변경
+v-overlay__content terms
